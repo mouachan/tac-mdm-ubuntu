@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x15a1e834f73' V1='4' name='Party' incarnation='8'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='fr.laposte.colis.schema.pivot.common.party' V281='13' V1='4' name='Party' description='Cette classe défini les caractéristiques complètes (identification, adresse, etc. ) d&apos;une entité pouvant jouer plusieurs rôles distincts (ex. : Expéditeur, Destinataire, Client, etc.) selon le contexte dans lequel elle est utilisée ( Adaptation du design pattern : &apos;A party can play role&apos;)'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' inheritsFromIncarnation='40' inheritsFromTimestamp='0x15a1e834f6a' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/AddressAndComplements.xml' V281='13' V1='4' name='in' description='Adresse d&apos;origine (telle que reçue/saisie) sans traitement RNVP'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='4' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/AddressAndComplements.xml' V281='13' V1='4' name='in'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='5' V167='21' inheritsFromIncarnation='15' inheritsFromTimestamp='0x15a1e834f6f' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/RnvpAddress.xml' V281='13' V1='4' name='rnvp' description='Adresse issue du traitement RNVP'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='6' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/RnvpAddress.xml' V281='13' V1='4' name='rnvp'>
+      </savedDerivedCopy>
+    </child>
+  </rootElem>
+  <child t='162' id='7' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='8' V1='4' name='Document Bindings'>
+  </child>
+</root>

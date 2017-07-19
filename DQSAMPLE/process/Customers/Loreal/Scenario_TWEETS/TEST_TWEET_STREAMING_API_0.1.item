@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="consumer_key" prompt="consumer_key?" promptNeeded="false" type="id_String" value="&quot;0f1gNI9fPToabU5o82FpT8waL&quot;"/>
+    <contextParameter comment="" name="consumer_secret" prompt="consumer_secret?" promptNeeded="false" type="id_String" value="&quot;YxbKbdE2O0z7qGiU1xXYt8cD42LuBRl6FChCUgW4eLDOb9OJxg&quot;"/>
+    <contextParameter comment="" name="access_token" prompt="access_token?" promptNeeded="false" type="id_String" value="&quot;862967771864367104-D57jGQCUgrVVW6DvBKPvzooBSmOZqCP&quot;"/>
+    <contextParameter comment="" name="access_token_secret" prompt="access_token_secret?" promptNeeded="false" type="id_String" value="&quot;EKqLESbtNMeZO0sZy9XvYoFnsrbNW7FQzj4SNd383G0gs&quot;"/>
+    <contextParameter comment="" name="out_path" prompt="out_path?" promptNeeded="false" type="id_String" value="&quot;C:/tmp/LOREAL/Data/Out&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Users/jeloundou/workspace2/in.csv&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/jeloundou/workspace2/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_NobsgDb8Eee0H9iO8q6j-Q" name="DQTechnical"/>
+    <routinesParameter id="_Nn12oDb8Eee0H9iO8q6j-Q" name="DataMasking"/>
+    <routinesParameter id="_NewMEDb8Eee0H9iO8q6j-Q" name="DataOperation"/>
+    <routinesParameter id="_Nn_AlDb8Eee0H9iO8q6j-Q" name="DataQualityDependencies"/>
+    <routinesParameter id="_Nn_AkDb8Eee0H9iO8q6j-Q" name="DataQuality"/>
+    <routinesParameter id="_NoSikDb8Eee0H9iO8q6j-Q" name="DqStringHandling"/>
+    <routinesParameter id="_NoldgDb8Eee0H9iO8q6j-Q" name="MDM"/>
+    <routinesParameter id="_Nm8ewzb8Eee0H9iO8q6j-Q" name="Mathematical"/>
+    <routinesParameter id="_NnGPwDb8Eee0H9iO8q6j-Q" name="Numeric"/>
+    <routinesParameter id="_NnPZsDb8Eee0H9iO8q6j-Q" name="Relational"/>
+    <routinesParameter id="_NoldhDb8Eee0H9iO8q6j-Q" name="SQLike"/>
+    <routinesParameter id="_NnPZtDb8Eee0H9iO8q6j-Q" name="StringHandling"/>
+    <routinesParameter id="_NnZKszb8Eee0H9iO8q6j-Q" name="TalendDataGenerator"/>
+    <routinesParameter id="_Nni7sDb8Eee0H9iO8q6j-Q" name="TalendDate"/>
+    <routinesParameter id="_NnsFoDb8Eee0H9iO8q6j-Q" name="TalendString"/>
+  </parameters>
+  <node componentName="tTwitterStreamInput" componentVersion="1.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tTwitterStreamInput_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="OAUTH_CONNECTION" value="tTwitterOAuth_1"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="tweetId"/>
+      <elementValue elementRef="OPERATION" value="STATUS_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="OPERATION" value="CREATION_DATE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tweet"/>
+      <elementValue elementRef="OPERATION" value="TEXT"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="user_id"/>
+      <elementValue elementRef="OPERATION" value="FROM_USERID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="screen_name"/>
+      <elementValue elementRef="OPERATION" value="FROM_SCREEN_NAME"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RT"/>
+      <elementValue elementRef="OPERATION" value="RETWEET_COUNT"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="source"/>
+      <elementValue elementRef="OPERATION" value="SOURCE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="location"/>
+      <elementValue elementRef="OPERATION" value="LOCATION"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="URLs"/>
+      <elementValue elementRef="OPERATION" value="URL_ENTITIES"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isretweet"/>
+      <elementValue elementRef="OPERATION" value="IS_RETWEET"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hashtags"/>
+      <elementValue elementRef="OPERATION" value="HASHTAGS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mentions"/>
+      <elementValue elementRef="OPERATION" value="USER_MENTIONS_SCREEN_NAME"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="KEYWORDS">
+      <elementValue elementRef="KEYWORD" value="&quot;@LOreal&quot;"/>
+      <elementValue elementRef="KEYWORD" value="&quot;Loreal&quot;"/>
+      <elementValue elementRef="KEYWORD" value="&quot;social&quot;"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="OR"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="TABLE" name="LANGUAGES">
+      <elementValue elementRef="LANGUAGE" value="en"/>
+      <elementValue elementRef="LANGUAGE" value="fr"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="FILTER_LINKS" value="false"/>
+    <elementParameter field="CHECK" name="SEND_TO_LOGCATCHER" value="false"/>
+    <elementParameter field="TEXT" name="LIMIT" value="1000"/>
+    <elementParameter field="TEXT" name="ENTITY_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="ENTITY_PREFIX" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="STANDARD" name="STANDARD">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;MM/dd/yyyy hh:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="tweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="URLs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="hashtags" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mentions" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="JSON" name="JSON">
+      <column defaultValue="" key="false" length="0" name="jsonString" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tReplace" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplace_1" show="false"/>
+    <elementParameter field="CHECK" name="SIMPLE_MODE" value="true"/>
+    <elementParameter field="LABEL" name="SIMPLEMODE_OLDLABLE" value="Simple mode works with regex expression(in last version)" show="false"/>
+    <elementParameter field="TABLE" name="SUBSTITUTIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="tweet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;\n&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="STRICT_MATCH" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_MODE" value="true"/>
+    <elementParameter field="TABLE" name="ADVANCED_SUBST">
+      <elementValue elementRef="INPUT_COLUMN" value="source"/>
+      <elementValue elementRef="SEARCH_COLUMN" value="&quot;&lt;.*?.>&quot;"/>
+      <elementValue elementRef="REPLACE_COLUMN" value="&quot; &quot;"/>
+      <elementValue elementRef="COMMENT" value=""/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tReplace_1">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="tweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="URLs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="hashtags" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mentions" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_tzRKYDb-Eee0H9iO8q6j-Q-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tweets">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="tweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="url_list">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="URLs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="mentions_list">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mentions" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="hashtags_list">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="hashtags" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="tweets">
+        <mapperTableEntries name="tweetId" expression="row2.tweetId " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="date" expression="row2.date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="tweet" expression="row2.tweet " type="id_String" nullable="true"/>
+        <mapperTableEntries name="user_id" expression="row2.user_id " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="screen_name" expression="row2.screen_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RT" expression="row2.RT " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="source" expression="row2.source " type="id_String" nullable="true"/>
+        <mapperTableEntries name="location" expression="row2.location " type="id_String" nullable="true"/>
+        <mapperTableEntries name="isretweet" expression="row2.isretweet " type="id_Boolean" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="url_list">
+        <mapperTableEntries name="tweetId" expression="row2.tweetId " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="date" expression="row2.date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="URLs" expression="row2.URLs " type="id_String" nullable="true"/>
+        <mapperTableEntries name="isretweet" expression="row2.isretweet " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="RT" expression="row2.RT " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="user_id" expression="row2.user_id " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="screen_name" expression="row2.screen_name " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="mentions_list">
+        <mapperTableEntries name="tweetId" expression="row2.tweetId " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="date" expression="row2.date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="mentions" expression="row2.mentions " type="id_String" nullable="true"/>
+        <mapperTableEntries name="user_id" expression="row2.user_id " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="screen_name" expression="row2.screen_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RT" expression="row2.RT " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="isretweet" expression="row2.isretweet " type="id_Boolean" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="hashtags_list">
+        <mapperTableEntries name="tweetId" expression="row2.tweetId " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="date" expression="row2.date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="user_id" expression="row2.user_id " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="screen_name" expression="row2.screen_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RT" expression="row2.RT " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="isretweet" expression="row2.isretweet " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="hashtags" expression="row2.hashtags " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="tweetId" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="tweet" type="id_String" nullable="true"/>
+        <mapperTableEntries name="user_id" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="screen_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RT" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="source" type="id_String" nullable="true"/>
+        <mapperTableEntries name="location" type="id_String" nullable="true"/>
+        <mapperTableEntries name="URLs" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isretweet" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="hashtags" type="id_String" nullable="true"/>
+        <mapperTableEntries name="mentions" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tExtractDelimitedFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractDelimitedFields_1" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="location"/>
+    <elementParameter field="CHECK" name="IGNORE_SOURCE_NULL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="poc_etl_talend_ref_product" name="tExtractDelimitedFields_1">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="tweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="poc_etl_talend_ref_product" name="REJECT">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="tweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_5" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="URLs"/>
+      <elementValue elementRef="FUNCTION" value="$source == null? false : $source.length() $operator $target"/>
+      <elementValue elementRef="OPERATOR" value=">"/>
+      <elementValue elementRef="RVALUE" value="0"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFilterRow_5">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="URLs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="URLs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="URLs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tNormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNormalize_1" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="NORMALIZE_COLUMN" value="URLs"/>
+    <elementParameter field="TEXT" name="ITEMSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="DEDUPLICATE" value="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ESCAPE_CHAR" value="ESCAPE_MODE_DOUBLED" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DISCARD_TRAILING_EMPTY_STR" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tNormalize_1">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="URLs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_9" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="mentions"/>
+      <elementValue elementRef="FUNCTION" value="$source == null? false : $source.length() $operator $target"/>
+      <elementValue elementRef="OPERATOR" value=">"/>
+      <elementValue elementRef="RVALUE" value="0"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFilterRow_9">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mentions" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mentions" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mentions" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_10" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="hashtags"/>
+      <elementValue elementRef="FUNCTION" value="$source == null? false : $source.length() $operator $target"/>
+      <elementValue elementRef="OPERATOR" value=">"/>
+      <elementValue elementRef="RVALUE" value="0"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFilterRow_10">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="hashtags" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="hashtags" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="hashtags" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tNormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNormalize_2" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="NORMALIZE_COLUMN" value="mentions"/>
+    <elementParameter field="TEXT" name="ITEMSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="DEDUPLICATE" value="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ESCAPE_CHAR" value="ESCAPE_MODE_DOUBLED" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DISCARD_TRAILING_EMPTY_STR" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tNormalize_2">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mentions" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tNormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tNormalize_3" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="NORMALIZE_COLUMN" value="hashtags"/>
+    <elementParameter field="TEXT" name="ITEMSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="DEDUPLICATE" value="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="ESCAPE_CHAR" value="ESCAPE_MODE_DOUBLED" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DISCARD_TRAILING_EMPTY_STR" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tNormalize_3">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="hashtags" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="tweetId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="URLs"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isretweet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="user_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="screen_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="URLs" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="tweetId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mentions"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="user_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="screen_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isretweet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_3">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mentions" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="tweetId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="user_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="screen_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isretweet"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hashtags"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_4">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="hashtags" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_tzRKYDb-Eee0H9iO8q6j-Q-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="poc_etl_talend_ref_product" name="out3">
+      <column comment="" key="false" length="0" name="product_id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="COLUMN FAMILY" value="info"/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out3">
+        <mapperTableEntries name="product_id" expression="row3.tweet " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="tweetId" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="tweet" type="id_String" nullable="true"/>
+        <mapperTableEntries name="user_id" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="screen_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RT" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="source" type="id_String" nullable="true"/>
+        <mapperTableEntries name="location" type="id_String" nullable="true"/>
+        <mapperTableEntries name="isretweet" type="id_Boolean" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tHBaseOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHBaseOutput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lFsAoCwFEee2NtV88zc1WA" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
+    <elementParameter field="CLOSED_LIST" name="HBASE_VERSION" value="Cloudera_CDH5_8"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HBASE" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="HADOOP_CUSTOM_VERSION" value="HADOOP_1" show="false"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" value="&quot;frrdcmstr01d.rd.loreal,frrdcwrkr01d.rd.loreal,frrdcwrkr02d.rd.loreal&quot;"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_CLIENT_PORT" value="&quot;2181&quot;"/>
+    <elementParameter field="CHECK" name="SET_ZNODE_PARENT" value="false"/>
+    <elementParameter field="TEXT" name="ZNODE_PARENT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="true"/>
+    <elementParameter field="TEXT" name="HBASE_MASTER_PRINCIPAL" value="&quot;hbase/_HOST@RD.LOREAL&quot;"/>
+    <elementParameter field="TEXT" name="HBASE_REGIONSERVER_PRINCIPAL" value="&quot;hbase/_HOST@RD.LOREAL&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="true"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;cu_app_poc_tal_d_sce@RD.LOREAL&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;C:/cu_app_poc_tal_d_sce.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_lFsAoCwFEee2NtV88zc1WA - poc_etl_talend_ref_product" show="false"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;poc_etl_talend:ref_product&quot;"/>
+    <elementParameter field="CHECK" name="SET_TABLE_NS_MAPPING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="TABLE_NS_MAPPING" value="&quot;*:/tables&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="CUSTOM_ROW_KEY" value="true"/>
+    <elementParameter field="TEXT" name="ROW_KEY" value="row3.tweetId"/>
+    <elementParameter field="TABLE" name="FAMILIES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="product_id"/>
+      <elementValue elementRef="FAMILY_COLUMN" value="&quot;info&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_MODE" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="500000" show="false"/>
+    <elementParameter field="TABLE" name="HBASE_PARAMETERS">
+      <elementValue elementRef="PROPERTY" value="&quot;hadoop.rpc.protection&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;authentication&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.app.mapreduce.am.staging-dir&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;/user&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="FAMILY_PARAMETERS" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="poc_etl_talend_ref_product"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="poc_etl_talend_ref_product" name="tHBaseOutput_2">
+      <column comment="" key="false" length="0" name="product_id" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="COLUMN FAMILY" value="info"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tTwitterOAuth" componentVersion="1.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tTwitterOAuth_1" show="false"/>
+    <elementParameter field="TEXT" name="CONSUMER_KEY" value="context.consumer_key"/>
+    <elementParameter field="TEXT" name="CONSUMER_SECRET" value="context.consumer_secret"/>
+    <elementParameter field="TEXT" name="ACCESS_TOKEN" value="context.access_token"/>
+    <elementParameter field="TEXT" name="ACCESS_TOKEN_SECRET" value="context.access_token_secret"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="TwitterStream"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tTwitterOAuthClose" componentVersion="1.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tTwitterOAuthClose_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="OAUTH_CONNECTION" value="tTwitterOAuth_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tHDFSOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="Cloudera_CDH5_8"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" value="USERNAME" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://frrdcmstr01d.rd.loreal:8020&quot;"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="true"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/_HOST@RD.LOREAL&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="true"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;cu_app_poc_tal_d_sce@RD.LOREAL&quot;"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;C:/cu_app_poc_tal_d_sce.keytab&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="BOTH_HADOOP" name="FILENAME" value="&quot;/pocs/poc_etl_talend/tweet/tweet.csv&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TYPEFILE" value="TEXT"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|||&quot;"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEYCOLUMN" value="tweetId" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="VALUECOLUMN" value="tweetId" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE : Only boolean, byte, byte[], double, float, integer,&#xA;&#x9;&#x9;&#x9;&#x9;long, short, string are currently supported for key class and value&#xA;&#x9;&#x9;&#x9;&#x9;columns fields&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" value="GZIP" show="false"/>
+    <elementParameter field="LABEL" name="COMPRESS_NOTE" value="NOTE : Only support Linux client and hadoop native code is&#xA;&#x9;&#x9;&#x9;&#x9;necessary, also need to add the native code path to&#xA;&#x9;&#x9;&#x9;&#x9;$java.library.path&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES">
+      <elementValue elementRef="PROPERTY" value="&quot;hadoop.rpc.protection&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;authentication&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+      <elementValue elementRef="PROPERTY" value="&quot;yarn.app.mapreduce.am.staging-dir&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;/user&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DEV_HDFS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHDFSOutput_1">
+      <column defaultValue="" key="false" length="22" name="tweetId" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="tweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="user_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="screen_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="isretweet" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="latitude" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+      <column comment="" key="false" length="220" name="longitude" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="220" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="STANDARD" label="row1" lineStyle="0" metaname="STANDARD" offsetLabelX="0" offsetLabelY="0" source="tTwitterStreamInput_1" target="tReplace_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tTwitterStreamInput_1" offsetLabelX="0" offsetLabelY="0" source="tTwitterStreamInput_1" target="tTwitterOAuthClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tReplace_1" offsetLabelX="0" offsetLabelY="0" source="tReplace_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="tweets" lineStyle="0" metaname="tweets" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tExtractDelimitedFields_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tweets" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="url_list" lineStyle="0" metaname="url_list" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tFilterRow_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="url_list" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="mentions_list" lineStyle="0" metaname="mentions_list" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tFilterRow_9">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="mentions_list" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="hashtags_list" lineStyle="0" metaname="hashtags_list" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tMap_1" target="tFilterRow_10">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="hashtags_list" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tExtractDelimitedFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractDelimitedFields_1" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="user_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="screen_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="isretweet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="location"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="tweet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="source"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="tweetId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row4" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_5" target="tNormalize_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tNormalize_1" offsetLabelX="0" offsetLabelY="0" source="tNormalize_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row5" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_9" target="tNormalize_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row6" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_10" target="tNormalize_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tNormalize_2" offsetLabelX="0" offsetLabelY="0" source="tNormalize_2" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tNormalize_3" offsetLabelX="0" offsetLabelY="0" source="tNormalize_3" target="tLogRow_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tHBaseOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tTwitterOAuth_1" offsetLabelX="0" offsetLabelY="0" source="tTwitterOAuth_1" target="tTwitterStreamInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tTwitterStreamInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tTwitterOAuth_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tTwitterOAuthClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSOutput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

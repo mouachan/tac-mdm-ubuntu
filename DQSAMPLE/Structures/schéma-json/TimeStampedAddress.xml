@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x15a1e834f48' V1='4' name='TimeStampedAddress' incarnation='21'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='fr.laposte.colis.schema.restitutions.address' V281='13' V1='4' name='TimeStampedAddress' description='time stamped address and complement'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' inheritsFromIncarnation='7' inheritsFromTimestamp='0x15a1e834e7c' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Person.xml' V281='13' V1='4' name='person' description='Personne'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='4' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Person.xml' V281='13' V1='4' name='person'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='5' V167='21' inheritsFromIncarnation='8' inheritsFromTimestamp='0x15a1e834e7e' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Organization.xml' V281='13' V1='4' name='organization' description='Entreprise'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='6' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Organization.xml' V281='13' V1='4' name='organization'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='7' V167='21' inheritsFromIncarnation='15' inheritsFromTimestamp='0x15a1e834e83' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Address.xml' V281='13' V1='4' name='address' description='Adresse' checksumValid='true' checksum='1EkmKUu8Ef/OuXayAM5tIilSLzA='>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='8' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Address.xml' V281='13' V1='4' name='address'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='9' V167='21' inheritsFromIncarnation='21' inheritsFromTimestamp='0x15a1e834e92' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/DefaultContacts.xml' V281='13' V1='4' name='contactList' description='Liste ouverte de type de contact' checksumValid='true' checksum='pgP7op5vI6Sq+rx3a65h7bSIcqQ='>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='10' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/DefaultContacts.xml' V281='13' V1='4' name='contactList'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='11' V167='21' inheritsFromIncarnation='12' inheritsFromTimestamp='0x15a1e834e93' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/HouseAccessInfo.xml' V281='13' V1='4' name='access' description='Info complémentaire pour l&apos;accès à l&apos;adresse indiquée (utilisé en livraison)' checksumValid='true' checksum='JZMbQ+PO55lZJ68b/oIw953aO2s='>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='12' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/HouseAccessInfo.xml' V281='13' V1='4' name='access'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='13' V167='21' inheritsFromIncarnation='6' inheritsFromTimestamp='0x15a1e834e80' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/GPS.xml' V281='13' V1='4' name='gps' description='Coordonnées GPS'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='14' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/GPS.xml' V281='13' V1='4' name='gps'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='15' V167='21' inheritsFromIncarnation='5' inheritsFromTimestamp='0x15a1e834e82' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/GlobalLocationNumber.xml' V281='13' V1='4' name='gln' description='Global Location Number'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='16' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/GlobalLocationNumber.xml' V281='13' V1='4' name='gln'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='17' V167='21' inheritsFromIncarnation='5' inheritsFromTimestamp='0x15a1e834e81' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/PGEO.xml' V281='13' V1='4' name='pgeo' description='ID Point CDL '>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='18' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/PGEO.xml' V281='13' V1='4' name='pgeo'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='19' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='lastEventDate'>
+      <structNode t='150' idref='1'/>
+    </child>
+  </rootElem>
+  <child t='162' id='20' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='21' V1='4' name='Document Bindings'>
+  </child>
+</root>

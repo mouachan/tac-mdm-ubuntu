@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x13e0981318d' V1='4' name='MultiJava' incarnation='66'>
+  <rootElem t='167' id='2' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='Root'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' differentFromInherited='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='3' repHandlerStruct='' inheritsFrom='' V281='12' V1='4' name='Attributes'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='4' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' modifiedFromParent_value='true' V1='4' name='class'>
+        <structNode t='150' idref='1'/>
+        <value>Constant([value="java.util.ArrayList",dataType="2"],)</value>
+      </child>
+    </child>
+    <child t='167' id='5' V167='21' differentFromInheritedCount='1' inheritsFromIncarnation='3585' inheritsFromTimestamp='0x13dfca6312f' inheritsInThisStruct='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Java/Invoices.xml' V281='12' modifiedFromParent_io='true' V1='4' name='Invoices'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='6' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='Structures/Java/Invoices.xml' V281='12' V1='4' name='Invoices'>
+      </savedDerivedCopy>
+      <io>ReadURL({Start Offset},{Length})</io>
+      <child t='167' id='7' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='3' repHandlerStruct='' inheritsFrom='' V281='12' V1='4' name='Attributes'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='8' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='3' repHandlerStruct='' inheritsFrom='' V281='12' V1='4' name='Attributes'>
+        </savedOrigCopy>
+        <child t='167' id='9' V167='21' differentFromInherited='true' V283='1' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='class'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='10' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' modifiedFromParent_value='true' V1='4' name='class'>
+            <value>Constant([value="com.mycompany.accting.Invoices",dataType="2"],)</value>
+          </savedOrigCopy>
+          <value>Constant([value="com.mycompany.accting.Invoices",dataType="2"],)</value>
+        </child>
+        <child t='167' id='11' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='collectionClass'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='12' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='collectionClass'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='13' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='nullEntry'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='14' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='nullEntry'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='15' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='id'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='16' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='id'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='17' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='reference'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='18' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='reference'>
+          </savedOrigCopy>
+        </child>
+      </child>
+      <child t='167' id='19' V167='21' inheritsFromIncarnation='3585' inheritsFromTimestamp='0x13dfca6312f' V283='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='Structures/Java/Invoice.xml' V281='12' V1='4' name='invoices' checksumValid='true' checksum='J1DJCcmNlMpzHWR0CairQPtmnfQ='>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='20' V167='21' differentFromInheritedCount='1' inheritsFromIncarnation='4170' inheritsFromTimestamp='0x13dfca630a8' inheritsInThisStruct='true' V283='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='Structures/Java/Invoice.xml' V281='12' V1='4' name='invoices'>
+        </savedOrigCopy>
+      </child>
+    </child>
+    <child t='167' id='21' V167='21' differentFromInheritedCount='1' inheritsFromIncarnation='4' inheritsFromTimestamp='0x13dfca63523' inheritsInThisStruct='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Java/PurchaseOrders.xml' V281='12' modifiedFromParent_io='true' V1='4' name='PurchaseOrders'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='22' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='Structures/Java/PurchaseOrders.xml' V281='12' V1='4' name='PurchaseOrders'>
+      </savedDerivedCopy>
+      <io>ReadURL({Start Offset},{Length})</io>
+      <child t='167' id='23' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='3' repHandlerStruct='' inheritsFrom='' V281='12' V1='4' name='Attributes'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='24' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='3' repHandlerStruct='' inheritsFrom='' V281='12' V1='4' name='Attributes'>
+        </savedOrigCopy>
+        <child t='167' id='25' V167='21' differentFromInherited='true' V283='1' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='class'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='26' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' modifiedFromParent_value='true' V1='4' name='class'>
+            <value>Constant([value="com.mycompany.accting.PurchaseOrders",dataType="2"],)</value>
+          </savedOrigCopy>
+          <value>Constant([value="com.mycompany.accting.PurchaseOrders",dataType="2"],)</value>
+        </child>
+        <child t='167' id='27' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='collectionClass'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='28' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='collectionClass'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='29' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='nullEntry'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='30' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='nullEntry'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='31' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='id'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='32' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='id'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='33' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='reference'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='34' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='12' V1='4' name='reference'>
+          </savedOrigCopy>
+        </child>
+      </child>
+      <child t='167' id='35' V167='21' inheritsFromIncarnation='4' inheritsFromTimestamp='0x13dfca63523' V283='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='Structures/Java/PurchaseOrder.xml' V281='12' V1='4' name='purchaseOrders'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='36' V167='21' differentFromInheritedCount='1' inheritsFromTimestamp='0x13dfca63510' inheritsInThisStruct='true' V283='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='Structures/Java/PurchaseOrder.xml' V281='12' V1='4' name='purchaseOrders'>
+        </savedOrigCopy>
+      </child>
+    </child>
+  </rootElem>
+  <defaultRep t='175' id='37' V175='4' importedStructs='2' V170='10' V695='1' elementsAre='1' V690='1' importerVersion='1' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='Java'>
+  </defaultRep>
+  <child t='162' id='38' V1='4' name='Representations'>
+    <child t='172' id='39' V172='6' autoFixNamespaceMismatch='true' V170='10' V692='1' V690='1' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='XML'>
+    </child>
+    <child t='175' idref='37'/>
+  </child>
+  <child t='165' id='40' V1='4' name='Document Bindings'>
+    <child t='166' id='41' V166='5' docType='1' docReposPath='/Examples/Sample Data/Java/PurchaseOrders/SamplePurchaseOrders.xml' V1='4' name='/Root/PurchaseOrders'>
+      <elemNode t='167' idref='21'/>
+    </child>
+    <child t='166' id='42' V166='5' docType='1' docReposPath='/Examples/Sample Data/Java/Invoices/SampleInvoices.xml' V1='4' name='/Root/Invoices'>
+      <elemNode t='167' idref='5'/>
+    </child>
+  </child>
+</root>

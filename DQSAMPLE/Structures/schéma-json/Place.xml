@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x15a1e834e80' V1='4' name='Place' incarnation='22'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='fr.laposte.colis.schema.common.location' V281='13' V1='4' name='Place' description='Information(s) qui caractérisent le lieu&lt;br&gt;Entities that have a somewhat fixed, physical extension&lt;/br&gt;&lt;br&gt;agregation of location types or site référence&lt;/br&gt;'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='location' description='Tout objet décrivant un lieu géographique ( CEA, PGEO, GPS, GLN )'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='4' V167='21' inheritsFromIncarnation='6' inheritsFromTimestamp='0x15a1e834e80' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/GPS.xml' V281='13' V1='4' name='GPS' description='Tout objet décrivant un lieu géographique ( CEA, PGEO, GPS, GLN )'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='5' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/GPS.xml' V281='13' V1='4' name='location'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='6' V167='21' inheritsFromIncarnation='5' inheritsFromTimestamp='0x15a1e834e81' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/CEA.xml' V281='13' V1='4' name='CEA' description='Tout objet décrivant un lieu géographique ( CEA, PGEO, GPS, GLN )'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='7' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/CEA.xml' V281='13' V1='4' name='location'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='8' V167='21' inheritsFromIncarnation='5' inheritsFromTimestamp='0x15a1e834e81' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/PGEO.xml' V281='13' V1='4' name='PGEO' description='Tout objet décrivant un lieu géographique ( CEA, PGEO, GPS, GLN )'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='9' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/PGEO.xml' V281='13' V1='4' name='location'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='10' V167='21' inheritsFromIncarnation='5' inheritsFromTimestamp='0x15a1e834e82' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/GlobalLocationNumber.xml' V281='13' V1='4' name='GlobalLocationNumber' description='Tout objet décrivant un lieu géographique ( CEA, PGEO, GPS, GLN )'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='11' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/GlobalLocationNumber.xml' V281='13' V1='4' name='location'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='12' V167='21' inheritsFromIncarnation='15' inheritsFromTimestamp='0x15a1e834e83' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Address.xml' V281='13' V1='4' name='Address' description='Tout objet décrivant un lieu géographique ( CEA, PGEO, GPS, GLN )' checksumValid='true' checksum='ZaAnTwnmkKxKGg0l7G9XghFp2PY='>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='13' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Address.xml' V281='13' V1='4' name='location'>
+        </savedDerivedCopy>
+      </child>
+    </child>
+    <child t='167' id='14' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='ZipCodeAndCountry' avroNamespace='fr.laposte.colis.schema.common.area' V281='13' V1='4' name='zipCodeAndCountry' description='définition zone administrative code postale et pays'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='15' V167='21' inheritsFromIncarnation='5' inheritsFromTimestamp='0x15a1e834e83' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/ZipCode.xml' V281='13' V1='4' name='zipCode'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='16' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/ZipCode.xml' V281='13' V1='4' name='zipCode'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='17' V167='21' inheritsFromIncarnation='9' inheritsFromTimestamp='0x15a1e834e84' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Country.xml' V281='13' V1='4' name='country' description='par défaut france'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='18' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Country.xml' V281='13' V1='4' name='country'>
+        </savedDerivedCopy>
+      </child>
+    </child>
+    <child t='167' id='19' V167='21' inheritsFromIncarnation='11' inheritsFromTimestamp='0x15a1e834e87' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Site.xml' V281='13' V1='4' name='site' description='site de production de l&apos;évènement ou site de rattachement de l&apos;évènement'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='20' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Site.xml' V281='13' V1='4' name='site'>
+      </savedDerivedCopy>
+    </child>
+  </rootElem>
+  <child t='162' id='21' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='22' V1='4' name='Document Bindings'>
+  </child>
+</root>

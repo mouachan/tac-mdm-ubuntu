@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_2OYZUGxjEeeL37kXNPv4gw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_2OYZUWxjEeeL37kXNPv4gw" comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" type="id_String" value="&quot;/Context&quot;"/>
+    <contextParameter xmi:id="_2OYZUmxjEeeL37kXNPv4gw" comment="" name="contextName" prompt="contextName?" promptNeeded="false" type="id_String" value="&quot;General&quot;"/>
+    <contextParameter xmi:id="_2OYZU2xjEeeL37kXNPv4gw" comment="" name="contextStr" prompt="contextStr?" promptNeeded="false" type="id_String" value="&quot;Talend&quot;"/>
+    <contextParameter xmi:id="_2OYZVGxjEeeL37kXNPv4gw" comment="" name="tl_RootDir" prompt="tl_RootDir?" promptNeeded="false" type="id_String" value="&quot;D:/Informatica/951/server/Talend&quot;"/>
+    <contextParameter xmi:id="_2OYZVWxjEeeL37kXNPv4gw" comment="" name="contextEnv" prompt="contextEnv?" promptNeeded="false" type="id_String" value="&quot;R&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_2OYZVmxjEeeL37kXNPv4gw" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_2OYZV2xjEeeL37kXNPv4gw" comment="" name="contextDir" prompt="contextDir?" promptNeeded="false" type="id_String" value="&quot;/Context&quot;"/>
+    <contextParameter xmi:id="_2OYZWGxjEeeL37kXNPv4gw" comment="" name="contextName" prompt="contextName?" promptNeeded="false" type="id_String" value="&quot;General&quot;"/>
+    <contextParameter xmi:id="_2OYZWWxjEeeL37kXNPv4gw" comment="" name="contextStr" prompt="contextStr?" promptNeeded="false" type="id_String" value="&quot;Talend&quot;"/>
+    <contextParameter xmi:id="_2OYZWmxjEeeL37kXNPv4gw" comment="" name="tl_RootDir" prompt="tl_RootDir?" promptNeeded="false" type="id_String" value="&quot;D:/Informatica/951/server/Talend&quot;"/>
+    <contextParameter xmi:id="_2OYZW2xjEeeL37kXNPv4gw" comment="" name="contextEnv" prompt="contextEnv?" promptNeeded="false" type="id_String" value="&quot;R&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

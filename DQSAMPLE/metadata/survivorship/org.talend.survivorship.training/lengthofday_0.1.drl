@@ -1,0 +1,14 @@
+package org.talend.survivorship.training 
+
+rule "lengthofday"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "lengthofdayGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( length_of_day, "Length_of_Day", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "Length_of_Day", drools.getRule().getName());
+
+end
+
+

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="zip" prompt="zip?" promptNeeded="false" type="id_Integer" value="94022"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Trace" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/v621/Studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_verXMAfdEea2-suu_vUe-A" name="DQTechnical"/>
+    <routinesParameter id="_vc5OgAfdEea2-suu_vUe-A" name="DataOperation"/>
+    <routinesParameter id="_veYcQwfdEea2-suu_vUe-A" name="DataQualityDependencies"/>
+    <routinesParameter id="_veOrRAfdEea2-suu_vUe-A" name="DataQuality"/>
+    <routinesParameter id="_veiNQgfdEea2-suu_vUe-A" name="DqStringHandling"/>
+    <routinesParameter id="_ve1IMAfdEea2-suu_vUe-A" name="MDM"/>
+    <routinesParameter id="_vdC_gAfdEea2-suu_vUe-A" name="Mathematical"/>
+    <routinesParameter id="_vdMJcAfdEea2-suu_vUe-A" name="Numeric"/>
+    <routinesParameter id="_vdV6cAfdEea2-suu_vUe-A" name="Relational"/>
+    <routinesParameter id="_vOK2AAfdEea2-suu_vUe-A" name="SQLike"/>
+    <routinesParameter id="_vdV6dAfdEea2-suu_vUe-A" name="StringHandling"/>
+    <routinesParameter id="_vd7wUAfdEea2-suu_vUe-A" name="TalendDataGenerator"/>
+    <routinesParameter id="_veFhUAfdEea2-suu_vUe-A" name="TalendDate"/>
+    <routinesParameter id="_veOrQAfdEea2-suu_vUe-A" name="TalendString"/>
+    <routinesParameter id="_0dLqEHA_EeaU_dzD0MnELw" name="DataMasking"/>
+  </parameters>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="zip"/>
+      <elementValue elementRef="VALUE" value="context.zip"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="zip" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="zipcode">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="zip" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="row1/zip"/>
+      </inputTrees>
+      <outputTrees name="zipcode">
+        <nodes name="payload" expression="" type="id_Document" xpath="zipcode/payload">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns:GetCityWeatherByZIP" type="id_String" xpath="zipcode.payload:/tns:GetCityWeatherByZIP">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns" type="id_String" xpath="zipcode.payload:/tns:GetCityWeatherByZIP/xmlns:tns" nodeType="NAME_SPACE" defaultValue="http://ws.cdyne.com/WeatherWS/"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns:ZIP" expression="row1.zip" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="zipcode.payload:/tns:GetCityWeatherByZIP/tns:ZIP" loop="true" optional="true"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tESBConsumer" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tESBConsumer_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="SERVICE_CONFIGURATION" value=""/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVICE_LOCATOR_STRATEGY" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="USE_SR" value="false"/>
+    <elementParameter field="LABEL" name="AUTHENTICATION_LABEL" value="" show="false"/>
+    <elementParameter field="CHECK" name="AUTH_PROPAGATE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SAML" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROPAGATE_TYPE" value="NONE" show="false"/>
+    <elementParameter field="LABEL" name="PROPAGATE_U_P_LABEL" value="" show="false"/>
+    <elementParameter field="LABEL" name="PROPAGATE_CERT_LABEL" value="" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_ALIAS" value="&quot;alias&quot;" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="LABEL" name="AUTHORIZATION_LABEL" value="" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_ENCRYPTION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="ESB_ENDPOINT" value="&quot;http://wsf.cdyne.com/WeatherWS/Weather.asmx&quot;"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;http://wsf.cdyne.com/WeatherWS/Weather.asmx?wsdl&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NS" value="http://ws.cdyne.com/WeatherWS/" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="Weather" show="false"/>
+    <elementParameter field="TEXT" name="PORT_NS" value="http://ws.cdyne.com/WeatherWS/" show="false"/>
+    <elementParameter field="TEXT" name="PORT_NAME" value="WeatherSoap12" show="false"/>
+    <elementParameter field="TEXT" name="METHOD_NS" value="http://ws.cdyne.com/WeatherWS/" show="false"/>
+    <elementParameter field="TEXT" name="METHOD" value="GetCityWeatherByZIP(GetCityWeatherByZIP):GetCityWeatherByZIPResponse" show="false"/>
+    <elementParameter field="TEXT" name="SOAP_ACTION" value="http://www.webserviceX.NET/GetWeather" show="false"/>
+    <elementParameter field="TEXT" name="COMMUNICATION_STYLE" value="request-response" show="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="WSDL_CONTENT" value="eJwBKQfW+FBLAwQUAAgICADsYZ1IAAAAAAAAAAAAAAAACQAAAG1haW4ud3NkbO1cS3PbNhC+d6b/&#xD;&#xA;AcNLL7UYuYd2PHEySZw0nkkijeU0md4gErIwJQmGAC3p33fB9wN8maAVOTlZArGLxbdvEPLzl3vX&#xD;&#xA;Qfck4JR5l8Z89sxAxLOYTb27S+Pz7buzv4yXL3795fmO286FTTbUowKmciRwcEfEJ+wS7mOLXBpb&#xD;&#xA;IfwL09zxmWUfPDKzmGt+IVhsSfBlZRoIFvL4Bc8n7naz3R8zFtyZ58+ezc2vHz+srC1xcTpVLpnN&#xD;&#xA;5tEjPoNHnGE/IpMTMsYudUn3bDkrIxEe7yu2nNXNXT7PubsZgUutgHG2ERH3XBBB9uIjFtYW0M4R&#xD;&#xA;Apbz8+7F4nklsn5EJRJQditVRJBahGmAKSAUG4M4+IRH32EEmEXEiDjEJZ54xwL3imxw6IhL41uI&#xD;&#xA;HbqhxDYGW03CP1ohYY08LDX9NxHJvGtvA6thaZb5/IgCmPkO2d+CpGbOycxYDeR+A0KD6ZPmVQoP&#xD;&#xA;YlDItxDAK4+XlnPxfmFZYQCWODeQS730GzhiuygALeAJi14aYMgXr4IAHxabZOoV4VZA/QgTsyyV&#xD;&#xA;qRRLDqs20oBWYWoiZvP6ZbSUkKgBCb01Cz1b2o0KGMVSBTw6gFDC0AiCasM6d1pW/byyw+urdGPA&#xD;&#xA;dMsCUVXpEHNSwAVcRQDuPYbtkloiDMjnmw+tXIfCXvPKN1QcILgQC3Px+vDv9fJxnVEu2IGaFv/q&#xD;&#xA;3vfRgpFKkkosSh/fELCJxwpAlUV1++IqtCzCea79NWMOwbXdDUEz1eEt1AE6nXElsCA6GUqd6+SX&#xD;&#xA;BDYpJ8Qh3dxzS2hIkukEzRmhyn2qxJctgDzqOHjtyN0FIVG5oOYtjt9bg3tdlSzWhm+3UCE/wAom&#xD;&#xA;T57acmcm6S1xfRJgmT95UYcCxsfwXQZsjdfUAfdabJagOOpTXK2TloulZhuJxNZkHxnyH1ngAcwf&#xD;&#xA;2E5npLjCBwFm9p7ebbWWLXVQJMy6MfkEYgsp/wSQTF/FJf75oxVxxW0/ag03N1oFqWTK5OmjVnDl&#xD;&#xA;NX8WcD9aAXeKfW8hd+tke0McQPaevA9dauvWHfVsra0/lC1c8/7/oZzGlYvunb/ZQs2sV1UuDv7j&#xD;&#xA;EybM5qO1lgagz3lgbaVKD92jv6gliBrPclTvTDERVNFZcnzWbFYOm+PDZxdMDt+R5oz2Xggfhq+z&#xD;&#xA;PBLT+TgQLVVAJkM2uShEsmiXGKXDkRXD/iIUjVLAR/grSAAGlOAWo9PnzGecnEW4xorZVtVoRFNq&#xD;&#xA;dcm4aBP1NbMPFSHVR0MPl6t+Hj8Gv+4XDfr0nLjFQPyUhZlO+FK9pu460kSO4PjqPRUE0WD1xwhm&#xD;&#xA;VeM5lhy1oNoixKCYOqHqB3pZ5xu0KTzue5ZxhJqbXw3rd4fjBlNVJh/hG6pTGc0JfLhnjMzfPrSO&#xD;&#xA;9WOGRJSyHCxq5sBcum4ZJBdimBVKMaPhFzCZo8I8BJ8QwdYWZQ1tImOZLiudo2fU80PoO+JdtBh0&#xD;&#xA;PdGZOX2FJwvFIKZF/ZgFDpWxFKwuCJVBV4XgK8dhO44OLESCoTsi5McASXqUMkCLexIgkBt9InuB&#xD;&#xA;/kRX+MB/R7stBaApR6Ev3x7YaAuUzmGGPs9WM7TwnMODse9RYwyGvo9naEK+6tIDgf+Np+Y7Ocjt&#xD;&#xA;DdyDMO4ofvtCnMaaJJJ0BhcZhU82slRSiIawUm2PfsaUrpp2fECZCPPTjCY60G07L5kqjqQ15snG&#xD;&#xA;EkXPqKlMqZbeP2NKn4MDPYXKRNifZmzRhXJXbzk+xqypJ69xq/ug+sl8tUOK7mqnPMC416C4t7f5&#xD;&#xA;yf2w2JSgEjHNiRxmRR8uDVNNaap0lI2lDEHXb+WldWIXL353aKXIRd7Pj35T8NV1kGwxk8a0xk5/&#xD;&#xA;wOkDTJ3wyeGivh/SDUuJ7vRQSQYTN+ty3qjPqHtuqf2QP+HIqEWAPS5DQ/evPuTzkc4dLZ0Tya+v&#xD;&#xA;rFhd7T/8UDNGXBzky8g0ZnerN947qAKFHAgdKkAWp66Xfmruy22ymDAGzzrfHwbOhlAyFs0S26cD&#xD;&#xA;5rAIlHUo6vqh1LwoCojlYvXdVRBRNLeYJ+QlhnhX2PcdGvM192e73e5M8juDxEHixPFQtT29OuNp&#xD;&#xA;ovc41ciJYje8Zpmf96la5udHrFtg8WNXLnL/OvNDP36TVi8PR1VX/XKioLbUMOMw1VDFfK+QNsYl&#xD;&#xA;ToJ7alXOWitvpFkg1HErYVcLXfCsphds2/J2bCExZDrZKJWSfJph7u4LdyIzkXrI2CxhtfZ9bOny&#xD;&#xA;WlElYbVcTNPrMaSMDsSahCyciU0rY/I9sVYYSs8s8//DAYP/A1BLBwjaGu8ypQYAAMRDAABQSwEC&#xD;&#xA;FAAUAAgICADsYZ1I2hrvMqUGAADEQwAACQAAAAAAAAAAAAAAAAAAAAAAbWFpbi53c2RsUEsFBgAA&#xD;&#xA;AAABAAEANwAAANwGAAAAAOQbU3g=&#xD;&#xA;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tESBConsumer_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="1024" name="faultCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultString" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultActor" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultNode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultRole" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="faultDetail" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="output">
+      <column comment="" defaultValue="" key="false" length="-1" name="Success" nullable="true" precision="-1" sourceType="id_Boolean" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ResponseText" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="State" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="City" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WeatherStationCity" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="WeatherID" nullable="true" precision="-1" sourceType="id_Short" type="id_Short" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Description" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Temperature" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RelativeHumidity" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Wind" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pressure" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Visibility" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WindChill" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Remarks" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="payload" expression="" type="id_Document" xpath="row2/payload">
+          <children name="tns:GetCityWeatherByZIPResponse" type="id_String" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse">
+            <children name="tns" type="id_String" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/xmlns:tns" nodeType="NAME_SPACE" defaultValue="http://ws.cdyne.com/WeatherWS/"/>
+            <children name="tns:GetCityWeatherByZIPResult" type="id_String" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult" loop="true">
+              <children name="tns:Success" type="id_Boolean" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Success"/>
+              <children name="tns:ResponseText" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:ResponseText" optional="true"/>
+              <children name="tns:State" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:State" optional="true"/>
+              <children name="tns:City" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:City" optional="true"/>
+              <children name="tns:WeatherStationCity" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:WeatherStationCity" optional="true"/>
+              <children name="tns:WeatherID" type="id_Short" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:WeatherID"/>
+              <children name="tns:Description" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Description" optional="true"/>
+              <children name="tns:Temperature" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.7" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Temperature" optional="true"/>
+              <children name="tns:RelativeHumidity" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.8" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:RelativeHumidity" optional="true"/>
+              <children name="tns:Wind" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.9" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Wind" optional="true"/>
+              <children name="tns:Pressure" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.10" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Pressure" optional="true"/>
+              <children name="tns:Visibility" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.11" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Visibility" optional="true"/>
+              <children name="tns:WindChill" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.12" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:WindChill" optional="true"/>
+              <children name="tns:Remarks" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.13" xpath="row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Remarks" optional="true"/>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="output">
+        <nodes name="Success" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Success]" type="id_Boolean" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="output/Success"/>
+        <nodes name="ResponseText" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:ResponseText]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="output/ResponseText"/>
+        <nodes name="State" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:State]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="output/State"/>
+        <nodes name="City" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:City]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="output/City"/>
+        <nodes name="WeatherStationCity" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:WeatherStationCity]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="output/WeatherStationCity"/>
+        <nodes name="WeatherID" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:WeatherID]" type="id_Short" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="output/WeatherID"/>
+        <nodes name="Description" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Description]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.6" xpath="output/Description"/>
+        <nodes name="Temperature" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Temperature]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.7" xpath="output/Temperature"/>
+        <nodes name="RelativeHumidity" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:RelativeHumidity]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.8" xpath="output/RelativeHumidity"/>
+        <nodes name="Wind" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Wind]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.9" xpath="output/Wind"/>
+        <nodes name="Pressure" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Pressure]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.10" xpath="output/Pressure"/>
+        <nodes name="Visibility" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Visibility]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.11" xpath="output/Visibility"/>
+        <nodes name="WindChill" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:WindChill]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.12" xpath="output/WindChill"/>
+        <nodes name="Remarks" expression="[row2.payload:/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Remarks]" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.13" xpath="output/Remarks"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.7" target="//@node.3/@nodeData/@outputTrees.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.8" target="//@node.3/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.9" target="//@node.3/@nodeData/@outputTrees.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.10" target="//@node.3/@nodeData/@outputTrees.0/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.11" target="//@node.3/@nodeData/@outputTrees.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.12" target="//@node.3/@nodeData/@outputTrees.0/@nodes.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.13" target="//@node.3/@nodeData/@outputTrees.0/@nodes.13"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Success"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ResponseText"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WeatherStationCity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WeatherID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Temperature"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RelativeHumidity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Wind"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pressure"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Visibility"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WindChill"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Remarks"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="Success" nullable="true" precision="-1" sourceType="id_Boolean" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ResponseText" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="State" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="City" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WeatherStationCity" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="WeatherID" nullable="true" precision="-1" sourceType="id_Short" type="id_Short" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Description" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Temperature" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RelativeHumidity" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Wind" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pressure" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Visibility" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WindChill" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Remarks" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="zipcode" lineStyle="0" metaname="zipcode" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tESBConsumer_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="zipcode" show="false"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="row2" lineStyle="0" metaname="tESBConsumer_1" offsetLabelX="0" offsetLabelY="0" source="tESBConsumer_1" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="output" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

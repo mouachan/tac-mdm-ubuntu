@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x15a1e834f81' V1='4' name='MessageAlert' incarnation='16'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='fr.laposte.colis.schema.pivot.common.alert' V281='13' V1='4' name='MessageAlert' description='Cette structure défini les préférences de mode et de langage de communication pour les notifications'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='type' description='Type de notification : EMAIL = 1 ,  PHONE = 2,  SMS = 3 (Nomemclature GEODATA)'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='4' V167='21' inheritsFromIncarnation='6' inheritsFromTimestamp='0x15a1e834f6d' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/LanguageCode.xml' V281='13' V1='4' name='language' description='Langue/Langage à utiliser pour la notification'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='5' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/LanguageCode.xml' V281='13' V1='4' name='language'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='6' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='destinationType' description='Destinataire de la notification'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='7' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='triggerType' description='Critère de déclenchement de la notification (cf. liste)'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='8' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='contact' description='Canal de notification ( Email, Téléphone, etc. )'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='9' V167='21' inheritsFromIncarnation='5' inheritsFromTimestamp='0x15a1e834f6c' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/FixedPhone.xml' V281='13' V1='4' name='FixedPhone' description='Canal de notification ( Email, Téléphone, etc. )'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='10' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/FixedPhone.xml' V281='13' V1='4' name='contact'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='11' V167='21' inheritsFromIncarnation='5' inheritsFromTimestamp='0x15a1e834f6c' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/MobilePhone.xml' V281='13' V1='4' name='MobilePhone' description='Canal de notification ( Email, Téléphone, etc. )'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='12' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/MobilePhone.xml' V281='13' V1='4' name='contact'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='13' V167='21' inheritsFromIncarnation='5' inheritsFromTimestamp='0x15a1e834f6d' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/EMail.xml' V281='13' V1='4' name='EMail' description='Canal de notification ( Email, Téléphone, etc. )'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='14' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/EMail.xml' V281='13' V1='4' name='contact'>
+        </savedDerivedCopy>
+      </child>
+    </child>
+  </rootElem>
+  <child t='162' id='15' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='16' V1='4' name='Document Bindings'>
+  </child>
+</root>

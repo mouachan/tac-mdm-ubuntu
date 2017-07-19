@@ -1,0 +1,23 @@
+<PurchaseOrder>
+  <txn_id>8RE542876358745T</txn_id>
+  <payment_date>Feb-09-2004</payment_date>
+  <first_name>Donald</first_name>
+  <last_name>Duck</last_name>
+  <payer_business_name></payer_business_name>
+  <address_name>Donald Duck</address_name>
+  <address_street>100 Disney Avenue</address_street>
+  <address_city>Orlando</address_city>
+  <address_state>FL</address_state>
+  <address_zip>32110</address_zip>
+  <address_country>United States</address_country>
+  <receiver_email>junk@company.com</receiver_email>
+  <payer_email>donald@disney.com</payer_email>
+  <item_name>3mm Titanium Engagement Ring Wedding Band</item_name>
+  <item_number>261111124</item_number>
+  <item_qty>1</item_qty>
+  <payment_amount>59.00</payment_amount>
+  <payment_currency>USD</payment_currency>
+  <payment_memo>I would like the ring sized a 13.
+Thank you,
+Donald</payment_memo> <!-- MSG/Message -->
+</PurchaseOrder>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_fX4b4GMREeexxvgIr1fGbA" name="Cerqual" supplierDependency="_nV2_EGMREeexxvgIr1fGbA" dataPackage="_fX4b4WMREeexxvgIr1fGbA" Server="Localhost 127.0.0.1" FilePath="C:/Users/pclapier/Desktop/cerqual.csv" Encoding="ISO-8859-15" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_fX4b4WMREeexxvgIr1fGbA" name="default" dataManager="_fX4b4GMREeexxvgIr1fGbA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_fX4b4mMREeexxvgIr1fGbA" id="_XZUp4GMREeexxvgIr1fGbA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fX4b42MREeexxvgIr1fGbA" id="id_adr" label="id_adr" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_nV2_EWMREeexxvgIr1fGbA" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fX4b5GMREeexxvgIr1fGbA" id="operation" label="operation" length="37" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_nV2_HmMREeexxvgIr1fGbA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fX4b5WMREeexxvgIr1fGbA" id="nom_operation" label="nom_operation" length="47" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_nV2_K2MREeexxvgIr1fGbA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fX4b5mMREeexxvgIr1fGbA" id="numerovoie" label="numerovoie" length="29" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_nV2_OGMREeexxvgIr1fGbA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fX4b52MREeexxvgIr1fGbA" id="typevoie" label="typevoie" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_nV2_RWMREeexxvgIr1fGbA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fX4b6GMREeexxvgIr1fGbA" id="nomvoie" label="nomvoie" length="35" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_nV2_UmMREeexxvgIr1fGbA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fX4b6WMREeexxvgIr1fGbA" id="complementadresse" label="complementadresse" length="40" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_nV2_X2MREeexxvgIr1fGbA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fX4b6mMREeexxvgIr1fGbA" id="codepostal" label="codepostal" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_nV2_amMREeexxvgIr1fGbA" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fX4b62MREeexxvgIr1fGbA" id="ville" label="ville" length="25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_nV2_d2MREeexxvgIr1fGbA" tag="Content Type" value="Nominal"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_nV2_EGMREeexxvgIr1fGbA" kind="Usage" supplier="_fX4b4GMREeexxvgIr1fGbA">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Cerqual_0.1.ana#_irMmwGMREeexxvgIr1fGbA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

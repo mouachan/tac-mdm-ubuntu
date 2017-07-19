@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x15a1e834f66' V1='4' name='GeographicalZone' incarnation='8'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='fr.laposte.colis.schema.pivot.common.zone' V281='13' V1='4' name='GeographicalZone' description='Cette structure permet de definir une zone géographique contenant les informations minimales pour qualifier une destination'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' inheritsFromIncarnation='9' inheritsFromTimestamp='0x15a1e834f67' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Country.xml' V281='13' V1='4' name='country' description='Pays'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='4' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Country.xml' V281='13' V1='4' name='country'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='5' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='zipCode' description='Code Postal'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='6' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='city' description='ville'>
+      <structNode t='150' idref='1'/>
+    </child>
+  </rootElem>
+  <child t='162' id='7' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='8' V1='4' name='Document Bindings'>
+  </child>
+</root>

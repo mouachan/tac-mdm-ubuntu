@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_H3-TMA8PEeeb8ciVyVu_ww" name="LouvreSTD" dataPackage="_H3-TMQ8PEeeb8ciVyVu_ww" Server="Localhost 127.0.0.1" FilePath="C:/Talend/DataMart/Louvre/louvre_standard.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_H3-TMQ8PEeeb8ciVyVu_ww" name="default" dataManager="_H3-TMA8PEeeb8ciVyVu_ww">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_H3-TMg8PEeeb8ciVyVu_ww" id="_DX7PcA8PEeeb8ciVyVu_ww" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TMw8PEeeb8ciVyVu_ww" label="LAST" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TNA8PEeeb8ciVyVu_ww" label="FIRST" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TNQ8PEeeb8ciVyVu_ww" label="MAIL" length="39" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TNg8PEeeb8ciVyVu_ww" label="PHONE" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TNw8PEeeb8ciVyVu_ww" label="ADDRESS1" length="34" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TOA8PEeeb8ciVyVu_ww" label="ADDRESS2" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TOQ8PEeeb8ciVyVu_ww" label="ADDRESS3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TOg8PEeeb8ciVyVu_ww" label="ZIP_CODE" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TOw8PEeeb8ciVyVu_ww" label="CREDIT_CARD_ID" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TPA8PEeeb8ciVyVu_ww" label="NAME_ID" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TPQ8PEeeb8ciVyVu_ww" label="GENDER" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TPg8PEeeb8ciVyVu_ww" label="BIRTH_DATE" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TPw8PEeeb8ciVyVu_ww" label="CITY" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TQA8PEeeb8ciVyVu_ww" label="STATE" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TQQ8PEeeb8ciVyVu_ww" label="COUNTRY" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_H3-TQg8PEeeb8ciVyVu_ww" label="COMPANY" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x15a1e834ea9' V1='4' name='Status' incarnation='15'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='fr.laposte.colis.schema.common.event' V281='13' V1='4' name='Status' description='Cette structure générique permet de conserver l&apos;évènement dans sa codification courante et sa codification d&apos;origine en cas de transcodification'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='type' description='Contient l&apos;identifiant du type de l&apos;évènement dans le contexte dans lequel il s&apos;applique. Dans le contexte d&apos;un évènement Colis, le type indique le référentiel dans lequel l&apos;évènement est exprimé (utilisé pour les transcodifications) : U=UPU; R=RDVEVT; C=CIRSEE; G=GDR; etc.'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='4' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='code' description='Code évènement principal. Sa signification dépend du contexte et du type de l&apos;évènement'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='5' V167='21' inheritsFromIncarnation='7' inheritsFromTimestamp='0x15a1e834ea9' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Reasons.xml' V281='13' V1='4' name='reasons' description='Liste des codes évènement complémentaires'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='6' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Reasons.xml' V281='13' V1='4' name='reasons'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='7' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='label' description='Représentation litérale de l&apos;évènement au format type&amp;#124;code&amp;#124;reason1&amp;#124;reason2&amp;#124;reason3&amp;#124;'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='8' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='StatusInfo' V281='13' V1='4' name='originStatus' description='Contient la description de l&apos;évènement d&apos;origine (tel que reçu) en cas de transcodification d&apos;un référentiel à l&apos;autre.'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='9' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='type' description='Contient l&apos;identifiant du type de l&apos;évènement dans le contexte dans lequel il s&apos;applique. Dans le contexte d&apos;un évènement Colis, le type indique le référentiel dans lequel l&apos;évènement est exprimé (utilisé pour les transcodifications) : U=UPU; R=RDVEVT; C=CIRSEE; G=GDR; etc.'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='10' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='code' description='Code évènement principal. Sa signification dépend du contexte et du type de l&apos;évènement'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='11' V167='21' inheritsFromIncarnation='7' inheritsFromTimestamp='0x15a1e834ea9' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Reasons.xml' V281='13' V1='4' name='reasons' description='Liste des codes évènement complémentaires'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='12' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Reasons.xml' V281='13' V1='4' name='reasons'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='13' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='label' description='Représentation litérale de l&apos;évènement au format type&amp;#124;code&amp;#124;reason1&amp;#124;reason2&amp;#124;reason3&amp;#124;'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+  </rootElem>
+  <child t='162' id='14' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='15' V1='4' name='Document Bindings'>
+  </child>
+</root>

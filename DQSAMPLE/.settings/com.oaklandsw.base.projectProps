@@ -1,9 +1,183 @@
 /,com.oaklandsw.base,version,1
 Databases,com.oaklandsw.base,order,5
 Maps,com.oaklandsw.base,order,1
+Maps/CSV/POPayPalCsv_PO2.xml,com.oaklandsw.base,references.0,Structures/CSV/PurchaseOrderPayPal.xml
+Maps/CSV/POPayPalCsv_PO2.xml,com.oaklandsw.base,references.1,Structures/PayPal/PurchaseOrder2.xml
+Maps/CSV/POPayPalCsv_PO2.xml,com.oaklandsw.base,references.2,Maps/PayPal/POPayPal_PO2.xml
+Maps/Collissimo.xml,com.oaklandsw.base,references.0,Structures/sch?ma-json2.xml
+Maps/Collissimo.xml,com.oaklandsw.base,references.1,Structures/sch?ma-json/Address.xml
+Maps/DELO4CO5.xml,com.oaklandsw.base,references.0,Structures/DELO4CO5.xml
+Maps/JSON/JSONtoXml.xml,com.oaklandsw.base,references.0,Structures/JSON/JSONExample.xml
+Maps/Java/AcmePOToJava.xml,com.oaklandsw.base,references.0,Structures/Simple/AcmeRetailer/AcmePOFile.xml
+Maps/Java/AcmePOToJava.xml,com.oaklandsw.base,references.1,Structures/Java/Invoices.xml
+Maps/Java/JavaInvoiceToXML.xml,com.oaklandsw.base,references.0,Structures/Java/Invoices.xml
+Maps/Java/JavaInvoiceToXML.xml,com.oaklandsw.base,references.1,Structures/Java/XML/XMLInvoices.xml
+Maps/Java/POPayPalCsvToJava.xml,com.oaklandsw.base,references.0,Structures/Java/Invoices.xml
+Maps/Java/POPayPalCsvToJava.xml,com.oaklandsw.base,references.1,Structures/CSV/PurchaseOrderPayPal.xml
+Maps/Looping/LoopAggregate.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/SimpleShipNoticeFile.xml
+Maps/Looping/LoopAggregate.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/POFile.xml
+Maps/Looping/LoopMergeTwoLoops.xml,com.oaklandsw.base,references.0,Structures/Simple/Customer/CustomerAddress.xml
+Maps/Looping/LoopMergeTwoLoops.xml,com.oaklandsw.base,references.1,Structures/Simple/Customer/CustomerCombinedAddresses.xml
+Maps/Looping/LoopRecursiveFromCustom.xml,com.oaklandsw.base,references.0,Structures/Recursive/CustomComponent.xml
+Maps/Looping/LoopRecursiveFromCustom.xml,com.oaklandsw.base,references.1,Structures/Recursive/Component.xml
+Maps/Looping/LoopRecursiveToFlat.xml,com.oaklandsw.base,references.0,Structures/CSV/FlatComponents.xml
+Maps/Looping/LoopRecursiveToFlat.xml,com.oaklandsw.base,references.1,Structures/Recursive/Component.xml
+Maps/Looping/LoopSimple.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/SimpleShipNoticeFile.xml
+Maps/Looping/LoopSimple.xml,com.oaklandsw.base,references.1,Structures/Simple/MaAndPaSupplier/MandPPOFile.xml
+Maps/Looping/LoopSkipLevel.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/SimpleShipNoticeFile.xml
+Maps/Looping/LoopSkipLevel.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/POFile.xml
+Maps/Message/POPayPal_PO2.xml,com.oaklandsw.base,references.0,Structures/PayPal/PurchaseOrder2.xml
+Maps/Message/POPayPal_PO2.xml,com.oaklandsw.base,references.1,Structures/CSV/PurchaseOrderPayPal.xml
+Maps/MultiInputOutput/CombinedToMultiJava.xml,com.oaklandsw.base,references.0,Structures/MultiInputOutput/MultiJava.xml
+Maps/MultiInputOutput/CombinedToMultiJava.xml,com.oaklandsw.base,references.1,Structures/MultiInputOutput/ExampleCombinedPoAndInvoice.xml
+Maps/MultiInputOutput/MultiJavaToCombined.xml,com.oaklandsw.base,references.0,Structures/MultiInputOutput/ExampleCombinedPoAndInvoice.xml
+Maps/MultiInputOutput/MultiJavaToCombined.xml,com.oaklandsw.base,references.1,Structures/MultiInputOutput/MultiJava.xml
+Maps/MultiInputOutput/PurchaseOrdersToMandP.xml,com.oaklandsw.base,references.0,Structures/Simple/MaAndPaSupplier/MandPPOFile.xml
+Maps/MultiInputOutput/PurchaseOrdersToMandP.xml,com.oaklandsw.base,references.1,Structures/MultiInputOutput/PurchaseOrders.xml
+Maps/MultiInputOutput/PurchaseOrdersToMandP.xml,com.oaklandsw.base,references.2,Maps/Simple/AcmePOToMaAndPa.xml
+Maps/PayPal/POPayPal_PO2.xml,com.oaklandsw.base,references.0,Structures/CSV/PurchaseOrderPayPal.xml
+Maps/PayPal/POPayPal_PO2.xml,com.oaklandsw.base,references.1,Structures/PayPal/PurchaseOrder2.xml
+Maps/PayPal/POPayPal_PO2_ValidationWarning.xml,com.oaklandsw.base,references.0,Structures/CSV/PurchaseOrderPayPal.xml
+Maps/PayPal/POPayPal_PO2_ValidationWarning.xml,com.oaklandsw.base,references.1,Structures/PayPal/PurchaseOrder2.xml
+Maps/Presales/Aggregate_Looping.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/POFile.xml
+Maps/Presales/Aggregate_Looping.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/SimpleShipNoticeFile.xml
+Maps/Presales/Nested_Looping.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/SimpleShipNoticeFile.xml
+Maps/Presales/Nested_Looping.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/POFile.xml
+Maps/Presales/Simple_Looping.xml,com.oaklandsw.base,references.0,Structures/Simple/MaAndPaSupplier/MandPPOFile.xml
+Maps/Presales/Simple_Looping.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/SimpleShipNoticeFile.xml
+Maps/Presales/XML2XML.xml,com.oaklandsw.base,references.0,Structures/POs.xml
+Maps/Presales/XML2XML_Advance.xml,com.oaklandsw.base,references.0,Structures/POs.xml
+Maps/Reports/POToHtml.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/POFile.xml
+Maps/Reports/POToHtml.xml,com.oaklandsw.base,references.1,Reports/POtoHtml.xsl
+Maps/Reports/POToHtml.xml,com.oaklandsw.base,references.2,/Builtin/Structures/Report Map/ReportMapOutput.xml
+Maps/Simple/AcmePOToFlat.xml,com.oaklandsw.base,references.0,Structures/Simple/AcmeRetailer/AcmePOFileFlat.xml
+Maps/Simple/AcmePOToFlat.xml,com.oaklandsw.base,references.1,Structures/Simple/AcmeRetailer/AcmePOFile.xml
+Maps/Simple/AcmePOToMaAndPa.xml,com.oaklandsw.base,references.0,Structures/Simple/MaAndPaSupplier/MandPPOFile.xml
+Maps/Simple/AcmePOToMaAndPa.xml,com.oaklandsw.base,references.1,Structures/Simple/AcmeRetailer/AcmePOFile.xml
+Maps/Simple/AcmePOToMaAndPa_1stDelivery.xml,com.oaklandsw.base,references.0,Structures/Simple/MaAndPaSupplier/MandPPOFile.xml
+Maps/Simple/AcmePOToMaAndPa_1stDelivery.xml,com.oaklandsw.base,references.1,Structures/Simple/AcmeRetailer/AcmePOFile.xml
+Maps/Simple/POMap.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/POFile.xml
+Maps/Simple/PartFile.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/PartFile.xml
+Maps/Simple/PartsToFlat.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/PartFileFlat.xml
+Maps/Simple/PartsToFlat.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/PartFile.xml
 Namespace Containers,com.oaklandsw.base,order,4
 Reports,com.oaklandsw.base,order,7
 Sample Data,com.oaklandsw.base,order,6
 Structures,com.oaklandsw.base,order,0
+Structures/COBOL/CUSTOMER-DATA.xml,com.oaklandsw.base,references.0,/Examples/Sample Data/COBOL/CUSTOMER-DATA/fcustdat.bin
+Structures/CSV/ConsumeDemo.xml,com.oaklandsw.base,references.0,/Examples/Sample Data/CSV/ConsumeDemo/OptRecordAbsent.csv
+Structures/CSV/FlatComponents.xml,com.oaklandsw.base,references.0,/Examples/Sample Data/CSV/FlatComponents/FlatSample.csv
+Structures/CSV/FlatComponents.xml,com.oaklandsw.base,references.1,Structures/Recursive/Component.xml,/FlatComponents/Row
+Structures/CSV/PurchaseOrderPayPal.xml,com.oaklandsw.base,references.0,Namespace Containers/PayPal.xml
+Structures/CSV/PurchaseOrderPayPal.xml,com.oaklandsw.base,references.1,/Examples/Sample Data/CSV/PurchaseOrderPayPal/PayPal.xml
+Structures/DELO4CO5.xml,com.oaklandsw.base,references.0,Sample Data/DELO4CO5_SAMPLE.CRE
+Structures/JSON/JSONExample.xml,com.oaklandsw.base,references.0,/Examples/Sample Data/JSON/JSONExample/example1.json
+Structures/Java/AmericanContact.xml,com.oaklandsw.base,references.0,Structures/Java/Contact.xml,/AmericanContact
+Structures/Java/CanadianContact.xml,com.oaklandsw.base,references.0,Structures/Java/Contact.xml,/CanadianContact
+Structures/Java/Contact_Composite.xml,com.oaklandsw.base,references.0,Structures/Java/CountyContact.xml,/Contact/CountyContact
+Structures/Java/Contact_Composite.xml,com.oaklandsw.base,references.1,Structures/Java/Contact.xml,/Contact/Contact
+Structures/Java/Contact_Composite.xml,com.oaklandsw.base,references.2,Structures/Java/AmericanContact.xml,/Contact/AmericanContact
+Structures/Java/Contact_Composite.xml,com.oaklandsw.base,references.3,Structures/Java/ParishContact.xml,/Contact/ParishContact
+Structures/Java/Contact_Composite.xml,com.oaklandsw.base,references.4,Structures/Java/CanadianContact.xml,/Contact/CanadianContact
+Structures/Java/CountyContact.xml,com.oaklandsw.base,references.0,Structures/Java/AmericanContact.xml,/CountyContact
+Structures/Java/Invoice.xml,com.oaklandsw.base,references.0,Structures/Java/InvoiceCondition.xml,/Invoice/conditionsMap/value
+Structures/Java/Invoice.xml,com.oaklandsw.base,references.1,Structures/Java/InvoiceCondition.xml,/Invoice/conditionsSet
+Structures/Java/Invoice.xml,com.oaklandsw.base,references.2,Structures/Java/Contact_Composite.xml,/Invoice/contacts
+Structures/Java/Invoice.xml,com.oaklandsw.base,references.3,Structures/Java/Contact_Composite.xml,/Invoice/mainContact
+Structures/Java/Invoice.xml,com.oaklandsw.base,references.4,Structures/Java/Identifier.xml,/Invoice/ids
+Structures/Java/Invoice.xml,com.oaklandsw.base,references.5,Structures/Java/InvoiceItem.xml,/Invoice/lineItems
+Structures/Java/Invoices.xml,com.oaklandsw.base,references.0,Structures/Java/Invoice.xml,/Invoices/invoices
+Structures/Java/Invoices.xml,com.oaklandsw.base,references.1,/Examples/Sample Data/Java/Invoices/SampleInvoices.xml
+Structures/Java/ParishContact.xml,com.oaklandsw.base,references.0,Structures/Java/AmericanContact.xml,/ParishContact
+Structures/Java/PurchaseOrder.xml,com.oaklandsw.base,references.0,Structures/Java/InvoiceItem.xml,/PurchaseOrder/lineItems
+Structures/Java/PurchaseOrders.xml,com.oaklandsw.base,references.0,Structures/Java/PurchaseOrder.xml,/PurchaseOrders/purchaseOrders
+Structures/Java/PurchaseOrders.xml,com.oaklandsw.base,references.1,/Examples/Sample Data/Java/PurchaseOrders/SamplePurchaseOrders.xml
+Structures/Java/XML/XMLInvoices.xml,com.oaklandsw.base,references.0,Structures/Java/Invoice.xml,/Invoices/invoices
+Structures/MultiInputOutput/MultiJava.xml,com.oaklandsw.base,references.0,Structures/Java/PurchaseOrders.xml,/Root/PurchaseOrders
+Structures/MultiInputOutput/MultiJava.xml,com.oaklandsw.base,references.1,/Examples/Sample Data/Java/Invoices/SampleInvoices.xml
+Structures/MultiInputOutput/MultiJava.xml,com.oaklandsw.base,references.2,Structures/Java/Invoices.xml,/Root/Invoices
+Structures/MultiInputOutput/MultiJava.xml,com.oaklandsw.base,references.3,/Examples/Sample Data/Java/PurchaseOrders/SamplePurchaseOrders.xml
+Structures/MultiInputOutput/PurchaseOrders.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/PO.xml,/Root/POs/PO
+Structures/MultiInputOutput/PurchaseOrders.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/POFile.xml,/Root/POs
+Structures/MultiInputOutput/PurchaseOrders.xml,com.oaklandsw.base,references.2,Structures/PayPal/PurchaseOrder2.xml,/Root/PurchaseOrders
+Structures/MultiInputOutput/PurchaseOrders.xml,com.oaklandsw.base,references.3,/Examples/Sample Data/MultiInputOutput/PurchaseOrders/SamplePurchaseOrders.txt
+Structures/POs.xml,com.oaklandsw.base,references.0,/LOCAL_PROJECT/Sample Data/POs/POs.xml
+Structures/POs.xml,com.oaklandsw.base,references.1,Namespace Containers/POs.xml
+Structures/PayPal/PurchaseOrder2.xml,com.oaklandsw.base,references.0,/Examples/Sample Data/PayPal/PurchaseOrder2/PO2Sample.xml
+Structures/Recursive/CustomComponent.xml,com.oaklandsw.base,references.0,Structures/Recursive/Component.xml,/Component
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.0,Structures/SAPIDOCS/Segments/E2EDC03.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/E2EDC03
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.1,Structures/SAPIDOCS/Segments/E2EDPT1001.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDPT1001/E2EDPT1001
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.10,Structures/SAPIDOCS/Segments/E2EDS01.xml,/ORDERS02/E2EDS01
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.11,Structures/SAPIDOCS/Segments/E2EDP04001.xml,/ORDERS02/Loop-E2EDP01008/E2EDP04001
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.12,Structures/SAPIDOCS/Segments/E2EDP17001.xml,/ORDERS02/Loop-E2EDP01008/E2EDP17001
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.13,Structures/SAPIDOCS/Segments/E2EDKA3.xml,/ORDERS02/Loop-E2EDKA1003/E2EDKA3
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.14,Structures/SAPIDOCS/Segments/E2EDC17.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/E2EDC17
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.15,Structures/SAPIDOCS/Segments/E2EDK17.xml,/ORDERS02/E2EDK17
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.16,Structures/SAPIDOCS/Segments/E2EDPA3.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDPA1003/E2EDPA3
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.17,Structures/SAPIDOCS/Segments/E2CUPRT002.xml,/ORDERS02/Loop-E2CUCFG003/E2CUPRT002
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.18,Structures/SAPIDOCS/Segments/E2EDPA1003.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDPA1003/E2EDPA1003
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.19,Structures/SAPIDOCS/Segments/E2EDKT1002.xml,/ORDERS02/Loop-E2EDKT1002/E2EDKT1002
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.2,Structures/SAPIDOCS/Segments/E2CUCFG003.xml,/ORDERS02/Loop-E2CUCFG003/E2CUCFG003
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.20,Structures/SAPIDOCS/Segments/E2EDCT1.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/Loop-E2EDCT1/E2EDCT1
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.21,Structures/SAPIDOCS/Segments/E2EDK18.xml,/ORDERS02/E2EDK18
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.22,Structures/SAPIDOCS/Segments/E2EDPT2001.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDPT1001/E2EDPT2001
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.23,Structures/SAPIDOCS/Segments/E2EDP03.xml,/ORDERS02/Loop-E2EDP01008/E2EDP03
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.24,Structures/SAPIDOCS/Segments/E2EDC18.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/E2EDC18
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.25,Structures/SAPIDOCS/Segments/E2EDCT2.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/Loop-E2EDCT1/E2EDCT2
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.26,Structures/SAPIDOCS/Segments/E2EDK05001.xml,/ORDERS02/E2EDK05001
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.27,Structures/SAPIDOCS/Segments/E2EDP02001.xml,/ORDERS02/Loop-E2EDP01008/E2EDP02001
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.28,Structures/SAPIDOCS/Segments/E2CUVAL002.xml,/ORDERS02/Loop-E2CUCFG003/E2CUVAL002
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.29,Structures/SAPIDOCS/Segments/EDI_DC40.xml,/ORDERS02/EDI_DC40
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.3,Structures/SAPIDOCS/Segments/E2EDP18001.xml,/ORDERS02/Loop-E2EDP01008/E2EDP18001
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.30,Structures/SAPIDOCS/Segments/E2EDK02.xml,/ORDERS02/E2EDK02
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.31,Structures/SAPIDOCS/Segments/E2EDKA1003.xml,/ORDERS02/Loop-E2EDKA1003/E2EDKA1003
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.32,Structures/SAPIDOCS/Segments/E2EDP05002.xml,/ORDERS02/Loop-E2EDP01008/E2EDP05002
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.33,Structures/SAPIDOCS/Segments/E2EDP19002.xml,/ORDERS02/Loop-E2EDP01008/E2EDP19002
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.34,Structures/SAPIDOCS/Segments/E2EDC01.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/E2EDC01
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.35,Structures/SAPIDOCS/Segments/E2EDC05.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/E2EDC05
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.36,Structures/SAPIDOCS/Segments/E2EDK04001.xml,/ORDERS02/E2EDK04001
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.37,Structures/SAPIDOCS/Segments/E2EDP20001.xml,/ORDERS02/Loop-E2EDP01008/E2EDP20001
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.38,/Examples/Sample Data/SAPIDOCS/ORDERS02.txt
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.39,Structures/SAPIDOCS/Segments/E2EDK14.xml,/ORDERS02/E2EDK14
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.4,Structures/SAPIDOCS/Segments/E2CUREF.xml,/ORDERS02/Loop-E2EDP01008/E2CUREF
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.40,Structures/SAPIDOCS/Segments/E2EDC02.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/E2EDC02
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.41,Structures/SAPIDOCS/Segments/E2EDC04.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/E2EDC04
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.42,Structures/SAPIDOCS/Segments/E2EDK01005.xml,/ORDERS02/E2EDK01005
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.43,Structures/SAPIDOCS/Segments/E2EDKT2001.xml,/ORDERS02/Loop-E2EDKT1002/E2EDKT2001
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.5,Structures/SAPIDOCS/Segments/E2EDC19.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/E2EDC19
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.6,Structures/SAPIDOCS/Segments/E2EDP01008.xml,/ORDERS02/Loop-E2EDP01008/E2EDP01008
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.7,Structures/SAPIDOCS/Segments/E2CUINS002.xml,/ORDERS02/Loop-E2CUCFG003/E2CUINS002
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.8,Structures/SAPIDOCS/Segments/E2EDCA1.xml,/ORDERS02/Loop-E2EDP01008/Loop-E2EDC01/E2EDCA1
+Structures/SAPIDOCS/IDocs/ORDERS02.xml,com.oaklandsw.base,references.9,Structures/SAPIDOCS/Segments/E2EDK03.xml,/ORDERS02/E2EDK03
+Structures/Simple/AcmeRetailer/AcmePOFile.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/POFile.xml,/POs
+Structures/Simple/AcmeRetailer/AcmePOFile.xml,com.oaklandsw.base,references.1,/Examples/Sample Data/Simple/AcmeRetailer/AcmePOFile/POInvalids.xml
+Structures/Simple/AcmeRetailer/AcmePOFile.xml,com.oaklandsw.base,references.2,Structures/Simple/POStandard/PO.xml,/POs/PO
+Structures/Simple/AcmeRetailer/AcmePOFileFlat.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/Item.xml,/POs/PO/Delivery/Item
+Structures/Simple/AcmeRetailer/AcmePOFileFlat.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/Address.xml,/POs/PO/Delivery/DeliverToAddress
+Structures/Simple/AcmeRetailer/AcmePOFileFlat.xml,com.oaklandsw.base,references.2,Structures/Simple/POStandard/Delivery.xml,/POs/PO/Delivery
+Structures/Simple/AcmeRetailer/AcmePOFileFlat.xml,com.oaklandsw.base,references.3,Structures/Simple/POStandard/Address.xml,/POs/PO/Address
+Structures/Simple/AcmeRetailer/AcmePOFileFlat.xml,com.oaklandsw.base,references.4,/Examples/Sample Data/Simple/AcmeRetailer/AcmePOFileFlat/POFileFlat
+Structures/Simple/AcmeRetailer/AcmePOFileFlat.xml,com.oaklandsw.base,references.5,Structures/Simple/AcmeRetailer/AcmePOFile.xml,/POs
+Structures/Simple/AcmeRetailer/AcmePOFileFlat.xml,com.oaklandsw.base,references.6,Structures/Simple/POStandard/PO.xml,/POs/PO
+Structures/Simple/Customer/CustomerAddress.xml,com.oaklandsw.base,references.0,/Examples/Documents/Simple/Customer/CustomerAddress/CustomerAddress.xml
+Structures/Simple/MaAndPaSupplier/MandPPOFile.xml,com.oaklandsw.base,references.0,/LOCAL_PROJECT/Sample Data/Simple/MaAndPaSupplier/MandPPOFile/MandPPOFile
+Structures/Simple/POStandard/Delivery.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/Address.xml,/Order/DeliverToAddress
+Structures/Simple/POStandard/Delivery.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/Item.xml,/Order/Item
+Structures/Simple/POStandard/LegacyVendor.xml,com.oaklandsw.base,references.0,/Examples/Sample Data/Simple/LegacyVendor/vendor.csv
+Structures/Simple/POStandard/PO.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/Delivery.xml,/PO/Delivery
+Structures/Simple/POStandard/PO.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/Address.xml,/PO/Address
+Structures/Simple/POStandard/PO.xml,com.oaklandsw.base,references.2,Structures/Simple/POStandard/LegacyVendor.xml,/PO/Vendor
+Structures/Simple/POStandard/POFile.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/PO.xml,/POs/PO
+Structures/Simple/POStandard/POFile.xml,com.oaklandsw.base,references.1,/Examples/Sample Data/Simple/POStandard/POFile/POs.xml
+Structures/Simple/POStandard/POMultiFile.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/PartFile.xml,/POMultiFile/Parts
+Structures/Simple/POStandard/POMultiFile.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/POFile.xml,/POMultiFile/POs
+Structures/Simple/POStandard/POMultiFile.xml,com.oaklandsw.base,references.2,Structures/Simple/POStandard/Part.xml,/POMultiFile/Parts/Part
+Structures/Simple/POStandard/POMultiFile.xml,com.oaklandsw.base,references.3,/Simple/PartFile/Parts.xml
+Structures/Simple/POStandard/POMultiFile.xml,com.oaklandsw.base,references.4,/Simple/POFile/POs.xml
+Structures/Simple/POStandard/Part.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/Component.xml,/Part/Component
+Structures/Simple/POStandard/PartFile.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/Part.xml,/Parts/Part
+Structures/Simple/POStandard/PartFile.xml,com.oaklandsw.base,references.1,/Examples/Sample Data/Simple/POStandard/PartFile/Parts.xml
+Structures/Simple/POStandard/SimpleShipNoticeFile.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/SimpleShipNotice.xml,/Notices/Notice
+Structures/Simple/Person/CustomPerson.xml,com.oaklandsw.base,references.0,Structures/Simple/Person/StandardPerson.xml,/Person
 assembly.xml,com.oaklandsw.base,order,9
 pom.xml,com.oaklandsw.base,order,8

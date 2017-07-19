@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/v621/Studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <routinesParameter id="_4iWVIBaZEeaSJf1MGUYP_A" name="DQTechnical"/>
+    <routinesParameter id="_4hD7sBaZEeaSJf1MGUYP_A" name="DataOperation"/>
+    <routinesParameter id="_4iISsBaZEeaSJf1MGUYP_A" name="DataQualityDependencies"/>
+    <routinesParameter id="_4iEBQBaZEeaSJf1MGUYP_A" name="DataQuality"/>
+    <routinesParameter id="_4iQOgBaZEeaSJf1MGUYP_A" name="DqStringHandling"/>
+    <routinesParameter id="_4idp4BaZEeaSJf1MGUYP_A" name="MDM"/>
+    <routinesParameter id="_4hKCUBaZEeaSJf1MGUYP_A" name="Mathematical"/>
+    <routinesParameter id="_4hQI8BaZEeaSJf1MGUYP_A" name="Numeric"/>
+    <routinesParameter id="_4hWPkBaZEeaSJf1MGUYP_A" name="Relational"/>
+    <routinesParameter id="_4Z0EMBaZEeaSJf1MGUYP_A" name="SQLike"/>
+    <routinesParameter id="_4hahABaZEeaSJf1MGUYP_A" name="StringHandling"/>
+    <routinesParameter id="_4hjq8BaZEeaSJf1MGUYP_A" name="TalendDataGenerator"/>
+    <routinesParameter id="_4hy7gBaZEeaSJf1MGUYP_A" name="TalendDate"/>
+    <routinesParameter id="_4h63UBaZEeaSJf1MGUYP_A" name="TalendString"/>
+    <routinesParameter id="_KUThkBuBEeaP26g4q0b-qg" name="EscapeJson"/>
+    <routinesParameter id="_tNirUBbhEeaYy_yNckdDGQ" name="ImporttweetsTstandardizerow_1"/>
+    <routinesParameter id="_ghBXkBbwEeaYy_yNckdDGQ" name="TweetstriggerTstandardizerow_1"/>
+    <routinesParameter id="_I8o5kCJcEeavMa2Ga0Cafg" name="IPSEN_ParseAWSNotification"/>
+    <routinesParameter id="_TVdvcGcqEeOjappPcW-THA" name="Tweets_Generator"/>
+  </parameters>
+  <node componentName="tEDIFACTtoXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEDIFACTtoXML_1" show="false"/>
+    <elementParameter field="FILE" name="EDI_FILE" value="&quot;C:/Users/pclapier/Documents/Customers/STREGO/invoic_facture.txt&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="EDI_VERSION" value="d96a"/>
+    <elementParameter field="CHECK" name="IGNORE_NEW_LINE" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tEDIFACTtoXML_1">
+      <column defaultValue="" key="false" length="255" name="document" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/pclapier/Documents/Customers/STREGO/invoic_facture_out.xml&quot;"/>
+    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="document" show="false"/>
+    <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TABLE" name="ROOT_TAGS"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="document"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" value="false"/>
+    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputXML_1">
+      <column defaultValue="" key="false" length="255" name="document" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="copyOfout1">
+      <column comment="" key="false" length="-1" name="id" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="versionNum" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="id_1" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="codeQualifier" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="id_2" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="codeQualifier_1" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="date" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="time" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="controlCount" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="controlRef" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="document" expression="" type="id_Document" xpath="row3/document">
+          <children name="unEdifact" type="id_String" xpath="row3.document:/unEdifact" main="true" optional="true">
+            <children name="UNB" type="id_String" xpath="row3.document:/unEdifact/UNB" loop="true" main="true">
+              <children name="syntaxIdentifier" type="id_String" xpath="row3.document:/unEdifact/UNB/syntaxIdentifier">
+                <children name="id" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="row3.document:/unEdifact/UNB/syntaxIdentifier/id"/>
+                <children name="versionNum" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.1" xpath="row3.document:/unEdifact/UNB/syntaxIdentifier/versionNum"/>
+              </children>
+              <children name="sender" type="id_String" xpath="row3.document:/unEdifact/UNB/sender">
+                <children name="id" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.2" xpath="row3.document:/unEdifact/UNB/sender/id"/>
+                <children name="codeQualifier" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.3" xpath="row3.document:/unEdifact/UNB/sender/codeQualifier"/>
+              </children>
+              <children name="recipient" type="id_String" xpath="row3.document:/unEdifact/UNB/recipient">
+                <children name="id" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.4" xpath="row3.document:/unEdifact/UNB/recipient/id"/>
+                <children name="codeQualifier" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="row3.document:/unEdifact/UNB/recipient/codeQualifier"/>
+              </children>
+              <children name="dateTime" type="id_String" xpath="row3.document:/unEdifact/UNB/dateTime">
+                <children name="date" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.6" xpath="row3.document:/unEdifact/UNB/dateTime/date"/>
+                <children name="time" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.7" xpath="row3.document:/unEdifact/UNB/dateTime/time"/>
+              </children>
+              <children name="controlRef" type="id_String" xpath="row3.document:/unEdifact/UNB/controlRef"/>
+              <children name="recipientRef" type="id_String" xpath="row3.document:/unEdifact/UNB/recipientRef"/>
+              <children name="applicationRef" type="id_String" xpath="row3.document:/unEdifact/UNB/applicationRef"/>
+            </children>
+            <children name="interchangeMessage" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage">
+              <children name="UNH" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/UNH">
+                <children name="messageRefNum" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/UNH/messageRefNum"/>
+                <children name="messageIdentifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/UNH/messageIdentifier">
+                  <children name="id" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/UNH/messageIdentifier/id"/>
+                  <children name="versionNum" type="id_Character" xpath="row3.document:/unEdifact/interchangeMessage/UNH/messageIdentifier/versionNum"/>
+                  <children name="releaseNum" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/UNH/messageIdentifier/releaseNum"/>
+                  <children name="controllingAgencyCode" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/UNH/messageIdentifier/controllingAgencyCode"/>
+                </children>
+              </children>
+              <children name="INVOIC" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC">
+                <children name="Beginning_of_message" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Beginning_of_message">
+                  <children name="DOCUMENT_MESSAGE_NAME" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Beginning_of_message/DOCUMENT_MESSAGE_NAME">
+                    <children name="Document_message_name__coded" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Beginning_of_message/DOCUMENT_MESSAGE_NAME/Document_message_name__coded"/>
+                    <children name="Code_list_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Beginning_of_message/DOCUMENT_MESSAGE_NAME/Code_list_qualifier"/>
+                    <children name="Code_list_responsible_agency__coded" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Beginning_of_message/DOCUMENT_MESSAGE_NAME/Code_list_responsible_agency__coded"/>
+                    <children name="Document_message_name" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Beginning_of_message/DOCUMENT_MESSAGE_NAME/Document_message_name"/>
+                  </children>
+                  <children name="Document_message_number" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Beginning_of_message/Document_message_number"/>
+                </children>
+                <children name="Date_time_period" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Date_time_period">
+                  <children name="DATE_TIME_PERIOD" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Date_time_period/DATE_TIME_PERIOD">
+                    <children name="Date_time_period_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Date_time_period/DATE_TIME_PERIOD/Date_time_period_qualifier"/>
+                    <children name="Date_time_period" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Date_time_period/DATE_TIME_PERIOD/Date_time_period"/>
+                    <children name="Date_time_period_format_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Date_time_period/DATE_TIME_PERIOD/Date_time_period_format_qualifier"/>
+                  </children>
+                </children>
+                <children name="Payment_instructions" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Payment_instructions">
+                  <children name="PAYMENT_INSTRUCTION_DETAILS" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Payment_instructions/PAYMENT_INSTRUCTION_DETAILS">
+                    <children name="Payment_conditions__coded" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Payment_instructions/PAYMENT_INSTRUCTION_DETAILS/Payment_conditions__coded"/>
+                  </children>
+                </children>
+                <children name="Segment_group_2" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2">
+                  <children name="Name_and_address" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address">
+                    <children name="Party_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/Party_qualifier"/>
+                    <children name="PARTY_IDENTIFICATION_DETAILS" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/PARTY_IDENTIFICATION_DETAILS">
+                      <children name="Party_id._identification" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/PARTY_IDENTIFICATION_DETAILS/Party_id._identification"/>
+                      <children name="Code_list_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/PARTY_IDENTIFICATION_DETAILS/Code_list_qualifier"/>
+                      <children name="Code_list_responsible_agency__coded" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/PARTY_IDENTIFICATION_DETAILS/Code_list_responsible_agency__coded"/>
+                    </children>
+                    <children name="NAME_AND_ADDRESS" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/NAME_AND_ADDRESS"/>
+                    <children name="PARTY_NAME" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/PARTY_NAME">
+                      <children name="Party_name_-_-1" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/PARTY_NAME/Party_name_-_-1"/>
+                    </children>
+                    <children name="STREET" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/STREET">
+                      <children name="Street_and_number_p.o._box_-_-1" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/STREET/Street_and_number_p.o._box_-_-1"/>
+                      <children name="Street_and_number_p.o._box_-_-2" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/STREET/Street_and_number_p.o._box_-_-2"/>
+                    </children>
+                    <children name="City_name" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/City_name"/>
+                    <children name="Country_sub_entity_identification" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/Country_sub_entity_identification"/>
+                    <children name="Postcode_identification" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/Postcode_identification"/>
+                    <children name="Country__coded" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Name_and_address/Country__coded"/>
+                  </children>
+                  <children name="Segment_group_3" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Segment_group_3">
+                    <children name="Reference" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Segment_group_3/Reference">
+                      <children name="REFERENCE" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Segment_group_3/Reference/REFERENCE">
+                        <children name="Reference_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Segment_group_3/Reference/REFERENCE/Reference_qualifier"/>
+                        <children name="Reference_number" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_2/Segment_group_3/Reference/REFERENCE/Reference_number"/>
+                      </children>
+                    </children>
+                  </children>
+                </children>
+                <children name="Segment_group_7" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_7">
+                  <children name="Currencies" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_7/Currencies">
+                    <children name="CURRENCY_DETAILS_-_-1" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_7/Currencies/CURRENCY_DETAILS_-_-1">
+                      <children name="Currency_details_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_7/Currencies/CURRENCY_DETAILS_-_-1/Currency_details_qualifier"/>
+                      <children name="Currency__coded" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_7/Currencies/CURRENCY_DETAILS_-_-1/Currency__coded"/>
+                      <children name="Currency_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_7/Currencies/CURRENCY_DETAILS_-_-1/Currency_qualifier"/>
+                    </children>
+                  </children>
+                </children>
+                <children name="Segment_group_25" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25">
+                  <children name="Line_item" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Line_item">
+                    <children name="Line_item_number" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Line_item/Line_item_number"/>
+                    <children name="Action_request_notification__coded" type="id_Character" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Line_item/Action_request_notification__coded"/>
+                    <children name="ITEM_NUMBER_IDENTIFICATION" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Line_item/ITEM_NUMBER_IDENTIFICATION">
+                      <children name="Item_number" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Line_item/ITEM_NUMBER_IDENTIFICATION/Item_number"/>
+                      <children name="Item_number_type__coded" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Line_item/ITEM_NUMBER_IDENTIFICATION/Item_number_type__coded"/>
+                    </children>
+                    <children name="SUB_LINE_INFORMATION" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Line_item/SUB_LINE_INFORMATION">
+                      <children name="Sub_line_indicator__coded" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Line_item/SUB_LINE_INFORMATION/Sub_line_indicator__coded"/>
+                    </children>
+                    <children name="Configuration_level" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Line_item/Configuration_level"/>
+                  </children>
+                  <children name="Additional_product_id" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Additional_product_id">
+                    <children name="Product_id._function_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Additional_product_id/Product_id._function_qualifier"/>
+                    <children name="ITEM_NUMBER_IDENTIFICATION_-_-1" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Additional_product_id/ITEM_NUMBER_IDENTIFICATION_-_-1">
+                      <children name="Item_number" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Additional_product_id/ITEM_NUMBER_IDENTIFICATION_-_-1/Item_number"/>
+                      <children name="Item_number_type__coded" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Additional_product_id/ITEM_NUMBER_IDENTIFICATION_-_-1/Item_number_type__coded"/>
+                      <children name="Code_list_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Additional_product_id/ITEM_NUMBER_IDENTIFICATION_-_-1/Code_list_qualifier"/>
+                      <children name="Code_list_responsible_agency__coded" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Additional_product_id/ITEM_NUMBER_IDENTIFICATION_-_-1/Code_list_responsible_agency__coded"/>
+                    </children>
+                  </children>
+                  <children name="Date_time_period" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Date_time_period">
+                    <children name="DATE_TIME_PERIOD" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Date_time_period/DATE_TIME_PERIOD">
+                      <children name="Date_time_period_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Date_time_period/DATE_TIME_PERIOD/Date_time_period_qualifier"/>
+                      <children name="Date_time_period" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Date_time_period/DATE_TIME_PERIOD/Date_time_period"/>
+                      <children name="Date_time_period_format_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Date_time_period/DATE_TIME_PERIOD/Date_time_period_format_qualifier"/>
+                    </children>
+                  </children>
+                  <children name="Segment_group_26" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_26">
+                    <children name="Monetary_amount" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_26/Monetary_amount">
+                      <children name="MONETARY_AMOUNT" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_26/Monetary_amount/MONETARY_AMOUNT">
+                        <children name="Monetary_amount_type_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_26/Monetary_amount/MONETARY_AMOUNT/Monetary_amount_type_qualifier"/>
+                        <children name="Monetary_amount" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_26/Monetary_amount/MONETARY_AMOUNT/Monetary_amount"/>
+                      </children>
+                    </children>
+                  </children>
+                  <children name="Segment_group_29" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_29">
+                    <children name="Reference" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_29/Reference">
+                      <children name="REFERENCE" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_29/Reference/REFERENCE">
+                        <children name="Reference_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_29/Reference/REFERENCE/Reference_qualifier"/>
+                        <children name="Reference_number" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_29/Reference/REFERENCE/Reference_number"/>
+                      </children>
+                    </children>
+                  </children>
+                  <children name="Segment_group_33" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33">
+                    <children name="Duty_tax_fee_details" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details">
+                      <children name="Duty_tax_fee_function_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details/Duty_tax_fee_function_qualifier"/>
+                      <children name="DUTY_TAX_FEE_TYPE" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details/DUTY_TAX_FEE_TYPE">
+                        <children name="Duty_tax_fee_type__coded" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details/DUTY_TAX_FEE_TYPE/Duty_tax_fee_type__coded"/>
+                      </children>
+                      <children name="DUTY_TAX_FEE_ACCOUNT_DETAIL" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details/DUTY_TAX_FEE_ACCOUNT_DETAIL"/>
+                      <children name="Duty_tax_fee_assessment_basis" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details/Duty_tax_fee_assessment_basis"/>
+                      <children name="DUTY_TAX_FEE_DETAIL" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details/DUTY_TAX_FEE_DETAIL">
+                        <children name="Duty_tax_fee_rate_identification" type="id_Character" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details/DUTY_TAX_FEE_DETAIL/Duty_tax_fee_rate_identification"/>
+                        <children name="Code_list_qualifier_-_-1" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details/DUTY_TAX_FEE_DETAIL/Code_list_qualifier_-_-1"/>
+                        <children name="Code_list_responsible_agency__coded_-_-1" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details/DUTY_TAX_FEE_DETAIL/Code_list_responsible_agency__coded_-_-1"/>
+                        <children name="Duty_tax_fee_rate" type="id_Float" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Duty_tax_fee_details/DUTY_TAX_FEE_DETAIL/Duty_tax_fee_rate"/>
+                      </children>
+                    </children>
+                    <children name="Monetary_amount" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Monetary_amount">
+                      <children name="MONETARY_AMOUNT" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Monetary_amount/MONETARY_AMOUNT">
+                        <children name="Monetary_amount_type_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Monetary_amount/MONETARY_AMOUNT/Monetary_amount_type_qualifier"/>
+                        <children name="Monetary_amount" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_33/Monetary_amount/MONETARY_AMOUNT/Monetary_amount"/>
+                      </children>
+                    </children>
+                  </children>
+                  <children name="Item_description" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Item_description">
+                    <children name="Item_description_type__coded" type="id_Character" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Item_description/Item_description_type__coded"/>
+                    <children name="Item_characteristic__coded" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Item_description/Item_characteristic__coded"/>
+                    <children name="ITEM_DESCRIPTION" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Item_description/ITEM_DESCRIPTION">
+                      <children name="Item_description_identification" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Item_description/ITEM_DESCRIPTION/Item_description_identification"/>
+                      <children name="Code_list_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Item_description/ITEM_DESCRIPTION/Code_list_qualifier"/>
+                      <children name="Code_list_responsible_agency__coded" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Item_description/ITEM_DESCRIPTION/Code_list_responsible_agency__coded"/>
+                      <children name="Item_description_-_-1" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Item_description/ITEM_DESCRIPTION/Item_description_-_-1"/>
+                    </children>
+                  </children>
+                  <children name="Quantity" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Quantity">
+                    <children name="QUANTITY_DETAILS" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Quantity/QUANTITY_DETAILS">
+                      <children name="Quantity_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Quantity/QUANTITY_DETAILS/Quantity_qualifier"/>
+                      <children name="Quantity" type="id_Float" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Quantity/QUANTITY_DETAILS/Quantity"/>
+                      <children name="Measure_unit_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Quantity/QUANTITY_DETAILS/Measure_unit_qualifier"/>
+                    </children>
+                  </children>
+                  <children name="Segment_group_28" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_28">
+                    <children name="Price_details" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_28/Price_details">
+                      <children name="PRICE_INFORMATION" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_28/Price_details/PRICE_INFORMATION">
+                        <children name="Price_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_28/Price_details/PRICE_INFORMATION/Price_qualifier"/>
+                        <children name="Price" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_28/Price_details/PRICE_INFORMATION/Price"/>
+                        <children name="Price_type__coded" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_28/Price_details/PRICE_INFORMATION/Price_type__coded"/>
+                        <children name="Price_type_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_28/Price_details/PRICE_INFORMATION/Price_type_qualifier"/>
+                        <children name="Unit_price_basis" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_28/Price_details/PRICE_INFORMATION/Unit_price_basis"/>
+                        <children name="Measure_unit_qualifier" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_25/Segment_group_28/Price_details/PRICE_INFORMATION/Measure_unit_qualifier"/>
+                      </children>
+                    </children>
+                  </children>
+                </children>
+                <children name="Section_control" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Section_control">
+                  <children name="SECTION_IDENTIFICATION" type="id_Character" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Section_control/SECTION_IDENTIFICATION"/>
+                </children>
+                <children name="Segment_group_48" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_48">
+                  <children name="Monetary_amount" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_48/Monetary_amount">
+                    <children name="MONETARY_AMOUNT" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_48/Monetary_amount/MONETARY_AMOUNT">
+                      <children name="Monetary_amount_type_qualifier" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_48/Monetary_amount/MONETARY_AMOUNT/Monetary_amount_type_qualifier"/>
+                      <children name="Monetary_amount" type="id_Float" xpath="row3.document:/unEdifact/interchangeMessage/INVOIC/Segment_group_48/Monetary_amount/MONETARY_AMOUNT/Monetary_amount"/>
+                    </children>
+                  </children>
+                </children>
+              </children>
+              <children name="UNT" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/UNT">
+                <children name="segmentCount" type="id_Integer" xpath="row3.document:/unEdifact/interchangeMessage/UNT/segmentCount"/>
+                <children name="messageRefNum" type="id_String" xpath="row3.document:/unEdifact/interchangeMessage/UNT/messageRefNum"/>
+              </children>
+            </children>
+            <children name="UNZ" type="id_String" xpath="row3.document:/unEdifact/UNZ">
+              <children name="controlCount" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.8" xpath="row3.document:/unEdifact/UNZ/controlCount"/>
+              <children name="controlRef" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.9" xpath="row3.document:/unEdifact/UNZ/controlRef"/>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="copyOfout1">
+        <nodes name="id" expression="[row3.document:/unEdifact/UNB/syntaxIdentifier/id]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="copyOfout1/id"/>
+        <nodes name="versionNum" expression="[row3.document:/unEdifact/UNB/syntaxIdentifier/versionNum]" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="copyOfout1/versionNum"/>
+        <nodes name="id_1" expression="[row3.document:/unEdifact/UNB/sender/id]" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="copyOfout1/id_1"/>
+        <nodes name="codeQualifier" expression="[row3.document:/unEdifact/UNB/sender/codeQualifier]" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="copyOfout1/codeQualifier"/>
+        <nodes name="id_2" expression="[row3.document:/unEdifact/UNB/recipient/id]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="copyOfout1/id_2"/>
+        <nodes name="codeQualifier_1" expression="[row3.document:/unEdifact/UNB/recipient/codeQualifier]" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="copyOfout1/codeQualifier_1"/>
+        <nodes name="date" expression="[row3.document:/unEdifact/UNB/dateTime/date]" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.6" xpath="copyOfout1/date"/>
+        <nodes name="time" expression="[row3.document:/unEdifact/UNB/dateTime/time]" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.7" xpath="copyOfout1/time"/>
+        <nodes name="controlCount" expression="[row3.document:/unEdifact/UNZ/controlCount]" type="id_Integer" incomingConnections="//@node.2/@nodeData/@connections.8" xpath="copyOfout1/controlCount"/>
+        <nodes name="controlRef" expression="[row3.document:/unEdifact/UNZ/controlRef]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.9" xpath="copyOfout1/controlRef"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.1/@children.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.1/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.2/@children.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.2/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.3/@children.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.3/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.9"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="versionNum"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codeQualifier"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codeQualifier_1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="time"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="controlCount"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="controlRef"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="id" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="versionNum" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="id_1" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="codeQualifier" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="id_2" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="codeQualifier_1" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="date" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="time" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="controlCount" nullable="true" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="controlRef" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tEDIFACTtoXML_1" offsetLabelX="0" offsetLabelY="0" source="tEDIFACTtoXML_1" target="tFileOutputXML_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileOutputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputXML_1" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfout1" lineStyle="0" metaname="copyOfout1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tEDIFACTtoXML_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

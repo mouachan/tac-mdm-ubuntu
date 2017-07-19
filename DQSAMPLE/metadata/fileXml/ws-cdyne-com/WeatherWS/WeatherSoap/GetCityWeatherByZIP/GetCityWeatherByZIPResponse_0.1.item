@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_SfoZAg3zEea07bfDW9_3JQ" name="GetCityWeatherByZIPResponse" dataPackage="_SfoZFA3zEea07bfDW9_3JQ" XmlFilePath="tempXSDFile583089065719545330_tempXSDFile833900187787605732.zip" inputModel="false" fileContent="504B0304140008080800EC619D480000000000000000000000002100000074656D7058534446696C653538333038393036353731393534353333302E787364ED586D6FDA3010FE3E69FF01E50790B6FB86DA495BD1D64A6D41C0D669DF8C73106BB19DDACE807FBF739AA449C84B69029AB4F12DF8EEB9BBE77C2FC9A51E69EA0327832D0F043E5C39BE31E1C875379BCD70F36128D5DABD383B3B777FDCDFCD63492711B57299F433881EE29196248CD536DA0B5C7BEEA62A9C716857B152998A3D6A57B14F0595F38BD7299D5F14D440D046BDD80E0A498F8975A66978A6C4195552CB951952C973E118D89A7B62A85FD01339BAF5907A3B01B1DE2310E3837A9C67A216A93D2267408C516C1919F822151FC38A4481B97222F1149180AD1878CE0002E0204C4120776C885A8379201C744828B43AF8F1FDBB01FE2EF528011E0862B3FC154C22752B56688B1826452A9D68205418C076B10BC14D71DC0CE820E419BA2B85867A0BB983E450C35384C92C9F948C72262694460A7375E6B4B88064228368ECCAC1E48E3E2945769355223A064D150B631EDCB2376EA53BF6EFFD102A39CA89254ED65B2F725443439E02B24D2988C45246C2B337A58A980A63393E5A88A820A18680AA707B88B300743B4E5D47555F2AB39FB4E64B52410222617D8AF5A15053464DA4E0DBECAE11E91002F76AEA9A991D3605A0449BCFBB9FB7D3D3949235D4CA4EE7EA688FF6E40DA4CA8352FF488F6780D93F4DD328997C5B05CD234A41EB97BC2EA50C805444D0CC529A93054ECFAE253437C44057109BB3AE18497BB1FE6067E803F1256735032815E8B1DB96918F3752321303C182802C031B9B8AA0AA507A0CF0CD9125CDBF70DB3C7C5AE01ED894D9FE87CFE1B3E75977013C0445ECC4D179960DFEDFAE3D557249962CC08B3D594D9144163252DE04A693698FB98A1D3BF80656B0762F95408AEEE4A66B4D8EC9CE60C26FD8DAEF6D64EF076E69EC23EE0774D3587F7B0AFBB85B4A5223FFC692920FF6783B4A93C9D24C494E4FB893142DFE5F49FEB295E4AF7D6BCACDB1AE503308909BDF701371E6F5C138135EE797421CCFBA87D8BE33CD9EE7751F515DFBB8A575A79B13F54B1F698CD47F18695831DBBFE5ECD929BD4BBD627F2D35D5BA224B019B9A724C4FFCA1101FFE00504B0708BCD6097208030000E7150000504B01021400140008080800EC619D48BCD6097208030000E715000021000000000000000000000000000000000074656D7058534446696C653538333038393036353731393534353333302E787364504B050600000000010001004F000000570300000000">
+    <root xmi:id="_SfoZAw3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse" Attribute="main" Order="1" Type="id_String"/>
+    <root xmi:id="_SfoZBA3zEea07bfDW9_3JQ" XMLPath="tns" DefaultValue="http://ws.cdyne.com/WeatherWS/" Attribute="ns" Order="2" Type="id_String"/>
+    <loop xmi:id="_SfoZBQ3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult" Attribute="main" Order="3" Type="id_String"/>
+    <loop xmi:id="_SfoZBg3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Success" RelatedColumn="Success" Attribute="branch" Order="4" Type="id_Boolean"/>
+    <loop xmi:id="_SfoZBw3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:ResponseText" RelatedColumn="ResponseText" Attribute="branch" Order="5" Type="id_String"/>
+    <loop xmi:id="_SfoZCA3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:State" RelatedColumn="State" Attribute="branch" Order="6" Type="id_String"/>
+    <loop xmi:id="_SfoZCQ3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:City" RelatedColumn="City" Attribute="branch" Order="7" Type="id_String"/>
+    <loop xmi:id="_SfoZCg3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:WeatherStationCity" RelatedColumn="WeatherStationCity" Attribute="branch" Order="8" Type="id_String"/>
+    <loop xmi:id="_SfoZCw3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:WeatherID" RelatedColumn="WeatherID" Attribute="branch" Order="9" Type="id_Short"/>
+    <loop xmi:id="_SfoZDA3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Description" RelatedColumn="Description" Attribute="branch" Order="10" Type="id_String"/>
+    <loop xmi:id="_SfoZDQ3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Temperature" RelatedColumn="Temperature" Attribute="branch" Order="11" Type="id_String"/>
+    <loop xmi:id="_SfoZDg3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:RelativeHumidity" RelatedColumn="RelativeHumidity" Attribute="branch" Order="12" Type="id_String"/>
+    <loop xmi:id="_SfoZDw3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Wind" RelatedColumn="Wind" Attribute="branch" Order="13" Type="id_String"/>
+    <loop xmi:id="_SfoZEA3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Pressure" RelatedColumn="Pressure" Attribute="branch" Order="14" Type="id_String"/>
+    <loop xmi:id="_SfoZEQ3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Visibility" RelatedColumn="Visibility" Attribute="branch" Order="15" Type="id_String"/>
+    <loop xmi:id="_SfoZEg3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:WindChill" RelatedColumn="WindChill" Attribute="branch" Order="16" Type="id_String"/>
+    <loop xmi:id="_SfoZEw3zEea07bfDW9_3JQ" XMLPath="/tns:GetCityWeatherByZIPResponse/tns:GetCityWeatherByZIPResult/tns:Remarks" RelatedColumn="Remarks" Attribute="branch" Order="17" Type="id_String"/>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_SfoZFA3zEea07bfDW9_3JQ" name="default" dataManager="_SfoZAg3zEea07bfDW9_3JQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SfoZFQ3zEea07bfDW9_3JQ" id="_SfoZAA3zEea07bfDW9_3JQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZFg3zEea07bfDW9_3JQ" label="Success" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZFw3zEea07bfDW9_3JQ" label="ResponseText" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZGA3zEea07bfDW9_3JQ" label="State" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZGQ3zEea07bfDW9_3JQ" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZGg3zEea07bfDW9_3JQ" label="WeatherStationCity" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZGw3zEea07bfDW9_3JQ" label="WeatherID" talendType="id_Short"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZHA3zEea07bfDW9_3JQ" label="Description" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZHQ3zEea07bfDW9_3JQ" label="Temperature" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZHg3zEea07bfDW9_3JQ" label="RelativeHumidity" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZHw3zEea07bfDW9_3JQ" label="Wind" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZIA3zEea07bfDW9_3JQ" label="Pressure" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZIQ3zEea07bfDW9_3JQ" label="Visibility" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZIg3zEea07bfDW9_3JQ" label="WindChill" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SfoZIw3zEea07bfDW9_3JQ" label="Remarks" talendType="id_String"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

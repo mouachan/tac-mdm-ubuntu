@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:tdqmatching="http://www.talend.org/tdqmatching" xmi:id="_TC7D0Kc0EeaNW4Is7aDCYw" defaultContext="Default" jobType="Big_Data_Batch" framework="MapReduce">
+  <context xmi:id="_TC7D0ac0EeaNW4Is7aDCYw" confirmationNeeded="false" name="Serv">
+    <contextParameter xmi:id="_TC7D0qc0EeaNW4Is7aDCYw" comment="" name="sourcesPath" prompt="sourcesPath?" promptNeeded="false" repositoryContextId="_UTG9cFJ-EeavaaPyr6GBRQ" type="id_String" value="&quot;/opt/talend/files/&quot;"/>
+  </context>
+  <context xmi:id="_TC7D06c0EeaNW4Is7aDCYw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_TC7D1Kc0EeaNW4Is7aDCYw" comment="" name="sourcesPath" prompt="sourcesPath?" promptNeeded="false" repositoryContextId="_UTG9cFJ-EeavaaPyr6GBRQ" type="id_String" value="&quot;C:/Users/pclapier/Documents/Customers/CARREFOUR/Extract/&quot;"/>
+  </context>
+  <parameters xmi:id="_TC7D1ac0EeaNW4Is7aDCYw">
+    <elementParameter xmi:id="_TC7D1qc0EeaNW4Is7aDCYw" field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms4000M&quot;,&quot;-Xmx10000M&quot;,&quot;-Dhadoop.home.dir=C:/Talend/winutils&quot;,&quot;-Dhdp.version=2.4.0.0-169&quot;]}" show="false"/>
+    <elementParameter xmi:id="_TC7D16c0EeaNW4Is7aDCYw" field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
+    <elementParameter xmi:id="_TC7D2Kc0EeaNW4Is7aDCYw" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_TC7D2ac0EeaNW4Is7aDCYw" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_TC7D2qc0EeaNW4Is7aDCYw" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D26c0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D3Kc0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D3ac0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D3qc0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D36c0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D4Kc0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D4ac0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D4qc0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D46c0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D5Kc0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D5ac0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D5qc0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D56c0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D6Kc0EeaNW4Is7aDCYw" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D6ac0EeaNW4Is7aDCYw" field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_TC7D6qc0EeaNW4Is7aDCYw" field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_TC7D66c0EeaNW4Is7aDCYw" field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter xmi:id="_TC7D7Kc0EeaNW4Is7aDCYw" field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter xmi:id="_TC7D7ac0EeaNW4Is7aDCYw" field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter xmi:id="_TC7D7qc0EeaNW4Is7aDCYw" field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7D76c0EeaNW4Is7aDCYw" field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7D8Kc0EeaNW4Is7aDCYw" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7D8ac0EeaNW4Is7aDCYw" field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7D8qc0EeaNW4Is7aDCYw" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D86c0EeaNW4Is7aDCYw" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D9Kc0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D9ac0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_TC7D9qc0EeaNW4Is7aDCYw" field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7D96c0EeaNW4Is7aDCYw" field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter xmi:id="_TC7D-Kc0EeaNW4Is7aDCYw" field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7D-ac0EeaNW4Is7aDCYw" field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7D-qc0EeaNW4Is7aDCYw" field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7D-6c0EeaNW4Is7aDCYw" field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7D_Kc0EeaNW4Is7aDCYw" field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7D_ac0EeaNW4Is7aDCYw" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7D_qc0EeaNW4Is7aDCYw" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7D_6c0EeaNW4Is7aDCYw" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EAKc0EeaNW4Is7aDCYw" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_TC7EAac0EeaNW4Is7aDCYw" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EAqc0EeaNW4Is7aDCYw" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EA6c0EeaNW4Is7aDCYw" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EBKc0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="" show="false"/>
+    <elementParameter xmi:id="_TC7EBac0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="" show="false"/>
+    <elementParameter xmi:id="_TC7EBqc0EeaNW4Is7aDCYw" field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EB6c0EeaNW4Is7aDCYw" field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7ECKc0EeaNW4Is7aDCYw" field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7ECac0EeaNW4Is7aDCYw" field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7ECqc0EeaNW4Is7aDCYw" field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_TC7EC6c0EeaNW4Is7aDCYw" field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_TC7EDKc0EeaNW4Is7aDCYw" field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_TC7EDac0EeaNW4Is7aDCYw" field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EDqc0EeaNW4Is7aDCYw" field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7ED6c0EeaNW4Is7aDCYw" field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/v621/Studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EEKc0EeaNW4Is7aDCYw" field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EEac0EeaNW4Is7aDCYw" field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EEqc0EeaNW4Is7aDCYw" field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EE6c0EeaNW4Is7aDCYw" field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_TC7EFKc0EeaNW4Is7aDCYw" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_TC7EFac0EeaNW4Is7aDCYw" field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EFqc0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter xmi:id="_TC7EF6c0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter xmi:id="_TC7EGKc0EeaNW4Is7aDCYw" field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EGac0EeaNW4Is7aDCYw" field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_TC7EGqc0EeaNW4Is7aDCYw" field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EG6c0EeaNW4Is7aDCYw" field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EHKc0EeaNW4Is7aDCYw" field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EHac0EeaNW4Is7aDCYw" field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EHqc0EeaNW4Is7aDCYw" field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EH6c0EeaNW4Is7aDCYw" field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EIKc0EeaNW4Is7aDCYw" field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EIac0EeaNW4Is7aDCYw" field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EIqc0EeaNW4Is7aDCYw" field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EI6c0EeaNW4Is7aDCYw" field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_TC7EJKc0EeaNW4Is7aDCYw" field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EJac0EeaNW4Is7aDCYw" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EJqc0EeaNW4Is7aDCYw" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EJ6c0EeaNW4Is7aDCYw" field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EKKc0EeaNW4Is7aDCYw" field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_TC7EKac0EeaNW4Is7aDCYw" field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_TC7EKqc0EeaNW4Is7aDCYw" field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter xmi:id="_TC7EK6c0EeaNW4Is7aDCYw" field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7ELKc0EeaNW4Is7aDCYw" field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter xmi:id="_TC7ELac0EeaNW4Is7aDCYw" field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7ELqc0EeaNW4Is7aDCYw" field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_TC7EL6c0EeaNW4Is7aDCYw" field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_TC7EMKc0EeaNW4Is7aDCYw" field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_TC7EMac0EeaNW4Is7aDCYw" field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter xmi:id="_TC7EMqc0EeaNW4Is7aDCYw" field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EM6c0EeaNW4Is7aDCYw" field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_TC7ENKc0EeaNW4Is7aDCYw" field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_TC7ENac0EeaNW4Is7aDCYw" field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_TC7ENqc0EeaNW4Is7aDCYw" field="TECHNICAL" name="MR_PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_TC7EN6c0EeaNW4Is7aDCYw" field="TECHNICAL" name="MR_PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_f3TcIHBIEeaU_dzD0MnELw" show="false"/>
+    <elementParameter xmi:id="_TC7EOKc0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
+    <elementParameter xmi:id="_TC7EOac0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="MR_VERSION" value="HDP_2_4"/>
+    <elementParameter xmi:id="_TC7EOqc0EeaNW4Is7aDCYw" field="HADOOP_DISTRIBUTION" name="MAPREDUCE" value=""/>
+    <elementParameter xmi:id="_TC7EO6c0EeaNW4Is7aDCYw" field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter xmi:id="_TC7EPKc0EeaNW4Is7aDCYw" field="CHECK" name="USE_YARN" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EPac0EeaNW4Is7aDCYw" field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EPqc0EeaNW4Is7aDCYw" field="TEXT" name="NAMENODE" value="&quot;hdfs://sandbox.hortonworks.com:8020&quot;"/>
+    <elementParameter xmi:id="_TC7EP6c0EeaNW4Is7aDCYw" field="TEXT" name="JOBTRACKER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EQKc0EeaNW4Is7aDCYw" field="TEXT" name="RESOURCE_MANAGER" value="&quot;sandbox.hortonworks.com:8050&quot;"/>
+    <elementParameter xmi:id="_TC7EQac0EeaNW4Is7aDCYw" field="CHECK" name="SET_SCHEDULER_ADDRESS" value="true"/>
+    <elementParameter xmi:id="_TC7EQqc0EeaNW4Is7aDCYw" field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;sandbox.hortonworks.com:8030&quot;"/>
+    <elementParameter xmi:id="_TC7EQ6c0EeaNW4Is7aDCYw" field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="true"/>
+    <elementParameter xmi:id="_TC7ERKc0EeaNW4Is7aDCYw" field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;sandbox.hortonworks.com:10020&quot;"/>
+    <elementParameter xmi:id="_TC7ERac0EeaNW4Is7aDCYw" field="CHECK" name="SET_STAGING_DIRECTORY" value="true"/>
+    <elementParameter xmi:id="_TC7ERqc0EeaNW4Is7aDCYw" field="TEXT" name="STAGING_DIRECTORY" value="&quot;/user&quot;"/>
+    <elementParameter xmi:id="_TC7ER6c0EeaNW4Is7aDCYw" field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter xmi:id="_TC7ESKc0EeaNW4Is7aDCYw" field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter xmi:id="_TC7ESac0EeaNW4Is7aDCYw" field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7ESqc0EeaNW4Is7aDCYw" field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;jt/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7ES6c0EeaNW4Is7aDCYw" field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7ETKc0EeaNW4Is7aDCYw" field="TEXT" name="JOBHISTORY_PRINCIPAL" value="&quot;mapred/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7ETac0EeaNW4Is7aDCYw" field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7ETqc0EeaNW4Is7aDCYw" field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7ET6c0EeaNW4Is7aDCYw" field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EUKc0EeaNW4Is7aDCYw" field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EUac0EeaNW4Is7aDCYw" field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EUqc0EeaNW4Is7aDCYw" field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_TC7EU6c0EeaNW4Is7aDCYw" field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EVKc0EeaNW4Is7aDCYw" field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter xmi:id="_TC7EVac0EeaNW4Is7aDCYw" field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EVqc0EeaNW4Is7aDCYw" field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EV6c0EeaNW4Is7aDCYw" field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EWKc0EeaNW4Is7aDCYw" field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EWac0EeaNW4Is7aDCYw" field="CHECK" name="PRELOAD_AUTHENTIFICATION" value="true" show="false"/>
+    <elementParameter xmi:id="_TC7EWqc0EeaNW4Is7aDCYw" field="TEXT" name="USERNAME" value="&quot;admin&quot;"/>
+    <elementParameter xmi:id="_TC7EW6c0EeaNW4Is7aDCYw" field="TEXT" name="SERVER_PATH_SEPARATOR" value="&quot;:&quot;"/>
+    <elementParameter xmi:id="_TC7EXKc0EeaNW4Is7aDCYw" field="TEXT" name="TEMP_FOLDER" value="&quot;/tmp&quot;"/>
+    <elementParameter xmi:id="_TC7EXac0EeaNW4Is7aDCYw" field="CHECK" name="RM_TEMP_FOLDER" value="true"/>
+    <elementParameter xmi:id="_TC7EXqc0EeaNW4Is7aDCYw" field="CHECK" name="MAPRED_JOB_COMPRESS_MAP_IO" value="true"/>
+    <elementParameter xmi:id="_TC7EX6c0EeaNW4Is7aDCYw" field="CHECK" name="USE_CLOUDERA_NAVIGATOR" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EYKc0EeaNW4Is7aDCYw" field="TEXT" name="CLOUDERA_NAVIGATOR_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EYac0EeaNW4Is7aDCYw" field="PASSWORD" name="CLOUDERA_NAVIGATOR_PASSWORD" value="" show="false"/>
+    <elementParameter xmi:id="_TC7EYqc0EeaNW4Is7aDCYw" field="TEXT" name="CLOUDERA_NAVIGATOR_URL" value="&quot;http://localhost:7187/api/v8/&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EY6c0EeaNW4Is7aDCYw" field="TEXT" name="CLOUDERA_NAVIGATOR_METADATA_URL" value="&quot;http://localhost:7187/api/v8/metadata/plugin&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EZKc0EeaNW4Is7aDCYw" field="TEXT" name="CLOUDERA_NAVIGATOR_CLIENT_URL" value="&quot;http://localhost&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EZac0EeaNW4Is7aDCYw" field="CHECK" name="CLOUDERA_NAVIGATOR_AUTOCOMMIT" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EZqc0EeaNW4Is7aDCYw" field="CHECK" name="CLOUDERA_NAVIGATOR_DISABLE_SSL_VALIDATION" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7EZ6c0EeaNW4Is7aDCYw" field="CHECK" name="CLOUDERA_NAVIGATOR_DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter xmi:id="_TC7EaKc0EeaNW4Is7aDCYw" field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter xmi:id="_TC7Eaac0EeaNW4Is7aDCYw" field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Eaqc0EeaNW4Is7aDCYw" field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Ea6c0EeaNW4Is7aDCYw" field="CHECK" name="SET_MEMORY" value="false"/>
+    <elementParameter xmi:id="_TC7EbKc0EeaNW4Is7aDCYw" field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Ebac0EeaNW4Is7aDCYw" field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Ebqc0EeaNW4Is7aDCYw" field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Eb6c0EeaNW4Is7aDCYw" field="TEXT" name="WEBHCAT_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EcKc0EeaNW4Is7aDCYw" field="TEXT" name="WEBHCAT_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Ecac0EeaNW4Is7aDCYw" field="TEXT" name="WEBHCAT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Ecqc0EeaNW4Is7aDCYw" field="TEXT" name="STATUSDIR" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Ec6c0EeaNW4Is7aDCYw" field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EdKc0EeaNW4Is7aDCYw" field="PASSWORD" name="HDINSIGHT_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_TC7Edac0EeaNW4Is7aDCYw" field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Edqc0EeaNW4Is7aDCYw" field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Ed6c0EeaNW4Is7aDCYw" field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EeKc0EeaNW4Is7aDCYw" field="PASSWORD" name="WASB_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_TC7Eeac0EeaNW4Is7aDCYw" field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Eeqc0EeaNW4Is7aDCYw" field="CHECK" name="USE_ATLAS" value="false"/>
+    <elementParameter xmi:id="_TC7Ee6c0EeaNW4Is7aDCYw" field="TEXT" name="ATLAS_URL" value="&quot;http://localhost:21000&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EfKc0EeaNW4Is7aDCYw" field="CHECK" name="ATLAS_DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7Efac0EeaNW4Is7aDCYw" field="TEXT" name="MAPREDUCE_INFOS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&#xA;&lt;MapReduceInfos>&#xA;  &lt;MapReduceInfo node=&quot;tHDFSOutput_1&quot; groupId=&quot;1&quot;>&#xA;    &lt;Map x=&quot;398&quot; y=&quot;116&quot; width=&quot;87&quot; height=&quot;18&quot; mrId=&quot;1&quot;/>&#xA;    &lt;Map x=&quot;398&quot; y=&quot;137&quot; width=&quot;87&quot; height=&quot;18&quot; mrId=&quot;2&quot;/>&#xA;  &lt;/MapReduceInfo>&#xA;  &lt;MapReduceInfo node=&quot;tHDFSInput_1&quot; groupId=&quot;2&quot;>&#xA;    &lt;Map x=&quot;73&quot; y=&quot;116&quot; width=&quot;87&quot; height=&quot;18&quot; mrId=&quot;1&quot;/>&#xA;    &lt;Reduce x=&quot;193&quot; y=&quot;116&quot; width=&quot;105&quot; height=&quot;18&quot; mrId=&quot;1&quot;/>&#xA;  &lt;/MapReduceInfo>&#xA;&lt;/MapReduceInfos>&#xA;" show="false"/>
+    <routinesParameter xmi:id="_jZ1_ZqcgEeaNW4Is7aDCYw" id="_hXtjwEjcEeajTbE3xjPVwA" name="DQTechnical"/>
+    <routinesParameter xmi:id="_jZ1_Z6cgEeaNW4Is7aDCYw" id="_hXikoEjcEeajTbE3xjPVwA" name="DataMasking"/>
+    <routinesParameter xmi:id="_jZ1_aKcgEeaNW4Is7aDCYw" id="_hYwsoEjcEeajTbE3xjPVwA" name="DataOperation"/>
+    <routinesParameter xmi:id="_jZ1_aacgEeaNW4Is7aDCYw" id="_hXm2EEjcEeajTbE3xjPVwA" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_jZ1_aqcgEeaNW4Is7aDCYw" id="_hXlA4EjcEeajTbE3xjPVwA" name="DataQuality"/>
+    <routinesParameter xmi:id="_jZ1_a6cgEeaNW4Is7aDCYw" id="_hXrukEjcEeajTbE3xjPVwA" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_jZ1_bKcgEeaNW4Is7aDCYw" id="_hUzZsEjcEeajTbE3xjPVwA" name="MDM"/>
+    <routinesParameter xmi:id="_jZ1_bacgEeaNW4Is7aDCYw" id="_hYx6wEjcEeajTbE3xjPVwA" name="Mathematical"/>
+    <routinesParameter xmi:id="_jZ1_bqcgEeaNW4Is7aDCYw" id="_hY4BYEjcEeajTbE3xjPVwA" name="Numeric"/>
+    <routinesParameter xmi:id="_jZ1_b6cgEeaNW4Is7aDCYw" id="_hY5PgEjcEeajTbE3xjPVwA" name="Relational"/>
+    <routinesParameter xmi:id="_jZ1_cKcgEeaNW4Is7aDCYw" id="_hYvegEjcEeajTbE3xjPVwA" name="SQLike"/>
+    <routinesParameter xmi:id="_jZ1_cacgEeaNW4Is7aDCYw" id="_hY6doEjcEeajTbE3xjPVwA" name="StringHandling"/>
+    <routinesParameter xmi:id="_jZ1_cqcgEeaNW4Is7aDCYw" id="_hY7rwEjcEeajTbE3xjPVwA" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_jZ1_c6cgEeaNW4Is7aDCYw" id="_hY9g8EjcEeajTbE3xjPVwA" name="TalendDate"/>
+    <routinesParameter xmi:id="_jZ1_dKcgEeaNW4Is7aDCYw" id="_hY_WIEjcEeajTbE3xjPVwA" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_TC7Efqc0EeaNW4Is7aDCYw" componentName="tHDFSInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter xmi:id="_TC7Ef6c0EeaNW4Is7aDCYw" field="TEXT" name="UNIQUE_NAME" value="tHDFSInput_1" show="false"/>
+    <elementParameter xmi:id="_TC7EgKc0EeaNW4Is7aDCYw" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_TC7Egac0EeaNW4Is7aDCYw" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_f3TcIHBIEeaU_dzD0MnELw" show="false"/>
+    <elementParameter xmi:id="_TC7Egqc0EeaNW4Is7aDCYw" field="BOTH_HADOOP" name="FILENAME" value="&quot;/user/talend/Carrefour_Customers&quot;"/>
+    <elementParameter xmi:id="_TC7Eg6c0EeaNW4Is7aDCYw" field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter xmi:id="_TC7EhKc0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="TYPEFILE" value="TEXT"/>
+    <elementParameter xmi:id="_TC7Ehac0EeaNW4Is7aDCYw" field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter xmi:id="_TC7Ehqc0EeaNW4Is7aDCYw" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter xmi:id="_TC7Eh6c0EeaNW4Is7aDCYw" field="TEXT" name="HEADER" value="0"/>
+    <elementParameter xmi:id="_TC7EiKc0EeaNW4Is7aDCYw" field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter xmi:id="_TC7Eiac0EeaNW4Is7aDCYw" field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Eiqc0EeaNW4Is7aDCYw" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter xmi:id="_TC7Ei6c0EeaNW4Is7aDCYw" field="COLUMN_LIST" name="KEYCOLUMN" value="FIRST_NAME" show="false"/>
+    <elementParameter xmi:id="_TC7EjKc0EeaNW4Is7aDCYw" field="COLUMN_LIST" name="VALUECOLUMN" value="FIRST_NAME" show="false"/>
+    <elementParameter xmi:id="_TC7Ejac0EeaNW4Is7aDCYw" field="LABEL" name="NOTE" value="NOTE : Only boolean, byte, byte[], double, float, integer,&#xA;&#x9;&#x9;&#x9;&#x9;long, short, string are currently supported for key class and value&#xA;&#x9;&#x9;&#x9;&#x9;columns fields&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter xmi:id="_TC7Ejqc0EeaNW4Is7aDCYw" field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter xmi:id="_TC7Ej6c0EeaNW4Is7aDCYw" field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7EkKc0EeaNW4Is7aDCYw" field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Ekac0EeaNW4Is7aDCYw" field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter xmi:id="_TC7Ekqc0EeaNW4Is7aDCYw" field="TABLE" name="TRIMSELECT">
+      <elementValue xmi:id="_TC7Ek6c0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="FIRST_NAME"/>
+      <elementValue xmi:id="_TC7ElKc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7Elac0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="LAST_NAME"/>
+      <elementValue xmi:id="_TC7Elqc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7El6c0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="EMAIL_ADDR"/>
+      <elementValue xmi:id="_TC7EmKc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7Emac0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="BIRTH_DATE"/>
+      <elementValue xmi:id="_TC7Emqc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7Em6c0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="PHONE_CELL"/>
+      <elementValue xmi:id="_TC7EnKc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7Enac0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="PHONE_HOME"/>
+      <elementValue xmi:id="_TC7Enqc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7En6c0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="ADRESS"/>
+      <elementValue xmi:id="_TC7EoKc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7Eoac0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="POSTCODE"/>
+      <elementValue xmi:id="_TC7Eoqc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7Eo6c0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="COUNTRY"/>
+      <elementValue xmi:id="_TC7EpKc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7Epac0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="LOY_CARD_KEY"/>
+      <elementValue xmi:id="_TC7Epqc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7Ep6c0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="SOURCE"/>
+      <elementValue xmi:id="_TC7EqKc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_TC7Eqac0EeaNW4Is7aDCYw" elementRef="SCHEMA_COLUMN" value="T_GEN_KEY"/>
+      <elementValue xmi:id="_TC7Eqqc0EeaNW4Is7aDCYw" elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_TC7Eq6c0EeaNW4Is7aDCYw" field="CHECK" name="FALLBACK_RECORD_READER" value="false"/>
+    <elementParameter xmi:id="_TC7ErKc0EeaNW4Is7aDCYw" field="TEXT" name="LABEL" value="Carrefour Customers"/>
+    <elementParameter xmi:id="_TC7Erac0EeaNW4Is7aDCYw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_TC7Erqc0EeaNW4Is7aDCYw" connector="FLOW" name="tHDFSInput_1">
+      <column xmi:id="_TC7Er6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="FIRST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7EsKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LAST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Esac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="EMAIL_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Esqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="BIRTH_DATE" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column xmi:id="_TC7Es6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_CELL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7EtKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_HOME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Etac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="ADRESS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Etqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="POSTCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Et6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7EuKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LOY_CARD_KEY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Euac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="SOURCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Euqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="T_GEN_KEY" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+    </metadata>
+    <metadata xmi:id="_TC7Eu6c0EeaNW4Is7aDCYw" connector="REJECT" name="REJECT">
+      <column xmi:id="_TC7EvKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="FIRST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Evac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LAST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Evqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="EMAIL_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Ev6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="BIRTH_DATE" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column xmi:id="_TC7EwKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_CELL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Ewac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_HOME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Ewqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="ADRESS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Ew6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="POSTCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7ExKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Exac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LOY_CARD_KEY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Exqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="SOURCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Ex6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="T_GEN_KEY" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column xmi:id="_TC7EyKc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="255" name="invalidInputLine" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7Eyac0EeaNW4Is7aDCYw" defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_TC7Eyqc0EeaNW4Is7aDCYw" componentName="tMatchGroup" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+    <elementParameter xmi:id="_TC7Ey6c0EeaNW4Is7aDCYw" field="TEXT" name="UNIQUE_NAME" value="tMatchGroup_2" show="false"/>
+    <elementParameter xmi:id="_TC7EzKc0EeaNW4Is7aDCYw" field="EXTERNAL" name="PREVIEW" value=""/>
+    <elementParameter xmi:id="_TC7Ezac0EeaNW4Is7aDCYw" field="CHECK" name="COMPUTE_GRP_QUALITY" value="true" show="false"/>
+    <elementParameter xmi:id="_TC7Ezqc0EeaNW4Is7aDCYw" field="TABLE" name="JOIN_KEY" show="false"/>
+    <elementParameter xmi:id="_TC7Ez6c0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="MATCHING_ALGORITHM" value="Simple VSR Matcher" show="false"/>
+    <elementParameter xmi:id="_TC7E0Kc0EeaNW4Is7aDCYw" field="TEXT" name="INTERVAL_RULE" value="0.85" show="false"/>
+    <elementParameter xmi:id="_TC7E0ac0EeaNW4Is7aDCYw" field="TABLE" name="BLOCKING_DEFINITION" show="false">
+      <elementValue xmi:id="_TC7E0qc0EeaNW4Is7aDCYw" elementRef="INPUT_COLUMN" value="T_GEN_KEY"/>
+    </elementParameter>
+    <elementParameter xmi:id="_TC7E06c0EeaNW4Is7aDCYw" field="CHECK" name="SHOW_BASIC_PARAMETER" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7E1Kc0EeaNW4Is7aDCYw" field="TEXT" name="INTERVAL" value="0.85" show="false"/>
+    <elementParameter xmi:id="_TC7E1ac0EeaNW4Is7aDCYw" field="CHECK" name="SEPARATE_OUTPUT" value="false"/>
+    <elementParameter xmi:id="_TC7E1qc0EeaNW4Is7aDCYw" field="TEXT" name="CONFIDENCE_THRESHOLD" value="1" show="false"/>
+    <elementParameter xmi:id="_TC7E16c0EeaNW4Is7aDCYw" field="CHECK" name="SORT_DATA" value="true"/>
+    <elementParameter xmi:id="_TC7E2Kc0EeaNW4Is7aDCYw" field="CHECK" name="OUTPUTDD" value="false"/>
+    <elementParameter xmi:id="_TC7E2ac0EeaNW4Is7aDCYw" field="CHECK" name="DISPLAY_ATTR_LABELS" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7E2qc0EeaNW4Is7aDCYw" field="CHECK" name="LINK_WITH_PREVIOUS" value="false"/>
+    <elementParameter xmi:id="_TC7E26c0EeaNW4Is7aDCYw" field="TEXT" name="LABEL" value="Matching"/>
+    <elementParameter xmi:id="_TC7E3Kc0EeaNW4Is7aDCYw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_TC7E3ac0EeaNW4Is7aDCYw" connector="FLOW" name="tMatchGroup_2">
+      <column xmi:id="_TC7E3qc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="FIRST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E36c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LAST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E4Kc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="EMAIL_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E4ac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="BIRTH_DATE" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column xmi:id="_TC7E4qc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_CELL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E46c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_HOME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E5Kc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="ADRESS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E5ac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="POSTCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E5qc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E56c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LOY_CARD_KEY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E6Kc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="SOURCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E6ac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="T_GEN_KEY" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column xmi:id="_TC7E6qc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7E66c0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7E7Kc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7E7ac0EeaNW4Is7aDCYw" defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7E7qc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties xmi:id="_TC7E76c0EeaNW4Is7aDCYw" key="Comment" value=""/>
+    </metadata>
+    <metadata xmi:id="_TC7E8Kc0EeaNW4Is7aDCYw" connector="UNIQUE_ROWS" name="UNIQUE_ROWS">
+      <column xmi:id="_TC7E8ac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="FIRST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E8qc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LAST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E86c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="EMAIL_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E9Kc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="BIRTH_DATE" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column xmi:id="_TC7E9ac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_CELL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E9qc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_HOME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E96c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="ADRESS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E-Kc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="POSTCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E-ac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E-qc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LOY_CARD_KEY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E-6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="SOURCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7E_Kc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="T_GEN_KEY" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column xmi:id="_TC7E_ac0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7E_qc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7E_6c0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7FAKc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7FAac0EeaNW4Is7aDCYw" defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties xmi:id="_TC7FAqc0EeaNW4Is7aDCYw" key="Comment" value=""/>
+    </metadata>
+    <metadata xmi:id="_TC7FA6c0EeaNW4Is7aDCYw" connector="CONFIDENT_GROUPS" name="CONFIDENT_GROUPS">
+      <column xmi:id="_TC7FBKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="FIRST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FBac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LAST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FBqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="EMAIL_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FB6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="BIRTH_DATE" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column xmi:id="_TC7FCKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_CELL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FCac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_HOME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FCqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="ADRESS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FC6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="POSTCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FDKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FDac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LOY_CARD_KEY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FDqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="SOURCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FD6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="T_GEN_KEY" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column xmi:id="_TC7FEKc0EeaNW4Is7aDCYw" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7FEac0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7FEqc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7FE6c0EeaNW4Is7aDCYw" defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7FFKc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties xmi:id="_TC7FFac0EeaNW4Is7aDCYw" key="Comment" value=""/>
+    </metadata>
+    <metadata xmi:id="_TC7FFqc0EeaNW4Is7aDCYw" connector="UNCERTAIN_GROUPS" name="UNCERTAIN_GROUPS">
+      <column xmi:id="_TC7FF6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="FIRST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FGKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LAST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FGac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="EMAIL_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FGqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="BIRTH_DATE" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column xmi:id="_TC7FG6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_CELL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FHKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_HOME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FHac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="ADRESS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FHqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="POSTCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FH6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FIKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LOY_CARD_KEY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FIac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="SOURCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7FIqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="T_GEN_KEY" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column xmi:id="_TC7FI6c0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7FJKc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7FJac0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7FJqc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7FJ6c0EeaNW4Is7aDCYw" defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties xmi:id="_TC7FKKc0EeaNW4Is7aDCYw" key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="tdqmatching:MatchingData" xmi:id="_TC7FKac0EeaNW4Is7aDCYw">
+      <ruleMatchers xmi:id="_TC7FKqc0EeaNW4Is7aDCYw">
+        <joinkeys xmi:id="_TC7FK6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7FLKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7FLac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FLqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="BIRTH_DATE"/>
+          <columnMap xmi:id="_TC7FL6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7FMKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FMac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7FMqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7FM6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7FNKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7FNac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FNqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="EMAIL_ADDR"/>
+          <columnMap xmi:id="_TC7FN6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7FOKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FOac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7FOqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7FO6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7FPKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7FPac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FPqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="FIRST_NAME"/>
+          <columnMap xmi:id="_TC7FP6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7FQKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FQac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7FQqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7FQ6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7FRKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7FRac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FRqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LAST_NAME"/>
+          <columnMap xmi:id="_TC7FR6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7FSKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FSac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7FSqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7FS6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7FTKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7FTac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FTqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LOY_CARD_KEY"/>
+          <columnMap xmi:id="_TC7FT6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7FUKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FUac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7FUqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7FU6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7FVKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7FVac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FVqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="PHONE_HOME"/>
+          <columnMap xmi:id="_TC7FV6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7FWKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FWac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7FWqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7FW6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7FXKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7FXac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FXqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="POSTCODE"/>
+          <columnMap xmi:id="_TC7FX6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7FYKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FYac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7FYqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <matchParamMap xmi:id="_TC7FY6c0EeaNW4Is7aDCYw" key="INTERVAL_RULE" value="0.85"/>
+        <matchParamMap xmi:id="_TC7FZKc0EeaNW4Is7aDCYw" key="MATCHING_ALGORITHM" value="SIMPLE_VSR_MATCHER"/>
+      </ruleMatchers>
+      <ruleMatchers xmi:id="_TC7FZac0EeaNW4Is7aDCYw">
+        <joinkeys xmi:id="_TC7FZqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7FZ6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7FaKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Faac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="BIRTH_DATE"/>
+          <columnMap xmi:id="_TC7Faqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7Fa6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FbKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Fbac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Fbqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Fb6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7FcKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Fcac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="EMAIL_ADDR"/>
+          <columnMap xmi:id="_TC7Fcqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7Fc6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FdKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Fdac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Fdqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Fd6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7FeKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Feac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="FIRST_NAME"/>
+          <columnMap xmi:id="_TC7Feqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7Fe6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FfKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Ffac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Ffqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Ff6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7FgKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Fgac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LAST_NAME"/>
+          <columnMap xmi:id="_TC7Fgqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7Fg6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FhKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Fhac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Fhqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Fh6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7FiKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Fiac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LOY_CARD_KEY"/>
+          <columnMap xmi:id="_TC7Fiqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7Fi6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FjKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Fjac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Fjqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Fj6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7FkKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Fkac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="PHONE_HOME"/>
+          <columnMap xmi:id="_TC7Fkqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7Fk6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FlKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Flac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Flqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Fl6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7FmKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Fmac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="POSTCODE"/>
+          <columnMap xmi:id="_TC7Fmqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7Fm6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7FnKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Fnac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+        </joinkeys>
+        <matchParamMap xmi:id="_TC7Fnqc0EeaNW4Is7aDCYw" key="INTERVAL_RULE" value="0.85"/>
+        <matchParamMap xmi:id="_TC7Fn6c0EeaNW4Is7aDCYw" key="MATCHING_ALGORITHM" value="SIMPLE_VSR_MATCHER"/>
+      </ruleMatchers>
+      <ruleMatchers xmi:id="_TC7FoKc0EeaNW4Is7aDCYw">
+        <joinkeys xmi:id="_TC7Foac0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Foqc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7Fo6c0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FpKc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7Fpac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="BIRTH_DATE"/>
+          <columnMap xmi:id="_TC7Fpqc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7Fp6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7FqKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Fqac0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Fqqc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7Fq6c0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FrKc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7Frac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="EMAIL_ADDR"/>
+          <columnMap xmi:id="_TC7Frqc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7Fr6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7FsKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Fsac0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Fsqc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7Fs6c0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FtKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Ftac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7Ftqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7Ft6c0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="FIRST_NAME"/>
+          <columnMap xmi:id="_TC7FuKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Fuac0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Fuqc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7Fu6c0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FvKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Fvac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7Fvqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7Fv6c0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LAST_NAME"/>
+          <columnMap xmi:id="_TC7FwKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Fwac0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Fwqc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7Fw6c0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FxKc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7Fxac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LOY_CARD_KEY"/>
+          <columnMap xmi:id="_TC7Fxqc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7Fx6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7FyKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Fyac0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Fyqc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7Fy6c0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7FzKc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Fzac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7Fzqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7Fz6c0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="PHONE_HOME"/>
+          <columnMap xmi:id="_TC7F0Kc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7F0ac0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7F0qc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7F06c0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7F1Kc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7F1ac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="POSTCODE"/>
+          <columnMap xmi:id="_TC7F1qc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7F16c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7F2Kc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <matchParamMap xmi:id="_TC7F2ac0EeaNW4Is7aDCYw" key="INTERVAL_RULE" value="0.85"/>
+        <matchParamMap xmi:id="_TC7F2qc0EeaNW4Is7aDCYw" key="MATCHING_ALGORITHM" value="SIMPLE_VSR_MATCHER"/>
+      </ruleMatchers>
+      <ruleMatchers xmi:id="_TC7F26c0EeaNW4Is7aDCYw">
+        <joinkeys xmi:id="_TC7F3Kc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7F3ac0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7F3qc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7F36c0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7F4Kc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7F4ac0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7F4qc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="BIRTH_DATE"/>
+          <columnMap xmi:id="_TC7F46c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7F5Kc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7F5ac0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7F5qc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7F56c0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7F6Kc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="EMAIL_ADDR"/>
+          <columnMap xmi:id="_TC7F6ac0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7F6qc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7F66c0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7F7Kc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7F7ac0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7F7qc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7F76c0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7F8Kc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7F8ac0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7F8qc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="FIRST_NAME"/>
+          <columnMap xmi:id="_TC7F86c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7F9Kc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7F9ac0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7F9qc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7F96c0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7F-Kc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LAST_NAME"/>
+          <columnMap xmi:id="_TC7F-ac0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7F-qc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7F-6c0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7F_Kc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7F_ac0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7F_qc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7F_6c0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GAKc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LOY_CARD_KEY"/>
+          <columnMap xmi:id="_TC7GAac0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7GAqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7GA6c0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7GBKc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GBac0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7GBqc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GB6c0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7GCKc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GCac0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7GCqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="PHONE_HOME"/>
+          <columnMap xmi:id="_TC7GC6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7GDKc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GDac0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7GDqc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GD6c0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GEKc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="POSTCODE"/>
+          <columnMap xmi:id="_TC7GEac0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7GEqc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7GE6c0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <matchParamMap xmi:id="_TC7GFKc0EeaNW4Is7aDCYw" key="INTERVAL_RULE" value="0.85"/>
+        <matchParamMap xmi:id="_TC7GFac0EeaNW4Is7aDCYw" key="MATCHING_ALGORITHM" value="SIMPLE_VSR_MATCHER"/>
+      </ruleMatchers>
+      <ruleMatchers xmi:id="_TC7GFqc0EeaNW4Is7aDCYw">
+        <joinkeys xmi:id="_TC7GF6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GGKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7GGac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GGqc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7GG6c0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GHKc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7GHac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="BIRTH_DATE"/>
+          <columnMap xmi:id="_TC7GHqc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7GH6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GIKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7GIac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GIqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GI6c0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="EMAIL_ADDR"/>
+          <columnMap xmi:id="_TC7GJKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7GJac0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7GJqc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7GJ6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GKKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7GKac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GKqc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7GK6c0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GLKc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7GLac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="FIRST_NAME"/>
+          <columnMap xmi:id="_TC7GLqc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7GL6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GMKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7GMac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GMqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GM6c0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LAST_NAME"/>
+          <columnMap xmi:id="_TC7GNKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7GNac0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7GNqc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7GN6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GOKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7GOac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GOqc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7GO6c0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GPKc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7GPac0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LOY_CARD_KEY"/>
+          <columnMap xmi:id="_TC7GPqc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7GP6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GQKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7GQac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GQqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GQ6c0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="PHONE_HOME"/>
+          <columnMap xmi:id="_TC7GRKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7GRac0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7GRqc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7GR6c0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GSKc0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7GSac0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GSqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GS6c0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="POSTCODE"/>
+          <columnMap xmi:id="_TC7GTKc0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7GTac0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7GTqc0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <matchParamMap xmi:id="_TC7GT6c0EeaNW4Is7aDCYw" key="INTERVAL_RULE" value="0.85"/>
+        <matchParamMap xmi:id="_TC7GUKc0EeaNW4Is7aDCYw" key="MATCHING_ALGORITHM" value="SIMPLE_VSR_MATCHER"/>
+      </ruleMatchers>
+      <ruleMatchers xmi:id="_TC7GUac0EeaNW4Is7aDCYw">
+        <joinkeys xmi:id="_TC7GUqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GU6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7GVKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GVac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7GVqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GV6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7GWKc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="BIRTH_DATE"/>
+          <columnMap xmi:id="_TC7GWac0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7GWqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GW6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7GXKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GXac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GXqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="EMAIL_ADDR"/>
+          <columnMap xmi:id="_TC7GX6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7GYKc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7GYac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7GYqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7GY6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7GZKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7GZac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7GZqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7GZ6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7GaKc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="FIRST_NAME"/>
+          <columnMap xmi:id="_TC7Gaac0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Gaqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Ga6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7GbKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Gbac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Gbqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7Gb6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7GcKc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LAST_NAME"/>
+          <columnMap xmi:id="_TC7Gcac0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Gcqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Gc6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7GdKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Gdac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7Gdqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="LOY_CARD_KEY"/>
+          <columnMap xmi:id="_TC7Gd6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7GeKc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7Geac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Geqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Ge6c0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+          <columnMap xmi:id="_TC7GfKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Gfac0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7Gfqc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="PHONE_HOME"/>
+          <columnMap xmi:id="_TC7Gf6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="dummy"/>
+          <columnMap xmi:id="_TC7GgKc0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="0"/>
+          <columnMap xmi:id="_TC7Ggac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+        </joinkeys>
+        <joinkeys xmi:id="_TC7Ggqc0EeaNW4Is7aDCYw">
+          <columnMap xmi:id="_TC7Gg6c0EeaNW4Is7aDCYw" key="MATCHING_TYPE" value="Exact"/>
+          <columnMap xmi:id="_TC7GhKc0EeaNW4Is7aDCYw" key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap xmi:id="_TC7Ghac0EeaNW4Is7aDCYw" key="HANDLE_NULL" value="nullMatchNone"/>
+          <columnMap xmi:id="_TC7Ghqc0EeaNW4Is7aDCYw" key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap xmi:id="_TC7Gh6c0EeaNW4Is7aDCYw" key="CONFIDENCE_WEIGHT" value="1"/>
+          <columnMap xmi:id="_TC7GiKc0EeaNW4Is7aDCYw" key="INPUT_COLUMN" value="POSTCODE"/>
+          <columnMap xmi:id="_TC7Giac0EeaNW4Is7aDCYw" key="CUSTOM_MATCHER" value="&quot;&quot;"/>
+        </joinkeys>
+        <matchParamMap xmi:id="_TC7Giqc0EeaNW4Is7aDCYw" key="INTERVAL_RULE" value="0.85"/>
+        <matchParamMap xmi:id="_TC7Gi6c0EeaNW4Is7aDCYw" key="MATCHING_ALGORITHM" value="SIMPLE_VSR_MATCHER"/>
+      </ruleMatchers>
+    </nodeData>
+  </node>
+  <node xmi:id="_TC7GjKc0EeaNW4Is7aDCYw" componentName="tHDFSOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+    <elementParameter xmi:id="_TC7Gjac0EeaNW4Is7aDCYw" field="TEXT" name="UNIQUE_NAME" value="tHDFSOutput_1" show="false"/>
+    <elementParameter xmi:id="_TC7Gjqc0EeaNW4Is7aDCYw" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_TC7Gj6c0EeaNW4Is7aDCYw" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_f3TcIHBIEeaU_dzD0MnELw" show="false"/>
+    <elementParameter xmi:id="_TC7GkKc0EeaNW4Is7aDCYw" field="BOTH_HADOOP" name="FOLDER" value="&quot;/user/talend/CarrefourGraph&quot;"/>
+    <elementParameter xmi:id="_TC7Gkac0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="TYPEFILE" value="TEXT"/>
+    <elementParameter xmi:id="_TC7Gkqc0EeaNW4Is7aDCYw" field="COLUMN_LIST" name="KEYCOLUMN" value="FIRST_NAME" show="false"/>
+    <elementParameter xmi:id="_TC7Gk6c0EeaNW4Is7aDCYw" field="COLUMN_LIST" name="VALUECOLUMN" value="FIRST_NAME" show="false"/>
+    <elementParameter xmi:id="_TC7GlKc0EeaNW4Is7aDCYw" field="LABEL" name="NOTE" value="NOTE : Only boolean, byte, byte[], double, float, integer, long, short, string are currently supported for key class and value columns fields" show="false"/>
+    <elementParameter xmi:id="_TC7Glac0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="FILE_ACTION" value="OVERWRITE"/>
+    <elementParameter xmi:id="_TC7Glqc0EeaNW4Is7aDCYw" field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter xmi:id="_TC7Gl6c0EeaNW4Is7aDCYw" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter xmi:id="_TC7GmKc0EeaNW4Is7aDCYw" field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter xmi:id="_TC7Gmac0EeaNW4Is7aDCYw" field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter xmi:id="_TC7Gmqc0EeaNW4Is7aDCYw" field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Gm6c0EeaNW4Is7aDCYw" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter xmi:id="_TC7GnKc0EeaNW4Is7aDCYw" field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter xmi:id="_TC7Gnac0EeaNW4Is7aDCYw" field="CLOSED_LIST" name="COMPRESSION" value="GZIP" show="false"/>
+    <elementParameter xmi:id="_TC7Gnqc0EeaNW4Is7aDCYw" field="CHECK" name="MERGE_RESULT" value="true"/>
+    <elementParameter xmi:id="_TC7Gn6c0EeaNW4Is7aDCYw" field="FILE_HADOOP" name="MERGE_PATH" value="&quot;/user/talend/m_CarrefourGraph&quot;"/>
+    <elementParameter xmi:id="_TC7GoKc0EeaNW4Is7aDCYw" field="CHECK" name="REMOVE_FILE" value="false"/>
+    <elementParameter xmi:id="_TC7Goac0EeaNW4Is7aDCYw" field="CHECK" name="REPLACE_FILE" value="true"/>
+    <elementParameter xmi:id="_TC7Goqc0EeaNW4Is7aDCYw" field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter xmi:id="_TC7Go6c0EeaNW4Is7aDCYw" field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7GpKc0EeaNW4Is7aDCYw" field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter xmi:id="_TC7Gpac0EeaNW4Is7aDCYw" field="TEXT" name="LABEL" value="Carrefour Graph"/>
+    <elementParameter xmi:id="_TC7Gpqc0EeaNW4Is7aDCYw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_TC7Gp6c0EeaNW4Is7aDCYw" connector="FLOW" name="tHDFSOutput_1">
+      <column xmi:id="_TC7GqKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="FIRST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Gqac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LAST_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Gqqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="EMAIL_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Gq6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="BIRTH_DATE" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column xmi:id="_TC7GrKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_CELL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Grac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="PHONE_HOME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Grqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="ADRESS" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Gr6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="POSTCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7GsKc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Gsac0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="LOY_CARD_KEY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Gsqc0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="SOURCE" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_TC7Gs6c0EeaNW4Is7aDCYw" comment="" key="false" length="255" name="T_GEN_KEY" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="255" usefulColumn="true"/>
+      <column xmi:id="_TC7GtKc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7Gtac0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7Gtqc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7Gt6c0EeaNW4Is7aDCYw" defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_TC7GuKc0EeaNW4Is7aDCYw" defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties xmi:id="_TC7Guac0EeaNW4Is7aDCYw" key="Comment" value=""/>
+    </metadata>
+  </node>
+  <connection xmi:id="_TC7Guqc0EeaNW4Is7aDCYw" connectorName="FLOW" label="row1" lineStyle="0" metaname="tHDFSInput_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSInput_1" target="tMatchGroup_2">
+    <elementParameter xmi:id="_TC7Gu6c0EeaNW4Is7aDCYw" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_TC7GvKc0EeaNW4Is7aDCYw" elementRef="TRACE_COLUMN" value="T_GEN_KEY"/>
+      <elementValue xmi:id="_TC7Gvac0EeaNW4Is7aDCYw" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_TC7Gvqc0EeaNW4Is7aDCYw" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_TC7Gv6c0EeaNW4Is7aDCYw" field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection xmi:id="_TC7GwKc0EeaNW4Is7aDCYw" connectorName="FLOW" label="row2" lineStyle="0" metaname="tMatchGroup_2" offsetLabelX="0" offsetLabelY="0" source="tMatchGroup_2" target="tHDFSOutput_1">
+    <elementParameter xmi:id="_TC7Gwac0EeaNW4Is7aDCYw" field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <subjob xmi:id="_TC7Gwqc0EeaNW4Is7aDCYw">
+    <elementParameter xmi:id="_TC7Gw6c0EeaNW4Is7aDCYw" field="TEXT" name="UNIQUE_NAME" value="tHDFSInput_1" show="false"/>
+    <elementParameter xmi:id="_TC7GxKc0EeaNW4Is7aDCYw" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_TC7Gxac0EeaNW4Is7aDCYw" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

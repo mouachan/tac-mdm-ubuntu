@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_KFrk4D-3EeeFRtfFSt0wBQ" name="Ligue1Ref" dataPackage="_KFsL8D-3EeeFRtfFSt0wBQ" Server="Localhost 127.0.0.1" FilePath="C:/Talend/DataMart/Ligue1/TeamRef.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_KFsL8D-3EeeFRtfFSt0wBQ" name="default" dataManager="_KFrk4D-3EeeFRtfFSt0wBQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_KFsL8T-3EeeFRtfFSt0wBQ" id="_EC7YQD-3EeeFRtfFSt0wBQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KFsL8j-3EeeFRtfFSt0wBQ" label="Team" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KFsL8z-3EeeFRtfFSt0wBQ" label="Id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

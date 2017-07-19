@@ -1,0 +1,193 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.text.ParseException;
+import java.lang.String;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.io.*;
+import com.sforce.ws.util.Base64;
+import java.util.regex.Pattern;
+
+
+
+public class convertRoutine{
+	
+	
+	/*********************************************************************************************
+	 * From CLOB to String
+	 * @return string representation of clob
+	 *********************************************************************************************/
+	public static String clobToString(java.sql.Clob data)
+	{
+	    final StringBuilder sb = new StringBuilder();
+
+
+		try
+	    {
+	        final Reader         reader = data.getCharacterStream();
+	        final BufferedReader br     = new BufferedReader(reader);
+
+	        int b;
+	        while(-1 != (b = br.read()))
+	        {
+	            sb.append((char)b);
+	        }
+
+	        br.close();
+	    }
+	    catch (SQLException e)
+	    {
+	        //log.error("SQL. Could not convert CLOB to string",e);
+	        return e.toString();
+	    }
+	    catch (IOException e)
+	    {
+	        //log.error("IO. Could not convert CLOB to string",e);
+	        return e.toString();
+	    }
+
+	    return sb.toString();
+	}
+	
+	
+	public static boolean isUpperCase(String s)
+	{
+		s = s.replace(" ", "").replace("-", "");
+		
+		for (int i=0; i<s.length(); i++)
+		{
+			if (!Character.isUpperCase(s.charAt(i)))
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	    public static boolean isEmailValid(String email) {
+	                           
+	        //boolean b = Pattern.matches("^[A-Za-z0-9\\._-]+@[A-Z0-9._-]+\\.[A-Za-z]+$", email); 
+	        
+	        boolean b = Pattern.matches("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$",email);
+	     
+	            return b;
+
+	       }
+
+	
+	public static String convertBase64File (String filePath){
+		
+		final ByteArrayOutputStream bos = new ByteArrayOutputStream();
+
+		FileInputStream input = null;
+		try {
+			input = new FileInputStream(filePath);
+		} catch (FileNotFoundException e1) {
+			throw new RuntimeException(e1);
+		}
+		try {
+			byte[] buffer = new byte[1024];
+			int len = 0;
+			try {
+				while ((len = input.read(buffer)) > 0) {
+					bos.write(buffer, 0, len);
+				}
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+			//bos.write(buffer, 0, len);
+		} finally {
+			try {
+				input.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		        
+		final byte[] bytes = bos.toByteArray();
+
+		final String stringToStore = new String(Base64.encode(bytes));
+		
+		return stringToStore;
+	}
+	
+	
+    public static GregorianCalendar getLastSundayOfMonth (int year, int month) {
+    	GregorianCalendar c = new GregorianCalendar();
+        for(int i=31; i>22; i--) //a partir du 22 pour ne pas rater un dimanche
+        {
+            c.set(year, month-1, i);
+            if (c.get(GregorianCalendar.DAY_OF_WEEK) == GregorianCalendar.SUNDAY){
+ 
+            	return c;
+            }
+        }
+ 
+    	return null;
+    }
+
+	    public static  String convertDateFormat(Date DateIN,String strFormatIN,String strDestination) {
+
+	    	
+	    	// Create an instance of SimpleDateFormat used for formatting 
+	    	// the string representation of date (month/day/year)
+	    	//DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss'.000Z'");
+	    	DateFormat df = new SimpleDateFormat(strFormatIN);
+
+	    	// Get the date today using Calendar object.
+	    	     
+	    	// Using DateFormat format method we can create a string 
+	    	// representation of a date with the defined format.
+	    	String strDate = df.format(DateIN);	
+	    	
+	    	String dateDest = null;
+	        // string containing date in one format
+	        // String strDate = "2012-05-20T09:00:00.000Z";
+
+	        try {
+	            // create SimpleDateFormat object with source string date format
+	            SimpleDateFormat sdfSource = new SimpleDateFormat(strFormatIN);
+
+	            // parse the string into Date object
+	            Date date = sdfSource.parse(strDate);
+
+	            // create SimpleDateFormat object with desired date format
+	            SimpleDateFormat sdfDestination = new SimpleDateFormat(
+	            		strDestination);
+
+	            // parse the date into another format
+	            dateDest = sdfDestination.format(date);
+
+	            //System.out
+	            //        .println("Date is converted from yyyy-MM-dd'T'hh:mm:ss'.000Z' format to dd/MM/yyyy, ha");
+	            //System.out.println("Converted date is : " + strDate.toLowerCase());
+
+	        } catch (ParseException pe) {
+	            System.out.println("Parse Exception : " + pe);
+	        }
+	        
+	        return dateDest;
+	    }
+	}
+

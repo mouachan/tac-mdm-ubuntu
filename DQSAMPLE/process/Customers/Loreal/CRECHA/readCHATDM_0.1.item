@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms4096M&quot;,&quot;-Xmx25G&quot;]}" show="false"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="939" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_eUICYO3tEeaWbJXBev8nwQ" name="DQTechnical"/>
+    <routinesParameter id="_eT2VkO3tEeaWbJXBev8nwQ" name="DataMasking"/>
+    <routinesParameter id="_eOQD4O3tEeaWbJXBev8nwQ" name="DataOperation"/>
+    <routinesParameter id="_eT-RYO3tEeaWbJXBev8nwQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_eT6nAO3tEeaWbJXBev8nwQ" name="DataQuality"/>
+    <routinesParameter id="_eUDw8O3tEeaWbJXBev8nwQ" name="DqStringHandling"/>
+    <routinesParameter id="_eULswO3tEeaWbJXBev8nwQ" name="MDM"/>
+    <routinesParameter id="_eTB2MO3tEeaWbJXBev8nwQ" name="Mathematical"/>
+    <routinesParameter id="_eTGHoO3tEeaWbJXBev8nwQ" name="Numeric"/>
+    <routinesParameter id="_eTKZEO3tEeaWbJXBev8nwQ" name="Relational"/>
+    <routinesParameter id="_eTyEIO3tEeaWbJXBev8nwQ" name="SQLike"/>
+    <routinesParameter id="_eTODcO3tEeaWbJXBev8nwQ" name="StringHandling"/>
+    <routinesParameter id="_eTlP0O3tEeaWbJXBev8nwQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_eTphQO3tEeaWbJXBev8nwQ" name="TalendDate"/>
+    <routinesParameter id="_eTuZwO3tEeaWbJXBev8nwQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputRaw_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/Downloads/DELO4CO5_P1.CRE&quot;"/>
+    <elementParameter field="RADIO" name="AS_STRING" value="false"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="lecture fichier CRE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputRaw_1">
+      <column defaultValue="" key="false" length="0" name="content" nullable="true" precision="0" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHMap_1" show="false"/>
+    <elementParameter field="LABEL" name="MAPPATH_HELP" value="To create a new map based on the input and output of tHMap, &#xA;use Open Map Editor below. To use an existing map, select the Map Path &#xA;below and then use Open Map Editor."/>
+    <elementParameter field="EXTERNAL" name="MAP_EDITOR" value=""/>
+    <elementParameter field="HMAP_PATH" name="HMAP_PATH" value="&quot;DELO4CO5&quot;"/>
+    <elementParameter field="RADIO" name="SOURCE_AS_MAP" value="false" show="false"/>
+    <elementParameter field="RADIO" name="SOURCE_AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_MAP" value="false" show="false"/>
+    <elementParameter field="RADIO" name="AS_STRING" value="false"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
+    <elementParameter field="RADIO" name="AS_DOCUMENT" value="true"/>
+    <elementParameter field="TEXT" name="SOURCE_TDM_STRUCT_INCARNATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TARGET_TDM_STRUCT_INCARNATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SOURCE_GENERATED_TDM_STRUCT_PATH" value="" show="false"/>
+    <elementParameter field="TEXT" name="TARGET_GENERATED_TDM_STRUCT_PATH" value="" show="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_OBJECTTYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_STRING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_BYTEARRAY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SINGLE_COLUMN_DOCUMENT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HIDE_INPUT_SET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HIDE_OUTPUT_SET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SHOW_INPUT_STRING" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SHOW_INPUT_MAP" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_STRING" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_MAP" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SHOW_OUTPUT_DOCUMENT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="IS_NEW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HMAP_VAR_PATH" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="MAP_ROW_BY_ROW" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOG" value="infrequent"/>
+    <elementParameter field="CLOSED_LIST" name="EXCEPTION" value="64"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHMap_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tReplicate_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/6.3.1/workspace/out.xml&quot;"/>
+    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="newColumn"/>
+    <elementParameter field="TEXT" name="ROW_TAG" value="&quot;csv&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TABLE" name="ROOT_TAGS" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputXML_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractXMLField_2" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="newColumn"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/mktCodes/mktCodeLines/mktCode&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="mktCode"/>
+      <elementValue elementRef="QUERY" value="&quot;.&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_XML_FIELD" value="false" show="false"/>
+    <elementParameter field="TEXT" name="XML_TEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="XML_PREFIX" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractXMLField_2">
+      <column comment="" key="false" length="-1" name="mktCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="mktCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_3HCYID-LEeehgt5oytpFAQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mktCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="seq" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="mktCode" expression="row7.mktCode" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="mktCode" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractXMLField_3" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="newColumn"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/prodCodes/prodCodeLines/prodCode&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="prodCode"/>
+      <elementValue elementRef="QUERY" value="&quot;.&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_XML_FIELD" value="false" show="false"/>
+    <elementParameter field="TEXT" name="XML_TEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="XML_PREFIX" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractXMLField_3">
+      <column comment="" key="false" length="-1" name="prodCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="prodCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_3HCYID-LEeehgt5oytpFAQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfout1">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="prodCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfout1">
+        <mapperTableEntries name="seq" expression="Numeric.sequence(&quot;s2&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="prodCode" expression="row8.prodCode" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="prodCode" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/workspace/prodCode.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="prodCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_3" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/workspace/mktCode.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_3">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mktCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="-192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractXMLField_4" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="newColumn"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/fctCodes/fctCodeLines/fctCode&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="fctCode"/>
+      <elementValue elementRef="QUERY" value="&quot;.&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_XML_FIELD" value="false" show="false"/>
+    <elementParameter field="TEXT" name="XML_TEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="XML_PREFIX" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractXMLField_4">
+      <column comment="" key="false" length="-1" name="fctCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="fctCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="-192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_3HCYID-LEeehgt5oytpFAQ-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfcopyOfout1">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fctCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout1">
+        <mapperTableEntries name="seq" expression="Numeric.sequence(&quot;s3&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="fctCode" expression="row10.fctCode" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row10" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="fctCode" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="-192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_4" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/workspace/fctCode.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_4">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fctCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="-288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractXMLField_5" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="newColumn"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/perCodes/perCodeLines/perCode&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="perCode"/>
+      <elementValue elementRef="QUERY" value="&quot;.&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_XML_FIELD" value="false" show="false"/>
+    <elementParameter field="TEXT" name="XML_TEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="XML_PREFIX" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractXMLField_5">
+      <column comment="" key="false" length="-1" name="perCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="perCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="-288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_3HCYID-LEeehgt5oytpFAQ-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfcopyOfcopyOfout1">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="perCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfout1">
+        <mapperTableEntries name="seq" expression="Numeric.sequence(&quot;s4&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="perCode" expression="row12.perCode" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row12" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="perCode" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="-288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_5" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/workspace/perCode.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_5">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="perCode" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="-384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractXMLField_6" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="newColumn"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/mktLabels/mktLabelLines&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="mktLabel1"/>
+      <elementValue elementRef="QUERY" value="&quot;mktLabel1&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="QUERY" value="&quot;mktLabel2&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_XML_FIELD" value="false" show="false"/>
+    <elementParameter field="TEXT" name="XML_TEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="XML_PREFIX" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractXMLField_6">
+      <column comment="" key="false" length="-1" name="mktLabel1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mktLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="mktLabel1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mktLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="-384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_3HCYID-LEeehgt5oytpFAQ-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfout1_0">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mktLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mktLabel1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfout1_0">
+        <mapperTableEntries name="seq" expression="Numeric.sequence(&quot;s5&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="mktLabel2" expression="row14.mktLabel2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="mktLabel1" expression="row14.mktLabel1" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row14" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="mktLabel1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="mktLabel2" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="-384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_6" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/workspace/mktLabel.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_6">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mktLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="mktLabel1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="-512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractXMLField_7" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="newColumn"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/prodLabels/prodLabelLines&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="prodLabel1"/>
+      <elementValue elementRef="QUERY" value="&quot;prodLabel1&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="prodLabel2"/>
+      <elementValue elementRef="QUERY" value="&quot;prodLabel2&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_XML_FIELD" value="false" show="false"/>
+    <elementParameter field="TEXT" name="XML_TEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="XML_PREFIX" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractXMLField_7">
+      <column comment="" key="false" length="-1" name="prodLabel1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="prodLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="prodLabel1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="prodLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="-512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_3HCYID-LEeehgt5oytpFAQ-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfcopyOfout1_0">
+      <column comment="" key="false" length="-1" name="prodLabel1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="prodLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout1_0">
+        <mapperTableEntries name="prodLabel1" expression="row15.prodLabel1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="prodLabel2" expression="row15.prodLabel2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="seq" expression="Numeric.sequence(&quot;s6&quot;,1,1) " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row15" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="prodLabel1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="prodLabel2" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="-512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_7" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/workspace/prodLabel.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_7">
+      <column comment="" key="false" length="-1" name="prodLabel1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="prodLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="-640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractXMLField_8" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="newColumn"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/fctLabels/fctLabelLines&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="fctLabel1"/>
+      <elementValue elementRef="QUERY" value="&quot;fctLabel1&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="QUERY" value="&quot;fctLabel2&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_XML_FIELD" value="false" show="false"/>
+    <elementParameter field="TEXT" name="XML_TEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="XML_PREFIX" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractXMLField_8">
+      <column comment="" key="false" length="-1" name="fctLabel1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fctLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="fctLabel1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fctLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="-640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_7" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_3HCYID-LEeehgt5oytpFAQ-tMap_7-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfcopyOfout1_0_0">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fctLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fctLabel1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout1_0_0">
+        <mapperTableEntries name="seq" expression="Numeric.sequence(&quot;s7&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="fctLabel2" expression="row16.fctLabel2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="fctLabel1" expression="row16.fctLabel1" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row16" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="fctLabel1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="fctLabel2" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="-640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_8" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/workspace/fctLabel.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_8">
+      <column comment="" key="false" length="-1" name="seq" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fctLabel2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fctLabel1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractXMLField_1" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="newColumn"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/faits/row&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="row"/>
+      <elementValue elementRef="QUERY" value="&quot;.&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_XML_FIELD" value="false" show="false"/>
+    <elementParameter field="TEXT" name="XML_TEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="XML_PREFIX" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractXMLField_1">
+      <column comment="" key="false" length="-1" name="row" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="row" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/workspace/faits.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="row" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_1" target="tHMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tHMap_1" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tReplicate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_1" target="tFileOutputXML_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_1" target="tExtractXMLField_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tReplicate_1" target="tExtractXMLField_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tReplicate_1" target="tExtractXMLField_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="5" source="tReplicate_1" target="tExtractXMLField_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="6" source="tReplicate_1" target="tExtractXMLField_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row17" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row18" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="7" source="tReplicate_1" target="tExtractXMLField_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="8" source="tReplicate_1" target="tExtractXMLField_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row19" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="9" source="tReplicate_1" target="tExtractXMLField_8">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row19" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tExtractXMLField_2" offsetLabelX="0" offsetLabelY="0" source="tExtractXMLField_2" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="seq"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tExtractXMLField_3" offsetLabelX="0" offsetLabelY="0" source="tExtractXMLField_3" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfout1" lineStyle="0" metaname="copyOfout1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tExtractXMLField_4" offsetLabelX="0" offsetLabelY="0" source="tExtractXMLField_4" target="tMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfcopyOfout1" lineStyle="0" metaname="copyOfcopyOfout1" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tFileOutputDelimited_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfout1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tExtractXMLField_5" offsetLabelX="0" offsetLabelY="0" source="tExtractXMLField_5" target="tMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfcopyOfcopyOfout1" lineStyle="0" metaname="copyOfcopyOfcopyOfout1" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tFileOutputDelimited_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfcopyOfout1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tExtractXMLField_6" offsetLabelX="0" offsetLabelY="0" source="tExtractXMLField_6" target="tMap_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfout1_0" lineStyle="0" metaname="copyOfout1_0" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tFileOutputDelimited_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="seq"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout1_0" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row15" lineStyle="0" metaname="tExtractXMLField_7" offsetLabelX="0" offsetLabelY="0" source="tExtractXMLField_7" target="tMap_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row15" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfcopyOfout1_0" lineStyle="0" metaname="copyOfcopyOfout1_0" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tFileOutputDelimited_7">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="seq"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfout1_0" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tExtractXMLField_8" offsetLabelX="0" offsetLabelY="0" source="tExtractXMLField_8" target="tMap_7">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfcopyOfout1_0_0" lineStyle="0" metaname="copyOfcopyOfout1_0_0" offsetLabelX="0" offsetLabelY="0" source="tMap_7" target="tFileOutputDelimited_8">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="mktLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="prodLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="seq"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="fctLabel2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfout1_0_0" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tExtractXMLField_1" offsetLabelX="0" offsetLabelY="0" source="tExtractXMLField_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputRaw_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
