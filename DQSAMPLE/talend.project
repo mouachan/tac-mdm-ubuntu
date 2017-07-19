@@ -5151,6 +5151,8 @@
       <relatedItems xmi:id="_3iYZgWxjEeeL37kXNPv4gw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iYZgmxjEeeL37kXNPv4gw" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iYZg2xjEeeL37kXNPv4gw" id="_AGw6wAlSEearSLoCnEASOA - customer_new" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_tucDoGyGEeeL37kXNPv4gw" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tucDoWyGEeeL37kXNPv4gw" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iYZhGxjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iYZhWxjEeeL37kXNPv4gw" id="_F5CnwGFVEeeVqbVh7yFyug" version="0.1" type="job"/>
