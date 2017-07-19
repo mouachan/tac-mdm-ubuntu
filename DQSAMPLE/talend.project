@@ -607,6 +607,8 @@
       <relatedItems xmi:id="_3iSR22xjEeeL37kXNPv4gw" id="_AGw6wAlSEearSLoCnEASOA - customer_new" version="Latest" type="schema"/>
       <relatedItems xmi:id="_3iSR3GxjEeeL37kXNPv4gw" id="_De2eoAvIEeaG_qop6r8MwQ - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_3iSR3WxjEeeL37kXNPv4gw" id="_pKMWQAxPEeaipMz8J9vTFg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_vNRZIGyGEeeL37kXNPv4gw" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_vNRZIWyGEeeL37kXNPv4gw" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iSR3mxjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iSR32xjEeeL37kXNPv4gw" id="_iARI4NNSEeaoMJyykSOkcg" version="0.1" type="job"/>
