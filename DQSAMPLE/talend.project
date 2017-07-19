@@ -1299,8 +1299,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iTf3WxjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iTf3mxjEeeL37kXNPv4gw" id="_XqRdkJeKEeady-wuHYcL-g" version="0.1" type="job"/>
-      <relatedItems xmi:id="_3iTf32xjEeeL37kXNPv4gw" id="_r0MQkIwCEeauR9HPMA2yrg" version="Latest" type="property"/>
-      <relatedItems xmi:id="_3iTf4GxjEeeL37kXNPv4gw" id="_iNi_QJrQEea7V-Zwb_4Wng" version="Latest" type="property"/>
       <relatedItems xmi:id="_3iTf4WxjEeeL37kXNPv4gw" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iTf4mxjEeeL37kXNPv4gw" id="DataMasking" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iTf42xjEeeL37kXNPv4gw" id="ImporttweetsTstandardizerow_2" version="Latest" type="routine"/>
@@ -1354,6 +1352,7 @@
       <relatedItems xmi:id="_3iTgE2xjEeeL37kXNPv4gw" id="_pi1jEJrWEea7V-Zwb_4Wng" version="Latest" type="survivorshipRuleRelation"/>
       <relatedItems xmi:id="_3iTgFGxjEeeL37kXNPv4gw" id="_phWVUJrWEea7V-Zwb_4Wng" version="Latest" type="survivorshipRuleRelation"/>
       <relatedItems xmi:id="_3iTgFWxjEeeL37kXNPv4gw" id="_phzBQJrWEea7V-Zwb_4Wng" version="Latest" type="survivorshipRuleRelation"/>
+      <relatedItems xmi:id="_vqDbwGyGEeeL37kXNPv4gw" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iTgFmxjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iTgF2xjEeeL37kXNPv4gw" id="_LMRwoCvCEeacporFBMb1YQ" version="0.1" type="joblet"/>
