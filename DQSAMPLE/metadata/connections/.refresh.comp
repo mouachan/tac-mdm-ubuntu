@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_n-i4wG4fEeerJbxXm1ThhQ" name="CifDQ" id="_Pl558G4fEeerJbxXm1ThhQ" label="CifDQ" dataPackage="_n-i4y24fEeerJbxXm1ThhQ" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://172.16.31.132:3306/cif_dq?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="remote_user" Password="1DpMjTaSjk0AeoFKP38dDg==" ServerName="172.16.31.132" DatasourceName="" FileFieldName="" SID="cif_dq" SqlSynthax="Syntaxe SQL" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_n-i4wW4fEeerJbxXm1ThhQ" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_n-i4wm4fEeerJbxXm1ThhQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_n-i4w24fEeerJbxXm1ThhQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_n-i4xG4fEeerJbxXm1ThhQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_n-i4xW4fEeerJbxXm1ThhQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_n-i4xm4fEeerJbxXm1ThhQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_n-i4x24fEeerJbxXm1ThhQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_n-i4yG4fEeerJbxXm1ThhQ" tag="otherParameter"/>
+    <parameters xmi:id="_n-i4yW4fEeerJbxXm1ThhQ" key="CONN_PARA_KEY_USERNAME" value="remote_user"/>
+    <parameters xmi:id="_n-i4ym4fEeerJbxXm1ThhQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_n-i4y24fEeerJbxXm1ThhQ" name="cif_dq" dataManager="_n-i4wG4fEeerJbxXm1ThhQ"/>
+</xmi:XMI>
