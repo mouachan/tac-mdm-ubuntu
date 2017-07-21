@@ -7,11 +7,11 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qythG4eEeerJbxXm1ThhQ" label="Name" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qythW4eEeerJbxXm1ThhQ" label="Address" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qythm4eEeerJbxXm1ThhQ" label="Zip" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qyth24eEeerJbxXm1ThhQ" label="City" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qyth24eEeerJbxXm1ThhQ" label="City" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qytiG4eEeerJbxXm1ThhQ" label="Phone" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qytiW4eEeerJbxXm1ThhQ" label="Email" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qytiW4eEeerJbxXm1ThhQ" label="Email" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qytim4eEeerJbxXm1ThhQ" label="DOB" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qyti24eEeerJbxXm1ThhQ" label="Children" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qyti24eEeerJbxXm1ThhQ" label="Children" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5qytjG4eEeerJbxXm1ThhQ" label="Cust_Type" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
