@@ -5261,7 +5261,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iY_L2xjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iY_MGxjEeeL37kXNPv4gw" id="_jTFQ0Au-EeaG_qop6r8MwQ" version="0.1" type="job"/>
-      <relatedItems xmi:id="_3iY_MWxjEeeL37kXNPv4gw" id="_AGw6wAlSEearSLoCnEASOA" version="Latest" type="property"/>
       <relatedItems xmi:id="_3iY_MmxjEeeL37kXNPv4gw" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iY_M2xjEeeL37kXNPv4gw" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iY_NGxjEeeL37kXNPv4gw" id="TalendString" version="Latest" type="routine"/>
