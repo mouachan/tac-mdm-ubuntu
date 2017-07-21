@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_Vi9uQG4fEeerJbxXm1ThhQ" name="CifDQ" id="_Pl558G4fEeerJbxXm1ThhQ" label="CifDQ" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://:3306/?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="remote_user" Password="1DpMjTaSjk0AeoFKP38dDg==" ServerName="172.16.31.132" DatasourceName="" FileFieldName="" SID="" SqlSynthax="Syntaxe SQL" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+  <taggedValue xmi:id="_Vi9uQW4fEeerJbxXm1ThhQ" tag="Is Conn Need Reload" value="false"/>
+  <taggedValue xmi:id="_VjEb8G4fEeerJbxXm1ThhQ" tag="package filter" value=""/>
+  <taggedValue xmi:id="_VjLwsG4fEeerJbxXm1ThhQ" tag="Status" value=""/>
+  <taggedValue xmi:id="_VjLwsW4fEeerJbxXm1ThhQ" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_VjLwsm4fEeerJbxXm1ThhQ" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_VjLws24fEeerJbxXm1ThhQ" tag="Description" value=""/>
+  <taggedValue xmi:id="_VjLwtG4fEeerJbxXm1ThhQ" tag="Author" value=""/>
+  <taggedValue xmi:id="_VjLwtW4fEeerJbxXm1ThhQ" tag="otherParameter"/>
+  <parameters xmi:id="_Vi9uQm4fEeerJbxXm1ThhQ" key="CONN_PARA_KEY_USERNAME" value="remote_user"/>
+</TalendMetadata:DatabaseConnection>
