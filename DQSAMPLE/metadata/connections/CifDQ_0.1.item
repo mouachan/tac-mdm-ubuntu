@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_Vi9uQG4fEeerJbxXm1ThhQ" name="CifDQ" id="_Pl558G4fEeerJbxXm1ThhQ" label="CifDQ" dataPackage="_qtkDwG4fEeerJbxXm1ThhQ" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://172.16.31.132:3306/cif_dq?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="remote_user" Password="1DpMjTaSjk0AeoFKP38dDg==" ServerName="172.16.31.132" DatasourceName="" FileFieldName="" SID="cif_dq" SqlSynthax="Syntaxe SQL" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_Vi9uQG4fEeerJbxXm1ThhQ" name="CifDQ" supplierDependency="_7X4c4HBMEeerJbxXm1ThhQ" id="_Pl558G4fEeerJbxXm1ThhQ" label="CifDQ" dataPackage="_qtkDwG4fEeerJbxXm1ThhQ" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://172.16.31.132:3306/cif_dq?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="remote_user" Password="1DpMjTaSjk0AeoFKP38dDg==" ServerName="172.16.31.132" DatasourceName="" FileFieldName="" SID="cif_dq" SqlSynthax="Syntaxe SQL" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
     <taggedValue xmi:id="_Vi9uQW4fEeerJbxXm1ThhQ" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_VjEb8G4fEeerJbxXm1ThhQ" tag="package filter" value=""/>
     <taggedValue xmi:id="_VjLwsG4fEeerJbxXm1ThhQ" tag="Status" value=""/>
@@ -135,4 +135,7 @@
       </feature>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_7X4c4HBMEeerJbxXm1ThhQ" kind="Usage" supplier="_Vi9uQG4fEeerJbxXm1ThhQ">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/analyse_structurel_cif_0.1.ana#_7pnGEHBMEeerJbxXm1ThhQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
