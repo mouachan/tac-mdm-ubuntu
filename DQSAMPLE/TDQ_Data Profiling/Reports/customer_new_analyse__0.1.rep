@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_lfa_MHB1EeerJbxXm1ThhQ" name="customer_new analyse " creationDate="2017-07-24T15:39:57.473+0200">
+  <clientDependency href="../Analyses/customer_new_analyse__0.1.ana#_lfcNUHB1EeerJbxXm1ThhQ"/>
+  <taggedValue xmi:id="_lfa_MXB1EeerJbxXm1ThhQ" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_lfa_MnB1EeerJbxXm1ThhQ" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_lfa_M3B1EeerJbxXm1ThhQ" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_lfa_NHB1EeerJbxXm1ThhQ" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_lfa_NXB1EeerJbxXm1ThhQ" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_lfa_NnB1EeerJbxXm1ThhQ" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_lfa_N3B1EeerJbxXm1ThhQ" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_lfa_OHB1EeerJbxXm1ThhQ" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_lfa_OXB1EeerJbxXm1ThhQ" tag="REP_DBINFO_PASSWORD" value="yJKHKGWEAQw="/>
+  <taggedValue xmi:id="_lfa_OnB1EeerJbxXm1ThhQ" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:/Applications/TalendStudio-6.4.1/studio/workspace/TDQ_reporting_db/talend_dq"/>
+  <taggedValue xmi:id="_lfa_O3B1EeerJbxXm1ThhQ" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_lfa_PHB1EeerJbxXm1ThhQ" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_lfa_PXB1EeerJbxXm1ThhQ" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_lfa_PnB1EeerJbxXm1ThhQ" tag="Author" value="presale_mdm@talend.com"/>
+  <analysisMap xmi:id="_lfa_P3B1EeerJbxXm1ThhQ" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/customer_new_analyse__0.1.ana#_DJNWQHBwEeerJbxXm1ThhQ"/>
+  </analysisMap>
+</dataquality.reports:TdReport>

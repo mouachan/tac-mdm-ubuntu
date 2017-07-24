@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_DJNWQHBwEeerJbxXm1ThhQ" name="customer_new analyse " creationDate="2017-07-24T15:00:19.088+0200" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_DJNWQHBwEeerJbxXm1ThhQ" name="customer_new analyse " supplierDependency="_lfcNUHB1EeerJbxXm1ThhQ" creationDate="2017-07-24T15:00:19.088+0200" defaultContext="Default">
     <clientDependency href="../../metadata/connections/CifDQ_0.1.item#_7X4c4HBMEeerJbxXm1ThhQ"/>
     <taggedValue xmi:id="_DJNWQXBwEeerJbxXm1ThhQ" tag="Status" value="development"/>
     <taggedValue xmi:id="_DJNWQnBwEeerJbxXm1ThhQ" tag="Author" value="presale_mdm@talend.com"/>
@@ -103,4 +103,7 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_lfcNUHB1EeerJbxXm1ThhQ" kind="Usage" supplier="_DJNWQHBwEeerJbxXm1ThhQ">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/customer_new_analyse__0.1.rep#_lfa_MHB1EeerJbxXm1ThhQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
