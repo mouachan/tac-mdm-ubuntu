@@ -1,13 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_62lKAHB1EeerJbxXm1ThhQ" name="analyse nominale title" creationDate="2017-07-24T15:42:20.887+0200">
-  <taggedValue xmi:id="_62lKAXB1EeerJbxXm1ThhQ" tag="Status" value="development"/>
-  <taggedValue xmi:id="_62lKAnB1EeerJbxXm1ThhQ" tag="Author" value="presale_mdm@talend.com"/>
-  <taggedValue xmi:id="_62lKA3B1EeerJbxXm1ThhQ" tag="Purpose"/>
-  <taggedValue xmi:id="_62lKBHB1EeerJbxXm1ThhQ" tag="Description"/>
-  <taggedValue xmi:id="_62lKBXB1EeerJbxXm1ThhQ" tag="Version" value="0.1"/>
-  <context xmi:id="_62lKBnB1EeerJbxXm1ThhQ"/>
-  <results xmi:id="_62lKB3B1EeerJbxXm1ThhQ">
-    <resultMetadata xmi:id="_62lKCHB1EeerJbxXm1ThhQ"/>
-  </results>
-  <parameters xmi:id="_62lKCXB1EeerJbxXm1ThhQ" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_62lKAHB1EeerJbxXm1ThhQ" name="analyse nominale title" creationDate="2017-07-24T15:42:20.887+0200" defaultContext="Default">
+    <clientDependency href="../../metadata/connections/CifDQ_0.1.item#_7X4c4HBMEeerJbxXm1ThhQ"/>
+    <taggedValue xmi:id="_62lKAXB1EeerJbxXm1ThhQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_62lKAnB1EeerJbxXm1ThhQ" tag="Author" value="presale_mdm@talend.com"/>
+    <taggedValue xmi:id="_62lKA3B1EeerJbxXm1ThhQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_62lKBHB1EeerJbxXm1ThhQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_62lKBXB1EeerJbxXm1ThhQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_7DOe4XB1EeerJbxXm1ThhQ" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_7DOe4nB1EeerJbxXm1ThhQ" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_7DPF8HB1EeerJbxXm1ThhQ" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_7DSwUHB1EeerJbxXm1ThhQ" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_62lKBnB1EeerJbxXm1ThhQ">
+      <connection href="../../metadata/connections/CifDQ_0.1.item#_Vi9uQG4fEeerJbxXm1ThhQ"/>
+      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+    </context>
+    <results xmi:id="_62lKB3B1EeerJbxXm1ThhQ">
+      <resultMetadata xmi:id="_62lKCHB1EeerJbxXm1ThhQ"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_7DPtAHB1EeerJbxXm1ThhQ">
+        <parameters xmi:id="_7DPtAXB1EeerJbxXm1ThhQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_7DPtAnB1EeerJbxXm1ThhQ">
+        <parameters xmi:id="_7DPtA3B1EeerJbxXm1ThhQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_7DPtBHB1EeerJbxXm1ThhQ">
+        <parameters xmi:id="_7DPtBXB1EeerJbxXm1ThhQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_7DPtBnB1EeerJbxXm1ThhQ">
+        <parameters xmi:id="_7DPtB3B1EeerJbxXm1ThhQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_7DPtCHB1EeerJbxXm1ThhQ">
+        <parameters xmi:id="_7DPtCXB1EeerJbxXm1ThhQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:BlankCountIndicator" xmi:id="_7DPtCnB1EeerJbxXm1ThhQ">
+        <parameters xmi:id="_7DPtC3B1EeerJbxXm1ThhQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Blank_Count_0.1.definition#_ccHq0xF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:FrequencyIndicator" xmi:id="_7DQ7IHB1EeerJbxXm1ThhQ">
+        <parameters xmi:id="_7DQ7IXB1EeerJbxXm1ThhQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Advanced Statistics/Frequency_Table_0.1.definition#_ccIR4hF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:TextIndicator" xmi:id="_7DQ7InB1EeerJbxXm1ThhQ">
+        <parameters xmi:id="_7DQ7I3B1EeerJbxXm1ThhQ"/>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Text_Statistics_0.1.definition#_yb9x0zh8Ed2XmO7pl5Yuyg"/>
+        <averageLengthIndicator xmi:id="_7DQ7JHB1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7JXB1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7JnB1EeerJbxXm1ThhQ" useBlank="false"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_0.1.definition#_ccIR4BF2Ed2PKb6nEJEvhw"/>
+        </averageLengthIndicator>
+        <maxLengthIndicator xmi:id="_7DQ7J3B1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7KHB1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7KXB1EeerJbxXm1ThhQ" useBlank="false"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_0.1.definition#_ccHq1RF2Ed2PKb6nEJEvhw"/>
+        </maxLengthIndicator>
+        <minLengthIndicator xmi:id="_7DQ7KnB1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7K3B1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7LHB1EeerJbxXm1ThhQ" useBlank="false"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_0.1.definition#_ccHq1BF2Ed2PKb6nEJEvhw"/>
+        </minLengthIndicator>
+        <minLengthWithBlankIndicator xmi:id="_7DQ7LXB1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7LnB1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7L3B1EeerJbxXm1ThhQ"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_0.1.definition#_G4EzQZU9Ed-Y15ulK_jijQ"/>
+        </minLengthWithBlankIndicator>
+        <minLengthWithNullIndicator xmi:id="_7DQ7MHB1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7MXB1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7MnB1EeerJbxXm1ThhQ" useBlank="false" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Null_0.1.definition#_a4KsoI1qEd-xwI2imLgHRA"/>
+        </minLengthWithNullIndicator>
+        <minLengthWithBlankNullIndicator xmi:id="_7DQ7M3B1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7NHB1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7NXB1EeerJbxXm1ThhQ" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Minimal_Length_With_Blank_and_Null_0.1.definition#_9HDjMJSOEd-TE5ti6XNR2Q"/>
+        </minLengthWithBlankNullIndicator>
+        <maxLengthWithBlankIndicator xmi:id="_7DQ7NnB1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7N3B1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7OHB1EeerJbxXm1ThhQ"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_0.1.definition#_-xmZcJSOEd-TE5ti6XNR2Q"/>
+        </maxLengthWithBlankIndicator>
+        <maxLengthWithNullIndicator xmi:id="_7DQ7OXB1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7OnB1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7O3B1EeerJbxXm1ThhQ" useBlank="false" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Null_0.1.definition#_-_UFUJSOEd-TE5ti6XNR2Q"/>
+        </maxLengthWithNullIndicator>
+        <maxLengthWithBlankNullIndicator xmi:id="_7DQ7PHB1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7PXB1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7PnB1EeerJbxXm1ThhQ" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Maximal_Length_With_Blank_and_Null_0.1.definition#_-hzp8JSOEd-TE5ti6XNR2Q"/>
+        </maxLengthWithBlankNullIndicator>
+        <avgLengthWithBlankIndicator xmi:id="_7DQ7P3B1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7QHB1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7QXB1EeerJbxXm1ThhQ"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_0.1.definition#__gPoIJSOEd-TE5ti6XNR2Q"/>
+        </avgLengthWithBlankIndicator>
+        <avgLengthWithNullIndicator xmi:id="_7DQ7QnB1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7Q3B1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7RHB1EeerJbxXm1ThhQ" useBlank="false" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Null_0.1.definition#__vI_wJSOEd-TE5ti6XNR2Q"/>
+        </avgLengthWithNullIndicator>
+        <avgLengthWithBlankNullIndicator xmi:id="_7DQ7RXB1EeerJbxXm1ThhQ">
+          <parameters xmi:id="_7DQ7RnB1EeerJbxXm1ThhQ">
+            <textParameter xmi:id="_7DQ7R3B1EeerJbxXm1ThhQ" useNulls="true"/>
+          </parameters>
+          <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VJ8AV3A6EeerJbxXm1ThhQ"/>
+          <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Text Statistics/Average_Length_With_Blank_and_Null_0.1.definition#__TbUIJSOEd-TE5ti6XNR2Q"/>
+        </avgLengthWithBlankNullIndicator>
+      </indicators>
+    </results>
+    <parameters xmi:id="_62lKCXB1EeerJbxXm1ThhQ" dataFilter="_7pueMHB1EeerJbxXm1ThhQ" analysisType="Multiple Column Analysis"/>
+    <contextType xmi:id="_7DOe4HB1EeerJbxXm1ThhQ" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_7pueMHB1EeerJbxXm1ThhQ" name="analyse nominale title">
+    <ranges xmi:id="_7pueMXB1EeerJbxXm1ThhQ">
+      <expressions xmi:id="_7pueMnB1EeerJbxXm1ThhQ">
+        <expression xsi:type="relational:TdExpression" xmi:id="_7pueM3B1EeerJbxXm1ThhQ" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>

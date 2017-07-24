@@ -161,5 +161,6 @@
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/analyse_structurel_cif_0.1.ana#_7pnGEHBMEeerJbxXm1ThhQ"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Customer_analyse_0.1.ana#_Ft5OcHBNEeerJbxXm1ThhQ"/>
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/customer_new_analyse__0.1.ana#_DJNWQHBwEeerJbxXm1ThhQ"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/analyse_nominale_title_0.1.ana#_62lKAHB1EeerJbxXm1ThhQ"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
