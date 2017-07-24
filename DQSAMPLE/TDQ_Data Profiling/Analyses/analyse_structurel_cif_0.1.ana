@@ -11,10 +11,16 @@
     <analysedElements xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/CifDQ_0.1.item#_qtkDwG4fEeerJbxXm1ThhQ"/>
   </context>
   <results xmi:id="_7pnGF3BMEeerJbxXm1ThhQ">
-    <resultMetadata xmi:id="_7pnGGHBMEeerJbxXm1ThhQ"/>
-    <indicators xsi:type="dataquality.indicators.schema:CatalogIndicator" xmi:id="_7pnGGXBMEeerJbxXm1ThhQ">
+    <resultMetadata xmi:id="_7pnGGHBMEeerJbxXm1ThhQ" executionDate="2017-07-24T10:49:36.819+0200" executionDuration="97" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+    <indicators xsi:type="dataquality.indicators.schema:CatalogIndicator" xmi:id="_7pnGGXBMEeerJbxXm1ThhQ" computed="true" tableCount="2" keyCount="1" indexCount="1" tableRowCount="604">
       <analyzedElement xsi:type="orgomg.cwm.resource.relational:Catalog" href="../../metadata/connections/CifDQ_0.1.item#_qtkDwG4fEeerJbxXm1ThhQ"/>
       <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Catalog_Overview_0.1.definition#_QwDiwMYUEd27NP4lvE0A4w"/>
+      <tableIndicators xmi:id="_Bbp9MHBNEeerJbxXm1ThhQ" rowCount="302" tableName="Customer">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_BbvcwHBNEeerJbxXm1ThhQ" rowCount="302" tableName="customer_new" keyCount="1" indexCount="1">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
     </indicators>
   </results>
   <parameters xmi:id="_7pnGGnBMEeerJbxXm1ThhQ" analysisType="Catalog Analysis"/>
