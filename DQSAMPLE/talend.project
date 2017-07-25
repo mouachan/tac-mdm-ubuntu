@@ -2343,7 +2343,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iUt-GxjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iUt-WxjEeeL37kXNPv4gw" id="_KKrXwA0YEea07bfDW9_3JQ" version="0.1" type="job"/>
-      <relatedItems xmi:id="_3iUt-mxjEeeL37kXNPv4gw" id="_AGw6wAlSEearSLoCnEASOA" version="Latest" type="property"/>
       <relatedItems xmi:id="_3iUt-2xjEeeL37kXNPv4gw" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iUt_GxjEeeL37kXNPv4gw" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iUt_WxjEeeL37kXNPv4gw" id="TalendString" version="Latest" type="routine"/>
@@ -2360,6 +2359,8 @@
       <relatedItems xmi:id="_3iUuCGxjEeeL37kXNPv4gw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iUuCWxjEeeL37kXNPv4gw" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iUuCmxjEeeL37kXNPv4gw" id="_AGw6wAlSEearSLoCnEASOA - customer_clean" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_bjQqQHE0EeerJbxXm1ThhQ" id="_Pl558G4fEeerJbxXm1ThhQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_bjQqQXE0EeerJbxXm1ThhQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iUuC2xjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iUuDGxjEeeL37kXNPv4gw" id="_MAonUBYtEeaOkrf6w6Mr2w" version="0.1" type="job"/>
