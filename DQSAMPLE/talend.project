@@ -3766,6 +3766,7 @@
       <relatedItems xmi:id="_3iWj-2xjEeeL37kXNPv4gw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iWj_GxjEeeL37kXNPv4gw" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iWj_WxjEeeL37kXNPv4gw" id="_djIXAPd0EeaAGY03UXZopw - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_TIHOoHFPEeeeL-AalauXAA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iWj_mxjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iWj_2xjEeeL37kXNPv4gw" id="_Vk_QwBwzEea4jaowcg3hJg" version="0.1" type="job"/>
