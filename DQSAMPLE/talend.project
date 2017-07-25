@@ -590,7 +590,6 @@
     <ItemsRelations xmi:id="_3iSRyGxjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iSRyWxjEeeL37kXNPv4gw" id="_NAiQQAvIEeaG_qop6r8MwQ" version="0.1" type="job"/>
       <relatedItems xmi:id="_3iSRymxjEeeL37kXNPv4gw" id="_pKMWQAxPEeaipMz8J9vTFg" version="Latest" type="property"/>
-      <relatedItems xmi:id="_3iSRzGxjEeeL37kXNPv4gw" id="_De2eoAvIEeaG_qop6r8MwQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_3iSRzWxjEeeL37kXNPv4gw" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iSRzmxjEeeL37kXNPv4gw" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iSRz2xjEeeL37kXNPv4gw" id="TalendString" version="Latest" type="routine"/>
@@ -612,6 +611,7 @@
       <relatedItems xmi:id="_vNRZIWyGEeeL37kXNPv4gw" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_fKll4HA6EeerJbxXm1ThhQ" id="_Pl558G4fEeerJbxXm1ThhQ" version="Latest" type="property"/>
       <relatedItems xmi:id="_fKll4XA6EeerJbxXm1ThhQ" id="_Pl558G4fEeerJbxXm1ThhQ - customer_new" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_n9alAHEMEeerJbxXm1ThhQ" id="_LpPzEGyeEeeSYdK8j84-gQ" version="Latest" type="context"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iSR3mxjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iSR32xjEeeL37kXNPv4gw" id="_iARI4NNSEeaoMJyykSOkcg" version="0.1" type="job"/>
