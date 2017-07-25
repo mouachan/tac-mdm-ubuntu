@@ -3305,6 +3305,8 @@
       <relatedItems xmi:id="_3iV8dmxjEeeL37kXNPv4gw" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iV8d2xjEeeL37kXNPv4gw" id="_Dw4DYQ3kEea07bfDW9_3JQ - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_3iV8eGxjEeeL37kXNPv4gw" id="_z1zt0A3jEea07bfDW9_3JQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PI5AAHFPEeeeL-AalauXAA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PI5AAXFPEeeeL-AalauXAA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iV8eWxjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iV8emxjEeeL37kXNPv4gw" id="_SnbgUC5DEeavAe-L5MtsfQ" version="0.1" type="job"/>
