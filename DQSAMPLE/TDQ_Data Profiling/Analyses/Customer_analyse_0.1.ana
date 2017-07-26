@@ -13,7 +13,6 @@
     <taggedValue xmi:id="_F_2hIHBNEeerJbxXm1ThhQ" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
     <context xmi:id="_Ft5OdnBNEeerJbxXm1ThhQ">
       <connection href="../../metadata/connections/CifDQ_0.1.item#_Vi9uQG4fEeerJbxXm1ThhQ"/>
-      <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VCi-43A6EeerJbxXm1ThhQ"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VCi-53A6EeerJbxXm1ThhQ"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VCi-63A6EeerJbxXm1ThhQ"/>
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VCi-73A6EeerJbxXm1ThhQ"/>
@@ -28,7 +27,6 @@
       <resultMetadata xmi:id="_Ft5OeHBNEeerJbxXm1ThhQ"/>
       <indicators xsi:type="dataquality.indicators.columnset:SimpleStatIndicator" xmi:id="_Ft5OeXBNEeerJbxXm1ThhQ">
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Multiple_Column_Simple_Statistics_0.1.definition#_JoeMkM-jEd6qN5aKpPNGTg"/>
-        <analyzedColumns xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VCi-43A6EeerJbxXm1ThhQ"/>
         <analyzedColumns xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VCi-53A6EeerJbxXm1ThhQ"/>
         <analyzedColumns xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VCi-63A6EeerJbxXm1ThhQ"/>
         <analyzedColumns xsi:type="relational:TdColumn" href="../../metadata/connections/CifDQ_0.1.item#_VCi-73A6EeerJbxXm1ThhQ"/>
