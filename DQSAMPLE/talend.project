@@ -4993,6 +4993,8 @@
       <relatedItems xmi:id="_3iYY2mxjEeeL37kXNPv4gw" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iYY22xjEeeL37kXNPv4gw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_3iYY3GxjEeeL37kXNPv4gw" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_gOXJYHHiEeeeL-AalauXAA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_gOXwcHHiEeeeL-AalauXAA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_3iYY3WxjEeeL37kXNPv4gw">
       <baseItem xmi:id="_3iYY3mxjEeeL37kXNPv4gw" id="_d_1wYMB6Eeac0rTU8I7CxA" version="0.1" type="job"/>
