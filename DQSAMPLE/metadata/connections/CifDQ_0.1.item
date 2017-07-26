@@ -24,7 +24,7 @@
         <initialValue xsi:type="relational:TdExpression" xmi:id="_VCi-5XA6EeerJbxXm1ThhQ" language="COLUMN_DEF"/>
         <sqlDataType xmi:id="_VCi-5nA6EeerJbxXm1ThhQ" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
       </feature>
-      <feature xsi:type="relational:TdColumn" xmi:id="_VCi-53A6EeerJbxXm1ThhQ" name="Name" id="Name" label="Name" length="300" sourceType="VARCHAR" talendType="id_String">
+      <feature xsi:type="relational:TdColumn" xmi:id="_VCi-53A6EeerJbxXm1ThhQ" name="Name" id="Name" label="Name" length="250" sourceType="VARCHAR" talendType="id_String">
         <taggedValue xmi:id="_VCi-6HA6EeerJbxXm1ThhQ" tag="Comment" value=""/>
         <taggedValue xmi:id="_F8N-UHBNEeerJbxXm1ThhQ" tag="Content Type" value="Nominal"/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_VCi-6XA6EeerJbxXm1ThhQ" language="COLUMN_DEF"/>
