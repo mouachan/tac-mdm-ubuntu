@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_84JhUHKzEeeRScMQBd5cnw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_84JhUXKzEeeRScMQBd5cnw" comment="" name="tl_RootDir" prompt="tl_RootDir?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84JhUnKzEeeRScMQBd5cnw" comment="" name="tl_BulkInput" prompt="tl_BulkInput?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84JhU3KzEeeRScMQBd5cnw" comment="" name="tl_BulkOuputOK" prompt="tl_BulkOuputOK?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84JhVHKzEeeRScMQBd5cnw" comment="" name="tl_BulkOuputKO" prompt="tl_BulkOuputKO?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84JhVXKzEeeRScMQBd5cnw" comment="" name="tl_ExtractDir" prompt="tl_ExtractDir?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84JhVnKzEeeRScMQBd5cnw" comment="" name="tl_LogDir" prompt="tl_LogDir?" promptNeeded="false" type="id_String" value="null"/>
+</talendfile:ContextType>

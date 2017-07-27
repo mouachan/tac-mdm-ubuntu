@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_CaVLcpqzEea7V-Zwb_4Wng" comment="connectionComment" label="connectionLabel" dataPackage="_CaVLc5qzEea7V-Zwb_4Wng" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_CaVLc5qzEea7V-Zwb_4Wng" dataManager="_CaVLcpqzEea7V-Zwb_4Wng">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_CaVLdJqzEea7V-Zwb_4Wng" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLdZqzEea7V-Zwb_4Wng" name="LAST" id="48508" label="LAST" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLdpqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLd5qzEea7V-Zwb_4Wng" name="FIRST" id="48509" label="FIRST" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLeJqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLeZqzEea7V-Zwb_4Wng" name="MAIL" id="48510" label="MAIL" length="255" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_CaVLepqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLe5qzEea7V-Zwb_4Wng" name="PHONE" id="48511" label="PHONE" length="255" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_CaVLfJqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLfZqzEea7V-Zwb_4Wng" name="ADDRESS1" id="48512" label="ADDRESS1" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLfpqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLf5qzEea7V-Zwb_4Wng" name="ADDRESS2" id="48513" label="ADDRESS2" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLgJqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLgZqzEea7V-Zwb_4Wng" name="ADDRESS3" id="48514" label="ADDRESS3" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLgpqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLg5qzEea7V-Zwb_4Wng" name="ZIP_CODE" id="48515" label="ZIP_CODE" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLhJqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLhZqzEea7V-Zwb_4Wng" name="CREDIT_CARD_ID" id="48516" label="CREDIT_CARD_ID" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLhpqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLh5qzEea7V-Zwb_4Wng" name="NAME_ID" id="48517" label="NAME_ID" length="255" sourceType="INT" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLiJqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLiZqzEea7V-Zwb_4Wng" name="GENDER" id="48518" label="GENDER" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLipqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLi5qzEea7V-Zwb_4Wng" name="BIRTH_DATE" id="48519" label="BIRTH_DATE" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLjJqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLjZqzEea7V-Zwb_4Wng" name="CITY" id="48520" label="CITY" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLjpqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLj5qzEea7V-Zwb_4Wng" name="STATE" id="48521" label="STATE" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLkJqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLkZqzEea7V-Zwb_4Wng" name="COUNTRY" id="48522" label="COUNTRY" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLkpqzEea7V-Zwb_4Wng"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CaVLk5qzEea7V-Zwb_4Wng" name="COMPANY" id="48523" label="COMPANY" length="255" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_CaVLlJqzEea7V-Zwb_4Wng"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

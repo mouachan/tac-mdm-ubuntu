@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<definitions id="Definition"
+             targetNamespace="http://www.jboss.org/drools"
+             typeLanguage="http://www.java.com/javaTypes"
+             expressionLanguage="http://www.mvel.org/2.0"
+             xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+             xmlns:g="http://www.jboss.org/drools/flow/gpd"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:tns="http://www.jboss.org/drools">
+
+  <process processType="Private" isExecutable="true" id="org.talend.survivorship.sample.SurvivorFlow" name="SurvivorFlow" >
+
+    <!-- nodes -->
+    <startEvent id="_jbpm-unique-166" name="start"  isInterrupting="false">
+    </startEvent>
+    <businessRuleTask id="_jbpm-unique-167" name="FIRST" g:ruleFlowGroup="FIRSTGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-168" name="MAIL" g:ruleFlowGroup="MAILGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-169" name="PHONE" g:ruleFlowGroup="PHONEGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-170" name="ADDRESS1" g:ruleFlowGroup="ADDRESS1Group" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-171" name="ADDRESS2" g:ruleFlowGroup="ADDRESS2Group" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-172" name="ADDRESS3" g:ruleFlowGroup="ADDRESS3Group" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-173" name="ZIP" g:ruleFlowGroup="ZIPGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-174" name="CARD" g:ruleFlowGroup="CARDGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-175" name="ID" g:ruleFlowGroup="IDGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-176" name="GENDER" g:ruleFlowGroup="GENDERGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-177" name="DOB" g:ruleFlowGroup="DOBGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-178" name="CITY" g:ruleFlowGroup="CITYGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-179" name="STATE" g:ruleFlowGroup="STATEGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-180" name="COUNTRY" g:ruleFlowGroup="COUNTRYGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-181" name="COMPANY" g:ruleFlowGroup="COMPANYGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-182" name="LAST" g:ruleFlowGroup="LASTGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <endEvent id="_jbpm-unique-183" name="end" >
+        <terminateEventDefinition />
+    </endEvent>
+
+    <!-- connections -->
+    <sequenceFlow id="_jbpm-unique-166-_jbpm-unique-167" sourceRef="_jbpm-unique-166" targetRef="_jbpm-unique-167" />
+    <sequenceFlow id="_jbpm-unique-167-_jbpm-unique-168" sourceRef="_jbpm-unique-167" targetRef="_jbpm-unique-168" />
+    <sequenceFlow id="_jbpm-unique-168-_jbpm-unique-169" sourceRef="_jbpm-unique-168" targetRef="_jbpm-unique-169" />
+    <sequenceFlow id="_jbpm-unique-169-_jbpm-unique-170" sourceRef="_jbpm-unique-169" targetRef="_jbpm-unique-170" />
+    <sequenceFlow id="_jbpm-unique-170-_jbpm-unique-171" sourceRef="_jbpm-unique-170" targetRef="_jbpm-unique-171" />
+    <sequenceFlow id="_jbpm-unique-171-_jbpm-unique-172" sourceRef="_jbpm-unique-171" targetRef="_jbpm-unique-172" />
+    <sequenceFlow id="_jbpm-unique-172-_jbpm-unique-173" sourceRef="_jbpm-unique-172" targetRef="_jbpm-unique-173" />
+    <sequenceFlow id="_jbpm-unique-173-_jbpm-unique-174" sourceRef="_jbpm-unique-173" targetRef="_jbpm-unique-174" />
+    <sequenceFlow id="_jbpm-unique-174-_jbpm-unique-175" sourceRef="_jbpm-unique-174" targetRef="_jbpm-unique-175" />
+    <sequenceFlow id="_jbpm-unique-175-_jbpm-unique-176" sourceRef="_jbpm-unique-175" targetRef="_jbpm-unique-176" />
+    <sequenceFlow id="_jbpm-unique-176-_jbpm-unique-177" sourceRef="_jbpm-unique-176" targetRef="_jbpm-unique-177" />
+    <sequenceFlow id="_jbpm-unique-177-_jbpm-unique-178" sourceRef="_jbpm-unique-177" targetRef="_jbpm-unique-178" />
+    <sequenceFlow id="_jbpm-unique-178-_jbpm-unique-179" sourceRef="_jbpm-unique-178" targetRef="_jbpm-unique-179" />
+    <sequenceFlow id="_jbpm-unique-179-_jbpm-unique-180" sourceRef="_jbpm-unique-179" targetRef="_jbpm-unique-180" />
+    <sequenceFlow id="_jbpm-unique-180-_jbpm-unique-181" sourceRef="_jbpm-unique-180" targetRef="_jbpm-unique-181" />
+    <sequenceFlow id="_jbpm-unique-181-_jbpm-unique-182" sourceRef="_jbpm-unique-181" targetRef="_jbpm-unique-182" />
+    <sequenceFlow id="_jbpm-unique-182-_jbpm-unique-183" sourceRef="_jbpm-unique-182" targetRef="_jbpm-unique-183" />
+
+  </process>
+
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="org.talend.survivorship.sample.SurvivorFlow" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-166" >
+        <dc:Bounds x="32" y="16" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-167" >
+        <dc:Bounds x="16" y="96" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-168" >
+        <dc:Bounds x="16" y="176" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-169" >
+        <dc:Bounds x="16" y="256" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-170" >
+        <dc:Bounds x="16" y="336" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-171" >
+        <dc:Bounds x="16" y="416" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-172" >
+        <dc:Bounds x="16" y="496" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-173" >
+        <dc:Bounds x="16" y="576" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-174" >
+        <dc:Bounds x="16" y="656" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-175" >
+        <dc:Bounds x="16" y="736" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-176" >
+        <dc:Bounds x="16" y="816" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-177" >
+        <dc:Bounds x="16" y="896" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-178" >
+        <dc:Bounds x="16" y="976" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-179" >
+        <dc:Bounds x="16" y="1056" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-180" >
+        <dc:Bounds x="16" y="1136" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-181" >
+        <dc:Bounds x="16" y="1216" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-182" >
+        <dc:Bounds x="16" y="1296" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-183" >
+        <dc:Bounds x="32" y="1376" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-166-_jbpm-unique-167" >
+        <di:waypoint x="56" y="40" />
+        <di:waypoint x="56" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-167-_jbpm-unique-168" >
+        <di:waypoint x="56" y="120" />
+        <di:waypoint x="56" y="200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-168-_jbpm-unique-169" >
+        <di:waypoint x="56" y="200" />
+        <di:waypoint x="56" y="280" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-169-_jbpm-unique-170" >
+        <di:waypoint x="56" y="280" />
+        <di:waypoint x="56" y="360" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-170-_jbpm-unique-171" >
+        <di:waypoint x="56" y="360" />
+        <di:waypoint x="56" y="440" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-171-_jbpm-unique-172" >
+        <di:waypoint x="56" y="440" />
+        <di:waypoint x="56" y="520" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-172-_jbpm-unique-173" >
+        <di:waypoint x="56" y="520" />
+        <di:waypoint x="56" y="600" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-173-_jbpm-unique-174" >
+        <di:waypoint x="56" y="600" />
+        <di:waypoint x="56" y="680" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-174-_jbpm-unique-175" >
+        <di:waypoint x="56" y="680" />
+        <di:waypoint x="56" y="760" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-175-_jbpm-unique-176" >
+        <di:waypoint x="56" y="760" />
+        <di:waypoint x="56" y="840" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-176-_jbpm-unique-177" >
+        <di:waypoint x="56" y="840" />
+        <di:waypoint x="56" y="920" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-177-_jbpm-unique-178" >
+        <di:waypoint x="56" y="920" />
+        <di:waypoint x="56" y="1000" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-178-_jbpm-unique-179" >
+        <di:waypoint x="56" y="1000" />
+        <di:waypoint x="56" y="1080" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-179-_jbpm-unique-180" >
+        <di:waypoint x="56" y="1080" />
+        <di:waypoint x="56" y="1160" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-180-_jbpm-unique-181" >
+        <di:waypoint x="56" y="1160" />
+        <di:waypoint x="56" y="1240" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-181-_jbpm-unique-182" >
+        <di:waypoint x="56" y="1240" />
+        <di:waypoint x="56" y="1320" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-182-_jbpm-unique-183" >
+        <di:waypoint x="56" y="1320" />
+        <di:waypoint x="56" y="1400" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

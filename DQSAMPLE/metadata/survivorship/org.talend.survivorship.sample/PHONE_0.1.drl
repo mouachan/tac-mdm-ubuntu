@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "PHONE"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "PHONEGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( phone, "PHONE", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "PHONE" );
+
+end
+
+

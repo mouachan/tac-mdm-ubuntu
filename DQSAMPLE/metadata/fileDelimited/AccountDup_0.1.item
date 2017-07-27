@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_d0-MwQhlEea5f4Eup6NH6Q" name="AccountDup" supplierDependency="_xmABEgiCEea5f4Eup6NH6Q" dataPackage="_d0-MwghlEea5f4Eup6NH6Q" Server="Localhost 127.0.0.1" FilePath="C:/Talend/DataMart/StudentFiles_DQ/StudentFiles/DQBasics/account_dups.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_d0-MwghlEea5f4Eup6NH6Q" name="default" dataManager="_d0-MwQhlEea5f4Eup6NH6Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_d0-MwwhlEea5f4Eup6NH6Q" id="_ALrzsAhlEea5f4Eup6NH6Q" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d1H9wAhlEea5f4Eup6NH6Q" id="recNum" label="recNum" length="7" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_rUczoCyWEeavAe-L5MtsfQ" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d1H9wQhlEea5f4Eup6NH6Q" id="acctName" label="acctName" length="34" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_q7X8IAiCEea5f4Eup6NH6Q" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d1H9wghlEea5f4Eup6NH6Q" id="addr" label="addr" length="25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_q7X8IQiCEea5f4Eup6NH6Q" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d1H9wwhlEea5f4Eup6NH6Q" id="city" label="city" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_q7htIAiCEea5f4Eup6NH6Q" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d1H9xAhlEea5f4Eup6NH6Q" id="state" label="state" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_q7htIQiCEea5f4Eup6NH6Q" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d1H9xQhlEea5f4Eup6NH6Q" id="zip" label="zip" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_rU0AACyWEeavAe-L5MtsfQ" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d1H9xghlEea5f4Eup6NH6Q" id="country" label="country" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_rU3DUCyWEeavAe-L5MtsfQ" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_d1H9xwhlEea5f4Eup6NH6Q" id="phone" label="phone" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_rU6tsCyWEeavAe-L5MtsfQ" tag="Content Type" value="Nominal"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_xmABEgiCEea5f4Eup6NH6Q" kind="Usage" supplier="_d0-MwQhlEea5f4Eup6NH6Q">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Account_Analysis/Customer_List_Analysis_0.1.ana#_l8uQ0QiCEea5f4Eup6NH6Q"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Account_Analysis/Customer_List_Matching_0.1.ana#_9IewUQiDEea5f4Eup6NH6Q"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendHadoopCluster:HadoopClusterConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHadoopCluster="http://www.talend.org/hadoopcluster" xmi:id="_nXFUwBVhEeaq663jNnCmnQ" name="HDP23" label="HDP23" distribution="HORTONWORKS" dfVersion="HDP_2_3" useYarn="true" nameNodeURI="hdfs://sandbox.hortonworks.com:8020" jobTrackerURI="sandbox.hortonworks.com:8050" principal="nn/_HOST@EXAMPLE.COM" jtOrRmPrincipal="yarn/_HOST@EXAMPLE.COM" jobHistoryPrincipal="mapred/_HOST@EXAMPLE.COM" userName="admin" group="" authMode="USERNAME" rmScheduler="sandbox.hortonworks.com:8030" jobHistory="sandbox.hortonworks.com:10020" stagingDirectory="/user" useCustomConfs="true">
+  <connectionList>_nYgREBVhEeaq663jNnCmnQ</connectionList>
+  <connectionList>_nZ6mUBVhEeaq663jNnCmnQ</connectionList>
+  <connectionList>_nZ7NYBVhEeaq663jNnCmnQ</connectionList>
+  <parameters xmi:id="_nXFUwRVhEeaq663jNnCmnQ" key="CONN_PARA_KEY_YARN_HOSTNAME" value="sandbox.hortonworks.com"/>
+</TalendHadoopCluster:HadoopClusterConnection>

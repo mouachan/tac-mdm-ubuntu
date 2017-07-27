@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "GENDER"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "GENDERGroup"
+when
+    $input : RecordIn( dataset.isShortest( gender, "GENDER", true) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "GENDER" );
+
+end
+
+

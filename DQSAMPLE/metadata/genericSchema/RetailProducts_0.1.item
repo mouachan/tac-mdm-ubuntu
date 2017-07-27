@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_MMNJkg3nEea07bfDW9_3JQ" dataPackage="_MMNJkw3nEea07bfDW9_3JQ" mappingTypeUsed="true" mappingTypeId="mysql_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_MMNJkw3nEea07bfDW9_3JQ" dataManager="_MMNJkg3nEea07bfDW9_3JQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_MMNJlA3nEea07bfDW9_3JQ" id="_MMNJkA3nEea07bfDW9_3JQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MMNJlQ3nEea07bfDW9_3JQ" name="id" label="id" length="3" sourceType="VARCHAR" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_MMNJlg3nEea07bfDW9_3JQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_MMNJlw3nEea07bfDW9_3JQ" name="product" label="product" length="10" sourceType="VARCHAR" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_MMNJmA3nEea07bfDW9_3JQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

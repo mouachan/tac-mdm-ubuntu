@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="HASHTAG" prompt="HASHTAG?" promptNeeded="true" type="id_String" value="#Talend"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/Applications/TalendStudio-6.4.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;172.16.31.132&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;172.16.31.132&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;amc&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;remote_user&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="X3+iLqN9rp0p4b38DHnmFg==" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;tstatcatcher&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;tlogcatcher&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;tflowmetercatcher&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <routinesParameter id="_4iWVIBaZEeaSJf1MGUYP_A" name="DQTechnical"/>
+    <routinesParameter id="_4hD7sBaZEeaSJf1MGUYP_A" name="DataOperation"/>
+    <routinesParameter id="_4iISsBaZEeaSJf1MGUYP_A" name="DataQualityDependencies"/>
+    <routinesParameter id="_4iEBQBaZEeaSJf1MGUYP_A" name="DataQuality"/>
+    <routinesParameter id="_4iQOgBaZEeaSJf1MGUYP_A" name="DqStringHandling"/>
+    <routinesParameter id="_4idp4BaZEeaSJf1MGUYP_A" name="MDM"/>
+    <routinesParameter id="_4hKCUBaZEeaSJf1MGUYP_A" name="Mathematical"/>
+    <routinesParameter id="_4hQI8BaZEeaSJf1MGUYP_A" name="Numeric"/>
+    <routinesParameter id="_4hWPkBaZEeaSJf1MGUYP_A" name="Relational"/>
+    <routinesParameter id="_4Z0EMBaZEeaSJf1MGUYP_A" name="SQLike"/>
+    <routinesParameter id="_4hahABaZEeaSJf1MGUYP_A" name="StringHandling"/>
+    <routinesParameter id="_4hjq8BaZEeaSJf1MGUYP_A" name="TalendDataGenerator"/>
+    <routinesParameter id="_4hy7gBaZEeaSJf1MGUYP_A" name="TalendDate"/>
+    <routinesParameter id="_4h63UBaZEeaSJf1MGUYP_A" name="TalendString"/>
+    <routinesParameter id="_tNirUBbhEeaYy_yNckdDGQ" name="ImporttweetsTstandardizerow_1"/>
+    <routinesParameter id="_ghBXkBbwEeaYy_yNckdDGQ" name="TweetstriggerTstandardizerow_1"/>
+  </parameters>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;https://api.twitter.com/1.1/search/tweets.json&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;q&quot;"/>
+      <elementValue elementRef="VALUE" value="context.HASHTAG"/>
+      <elementValue elementRef="NAME" value="&quot;count&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;180&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;result_type&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;mixed&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="OAUTH2_BEARER"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;AAAAAAAAAAAAAAAAAAAAAOnGUwAAAAAAASlaRBWm7y%2BhNmnYmvUIBuM91Ws%3DZaDRhPsQaBHDjjcthoXYvW9ju3hWfnbsxOFlnd4qhSwo8uSZ3h&quot;"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Get Tweets"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="out1">
+      <column comment="" key="false" length="-1" name="text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="influence" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="timezone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="rest" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="statusCode" type="id_Integer" xpath="rest/statusCode"/>
+        <nodes name="body" expression="" type="id_Document" xpath="rest/body">
+          <children name="root" type="id_String" xpath="rest.body:/root" main="true">
+            <children name="statuses" type="id_String" xpath="rest.body:/root/statuses" main="true">
+              <children name="metadata" type="id_String" xpath="rest.body:/root/statuses/metadata">
+                <children name="iso_language_code" type="id_String" xpath="rest.body:/root/statuses/metadata/iso_language_code"/>
+                <children name="result_type" type="id_String" xpath="rest.body:/root/statuses/metadata/result_type"/>
+              </children>
+              <children name="created_at" type="id_String" xpath="rest.body:/root/statuses/created_at"/>
+              <children name="id" type="id_Long" xpath="rest.body:/root/statuses/id"/>
+              <children name="id_str" type="id_Long" xpath="rest.body:/root/statuses/id_str"/>
+              <children name="text" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="rest.body:/root/statuses/text"/>
+              <children name="source" type="id_String" xpath="rest.body:/root/statuses/source"/>
+              <children name="truncated" type="id_Boolean" xpath="rest.body:/root/statuses/truncated"/>
+              <children name="in_reply_to_status_id" type="id_String" xpath="rest.body:/root/statuses/in_reply_to_status_id"/>
+              <children name="in_reply_to_status_id_str" type="id_String" xpath="rest.body:/root/statuses/in_reply_to_status_id_str"/>
+              <children name="in_reply_to_user_id" type="id_String" xpath="rest.body:/root/statuses/in_reply_to_user_id"/>
+              <children name="in_reply_to_user_id_str" type="id_String" xpath="rest.body:/root/statuses/in_reply_to_user_id_str"/>
+              <children name="in_reply_to_screen_name" type="id_String" xpath="rest.body:/root/statuses/in_reply_to_screen_name"/>
+              <children name="user" type="id_String" xpath="rest.body:/root/statuses/user" loop="true" main="true">
+                <children name="id" type="id_Long" xpath="rest.body:/root/statuses/user/id"/>
+                <children name="id_str" type="id_Long" xpath="rest.body:/root/statuses/user/id_str"/>
+                <children name="name" type="id_String" xpath="rest.body:/root/statuses/user/name"/>
+                <children name="screen_name" type="id_String" xpath="rest.body:/root/statuses/user/screen_name"/>
+                <children name="location" type="id_String" xpath="rest.body:/root/statuses/user/location"/>
+                <children name="description" type="id_String" xpath="rest.body:/root/statuses/user/description"/>
+                <children name="url" type="id_String" xpath="rest.body:/root/statuses/user/url"/>
+                <children name="entities" type="id_String" xpath="rest.body:/root/statuses/user/entities">
+                  <children name="url" type="id_String" xpath="rest.body:/root/statuses/user/entities/url">
+                    <children name="urls" type="id_String" xpath="rest.body:/root/statuses/user/entities/url/urls">
+                      <children name="url" type="id_String" xpath="rest.body:/root/statuses/user/entities/url/urls/url"/>
+                      <children name="expanded_url" type="id_String" xpath="rest.body:/root/statuses/user/entities/url/urls/expanded_url"/>
+                      <children name="display_url" type="id_String" xpath="rest.body:/root/statuses/user/entities/url/urls/display_url"/>
+                      <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/user/entities/url/urls/indices"/>
+                    </children>
+                  </children>
+                  <children name="description" type="id_String" xpath="rest.body:/root/statuses/user/entities/description">
+                    <children name="urls" type="id_String" xpath="rest.body:/root/statuses/user/entities/description/urls">
+                      <children name="url" type="id_String" xpath="rest.body:/root/statuses/user/entities/description/urls/url"/>
+                      <children name="expanded_url" type="id_String" xpath="rest.body:/root/statuses/user/entities/description/urls/expanded_url"/>
+                      <children name="display_url" type="id_String" xpath="rest.body:/root/statuses/user/entities/description/urls/display_url"/>
+                      <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/user/entities/description/urls/indices"/>
+                    </children>
+                  </children>
+                </children>
+                <children name="protected" type="id_Boolean" xpath="rest.body:/root/statuses/user/protected"/>
+                <children name="followers_count" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.2" xpath="rest.body:/root/statuses/user/followers_count"/>
+                <children name="friends_count" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.3" xpath="rest.body:/root/statuses/user/friends_count"/>
+                <children name="listed_count" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.4" xpath="rest.body:/root/statuses/user/listed_count"/>
+                <children name="created_at" type="id_String" xpath="rest.body:/root/statuses/user/created_at"/>
+                <children name="favourites_count" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.5" xpath="rest.body:/root/statuses/user/favourites_count"/>
+                <children name="utc_offset" type="id_String" xpath="rest.body:/root/statuses/user/utc_offset"/>
+                <children name="time_zone" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.1" xpath="rest.body:/root/statuses/user/time_zone"/>
+                <children name="geo_enabled" type="id_Boolean" xpath="rest.body:/root/statuses/user/geo_enabled"/>
+                <children name="verified" type="id_Boolean" xpath="rest.body:/root/statuses/user/verified"/>
+                <children name="statuses_count" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.6" xpath="rest.body:/root/statuses/user/statuses_count"/>
+                <children name="lang" type="id_String" xpath="rest.body:/root/statuses/user/lang"/>
+                <children name="contributors_enabled" type="id_Boolean" xpath="rest.body:/root/statuses/user/contributors_enabled"/>
+                <children name="is_translator" type="id_Boolean" xpath="rest.body:/root/statuses/user/is_translator"/>
+                <children name="is_translation_enabled" type="id_Boolean" xpath="rest.body:/root/statuses/user/is_translation_enabled"/>
+                <children name="profile_background_color" type="id_String" xpath="rest.body:/root/statuses/user/profile_background_color"/>
+                <children name="profile_background_image_url" type="id_String" xpath="rest.body:/root/statuses/user/profile_background_image_url"/>
+                <children name="profile_background_image_url_https" type="id_String" xpath="rest.body:/root/statuses/user/profile_background_image_url_https"/>
+                <children name="profile_background_tile" type="id_Boolean" xpath="rest.body:/root/statuses/user/profile_background_tile"/>
+                <children name="profile_image_url" type="id_String" xpath="rest.body:/root/statuses/user/profile_image_url"/>
+                <children name="profile_image_url_https" type="id_String" xpath="rest.body:/root/statuses/user/profile_image_url_https"/>
+                <children name="profile_banner_url" type="id_String" xpath="rest.body:/root/statuses/user/profile_banner_url"/>
+                <children name="profile_link_color" type="id_String" xpath="rest.body:/root/statuses/user/profile_link_color"/>
+                <children name="profile_sidebar_border_color" type="id_String" xpath="rest.body:/root/statuses/user/profile_sidebar_border_color"/>
+                <children name="profile_sidebar_fill_color" type="id_String" xpath="rest.body:/root/statuses/user/profile_sidebar_fill_color"/>
+                <children name="profile_text_color" type="id_String" xpath="rest.body:/root/statuses/user/profile_text_color"/>
+                <children name="profile_use_background_image" type="id_Boolean" xpath="rest.body:/root/statuses/user/profile_use_background_image"/>
+                <children name="default_profile" type="id_Boolean" xpath="rest.body:/root/statuses/user/default_profile"/>
+                <children name="default_profile_image" type="id_Boolean" xpath="rest.body:/root/statuses/user/default_profile_image"/>
+                <children name="following" type="id_String" xpath="rest.body:/root/statuses/user/following"/>
+                <children name="follow_request_sent" type="id_String" xpath="rest.body:/root/statuses/user/follow_request_sent"/>
+                <children name="notifications" type="id_String" xpath="rest.body:/root/statuses/user/notifications"/>
+              </children>
+              <children name="geo" type="id_String" xpath="rest.body:/root/statuses/geo"/>
+              <children name="coordinates" type="id_String" xpath="rest.body:/root/statuses/coordinates"/>
+              <children name="place" type="id_String" xpath="rest.body:/root/statuses/place"/>
+              <children name="contributors" type="id_String" xpath="rest.body:/root/statuses/contributors"/>
+              <children name="retweet_count" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.7" xpath="rest.body:/root/statuses/retweet_count"/>
+              <children name="favorite_count" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.8" xpath="rest.body:/root/statuses/favorite_count"/>
+              <children name="entities" type="id_String" xpath="rest.body:/root/statuses/entities">
+                <children name="hashtags" type="id_String" xpath="rest.body:/root/statuses/entities/hashtags">
+                  <children name="text" type="id_String" xpath="rest.body:/root/statuses/entities/hashtags/text"/>
+                  <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/entities/hashtags/indices"/>
+                </children>
+                <children name="urls" type="id_String" xpath="rest.body:/root/statuses/entities/urls">
+                  <children name="url" type="id_String" xpath="rest.body:/root/statuses/entities/urls/url"/>
+                  <children name="expanded_url" type="id_String" xpath="rest.body:/root/statuses/entities/urls/expanded_url"/>
+                  <children name="display_url" type="id_String" xpath="rest.body:/root/statuses/entities/urls/display_url"/>
+                  <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/entities/urls/indices"/>
+                </children>
+                <children name="user_mentions" type="id_String" xpath="rest.body:/root/statuses/entities/user_mentions">
+                  <children name="screen_name" type="id_String" xpath="rest.body:/root/statuses/entities/user_mentions/screen_name"/>
+                  <children name="name" type="id_String" xpath="rest.body:/root/statuses/entities/user_mentions/name"/>
+                  <children name="id" type="id_Long" xpath="rest.body:/root/statuses/entities/user_mentions/id"/>
+                  <children name="id_str" type="id_Long" xpath="rest.body:/root/statuses/entities/user_mentions/id_str"/>
+                  <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/entities/user_mentions/indices"/>
+                </children>
+                <children name="media" type="id_String" xpath="rest.body:/root/statuses/entities/media">
+                  <children name="id" type="id_Long" xpath="rest.body:/root/statuses/entities/media/id"/>
+                  <children name="id_str" type="id_Long" xpath="rest.body:/root/statuses/entities/media/id_str"/>
+                  <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/entities/media/indices"/>
+                  <children name="media_url" type="id_String" xpath="rest.body:/root/statuses/entities/media/media_url"/>
+                  <children name="media_url_https" type="id_String" xpath="rest.body:/root/statuses/entities/media/media_url_https"/>
+                  <children name="url" type="id_String" xpath="rest.body:/root/statuses/entities/media/url"/>
+                  <children name="display_url" type="id_String" xpath="rest.body:/root/statuses/entities/media/display_url"/>
+                  <children name="expanded_url" type="id_String" xpath="rest.body:/root/statuses/entities/media/expanded_url"/>
+                  <children name="type" type="id_String" xpath="rest.body:/root/statuses/entities/media/type"/>
+                  <children name="sizes" type="id_String" xpath="rest.body:/root/statuses/entities/media/sizes">
+                    <children name="small" type="id_String" xpath="rest.body:/root/statuses/entities/media/sizes/small">
+                      <children name="w" type="id_Integer" xpath="rest.body:/root/statuses/entities/media/sizes/small/w"/>
+                      <children name="h" type="id_Integer" xpath="rest.body:/root/statuses/entities/media/sizes/small/h"/>
+                      <children name="resize" type="id_String" xpath="rest.body:/root/statuses/entities/media/sizes/small/resize"/>
+                    </children>
+                    <children name="thumb" type="id_String" xpath="rest.body:/root/statuses/entities/media/sizes/thumb">
+                      <children name="w" type="id_Integer" xpath="rest.body:/root/statuses/entities/media/sizes/thumb/w"/>
+                      <children name="h" type="id_Integer" xpath="rest.body:/root/statuses/entities/media/sizes/thumb/h"/>
+                      <children name="resize" type="id_String" xpath="rest.body:/root/statuses/entities/media/sizes/thumb/resize"/>
+                    </children>
+                    <children name="medium" type="id_String" xpath="rest.body:/root/statuses/entities/media/sizes/medium">
+                      <children name="w" type="id_Integer" xpath="rest.body:/root/statuses/entities/media/sizes/medium/w"/>
+                      <children name="h" type="id_Integer" xpath="rest.body:/root/statuses/entities/media/sizes/medium/h"/>
+                      <children name="resize" type="id_String" xpath="rest.body:/root/statuses/entities/media/sizes/medium/resize"/>
+                    </children>
+                    <children name="large" type="id_String" xpath="rest.body:/root/statuses/entities/media/sizes/large">
+                      <children name="w" type="id_Integer" xpath="rest.body:/root/statuses/entities/media/sizes/large/w"/>
+                      <children name="h" type="id_Integer" xpath="rest.body:/root/statuses/entities/media/sizes/large/h"/>
+                      <children name="resize" type="id_String" xpath="rest.body:/root/statuses/entities/media/sizes/large/resize"/>
+                    </children>
+                  </children>
+                  <children name="source_status_id" type="id_Long" xpath="rest.body:/root/statuses/entities/media/source_status_id"/>
+                  <children name="source_status_id_str" type="id_Long" xpath="rest.body:/root/statuses/entities/media/source_status_id_str"/>
+                </children>
+              </children>
+              <children name="favorited" type="id_Boolean" xpath="rest.body:/root/statuses/favorited"/>
+              <children name="retweeted" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted"/>
+              <children name="possibly_sensitive" type="id_Boolean" xpath="rest.body:/root/statuses/possibly_sensitive"/>
+              <children name="lang" type="id_String" xpath="rest.body:/root/statuses/lang"/>
+              <children name="retweeted_status" type="id_String" xpath="rest.body:/root/statuses/retweeted_status">
+                <children name="metadata" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/metadata">
+                  <children name="iso_language_code" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/metadata/iso_language_code"/>
+                  <children name="result_type" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/metadata/result_type"/>
+                </children>
+                <children name="created_at" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/created_at"/>
+                <children name="id" type="id_Long" xpath="rest.body:/root/statuses/retweeted_status/id"/>
+                <children name="id_str" type="id_Long" xpath="rest.body:/root/statuses/retweeted_status/id_str"/>
+                <children name="text" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/text"/>
+                <children name="source" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/source"/>
+                <children name="truncated" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/truncated"/>
+                <children name="in_reply_to_status_id" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/in_reply_to_status_id"/>
+                <children name="in_reply_to_status_id_str" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/in_reply_to_status_id_str"/>
+                <children name="in_reply_to_user_id" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/in_reply_to_user_id"/>
+                <children name="in_reply_to_user_id_str" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/in_reply_to_user_id_str"/>
+                <children name="in_reply_to_screen_name" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/in_reply_to_screen_name"/>
+                <children name="user" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user">
+                  <children name="id" type="id_Long" xpath="rest.body:/root/statuses/retweeted_status/user/id"/>
+                  <children name="id_str" type="id_Long" xpath="rest.body:/root/statuses/retweeted_status/user/id_str"/>
+                  <children name="name" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/name"/>
+                  <children name="screen_name" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/screen_name"/>
+                  <children name="location" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/location"/>
+                  <children name="description" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/description"/>
+                  <children name="url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/url"/>
+                  <children name="entities" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities">
+                    <children name="url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities/url">
+                      <children name="urls" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities/url/urls">
+                        <children name="url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities/url/urls/url"/>
+                        <children name="expanded_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities/url/urls/expanded_url"/>
+                        <children name="display_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities/url/urls/display_url"/>
+                        <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/user/entities/url/urls/indices"/>
+                      </children>
+                    </children>
+                    <children name="description" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities/description">
+                      <children name="urls" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities/description/urls">
+                        <children name="url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities/description/urls/url"/>
+                        <children name="expanded_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities/description/urls/expanded_url"/>
+                        <children name="display_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/entities/description/urls/display_url"/>
+                        <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/user/entities/description/urls/indices"/>
+                      </children>
+                    </children>
+                  </children>
+                  <children name="protected" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/user/protected"/>
+                  <children name="followers_count" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/user/followers_count"/>
+                  <children name="friends_count" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/user/friends_count"/>
+                  <children name="listed_count" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/user/listed_count"/>
+                  <children name="created_at" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/created_at"/>
+                  <children name="favourites_count" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/user/favourites_count"/>
+                  <children name="utc_offset" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/utc_offset"/>
+                  <children name="time_zone" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/time_zone"/>
+                  <children name="geo_enabled" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/user/geo_enabled"/>
+                  <children name="verified" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/user/verified"/>
+                  <children name="statuses_count" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/user/statuses_count"/>
+                  <children name="lang" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/lang"/>
+                  <children name="contributors_enabled" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/user/contributors_enabled"/>
+                  <children name="is_translator" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/user/is_translator"/>
+                  <children name="is_translation_enabled" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/user/is_translation_enabled"/>
+                  <children name="profile_background_color" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/profile_background_color"/>
+                  <children name="profile_background_image_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/profile_background_image_url"/>
+                  <children name="profile_background_image_url_https" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/profile_background_image_url_https"/>
+                  <children name="profile_background_tile" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/user/profile_background_tile"/>
+                  <children name="profile_image_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/profile_image_url"/>
+                  <children name="profile_image_url_https" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/profile_image_url_https"/>
+                  <children name="profile_link_color" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/profile_link_color"/>
+                  <children name="profile_sidebar_border_color" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/profile_sidebar_border_color"/>
+                  <children name="profile_sidebar_fill_color" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/profile_sidebar_fill_color"/>
+                  <children name="profile_text_color" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/profile_text_color"/>
+                  <children name="profile_use_background_image" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/user/profile_use_background_image"/>
+                  <children name="default_profile" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/user/default_profile"/>
+                  <children name="default_profile_image" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/user/default_profile_image"/>
+                  <children name="following" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/following"/>
+                  <children name="follow_request_sent" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/follow_request_sent"/>
+                  <children name="notifications" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/notifications"/>
+                  <children name="profile_banner_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/user/profile_banner_url"/>
+                </children>
+                <children name="geo" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/geo"/>
+                <children name="coordinates" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/coordinates"/>
+                <children name="place" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/place"/>
+                <children name="contributors" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/contributors"/>
+                <children name="retweet_count" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/retweet_count"/>
+                <children name="favorite_count" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/favorite_count"/>
+                <children name="entities" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities">
+                  <children name="hashtags" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/hashtags">
+                    <children name="text" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/hashtags/text"/>
+                    <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/hashtags/indices"/>
+                  </children>
+                  <children name="urls" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/urls">
+                    <children name="url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/urls/url"/>
+                    <children name="expanded_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/urls/expanded_url"/>
+                    <children name="display_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/urls/display_url"/>
+                    <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/urls/indices"/>
+                  </children>
+                  <children name="user_mentions" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/user_mentions">
+                    <children name="screen_name" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/user_mentions/screen_name"/>
+                    <children name="name" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/user_mentions/name"/>
+                    <children name="id" type="id_Long" xpath="rest.body:/root/statuses/retweeted_status/entities/user_mentions/id"/>
+                    <children name="id_str" type="id_Long" xpath="rest.body:/root/statuses/retweeted_status/entities/user_mentions/id_str"/>
+                    <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/user_mentions/indices"/>
+                  </children>
+                  <children name="media" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media">
+                    <children name="id" type="id_Long" xpath="rest.body:/root/statuses/retweeted_status/entities/media/id"/>
+                    <children name="id_str" type="id_Long" xpath="rest.body:/root/statuses/retweeted_status/entities/media/id_str"/>
+                    <children name="indices" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/media/indices"/>
+                    <children name="media_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/media_url"/>
+                    <children name="media_url_https" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/media_url_https"/>
+                    <children name="url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/url"/>
+                    <children name="display_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/display_url"/>
+                    <children name="expanded_url" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/expanded_url"/>
+                    <children name="type" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/type"/>
+                    <children name="sizes" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes">
+                      <children name="small" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/small">
+                        <children name="w" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/small/w"/>
+                        <children name="h" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/small/h"/>
+                        <children name="resize" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/small/resize"/>
+                      </children>
+                      <children name="thumb" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/thumb">
+                        <children name="w" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/thumb/w"/>
+                        <children name="h" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/thumb/h"/>
+                        <children name="resize" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/thumb/resize"/>
+                      </children>
+                      <children name="medium" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/medium">
+                        <children name="w" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/medium/w"/>
+                        <children name="h" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/medium/h"/>
+                        <children name="resize" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/medium/resize"/>
+                      </children>
+                      <children name="large" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/large">
+                        <children name="w" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/large/w"/>
+                        <children name="h" type="id_Integer" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/large/h"/>
+                        <children name="resize" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/entities/media/sizes/large/resize"/>
+                      </children>
+                    </children>
+                    <children name="source_status_id" type="id_Long" xpath="rest.body:/root/statuses/retweeted_status/entities/media/source_status_id"/>
+                    <children name="source_status_id_str" type="id_Long" xpath="rest.body:/root/statuses/retweeted_status/entities/media/source_status_id_str"/>
+                  </children>
+                </children>
+                <children name="favorited" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/favorited"/>
+                <children name="retweeted" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/retweeted"/>
+                <children name="possibly_sensitive" type="id_Boolean" xpath="rest.body:/root/statuses/retweeted_status/possibly_sensitive"/>
+                <children name="lang" type="id_String" xpath="rest.body:/root/statuses/retweeted_status/lang"/>
+              </children>
+            </children>
+            <children name="search_metadata" type="id_String" xpath="rest.body:/root/search_metadata">
+              <children name="completed_in" type="id_Float" xpath="rest.body:/root/search_metadata/completed_in"/>
+              <children name="max_id" type="id_Long" xpath="rest.body:/root/search_metadata/max_id"/>
+              <children name="max_id_str" type="id_Long" xpath="rest.body:/root/search_metadata/max_id_str"/>
+              <children name="next_results" type="id_String" xpath="rest.body:/root/search_metadata/next_results"/>
+              <children name="query" type="id_String" xpath="rest.body:/root/search_metadata/query"/>
+              <children name="refresh_url" type="id_String" xpath="rest.body:/root/search_metadata/refresh_url"/>
+              <children name="count" type="id_Integer" xpath="rest.body:/root/search_metadata/count"/>
+              <children name="since_id" type="id_Integer" xpath="rest.body:/root/search_metadata/since_id"/>
+              <children name="since_id_str" type="id_Integer" xpath="rest.body:/root/search_metadata/since_id_str"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" xpath="rest/string"/>
+      </inputTrees>
+      <outputTrees name="out1">
+        <nodes name="text" expression="[rest.body:/root/statuses/text]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="out1/text" pattern=""/>
+        <nodes name="influence" expression="[rest.body:/root/statuses/user/followers_count] + &#xD;&#xA;[rest.body:/root/statuses/user/friends_count] + &#xD;&#xA;[rest.body:/root/statuses/user/listed_count] + &#xD;&#xA;[rest.body:/root/statuses/user/favourites_count] + &#xD;&#xA;[rest.body:/root/statuses/user/statuses_count] + &#xD;&#xA;[rest.body:/root/statuses/retweet_count] + &#xD;&#xA;[rest.body:/root/statuses/favorite_count] " type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.2 //@node.1/@nodeData/@connections.3 //@node.1/@nodeData/@connections.4 //@node.1/@nodeData/@connections.5 //@node.1/@nodeData/@connections.6 //@node.1/@nodeData/@connections.7 //@node.1/@nodeData/@connections.8" xpath="out1/influence" pattern=""/>
+        <nodes name="timezone" expression="[rest.body:/root/statuses/user/time_zone]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="out1/timezone" pattern=""/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12/@children.15" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12/@children.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12/@children.10" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12/@children.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12/@children.13" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12/@children.18" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.17" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.18" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tStandardizeRow" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="320" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStandardizeRow_1" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="COLUMN_TO_PARSE" value="text"/>
+    <elementParameter field="CHECK" name="STANDARDIZED" value="false"/>
+    <elementParameter field="GENERATEGRAMMARCONTROLLER" name="GEN_PARSER" value="false"/>
+    <elementParameter field="TABLE" name="RULE_TABLE">
+      <elementValue elementRef="RULE_NAME" value="&quot;WORDS&quot;"/>
+      <elementValue elementRef="RULE_TYPE" value="FORMAT"/>
+      <elementValue elementRef="RULE_VALUE" value="&quot;(WORD)|(ALPHANUM)&quot;"/>
+      <elementValue elementRef="SEARCH_MODE" value="-"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SEARCH_UNDEFINED_FIELDS" value="false"/>
+    <elementParameter field="TEXT" name="SLOP_FOR_PARTIAL_MATCH" value="1"/>
+    <elementParameter field="CLOSED_LIST" name="MAX_EDITS_FOR_FUZZY_MATCH" value="1"/>
+    <elementParameter field="RADIO" name="USE_XML_OUTPUT" value="true"/>
+    <elementParameter field="RADIO" name="USE_JSON_OUTPUT" value="false"/>
+    <elementParameter field="CHECK" name="FORMAT_XML_OUTPUT" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tStandardizeRow_1">
+      <column comment="" key="false" length="-1" name="text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="influence" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="timezone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="NORMALIZED_FIELD" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="out1" name="REJECT">
+      <column comment="" key="false" length="-1" name="text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="influence" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="timezone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="NORMALIZED_FIELD" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="error_message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_1" show="false"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
+    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tConvertType_1">
+      <column comment="" key="false" length="-1" name="text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="influence" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="timezone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="NORMALIZED_FIELD" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="out1" name="REJECT">
+      <column comment="" key="false" length="-1" name="text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="influence" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="timezone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="NORMALIZED_FIELD" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="data" name="data">
+      <column comment="" key="false" length="-1" name="WORDS" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="polarity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="text" type="id_String" xpath="row2/text"/>
+        <nodes name="influence" type="id_Integer" xpath="row2/influence"/>
+        <nodes name="timezone" type="id_String" xpath="row2/timezone"/>
+        <nodes name="NORMALIZED_FIELD" expression="" type="id_Document" xpath="row2/NORMALIZED_FIELD">
+          <children name="root" expression="" type="id_String" xpath="row2.NORMALIZED_FIELD:/root" main="true">
+            <children name="WORDS" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.1" xpath="row2.NORMALIZED_FIELD:/root/WORDS" loop="true" main="true" lookupOutgoingConnections="//@node.4/@nodeData/@connections.0"/>
+            <children name="UNMATCHED" expression="" type="id_String" xpath="row2.NORMALIZED_FIELD:/root/UNMATCHED">
+              <children name="UNDEFINED" type="id_String" xpath="row2.NORMALIZED_FIELD:/root/UNMATCHED/UNDEFINED"/>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <inputTrees name="row3" lookup="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <nodes name="type" type="id_String" xpath="row3/type"/>
+        <nodes name="lenght" type="id_String" xpath="row3/lenght"/>
+        <nodes name="word" expression="[row2.NORMALIZED_FIELD:/root/WORDS]" type="id_String" xpath="row3/word" lookupIncomingConnections="//@node.4/@nodeData/@connections.0"/>
+        <nodes name="pos" type="id_String" xpath="row3/pos"/>
+        <nodes name="stemmed" type="id_String" xpath="row3/stemmed"/>
+        <nodes name="polarity" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.2" xpath="row3/polarity"/>
+      </inputTrees>
+      <outputTrees name="data">
+        <nodes name="WORDS" expression="[row2.NORMALIZED_FIELD:/root/WORDS]" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.1" xpath="data/WORDS"/>
+        <nodes name="polarity" expression="row3.polarity" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.2" xpath="data/polarity"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.3/@children.0/@children.0" target="//@node.4/@nodeData/@inputTrees.1/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.3/@children.0/@children.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.1/@nodes.5" target="//@node.4/@nodeData/@outputTrees.0/@nodes.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tHDFSInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_AwWIwRaDEeaOkrf6w6Mr2w" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="HDP_2_3"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" value="USERNAME" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://sandbox.hortonworks.com:8020&quot;"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;talend&quot;"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="BOTH_HADOOP" name="FILENAME" value="&quot;/user/talend/sentiment/lookup/dictionary&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TYPEFILE" value="TEXT"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEYCOLUMN" value="type" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="VALUECOLUMN" value="type" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE : Only boolean, byte, byte[], double, float, integer,&#xA;&#x9;&#x9;&#x9;&#x9;long, short, string are currently supported for key class and value&#xA;&#x9;&#x9;&#x9;&#x9;columns fields&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" value="GZIP" show="false"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHDFSInput_1">
+      <column comment="" key="false" length="10" name="type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="lenght" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="word" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="pos" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="stemmed" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="polarity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/DataMart/Output/tweets.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <metadata connector="FLOW" label="data" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="WORDS" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="polarity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="RESPONSE" label="rest" lineStyle="0" metaname="tRESTClient_1" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="rest" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tStandardizeRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tStandardizeRow_1" offsetLabelX="0" offsetLabelY="0" source="tStandardizeRow_1" target="tConvertType_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="data" lineStyle="0" metaname="data" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="data" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tHDFSInput_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSInput_1" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

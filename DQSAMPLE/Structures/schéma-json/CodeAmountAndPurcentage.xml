@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x15a1e834f82' V1='4' name='CodeAmountAndPurcentage' incarnation='8'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='fr.laposte.colis.schema.pivot.common.units' V281='13' V1='4' name='CodeAmountAndPurcentage' description='Définition d&apos;un montant et/ou code et/ou pourcentage'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='code' description='Code'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='4' V167='21' inheritsFromIncarnation='6' inheritsFromTimestamp='0x15a1e834f7b' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Amount.xml' V281='13' V1='4' name='amount' description='Montant'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='5' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Amount.xml' V281='13' V1='4' name='amount'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='6' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='purcentage' description='Pourcentage'>
+      <structNode t='150' idref='1'/>
+    </child>
+  </rootElem>
+  <child t='162' id='7' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='8' V1='4' name='Document Bindings'>
+  </child>
+</root>

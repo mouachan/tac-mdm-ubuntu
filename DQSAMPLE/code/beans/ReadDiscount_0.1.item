@@ -1,0 +1,31 @@
+package beans;
+
+import org.apache.camel.Exchange;
+
+public class ReadDiscount {
+	/*
+	 * getDiscount: return a string indicating which routing endpoints should be
+	 * applied to the current record. The "Discount" field of the input data
+	 *  is used to determine the appropriate route.
+	 *
+	 * if the customer has a valid discount, the return value would be:
+	 *  "direct:billing,direct:discount,direct:receipt"
+ 	 *
+     	 *  otherwise, the string returned will be:
+	 *      "direct:billing,direct:receipt"
+	*/
+	public static String getDiscount(Exchange exch) {
+		if (exch.getIn().getBody() != null) {
+			java.util.Map data = exch.getIn().getBody(java.util.Map.class);
+			if (data != null) {
+				String discount = (String) (data.get("Discount"));
+				System.out.println("Discount :"+discount);
+				if (!"0.0".equals(discount)) {
+					return "direct:billing,direct:discount,direct:receipt";
+				} else
+					return "direct:billing,direct:receipt";
+			}
+		}
+		return null;
+	}
+}

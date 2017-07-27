@@ -1,0 +1,1755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_cCBmkERVEeeMy-Obu4ebdA" defaultContext="Default" jobType="Big_Data_Batch" framework="Spark">
+  <context xmi:id="_cCBmkURVEeeMy-Obu4ebdA" confirmationNeeded="false" name="Default"/>
+  <parameters xmi:id="_cCBmkkRVEeeMy-Obu4ebdA">
+    <elementParameter xmi:id="_cCBmk0RVEeeMy-Obu4ebdA" field="CHECK" name="LOG4J_RUN_ACTIVATE" value="true" show="false"/>
+    <elementParameter xmi:id="_cCBmlERVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Debug" show="false"/>
+    <elementParameter xmi:id="_cCBmlURVEeeMy-Obu4ebdA" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_cCBmlkRVEeeMy-Obu4ebdA" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_cCBml0RVEeeMy-Obu4ebdA" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmmERVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmmURVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmmkRVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmm0RVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmnERVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmnURVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmnkRVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmn0RVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmoERVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmoURVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmokRVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmo0RVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmpERVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmpURVEeeMy-Obu4ebdA" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmpkRVEeeMy-Obu4ebdA" field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_cCBmp0RVEeeMy-Obu4ebdA" field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_cCBmqERVEeeMy-Obu4ebdA" field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter xmi:id="_cCBmqURVEeeMy-Obu4ebdA" field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter xmi:id="_cCBmqkRVEeeMy-Obu4ebdA" field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter xmi:id="_cCBmq0RVEeeMy-Obu4ebdA" field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBmrERVEeeMy-Obu4ebdA" field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBmrURVEeeMy-Obu4ebdA" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmrkRVEeeMy-Obu4ebdA" field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmr0RVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmsERVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmsURVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_cCBmskRVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_cCBms0RVEeeMy-Obu4ebdA" field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmtERVEeeMy-Obu4ebdA" field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter xmi:id="_cCBmtURVEeeMy-Obu4ebdA" field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmtkRVEeeMy-Obu4ebdA" field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmt0RVEeeMy-Obu4ebdA" field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmuERVEeeMy-Obu4ebdA" field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmuURVEeeMy-Obu4ebdA" field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmukRVEeeMy-Obu4ebdA" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmu0RVEeeMy-Obu4ebdA" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmvERVEeeMy-Obu4ebdA" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmvURVEeeMy-Obu4ebdA" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cCBmvkRVEeeMy-Obu4ebdA" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmv0RVEeeMy-Obu4ebdA" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmwERVEeeMy-Obu4ebdA" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBmwURVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_cCBmwkRVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_cCBmw0RVEeeMy-Obu4ebdA" field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBmxERVEeeMy-Obu4ebdA" field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBmxURVEeeMy-Obu4ebdA" field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBmxkRVEeeMy-Obu4ebdA" field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBmx0RVEeeMy-Obu4ebdA" field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter xmi:id="_cCBmyERVEeeMy-Obu4ebdA" field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter xmi:id="_cCBmyURVEeeMy-Obu4ebdA" field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter xmi:id="_cCBmykRVEeeMy-Obu4ebdA" field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter xmi:id="_cCBmy0RVEeeMy-Obu4ebdA" field="CHECK" name="ON_FILES_FLAG" value="true"/>
+    <elementParameter xmi:id="_cCBmzERVEeeMy-Obu4ebdA" field="DIRECTORY" name="FILE_PATH" value="&quot;D:/AMC&quot;"/>
+    <elementParameter xmi:id="_cCBmzURVEeeMy-Obu4ebdA" field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter xmi:id="_cCBmzkRVEeeMy-Obu4ebdA" field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter xmi:id="_cCBmz0RVEeeMy-Obu4ebdA" field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter xmi:id="_cCBm0ERVEeeMy-Obu4ebdA" field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_cCBm0URVEeeMy-Obu4ebdA" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_cCBm0kRVEeeMy-Obu4ebdA" field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter xmi:id="_cCBm00RVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="DB_TYPE" value="tMSSqlOutput" show="false"/>
+    <elementParameter xmi:id="_cCBm1ERVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="DB_VERSION" value="JTDS" show="false"/>
+    <elementParameter xmi:id="_cCBm1URVEeeMy-Obu4ebdA" field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm1kRVEeeMy-Obu4ebdA" field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_cCBm10RVEeeMy-Obu4ebdA" field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm2ERVEeeMy-Obu4ebdA" field="TEXT" name="HOST" value="&quot;10.144.54.167&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm2URVEeeMy-Obu4ebdA" field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm2kRVEeeMy-Obu4ebdA" field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm20RVEeeMy-Obu4ebdA" field="TEXT" name="DBNAME" value="&quot;TAL_LOGS&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm3ERVEeeMy-Obu4ebdA" field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm3URVEeeMy-Obu4ebdA" field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm3kRVEeeMy-Obu4ebdA" field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm30RVEeeMy-Obu4ebdA" field="TEXT" name="USER" value="&quot;frrdadmin01&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm4ERVEeeMy-Obu4ebdA" field="PASSWORD" name="PASS" value="+z/bJqSmk6TL/kHHj2S1hA==" show="false"/>
+    <elementParameter xmi:id="_cCBm4URVEeeMy-Obu4ebdA" field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm4kRVEeeMy-Obu4ebdA" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm40RVEeeMy-Obu4ebdA" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm5ERVEeeMy-Obu4ebdA" field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBm5URVEeeMy-Obu4ebdA" field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter xmi:id="_cCBm5kRVEeeMy-Obu4ebdA" field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter xmi:id="_cCBm50RVEeeMy-Obu4ebdA" field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter xmi:id="_cCBm6ERVEeeMy-Obu4ebdA" field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter xmi:id="_cCBm6URVEeeMy-Obu4ebdA" field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter xmi:id="_cCBm6kRVEeeMy-Obu4ebdA" field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBm60RVEeeMy-Obu4ebdA" field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_cCBm7ERVEeeMy-Obu4ebdA" field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_cCBm7URVEeeMy-Obu4ebdA" field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_cCBm7kRVEeeMy-Obu4ebdA" field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter xmi:id="_cCBm70RVEeeMy-Obu4ebdA" field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBm8ERVEeeMy-Obu4ebdA" field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_cCBm8URVEeeMy-Obu4ebdA" field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_cCBm8kRVEeeMy-Obu4ebdA" field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_cCBm80RVEeeMy-Obu4ebdA" field="CHECK" name="SPARK_LOCAL_MODE" value="false"/>
+    <elementParameter xmi:id="_cCBm9ERVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="SPARK_LOCAL_VERSION" value="SPARK_2_0_0" show="false"/>
+    <elementParameter xmi:id="_cCBm9URVEeeMy-Obu4ebdA" field="TECHNICAL" name="MR_PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_cCBm9kRVEeeMy-Obu4ebdA" field="TECHNICAL" name="MR_PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_rkNYsCwEEee2NtV88zc1WA" show="false"/>
+    <elementParameter xmi:id="_cCBm90RVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
+    <elementParameter xmi:id="_cCBm-ERVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="SPARK_VERSION" value="Cloudera_CDH5_8"/>
+    <elementParameter xmi:id="_cCBm-URVEeeMy-Obu4ebdA" field="HADOOP_DISTRIBUTION" name="SPARKBATCH" value=""/>
+    <elementParameter xmi:id="_cCBm-kRVEeeMy-Obu4ebdA" field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter xmi:id="_cCBm-0RVEeeMy-Obu4ebdA" field="LABEL" name="NOTE" value="** The version of Spark must be 1.3.0 or later." show="false"/>
+    <elementParameter xmi:id="_cCBm_ERVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="SPARK_API_VERSION" value="SPARK_200" show="false"/>
+    <elementParameter xmi:id="_cCBm_URVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="SPARK_MODE" value="YARN_CLIENT"/>
+    <elementParameter xmi:id="_cCBm_kRVEeeMy-Obu4ebdA" field="TEXT" name="RESOURCE_MANAGER" value="&quot;frrdcmstr01d.rd.loreal:8032&quot;"/>
+    <elementParameter xmi:id="_cCBm_0RVEeeMy-Obu4ebdA" field="CHECK" name="SET_SCHEDULER_ADDRESS" value="true"/>
+    <elementParameter xmi:id="_cCBnAERVEeeMy-Obu4ebdA" field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;frrdcmstr01d.rd.loreal:8030&quot;"/>
+    <elementParameter xmi:id="_cCBnAURVEeeMy-Obu4ebdA" field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="true"/>
+    <elementParameter xmi:id="_cCBnAkRVEeeMy-Obu4ebdA" field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;frrdcmstr01d.rd.loreal:10020&quot;"/>
+    <elementParameter xmi:id="_cCBnA0RVEeeMy-Obu4ebdA" field="CHECK" name="SET_STAGING_DIRECTORY" value="true"/>
+    <elementParameter xmi:id="_cCBnBERVEeeMy-Obu4ebdA" field="TEXT" name="STAGING_DIRECTORY" value="&quot;/user&quot;"/>
+    <elementParameter xmi:id="_cCBnBURVEeeMy-Obu4ebdA" field="TEXT" name="HDINSIGHT_ENDPOINT" value="&quot;https://xxxx.azurehdinsight.net&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnBkRVEeeMy-Obu4ebdA" field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnB0RVEeeMy-Obu4ebdA" field="PASSWORD" name="HDINSIGHT_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cCBnCERVEeeMy-Obu4ebdA" field="TEXT" name="LIVY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnCURVEeeMy-Obu4ebdA" field="TEXT" name="LIVY_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnCkRVEeeMy-Obu4ebdA" field="TEXT" name="LIVY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnC0RVEeeMy-Obu4ebdA" field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnDERVEeeMy-Obu4ebdA" field="PASSWORD" name="HDINSIGHT_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cCBnDURVEeeMy-Obu4ebdA" field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnDkRVEeeMy-Obu4ebdA" field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnD0RVEeeMy-Obu4ebdA" field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnEERVEeeMy-Obu4ebdA" field="PASSWORD" name="WASB_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cCBnEURVEeeMy-Obu4ebdA" field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnEkRVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_HOST" value="&quot;spark://localhost:7077&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnE0RVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_HOME" value="&quot;/usr/lib/spark&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnFERVEeeMy-Obu4ebdA" field="CHECK" name="DEFINE_HADOOP_HOME_DIR" value="false"/>
+    <elementParameter xmi:id="_cCBnFURVEeeMy-Obu4ebdA" field="TEXT" name="HADOOP_HOME_DIR" value="&quot;C:/Talend/winutils&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnFkRVEeeMy-Obu4ebdA" field="CHECK" name="DEFINE_SPARK_DRIVER_HOST" value="false"/>
+    <elementParameter xmi:id="_cCBnF0RVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_DRIVER_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnGERVEeeMy-Obu4ebdA" field="CHECK" name="USE_KRB" value="true"/>
+    <elementParameter xmi:id="_cCBnGURVEeeMy-Obu4ebdA" field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@RD.LOREAL&quot;"/>
+    <elementParameter xmi:id="_cCBnGkRVEeeMy-Obu4ebdA" field="TEXT" name="JOBHISTORY_PRINCIPAL" value="&quot;mapred/_HOST@RD.LOREAL&quot;"/>
+    <elementParameter xmi:id="_cCBnG0RVEeeMy-Obu4ebdA" field="CHECK" name="USE_KEYTAB" value="true"/>
+    <elementParameter xmi:id="_cCBnHERVEeeMy-Obu4ebdA" field="TEXT" name="PRINCIPAL" value="&quot;cu_app_poc_tal_d_sce@RD.LOREAL&quot;"/>
+    <elementParameter xmi:id="_cCBnHURVEeeMy-Obu4ebdA" field="FILE" name="KEYTAB_PATH" value="&quot;C:/cu_app_poc_tal_d_sce.keytab&quot;"/>
+    <elementParameter xmi:id="_cCBnHkRVEeeMy-Obu4ebdA" field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnH0RVEeeMy-Obu4ebdA" field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnIERVEeeMy-Obu4ebdA" field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cCBnIURVEeeMy-Obu4ebdA" field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnIkRVEeeMy-Obu4ebdA" field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter xmi:id="_cCBnI0RVEeeMy-Obu4ebdA" field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnJERVEeeMy-Obu4ebdA" field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnJURVEeeMy-Obu4ebdA" field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnJkRVEeeMy-Obu4ebdA" field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnJ0RVEeeMy-Obu4ebdA" field="CHECK" name="ADVANCED_SETTINGS_CHECK" value="false"/>
+    <elementParameter xmi:id="_cCBnKERVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_DRIVER_MEM" value="&quot;512m&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnKURVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_DRIVER_CORES" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnKkRVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_EXECUTOR_MEM" value="&quot;512m&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnK0RVEeeMy-Obu4ebdA" field="CHECK" name="SET_SPARK_EXECUTOR_MEM_OVERHEAD" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnLERVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_EXECUTOR_MEM_OVERHEAD" value="&quot;384&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnLURVEeeMy-Obu4ebdA" field="CHECK" name="SPARK_EXECUTOR_CORES_CHECK" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnLkRVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_EXECUTOR_CORES" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnL0RVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="SPARK_YARN_ALLOC_TYPE" value="AUTO" show="false"/>
+    <elementParameter xmi:id="_cCBnMERVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_EXECUTOR_INSTANCES" value="&quot;2&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnMURVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_YARN_DYN_INIT" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnMkRVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_YARN_DYN_MIN" value="&quot;0&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnM0RVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_YARN_DYN_MAX" value="&quot;MAX&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnNERVEeeMy-Obu4ebdA" field="CHECK" name="WEB_UI_PORT_CHECK" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnNURVEeeMy-Obu4ebdA" field="TEXT" name="WEB_UI_PORT" value="&quot;4040&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnNkRVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="SPARK_BROADCAST_FACTORY" value="AUTO" show="false"/>
+    <elementParameter xmi:id="_cCBnN0RVEeeMy-Obu4ebdA" field="CHECK" name="CUSTOMIZE_SPARK_SERIALIZER" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnOERVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_SERIALIZER" value="&quot;org.apache.spark.serializer.KryoSerializer&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnOURVEeeMy-Obu4ebdA" field="CHECK" name="ENABLE_SPARK_EVENT_LOGGING" value="true"/>
+    <elementParameter xmi:id="_cCBnOkRVEeeMy-Obu4ebdA" field="CHECK" name="COMPRESS_SPARK_EVENT_LOGS" value="false"/>
+    <elementParameter xmi:id="_cCBnO0RVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_EVENT_LOG_DIR" value="&quot;hdfs://10.144.65.7:8020/user/spark/applicationHistory&quot;&#xD;&#xA;&#x9;&#x9;&#x9;"/>
+    <elementParameter xmi:id="_cCBnPERVEeeMy-Obu4ebdA" field="TEXT" name="SPARKHISTORY_ADDRESS" value="&quot;10.144.65.7:18080&quot;"/>
+    <elementParameter xmi:id="_cCBnPURVEeeMy-Obu4ebdA" field="CHECK" name="USE_CLOUDERA_NAVIGATOR" value="true"/>
+    <elementParameter xmi:id="_cCBnPkRVEeeMy-Obu4ebdA" field="TEXT" name="CLOUDERA_NAVIGATOR_USERNAME" value="&quot;admin&quot;"/>
+    <elementParameter xmi:id="_cCBnP0RVEeeMy-Obu4ebdA" field="PASSWORD" name="CLOUDERA_NAVIGATOR_PASSWORD" value="dg26eu0zJXA3twQTj3ZnIQ=="/>
+    <elementParameter xmi:id="_cCBnQERVEeeMy-Obu4ebdA" field="TEXT" name="CLOUDERA_NAVIGATOR_URL" value="&quot;http://frrdcmstr01d.rd.loreal:7187/api/v8/&quot;"/>
+    <elementParameter xmi:id="_cCBnQURVEeeMy-Obu4ebdA" field="TEXT" name="CLOUDERA_NAVIGATOR_METADATA_URL" value="&quot;http://frrdcmstr01d.rd.loreal:7187/api/v8/metadata/plugin&quot;"/>
+    <elementParameter xmi:id="_cCBnQkRVEeeMy-Obu4ebdA" field="TEXT" name="CLOUDERA_NAVIGATOR_CLIENT_URL" value="&quot;http://frrdcmstr01d.rd.loreal:7187/&quot;"/>
+    <elementParameter xmi:id="_cCBnQ0RVEeeMy-Obu4ebdA" field="CHECK" name="CLOUDERA_NAVIGATOR_AUTOCOMMIT" value="true"/>
+    <elementParameter xmi:id="_cCBnRERVEeeMy-Obu4ebdA" field="CHECK" name="CLOUDERA_NAVIGATOR_DISABLE_SSL_VALIDATION" value="true"/>
+    <elementParameter xmi:id="_cCBnRURVEeeMy-Obu4ebdA" field="CHECK" name="CLOUDERA_NAVIGATOR_DIE_ON_ERROR" value="false"/>
+    <elementParameter xmi:id="_cCBnRkRVEeeMy-Obu4ebdA" field="CHECK" name="USE_ATLAS" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnR0RVEeeMy-Obu4ebdA" field="TEXT" name="ATLAS_URL" value="&quot;http://localhost:21000&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnSERVEeeMy-Obu4ebdA" field="TEXT" name="ATLAS_USERNAME" value="&quot;admin&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnSURVEeeMy-Obu4ebdA" field="PASSWORD" name="ATLAS_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_cCBnSkRVEeeMy-Obu4ebdA" field="CHECK" name="SET_ATLAS_APPLICATION_PROPERTIES" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnS0RVEeeMy-Obu4ebdA" field="TEXT" name="ATLAS_APPLICATION_PROPERTIES" value="&quot;/user/atlas/atlas-application.properties&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnTERVEeeMy-Obu4ebdA" field="CHECK" name="ATLAS_DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnTURVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_SCRATCH_DIR" value="&quot;/user&quot;"/>
+    <elementParameter xmi:id="_cCBnTkRVEeeMy-Obu4ebdA" field="CHECK" name="USE_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_cCBnT0RVEeeMy-Obu4ebdA" field="TEXT" name="CHECKPOINT_DIR" value="&quot;file:///tmp/mycheckpoint&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnUERVEeeMy-Obu4ebdA" field="TABLE" name="SPARK_ADVANCED_PROPERTIES"/>
+    <elementParameter xmi:id="_3XQF4GxjEeeL37kXNPv4gw" field="CLOSED_LIST" name="SUPPORTED_SPARK_VERSION" value="SPARK_1_6_0"/>
+    <routinesParameter xmi:id="_cCBnUURVEeeMy-Obu4ebdA" id="_Pyb84CvuEee_mvmla291yg" name="DQTechnical"/>
+    <routinesParameter xmi:id="_cCBnUkRVEeeMy-Obu4ebdA" id="_PqPqMCvuEee_mvmla291yg" name="DataMasking"/>
+    <routinesParameter xmi:id="_cCBnU0RVEeeMy-Obu4ebdA" id="_POhXgCvuEee_mvmla291yg" name="DataOperation"/>
+    <routinesParameter xmi:id="_cCBnVERVEeeMy-Obu4ebdA" id="_PuQngCvuEee_mvmla291yg" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_cCBnVURVEeeMy-Obu4ebdA" id="_PsUt0CvuEee_mvmla291yg" name="DataQuality"/>
+    <routinesParameter xmi:id="_cCBnVkRVEeeMy-Obu4ebdA" id="_PwWSMCvuEee_mvmla291yg" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_cCBnV0RVEeeMy-Obu4ebdA" id="_PXwzECvuEee_mvmla291yg" name="Mathematical"/>
+    <routinesParameter xmi:id="_cCBnWERVEeeMy-Obu4ebdA" id="_PZ_nsCvuEee_mvmla291yg" name="Numeric"/>
+    <routinesParameter xmi:id="_cCBnWURVEeeMy-Obu4ebdA" id="_Pch-UCvuEee_mvmla291yg" name="Relational"/>
+    <routinesParameter xmi:id="_cCBnWkRVEeeMy-Obu4ebdA" id="_P00igCvuEee_mvmla291yg" name="SQLike"/>
+    <routinesParameter xmi:id="_cCBnW0RVEeeMy-Obu4ebdA" id="_Pe6j8CvuEee_mvmla291yg" name="StringHandling"/>
+    <routinesParameter xmi:id="_cCBnXERVEeeMy-Obu4ebdA" id="_Ph8p0CvuEee_mvmla291yg" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_cCBnXURVEeeMy-Obu4ebdA" id="_PkbWECvuEee_mvmla291yg" name="TalendDate"/>
+    <routinesParameter xmi:id="_cCBnXkRVEeeMy-Obu4ebdA" id="_PmqxwCvuEee_mvmla291yg" name="TalendString"/>
+    <routinesParameter xmi:id="_cCBnX0RVEeeMy-Obu4ebdA" id="_KUV10DScEeeyDp5EbBVXZw" name="ImageResize"/>
+  </parameters>
+  <node xmi:id="_cCBnYERVEeeMy-Obu4ebdA" componentName="tHiveConfiguration" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="32" sizeX="32" sizeY="35">
+    <elementParameter xmi:id="_cCBnYURVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tHiveConfiguration_2" show="false"/>
+    <elementParameter xmi:id="_cCBnYkRVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_cCBnY0RVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_u2NtsDo2Eee_wuCTPLAcHw" show="false"/>
+    <elementParameter xmi:id="_cCBnZERVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
+    <elementParameter xmi:id="_cCBnZURVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="DB_VERSION" value="Cloudera_CDH5_8"/>
+    <elementParameter xmi:id="_cCBnZkRVEeeMy-Obu4ebdA" field="HADOOP_DISTRIBUTION" name="HIVEONSPARK" value=""/>
+    <elementParameter xmi:id="_cCBnZ0RVEeeMy-Obu4ebdA" field="TEXT" name="HOST" value="&quot;frrdcmstr01d.rd.loreal&quot;"/>
+    <elementParameter xmi:id="_cCBnaERVEeeMy-Obu4ebdA" field="TEXT" name="PORT" value="&quot;9083&quot;"/>
+    <elementParameter xmi:id="_cCBnaURVEeeMy-Obu4ebdA" field="CHECK" name="USE_KRB" value="true"/>
+    <elementParameter xmi:id="_cCBnakRVEeeMy-Obu4ebdA" field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@RD.LOREAL&quot;"/>
+    <elementParameter xmi:id="_cCBna0RVEeeMy-Obu4ebdA" field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter xmi:id="_cCBnbERVEeeMy-Obu4ebdA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_cCBnbURVEeeMy-Obu4ebdA" componentName="tHDFSConfiguration" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+    <elementParameter xmi:id="_cCBnbkRVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tHDFSConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cCBnb0RVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_cCBncERVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lDwG8CwFEee2NtV88zc1WA" show="false"/>
+    <elementParameter xmi:id="_cCBncURVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
+    <elementParameter xmi:id="_cCBnckRVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="DB_VERSION" value="Cloudera_CDH5_8"/>
+    <elementParameter xmi:id="_cCBnc0RVEeeMy-Obu4ebdA" field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter xmi:id="_cCBndERVEeeMy-Obu4ebdA" field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter xmi:id="_cCBndURVEeeMy-Obu4ebdA" field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://frrdcmstr01d.rd.loreal:8020&quot;"/>
+    <elementParameter xmi:id="_cCBndkRVEeeMy-Obu4ebdA" field="CHECK" name="USE_KRB" value="true"/>
+    <elementParameter xmi:id="_cCBnd0RVEeeMy-Obu4ebdA" field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/_HOST@RD.LOREAL&quot;"/>
+    <elementParameter xmi:id="_cCBneERVEeeMy-Obu4ebdA" field="CHECK" name="USE_KEYTAB" value="true"/>
+    <elementParameter xmi:id="_cCBneURVEeeMy-Obu4ebdA" field="TEXT" name="PRINCIPAL" value="&quot;cu_app_poc_tal_d_sce@RD.LOREAL&quot;"/>
+    <elementParameter xmi:id="_cCBnekRVEeeMy-Obu4ebdA" field="FILE" name="KEYTAB_PATH" value="&quot;C:/cu_app_poc_tal_d_sce.keytab&quot;"/>
+    <elementParameter xmi:id="_cCBne0RVEeeMy-Obu4ebdA" field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnfERVEeeMy-Obu4ebdA" field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnfURVEeeMy-Obu4ebdA" field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter xmi:id="_cCBnfkRVEeeMy-Obu4ebdA" field="TEXT" name="TEMP_FOLDER" value="&quot;/user/cu_app_poc_tal_d_sce/tmp&quot;"/>
+    <elementParameter xmi:id="_cCBnf0RVEeeMy-Obu4ebdA" field="CHECK" name="USE_HDFS_ENCRYPTION" value="false"/>
+    <elementParameter xmi:id="_cCBngERVEeeMy-Obu4ebdA" field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" value="&quot;kms://http@localhost:16000/kms&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBngURVEeeMy-Obu4ebdA" field="TABLE" name="HADOOP_ADVANCED_PROPERTIES">
+      <elementValue xmi:id="_cCBngkRVEeeMy-Obu4ebdA" elementRef="PROPERTY" value="&quot;hadoop.rpc.protection&quot;"/>
+      <elementValue xmi:id="_cCBng0RVEeeMy-Obu4ebdA" elementRef="VALUE" value="&quot;authentication&quot;"/>
+      <elementValue xmi:id="_cCBnhERVEeeMy-Obu4ebdA" elementRef="BUILDIN" value=""/>
+      <elementValue xmi:id="_cCBnhURVEeeMy-Obu4ebdA" elementRef="PROPERTY" value="&quot;yarn.app.mapreduce.am.staging-dir&quot;"/>
+      <elementValue xmi:id="_cCBnhkRVEeeMy-Obu4ebdA" elementRef="VALUE" value="&quot;/user&quot;"/>
+      <elementValue xmi:id="_cCBnh0RVEeeMy-Obu4ebdA" elementRef="BUILDIN" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_cCBniERVEeeMy-Obu4ebdA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_cCBniURVEeeMy-Obu4ebdA" componentName="tHiveInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
+    <elementParameter xmi:id="_cCBnikRVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tHiveInput_4" show="false"/>
+    <elementParameter xmi:id="_cCBni0RVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_cCBnjERVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_u2NtsDo2Eee_wuCTPLAcHw" show="false"/>
+    <elementParameter xmi:id="_cCBnjURVEeeMy-Obu4ebdA" field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_2"/>
+    <elementParameter xmi:id="_cCBnjkRVEeeMy-Obu4ebdA" field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_cCBnj0RVEeeMy-Obu4ebdA" field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter xmi:id="_cCBnkERVEeeMy-Obu4ebdA" field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_u2NtsDo2Eee_wuCTPLAcHw - input_bt_images" show="false"/>
+    <elementParameter xmi:id="_cCBnkURVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="INPUT_SOURCE" value="HIVE_TABLE"/>
+    <elementParameter xmi:id="_cCBnkkRVEeeMy-Obu4ebdA" field="TEXT" name="HIVE_DATABASE_NAME" value="&quot;poc_imagebank&quot;"/>
+    <elementParameter xmi:id="_cCBnk0RVEeeMy-Obu4ebdA" field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;input_bt_images&quot;"/>
+    <elementParameter xmi:id="_cCBnlERVEeeMy-Obu4ebdA" field="MEMO" name="SQL_QUERY" value="&quot;select id, name from table&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnlURVEeeMy-Obu4ebdA" field="TEXT" name="FILENAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCBnlkRVEeeMy-Obu4ebdA" field="TEXT" name="TYPE" value="HIVE" show="false"/>
+    <elementParameter xmi:id="_cCBnl0RVEeeMy-Obu4ebdA" field="TABLE" name="REGISTER_JARS"/>
+    <elementParameter xmi:id="_cCBnmERVEeeMy-Obu4ebdA" field="TABLE" name="TEMP_UDF_FUNCTIONS"/>
+    <elementParameter xmi:id="_cCBnmURVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cCBnmkRVEeeMy-Obu4ebdA" field="TEXT" name="LABEL" value="__HIVE_TABLE_NAME__"/>
+    <elementParameter xmi:id="_cCBnm0RVEeeMy-Obu4ebdA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cCBnnERVEeeMy-Obu4ebdA" connector="FLOW" label="input_bt_images" name="tHiveInput_4">
+      <column xmi:id="_cCCNoERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="id_volunteer" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNoURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNokRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_family" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNo0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNpERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_type" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNpURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNpkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_name" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNp0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNqERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_category" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNqURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNqkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="instrument" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNq0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNrERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="treatment" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNrURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNrkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="orientation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNr0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNsERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNsURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <additionalProperties xmi:id="_cCCNskRVEeeMy-Obu4ebdA" key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node xmi:id="_cCCNs0RVEeeMy-Obu4ebdA" componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="256">
+    <elementParameter xmi:id="_cCCNtERVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter xmi:id="_cCCNtURVEeeMy-Obu4ebdA" field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter xmi:id="_cCCNtkRVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter xmi:id="_cCCNt0RVEeeMy-Obu4ebdA" field="CHECK" name="REPLICATED_JOIN" value="false"/>
+    <elementParameter xmi:id="_cCCNuERVEeeMy-Obu4ebdA" field="IMAGE" name="PREVIEW" value="_RJhzoDo8Eee_wuCTPLAcHw-tMap_2-PREVIEW.bmp"/>
+    <elementParameter xmi:id="_cCCNuURVEeeMy-Obu4ebdA" field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter xmi:id="_cCCNukRVEeeMy-Obu4ebdA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cCCNu0RVEeeMy-Obu4ebdA" connector="FLOW" name="out1">
+      <column xmi:id="_cCCNvERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="id_volunteer" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNvURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNvkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_family" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNv0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNwERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_type" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNwURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNwkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_name" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNw0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNxERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_category" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNxURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNxkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="instrument_code" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNx0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNyERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="treatment" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNyURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNykRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="orientation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNy0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNzERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNzURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCNzkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="instrument_lib" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCNz0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData" xmi:id="_cCCN0ERVEeeMy-Obu4ebdA">
+      <uiProperties xmi:id="_cCCN0URVEeeMy-Obu4ebdA" shellMaximized="true"/>
+      <varTables xmi:id="_cCCN0kRVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables xmi:id="_cCCN00RVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries xmi:id="_cCCN1ERVEeeMy-Obu4ebdA" name="id_volunteer" expression="images.id_volunteer " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN1URVEeeMy-Obu4ebdA" name="image_family" expression="images.image_family " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN1kRVEeeMy-Obu4ebdA" name="image_type" expression="images.image_type " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN10RVEeeMy-Obu4ebdA" name="image_name" expression="images.image_name " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN2ERVEeeMy-Obu4ebdA" name="image_category" expression="images.image_category " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN2URVEeeMy-Obu4ebdA" name="instrument_code" expression="images.instrument " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN2kRVEeeMy-Obu4ebdA" name="treatment" expression="images.treatment " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN20RVEeeMy-Obu4ebdA" name="orientation" expression="images.orientation " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN3ERVEeeMy-Obu4ebdA" name="image" expression="images.image " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN3URVEeeMy-Obu4ebdA" name="instrument_lib" expression="instruments.lib " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables xmi:id="_cCCN3kRVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="images" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_cCCN30RVEeeMy-Obu4ebdA" name="id_volunteer" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN4ERVEeeMy-Obu4ebdA" name="image_family" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN4URVEeeMy-Obu4ebdA" name="image_type" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN4kRVEeeMy-Obu4ebdA" name="image_name" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN40RVEeeMy-Obu4ebdA" name="image_category" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN5ERVEeeMy-Obu4ebdA" name="instrument" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN5URVEeeMy-Obu4ebdA" name="treatment" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN5kRVEeeMy-Obu4ebdA" name="orientation" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCN50RVEeeMy-Obu4ebdA" name="image" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables xmi:id="_cCCN6ERVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="instruments" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_cCCN6URVEeeMy-Obu4ebdA" name="code" expression="images.instrument " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries xmi:id="_cCCN6kRVEeeMy-Obu4ebdA" name="lib" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node xmi:id="_cCCN60RVEeeMy-Obu4ebdA" componentName="tHiveInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="384">
+    <elementParameter xmi:id="_cCCN7ERVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tHiveInput_3" show="false"/>
+    <elementParameter xmi:id="_cCCN7URVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_cCCN7kRVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_u2NtsDo2Eee_wuCTPLAcHw" show="false"/>
+    <elementParameter xmi:id="_cCCN70RVEeeMy-Obu4ebdA" field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_2"/>
+    <elementParameter xmi:id="_cCCN8ERVEeeMy-Obu4ebdA" field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_cCCN8URVEeeMy-Obu4ebdA" field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter xmi:id="_cCCN8kRVEeeMy-Obu4ebdA" field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_u2NtsDo2Eee_wuCTPLAcHw - input_bt_instruments" show="false"/>
+    <elementParameter xmi:id="_cCCN80RVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="INPUT_SOURCE" value="HIVE_TABLE"/>
+    <elementParameter xmi:id="_cCCN9ERVEeeMy-Obu4ebdA" field="TEXT" name="HIVE_DATABASE_NAME" value="&quot;poc_imagebank&quot;"/>
+    <elementParameter xmi:id="_cCCN9URVEeeMy-Obu4ebdA" field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;input_bt_instruments&quot;"/>
+    <elementParameter xmi:id="_cCCN9kRVEeeMy-Obu4ebdA" field="MEMO" name="SQL_QUERY" value="&quot;select id, name from table&quot;" show="false"/>
+    <elementParameter xmi:id="_cCCN90RVEeeMy-Obu4ebdA" field="TEXT" name="FILENAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCCN-ERVEeeMy-Obu4ebdA" field="TEXT" name="TYPE" value="HIVE" show="false"/>
+    <elementParameter xmi:id="_cCCN-URVEeeMy-Obu4ebdA" field="TABLE" name="REGISTER_JARS"/>
+    <elementParameter xmi:id="_cCCN-kRVEeeMy-Obu4ebdA" field="TABLE" name="TEMP_UDF_FUNCTIONS"/>
+    <elementParameter xmi:id="_cCCN-0RVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cCCN_ERVEeeMy-Obu4ebdA" field="TEXT" name="LABEL" value="__HIVE_TABLE_NAME__"/>
+    <elementParameter xmi:id="_cCCN_URVEeeMy-Obu4ebdA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cCCN_kRVEeeMy-Obu4ebdA" connector="FLOW" label="input_bt_instruments" name="tHiveInput_3">
+      <column xmi:id="_cCCN_0RVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="code" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOAERVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOAURVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="lib" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOAkRVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <additionalProperties xmi:id="_cCCOA0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node xmi:id="_cCCOBERVEeeMy-Obu4ebdA" componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
+    <elementParameter xmi:id="_cCCOBURVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter xmi:id="_cCCOBkRVEeeMy-Obu4ebdA" field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter xmi:id="_cCCOB0RVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter xmi:id="_cCCOCERVEeeMy-Obu4ebdA" field="CHECK" name="REPLICATED_JOIN" value="false"/>
+    <elementParameter xmi:id="_cCCOCURVEeeMy-Obu4ebdA" field="IMAGE" name="PREVIEW" value="_RJhzoDo8Eee_wuCTPLAcHw-tMap_3-PREVIEW.bmp"/>
+    <elementParameter xmi:id="_cCCOCkRVEeeMy-Obu4ebdA" field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter xmi:id="_cCCOC0RVEeeMy-Obu4ebdA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cCCODERVEeeMy-Obu4ebdA" name="out2">
+      <column xmi:id="_cCCODURVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="id_volunteer" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCODkRVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOD0RVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_family" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOEERVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOEURVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_type" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOEkRVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOE0RVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_name" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOFERVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOFURVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="image_category" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOFkRVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOF0RVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="image_url" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCCOGERVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="ethnicity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCCOGURVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="age" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCCOGkRVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="gender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCCOG0RVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="study_number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCCOHERVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="description" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCCOHURVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="instrument_lib" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOHkRVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOH0RVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="treatment" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOIERVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOIURVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="orientation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOIkRVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOI0RVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCCOJERVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData" xmi:id="_cCCOJURVEeeMy-Obu4ebdA">
+      <uiProperties xmi:id="_cCCOJkRVEeeMy-Obu4ebdA" shellMaximized="true"/>
+      <varTables xmi:id="_cCCOJ0RVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables xmi:id="_cCCOKERVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="out2">
+        <mapperTableEntries xmi:id="_cCCOKURVEeeMy-Obu4ebdA" name="id_volunteer" expression="out1.id_volunteer " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOKkRVEeeMy-Obu4ebdA" name="image_family" expression="out1.image_family " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOK0RVEeeMy-Obu4ebdA" name="image_type" expression="out1.image_type " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOLERVEeeMy-Obu4ebdA" name="image_name" expression="out1.image_name " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOLURVEeeMy-Obu4ebdA" name="image_category" expression="out1.image_category " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOLkRVEeeMy-Obu4ebdA" name="image_url" expression="&quot;/poc_images/&quot;+out1.id_volunteer+&quot;/&quot;+out1.image_family+&quot;:&quot;+out1.image_name " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOL0RVEeeMy-Obu4ebdA" name="ethnicity" expression="minibase.ethnicity " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOMERVEeeMy-Obu4ebdA" name="age" expression="minibase.age " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOMURVEeeMy-Obu4ebdA" name="gender" expression="minibase.gender " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOMkRVEeeMy-Obu4ebdA" name="study_number" expression="minibase.study_number " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOM0RVEeeMy-Obu4ebdA" name="description" expression="minibase.description " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCONERVEeeMy-Obu4ebdA" name="instrument_lib" expression="out1.instrument_lib " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCONURVEeeMy-Obu4ebdA" name="treatment" expression="out1.treatment " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCONkRVEeeMy-Obu4ebdA" name="orientation" expression="out1.orientation " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCON0RVEeeMy-Obu4ebdA" name="newColumn" expression="&quot;/poc_images/&quot;+out1.id_volunteer+&quot;/Volunteer_info&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOOERVEeeMy-Obu4ebdA" name="newColumn1" expression="&quot;/poc_images/&quot;+out1.id_volunteer+&quot;/Expert_scoring_on_pictures&quot;" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables xmi:id="_cCCOOURVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_cCCOOkRVEeeMy-Obu4ebdA" name="id_volunteer" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOO0RVEeeMy-Obu4ebdA" name="image_family" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOPERVEeeMy-Obu4ebdA" name="image_type" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOPURVEeeMy-Obu4ebdA" name="image_name" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOPkRVEeeMy-Obu4ebdA" name="image_category" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOP0RVEeeMy-Obu4ebdA" name="instrument_code" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOQERVEeeMy-Obu4ebdA" name="treatment" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOQURVEeeMy-Obu4ebdA" name="orientation" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOQkRVEeeMy-Obu4ebdA" name="image" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOQ0RVEeeMy-Obu4ebdA" name="instrument_lib" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables xmi:id="_cCCORERVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="minibase" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_cCCORURVEeeMy-Obu4ebdA" name="JoinKey" expression="out1.id_volunteer " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries xmi:id="_cCCORkRVEeeMy-Obu4ebdA" name="id_volunteer" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOR0RVEeeMy-Obu4ebdA" name="id_inclusion" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOSERVEeeMy-Obu4ebdA" name="ethnicity" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOSURVEeeMy-Obu4ebdA" name="age" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOSkRVEeeMy-Obu4ebdA" name="gender" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOS0RVEeeMy-Obu4ebdA" name="Date" type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOTERVEeeMy-Obu4ebdA" name="study_number" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCCOTURVEeeMy-Obu4ebdA" name="description" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node xmi:id="_cCCOTkRVEeeMy-Obu4ebdA" componentName="tHiveInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+    <elementParameter xmi:id="_cCCOT0RVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tHiveInput_2" show="false"/>
+    <elementParameter xmi:id="_cCCOUERVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_cCCOUURVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_u2NtsDo2Eee_wuCTPLAcHw" show="false"/>
+    <elementParameter xmi:id="_cCCOUkRVEeeMy-Obu4ebdA" field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_2"/>
+    <elementParameter xmi:id="_cCCOU0RVEeeMy-Obu4ebdA" field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_cCCOVERVEeeMy-Obu4ebdA" field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter xmi:id="_cCCOVURVEeeMy-Obu4ebdA" field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_u2NtsDo2Eee_wuCTPLAcHw - minibase" show="false"/>
+    <elementParameter xmi:id="_cCCOVkRVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="INPUT_SOURCE" value="HIVE_TABLE"/>
+    <elementParameter xmi:id="_cCCOV0RVEeeMy-Obu4ebdA" field="TEXT" name="HIVE_DATABASE_NAME" value="&quot;poc_imagebank&quot;"/>
+    <elementParameter xmi:id="_cCCOWERVEeeMy-Obu4ebdA" field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;minibase&quot;"/>
+    <elementParameter xmi:id="_cCCOWURVEeeMy-Obu4ebdA" field="MEMO" name="SQL_QUERY" value="&quot;select id, name from table&quot;" show="false"/>
+    <elementParameter xmi:id="_cCCOWkRVEeeMy-Obu4ebdA" field="TEXT" name="FILENAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCCOW0RVEeeMy-Obu4ebdA" field="TEXT" name="TYPE" value="HIVE" show="false"/>
+    <elementParameter xmi:id="_cCCOXERVEeeMy-Obu4ebdA" field="TABLE" name="REGISTER_JARS"/>
+    <elementParameter xmi:id="_cCCOXURVEeeMy-Obu4ebdA" field="TABLE" name="TEMP_UDF_FUNCTIONS"/>
+    <elementParameter xmi:id="_cCCOXkRVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cCCOX0RVEeeMy-Obu4ebdA" field="TEXT" name="LABEL" value="__HIVE_TABLE_NAME__"/>
+    <elementParameter xmi:id="_cCCOYERVEeeMy-Obu4ebdA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cCCOYURVEeeMy-Obu4ebdA" connector="FLOW" label="minibase" name="tHiveInput_2">
+      <column xmi:id="_cCCOYkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="id_volunteer" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOY0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOZERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="inclusion_id" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOZURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOZkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="vol_ethnicity" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOZ0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOaERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="vol_age" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOaURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOakRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="vol_apparent_age" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOa0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCObERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="vol_gender" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCObURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCObkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="vol_skin_type" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOb0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOcERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="vol_phototype" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOcURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOckRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="study_date" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOc0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOdERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="study_number" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOdURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOdkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="study_description" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOd0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOeERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_ff_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOeURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOekRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_ff_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOe0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOfERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_ff_02" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOfURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOfkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_ff_03" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOf0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOgERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_ff_04" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOgURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOgkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_ff_05" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOg0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOhERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_ff_06" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOhURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOhkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_ff_07" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOh0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOiERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fl_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOiURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOikRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fl_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOi0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOjERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fl_02" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOjURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOjkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fl_03" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOj0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOkERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fl_04" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOkURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOkkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fl_05" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOk0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOlERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fl_06" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOlURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOlkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fl_07" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOl0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOmERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fr_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOmURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOmkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fr_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOm0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOnERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fr_02" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOnURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOnkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fr_03" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOn0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOoERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fr_04" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOoURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOokRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fr_05" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOo0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOpERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fr_06" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOpURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOpkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_wf_fr_07" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOp0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOqERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_li_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOqURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOqkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="csph_li_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOq0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOrERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="samb_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOrURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOrkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="samb_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOr0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOsERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_ff_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOsURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOskRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_ff_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOs0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOtERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_ff_02" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOtURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOtkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_ff_03" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOt0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOuERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_ff_04" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOuURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOukRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_ff_05" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOu0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOvERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_ff_06" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOvURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOvkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_ff_07" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOv0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOwERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fl45_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOwURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOwkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fl45_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOw0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOxERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fl45_02" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOxURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOxkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fl45_03" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOx0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOyERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fl45_04" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOyURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOykRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fl45_05" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOy0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOzERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fl45_06" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOzURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCOzkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fl45_07" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCOz0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO0ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fl90_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO0URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO0kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fl90_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO00RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO1ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fr45_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO1URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO1kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fr45_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO10RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO2ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fr45_02" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO2URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO2kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fr45_03" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO20RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO3ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fr45_04" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO3URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO3kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fr45_05" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO30RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO4ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fr45_06" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO4URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO4kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fr45_07" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO40RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO5ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fr90_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO5URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO5kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_wf_fr90_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO50RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO6ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pori_br_ff_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO6URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO6kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="cropped_images" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO60RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO7ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol00_fh_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO7URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO7kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol00_fh_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO70RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO8ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol90_fh_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO8URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO8kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol90_fh_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO80RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO9ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol00_ck_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO9URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO9kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol00_ck_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO90RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO-ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol00_ck_02" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO-URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO-kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol00_ck_03" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO-0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO_ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol00_ck_04" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO_URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCO_kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol00_ck_05" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCO_0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPAERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol00_ck_06" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPAURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPAkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol00_ck_07" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPA0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPBERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol90_ck_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPBURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPBkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drsc_pol90_ck_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPB0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPCERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="dscp_pol00_fh_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPCURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPCkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="dscp_pol00_fh_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPC0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPDERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="dscp_pol90_fh_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPDURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPDkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="dscp_pol90_fh_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPD0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPEERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="dscp_pol00_ck_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPEURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPEkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="dscp_pol00_ck_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPE0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPFERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="dscp_pol90_ck_00" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPFURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPFkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="dscp_pol90_ck_01" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPF0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPGERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_scar" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPGURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPGkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_piercing" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPG0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPHERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_facedown" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPHURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPHkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_downy_frd" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPH0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPIERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_downy_btwne1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPIURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPIkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_downy_chk" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPI0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPJERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_downy_uplips" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPJURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPJkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_downy_chin" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPJ0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPKERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_complexion" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPKURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPKkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_uniformity" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPK0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPLERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_colchart_frd_ltr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPLURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPLkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_colchart_frd_nb" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPL0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPMERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_colchart_chk_ltr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPMURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPMkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_colchart_chk_nb" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPM0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPNERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_fairness" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPNURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPNkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_borwn_dens" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPN0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPOERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_brown_frd" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPOURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPOkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_brown_chk" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPO0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPPERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_brown_0se" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPPURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPPkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_brown_chin" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPP0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPQERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_brown_contrast" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPQURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPQkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_brown_size" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPQ0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPRERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_redness" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPRURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPRkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_white" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPR0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPSERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_wri_crow" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPSURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPSkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_wri_undereye" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPS0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPTERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_wri_lion" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPTURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPTkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_wri_btwneyes" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPT0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPUERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_wri_cheek" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPUURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPUkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_wri_uplips" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPU0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPVERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_wri_mouthcorn" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPVURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPVkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_wri_nasolab" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPV0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPWERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_wri_ear" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPWURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPWkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_wri_forehead" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPW0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPXERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_granul_text" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPXURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPXkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_rope" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPX0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPYERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_ptosis" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPYURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPYkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_neck_skinfold" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPY0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPZERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_neck_empty" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPZURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPZkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_neck_release" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPZ0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPaERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_chine_whiter" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPaURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPakRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_darkcircles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPa0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPbERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_darkc_shape" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPbURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPbkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_darkc_color" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPb0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPcERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_darkc_intens" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPcURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPckRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_eyebags" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPc0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPdERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_type" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPdURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPdkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_dehyline_eye" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPd0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPeERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_dehyline_face" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPeURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPekRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_flakiness" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPe0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPfERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_lips_dryness" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPfURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPfkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_shiny_look" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPf0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPgERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_oily_touch" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPgURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPgkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_blackheads" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPg0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPhERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_pimples" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPhURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPhkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_microcystes" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPh0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPiERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_pores_chk" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPiURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPikRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_pores_nose" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPi0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPjERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="exp_pore_frd" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPjURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPjkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_age" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPj0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPkERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_gender" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPkURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPkkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_origin" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPk0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPlERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_origin_years_nb" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPlURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPlkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_occupation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPl0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPmERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_educ" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPmURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPmkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_earn_occup" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPm0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPnERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_earn_educ" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPnURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPnkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_status" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPn0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPoERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_regimen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPoURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPokRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_child_sun" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPo0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPpERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_adult_sun" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPpURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPpkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_age" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPp0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPqERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_fair" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPqURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPqkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_shiny" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPq0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPrERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_oily" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPrURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPrkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_darkcirc" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPr0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPsERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_spot" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPsURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPskRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_glow" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPs0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPtERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_pores" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPtURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPtkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_firm" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPt0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPuERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_type" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPuURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPukRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_self_lips" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPu0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPvERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_armpit_spot" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPvURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPvkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_feel_unclean" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPv0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPwERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_feel_sweaty" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPwURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPwkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_sagging" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPw0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPxERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_sensitiv" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPxURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPxkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_eyebag" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPx0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPyERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_wrinkles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPyURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPykRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_uneven" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPy0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPzERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_dull" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPzURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCPzkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_pimple" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCPz0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP0ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_blackhd" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP0URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP0kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_dilatpores" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP00RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP1ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_acnescar" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP1URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP1kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_darkspot" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP10RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP2ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_roughness" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP2URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP2kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_dryness" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP20RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP3ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_cracks" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP3URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP3kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_patches" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP30RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP4ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_fragilips" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP4URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP4kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_tight" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP40RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP5ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_uperlipigm" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP5URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP5kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_lowerlipigm" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP50RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCCP6ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_perspir_face" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCCP6URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0sERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_perspir_body" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0sURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0skRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_perspir_underarm" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0s0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0tERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_darkcircles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0tURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0tkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_darkcirc_color" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0t0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0uERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_darkcirc_moment" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0uURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0ukRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_darkcirc_freq" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0u0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0vERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_darkcirc_bothered" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0vURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0vkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="self_darkcirc_solut" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0v0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0wERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="cluster_age" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0wURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0wkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="ita_group" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0w0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0xERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="sun_group" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0xURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0xkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="forehead_wrinkles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0x0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0yERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t04" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0yURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0ykRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="fine_lines_on_the_forehead" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0y0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0zERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="glabellar_wrinkles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0zURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0zkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t041" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0z0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC00ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="inter_ocular_wrinkles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC00URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC00kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="crows_feet_wrinkles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC000RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC01ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t042" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC01URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC01kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="number_of_crows_feet_wrinkles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC010RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC02ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="drooping_of_the_upper_outer_eyelid" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC02URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC02kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="eye_bags" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC020RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC03ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t043" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC03URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC03kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="underneath_eye_wrinkles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC030RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC04ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t044" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC04URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC04kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="preauricular_wrinkles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC040RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC05ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="cheek_folds" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC05URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC05kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="nasolabial_fold" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC050RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC06ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t045" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC06URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC06kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="small_folds_on_nasolabial_zone" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC060RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC07ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="upper_lip_wrinkles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC07URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC07kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t046" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC070RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC08ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="upper_lip_texture" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC08URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC08kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="lower_lip_wrinkles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC080RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC09ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="cheek_sebaceous_pores" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC09URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC09kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="wrinkles_of_the_corner_of_the_lips" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC090RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0-ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t047" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0-URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0-kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="texture_of_the_mouth_contour" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0-0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0_ERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t048" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0_URVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC0_kRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="jawline_folds" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC0_0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1AERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t049" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1AURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1AkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="chin_withering" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1A0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1BERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="ptosis_of_the_lower_part_of_the_face" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1BURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1BkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t0411" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1B0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1CERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="wrinkles_created_by_lower_part_of_the_face_ptosis" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1CURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1CkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t0412" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1C0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1DERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="horizontal_neck_fold" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1DURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1DkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="neck_sagging" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1D0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1EERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="neck_texture" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1EURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1EkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="density_of_pigmentary_spots" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1E0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1FERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="puddles_pigmentation_of_the_face" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1FURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1FkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="localized_pigmentary_spots_on_the_cheek" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1F0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1GERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="contrast_of_isolated_pigmentary_spot_of_the_face" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1GURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1GkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="size_of_an_isolated_spot" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1G0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1HERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="tears_valley_hyperpigmentation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1HURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1HkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="skin_unevenness" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1H0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1IERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="ocular_area_pigmentation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1IURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1IkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="eye_contour_color_contrast" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1I0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1JERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="forehead_pigmentation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1JURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1JkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="malar_pigmentation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1J0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1KERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t0413" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1KURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1KkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="malar_rosacea" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1K0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1LERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t0414" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1LURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1LkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="lateral_facial_pigmentation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1L0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1MERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t0415" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1MURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1MkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="whole_face_pigmentation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1M0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1NERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t0416" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1NURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1NkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="lower_face_diffuse_dyschromia" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1N0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1OERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t0417" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1OURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1OkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="importance_of_facial_skin_surface_texture_presenting_alteration" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1O0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1PERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="vascular_disorders" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1PURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1PkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t0418" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1P0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1QERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="lower_face_density_of_pigmentary_spots" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1QURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1QkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="t0419" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1Q0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1RERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="upper_lip_pigmentation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1RURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1RkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="skin_relief" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1R0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1SERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="vascular_homogeneity" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1SURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1SkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="pigmentary_homogeneity" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1S0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1TERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="quiz_age" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1TURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1TkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="quiz_darkcircles" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1T0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1UERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="quiz_fairness" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1UURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1UkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="quiz_firmness" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1U0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1VERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="quiz_glow" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1VURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1VkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="quiz_oily" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1V0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1WERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="quiz_pores" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1WURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC1WkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="quiz_pigmentation" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC1W0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <additionalProperties xmi:id="_cCC1XERVEeeMy-Obu4ebdA" key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node xmi:id="_cCC1XURVEeeMy-Obu4ebdA" componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
+    <elementParameter xmi:id="_cCC1XkRVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter xmi:id="_cCC1X0RVEeeMy-Obu4ebdA" field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter xmi:id="_cCC1YERVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter xmi:id="_cCC1YURVEeeMy-Obu4ebdA" field="CHECK" name="REPLICATED_JOIN" value="false"/>
+    <elementParameter xmi:id="_cCC1YkRVEeeMy-Obu4ebdA" field="IMAGE" name="PREVIEW" value="_RJhzoDo8Eee_wuCTPLAcHw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter xmi:id="_cCC1Y0RVEeeMy-Obu4ebdA" field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter xmi:id="_cCC1ZERVEeeMy-Obu4ebdA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cCC1ZURVEeeMy-Obu4ebdA" connector="FLOW" name="minibase">
+      <column xmi:id="_cCC1ZkRVEeeMy-Obu4ebdA" comment="" key="true" length="-1" name="JoinKey" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCC1Z0RVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="id_volunteer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCC1aERVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="id_inclusion" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCC1aURVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="ethnicity" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCC1akRVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="age" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCC1a0RVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="gender" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCC1bERVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="Date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCC1bURVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="study_number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_cCC1bkRVEeeMy-Obu4ebdA" comment="" key="false" length="-1" name="description" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData" xmi:id="_cCC1b0RVEeeMy-Obu4ebdA">
+      <uiProperties xmi:id="_cCC1cERVEeeMy-Obu4ebdA"/>
+      <varTables xmi:id="_cCC1cURVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables xmi:id="_cCC1ckRVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="minibase">
+        <mapperTableEntries xmi:id="_cCC1c0RVEeeMy-Obu4ebdA" name="JoinKey" expression="&quot;V&quot;+  row1.vol_ethnicity +  row1.id_volunteer " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1dERVEeeMy-Obu4ebdA" name="id_volunteer" expression="row1.id_volunteer " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1dURVEeeMy-Obu4ebdA" name="id_inclusion" expression="row1.inclusion_id " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1dkRVEeeMy-Obu4ebdA" name="ethnicity" expression="row2.lib " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1d0RVEeeMy-Obu4ebdA" name="age" expression="row1.vol_age " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1eERVEeeMy-Obu4ebdA" name="gender" expression="row1.vol_gender " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1eURVEeeMy-Obu4ebdA" name="Date" expression="row1.study_date " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1ekRVEeeMy-Obu4ebdA" name="study_number" expression="row1.study_number " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1e0RVEeeMy-Obu4ebdA" name="description" expression="row1.study_description " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables xmi:id="_cCC1fERVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_cCC1fURVEeeMy-Obu4ebdA" name="id_volunteer" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1fkRVEeeMy-Obu4ebdA" name="inclusion_id" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1f0RVEeeMy-Obu4ebdA" name="vol_ethnicity" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1gERVEeeMy-Obu4ebdA" name="vol_age" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1gURVEeeMy-Obu4ebdA" name="vol_apparent_age" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1gkRVEeeMy-Obu4ebdA" name="vol_gender" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1g0RVEeeMy-Obu4ebdA" name="vol_skin_type" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1hERVEeeMy-Obu4ebdA" name="vol_phototype" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1hURVEeeMy-Obu4ebdA" name="study_date" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1hkRVEeeMy-Obu4ebdA" name="study_number" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1h0RVEeeMy-Obu4ebdA" name="study_description" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1iERVEeeMy-Obu4ebdA" name="csph_wf_ff_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1iURVEeeMy-Obu4ebdA" name="csph_wf_ff_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1ikRVEeeMy-Obu4ebdA" name="csph_wf_ff_02" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1i0RVEeeMy-Obu4ebdA" name="csph_wf_ff_03" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1jERVEeeMy-Obu4ebdA" name="csph_wf_ff_04" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1jURVEeeMy-Obu4ebdA" name="csph_wf_ff_05" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1jkRVEeeMy-Obu4ebdA" name="csph_wf_ff_06" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1j0RVEeeMy-Obu4ebdA" name="csph_wf_ff_07" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1kERVEeeMy-Obu4ebdA" name="csph_wf_fl_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1kURVEeeMy-Obu4ebdA" name="csph_wf_fl_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1kkRVEeeMy-Obu4ebdA" name="csph_wf_fl_02" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1k0RVEeeMy-Obu4ebdA" name="csph_wf_fl_03" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1lERVEeeMy-Obu4ebdA" name="csph_wf_fl_04" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1lURVEeeMy-Obu4ebdA" name="csph_wf_fl_05" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1lkRVEeeMy-Obu4ebdA" name="csph_wf_fl_06" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1l0RVEeeMy-Obu4ebdA" name="csph_wf_fl_07" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1mERVEeeMy-Obu4ebdA" name="csph_wf_fr_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1mURVEeeMy-Obu4ebdA" name="csph_wf_fr_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1mkRVEeeMy-Obu4ebdA" name="csph_wf_fr_02" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1m0RVEeeMy-Obu4ebdA" name="csph_wf_fr_03" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1nERVEeeMy-Obu4ebdA" name="csph_wf_fr_04" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1nURVEeeMy-Obu4ebdA" name="csph_wf_fr_05" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1nkRVEeeMy-Obu4ebdA" name="csph_wf_fr_06" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1n0RVEeeMy-Obu4ebdA" name="csph_wf_fr_07" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1oERVEeeMy-Obu4ebdA" name="csph_li_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1oURVEeeMy-Obu4ebdA" name="csph_li_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1okRVEeeMy-Obu4ebdA" name="samb_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1o0RVEeeMy-Obu4ebdA" name="samb_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1pERVEeeMy-Obu4ebdA" name="pori_wf_ff_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1pURVEeeMy-Obu4ebdA" name="pori_wf_ff_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1pkRVEeeMy-Obu4ebdA" name="pori_wf_ff_02" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1p0RVEeeMy-Obu4ebdA" name="pori_wf_ff_03" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1qERVEeeMy-Obu4ebdA" name="pori_wf_ff_04" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1qURVEeeMy-Obu4ebdA" name="pori_wf_ff_05" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1qkRVEeeMy-Obu4ebdA" name="pori_wf_ff_06" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1q0RVEeeMy-Obu4ebdA" name="pori_wf_ff_07" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1rERVEeeMy-Obu4ebdA" name="pori_wf_fl45_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1rURVEeeMy-Obu4ebdA" name="pori_wf_fl45_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1rkRVEeeMy-Obu4ebdA" name="pori_wf_fl45_02" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1r0RVEeeMy-Obu4ebdA" name="pori_wf_fl45_03" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1sERVEeeMy-Obu4ebdA" name="pori_wf_fl45_04" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1sURVEeeMy-Obu4ebdA" name="pori_wf_fl45_05" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1skRVEeeMy-Obu4ebdA" name="pori_wf_fl45_06" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1s0RVEeeMy-Obu4ebdA" name="pori_wf_fl45_07" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1tERVEeeMy-Obu4ebdA" name="pori_wf_fl90_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1tURVEeeMy-Obu4ebdA" name="pori_wf_fl90_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1tkRVEeeMy-Obu4ebdA" name="pori_wf_fr45_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1t0RVEeeMy-Obu4ebdA" name="pori_wf_fr45_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1uERVEeeMy-Obu4ebdA" name="pori_wf_fr45_02" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1uURVEeeMy-Obu4ebdA" name="pori_wf_fr45_03" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1ukRVEeeMy-Obu4ebdA" name="pori_wf_fr45_04" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1u0RVEeeMy-Obu4ebdA" name="pori_wf_fr45_05" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1vERVEeeMy-Obu4ebdA" name="pori_wf_fr45_06" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1vURVEeeMy-Obu4ebdA" name="pori_wf_fr45_07" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1vkRVEeeMy-Obu4ebdA" name="pori_wf_fr90_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1v0RVEeeMy-Obu4ebdA" name="pori_wf_fr90_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1wERVEeeMy-Obu4ebdA" name="pori_br_ff_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1wURVEeeMy-Obu4ebdA" name="cropped_images" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1wkRVEeeMy-Obu4ebdA" name="drsc_pol00_fh_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1w0RVEeeMy-Obu4ebdA" name="drsc_pol00_fh_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1xERVEeeMy-Obu4ebdA" name="drsc_pol90_fh_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1xURVEeeMy-Obu4ebdA" name="drsc_pol90_fh_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1xkRVEeeMy-Obu4ebdA" name="drsc_pol00_ck_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1x0RVEeeMy-Obu4ebdA" name="drsc_pol00_ck_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1yERVEeeMy-Obu4ebdA" name="drsc_pol00_ck_02" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1yURVEeeMy-Obu4ebdA" name="drsc_pol00_ck_03" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1ykRVEeeMy-Obu4ebdA" name="drsc_pol00_ck_04" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1y0RVEeeMy-Obu4ebdA" name="drsc_pol00_ck_05" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1zERVEeeMy-Obu4ebdA" name="drsc_pol00_ck_06" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1zURVEeeMy-Obu4ebdA" name="drsc_pol00_ck_07" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1zkRVEeeMy-Obu4ebdA" name="drsc_pol90_ck_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1z0RVEeeMy-Obu4ebdA" name="drsc_pol90_ck_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC10ERVEeeMy-Obu4ebdA" name="dscp_pol00_fh_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC10URVEeeMy-Obu4ebdA" name="dscp_pol00_fh_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC10kRVEeeMy-Obu4ebdA" name="dscp_pol90_fh_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC100RVEeeMy-Obu4ebdA" name="dscp_pol90_fh_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC11ERVEeeMy-Obu4ebdA" name="dscp_pol00_ck_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC11URVEeeMy-Obu4ebdA" name="dscp_pol00_ck_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC11kRVEeeMy-Obu4ebdA" name="dscp_pol90_ck_00" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC110RVEeeMy-Obu4ebdA" name="dscp_pol90_ck_01" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC12ERVEeeMy-Obu4ebdA" name="exp_scar" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC12URVEeeMy-Obu4ebdA" name="exp_piercing" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC12kRVEeeMy-Obu4ebdA" name="exp_facedown" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC120RVEeeMy-Obu4ebdA" name="exp_downy_frd" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC13ERVEeeMy-Obu4ebdA" name="exp_downy_btwne1" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC13URVEeeMy-Obu4ebdA" name="exp_downy_chk" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC13kRVEeeMy-Obu4ebdA" name="exp_downy_uplips" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC130RVEeeMy-Obu4ebdA" name="exp_downy_chin" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC14ERVEeeMy-Obu4ebdA" name="exp_complexion" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC14URVEeeMy-Obu4ebdA" name="exp_uniformity" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC14kRVEeeMy-Obu4ebdA" name="exp_colchart_frd_ltr" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC140RVEeeMy-Obu4ebdA" name="exp_colchart_frd_nb" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC15ERVEeeMy-Obu4ebdA" name="exp_colchart_chk_ltr" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC15URVEeeMy-Obu4ebdA" name="exp_colchart_chk_nb" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC15kRVEeeMy-Obu4ebdA" name="exp_fairness" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC150RVEeeMy-Obu4ebdA" name="exp_borwn_dens" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC16ERVEeeMy-Obu4ebdA" name="exp_brown_frd" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC16URVEeeMy-Obu4ebdA" name="exp_brown_chk" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC16kRVEeeMy-Obu4ebdA" name="exp_brown_0se" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC160RVEeeMy-Obu4ebdA" name="exp_brown_chin" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC17ERVEeeMy-Obu4ebdA" name="exp_brown_contrast" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC17URVEeeMy-Obu4ebdA" name="exp_brown_size" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC17kRVEeeMy-Obu4ebdA" name="exp_redness" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC170RVEeeMy-Obu4ebdA" name="exp_white" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC18ERVEeeMy-Obu4ebdA" name="exp_wri_crow" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC18URVEeeMy-Obu4ebdA" name="exp_wri_undereye" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC18kRVEeeMy-Obu4ebdA" name="exp_wri_lion" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC180RVEeeMy-Obu4ebdA" name="exp_wri_btwneyes" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC19ERVEeeMy-Obu4ebdA" name="exp_wri_cheek" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC19URVEeeMy-Obu4ebdA" name="exp_wri_uplips" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC19kRVEeeMy-Obu4ebdA" name="exp_wri_mouthcorn" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC190RVEeeMy-Obu4ebdA" name="exp_wri_nasolab" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1-ERVEeeMy-Obu4ebdA" name="exp_wri_ear" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1-URVEeeMy-Obu4ebdA" name="exp_wri_forehead" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1-kRVEeeMy-Obu4ebdA" name="exp_granul_text" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1-0RVEeeMy-Obu4ebdA" name="exp_rope" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1_ERVEeeMy-Obu4ebdA" name="exp_ptosis" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1_URVEeeMy-Obu4ebdA" name="exp_neck_skinfold" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1_kRVEeeMy-Obu4ebdA" name="exp_neck_empty" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC1_0RVEeeMy-Obu4ebdA" name="exp_neck_release" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2AERVEeeMy-Obu4ebdA" name="exp_chine_whiter" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2AURVEeeMy-Obu4ebdA" name="exp_darkcircles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2AkRVEeeMy-Obu4ebdA" name="exp_darkc_shape" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2A0RVEeeMy-Obu4ebdA" name="exp_darkc_color" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2BERVEeeMy-Obu4ebdA" name="exp_darkc_intens" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2BURVEeeMy-Obu4ebdA" name="exp_eyebags" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2BkRVEeeMy-Obu4ebdA" name="exp_type" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2B0RVEeeMy-Obu4ebdA" name="exp_dehyline_eye" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2CERVEeeMy-Obu4ebdA" name="exp_dehyline_face" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2CURVEeeMy-Obu4ebdA" name="exp_flakiness" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2CkRVEeeMy-Obu4ebdA" name="exp_lips_dryness" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2C0RVEeeMy-Obu4ebdA" name="exp_shiny_look" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2DERVEeeMy-Obu4ebdA" name="exp_oily_touch" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2DURVEeeMy-Obu4ebdA" name="exp_blackheads" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2DkRVEeeMy-Obu4ebdA" name="exp_pimples" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2D0RVEeeMy-Obu4ebdA" name="exp_microcystes" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2EERVEeeMy-Obu4ebdA" name="exp_pores_chk" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2EURVEeeMy-Obu4ebdA" name="exp_pores_nose" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2EkRVEeeMy-Obu4ebdA" name="exp_pore_frd" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2E0RVEeeMy-Obu4ebdA" name="self_age" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2FERVEeeMy-Obu4ebdA" name="self_gender" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2FURVEeeMy-Obu4ebdA" name="self_origin" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2FkRVEeeMy-Obu4ebdA" name="self_origin_years_nb" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2F0RVEeeMy-Obu4ebdA" name="self_occupation" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2GERVEeeMy-Obu4ebdA" name="self_educ" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2GURVEeeMy-Obu4ebdA" name="self_earn_occup" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2GkRVEeeMy-Obu4ebdA" name="self_earn_educ" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2G0RVEeeMy-Obu4ebdA" name="self_status" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2HERVEeeMy-Obu4ebdA" name="self_regimen" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2HURVEeeMy-Obu4ebdA" name="self_child_sun" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2HkRVEeeMy-Obu4ebdA" name="self_adult_sun" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2H0RVEeeMy-Obu4ebdA" name="self_self_age" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2IERVEeeMy-Obu4ebdA" name="self_self_fair" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2IURVEeeMy-Obu4ebdA" name="self_self_shiny" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2IkRVEeeMy-Obu4ebdA" name="self_self_oily" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2I0RVEeeMy-Obu4ebdA" name="self_self_darkcirc" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2JERVEeeMy-Obu4ebdA" name="self_self_spot" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2JURVEeeMy-Obu4ebdA" name="self_self_glow" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2JkRVEeeMy-Obu4ebdA" name="self_self_pores" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2J0RVEeeMy-Obu4ebdA" name="self_self_firm" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2KERVEeeMy-Obu4ebdA" name="self_self_type" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2KURVEeeMy-Obu4ebdA" name="self_self_lips" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2KkRVEeeMy-Obu4ebdA" name="self_armpit_spot" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2K0RVEeeMy-Obu4ebdA" name="self_feel_unclean" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2LERVEeeMy-Obu4ebdA" name="self_feel_sweaty" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2LURVEeeMy-Obu4ebdA" name="self_sagging" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2LkRVEeeMy-Obu4ebdA" name="self_sensitiv" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2L0RVEeeMy-Obu4ebdA" name="self_eyebag" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2MERVEeeMy-Obu4ebdA" name="self_wrinkles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2MURVEeeMy-Obu4ebdA" name="self_uneven" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2MkRVEeeMy-Obu4ebdA" name="self_dull" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2M0RVEeeMy-Obu4ebdA" name="self_pimple" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2NERVEeeMy-Obu4ebdA" name="self_blackhd" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2NURVEeeMy-Obu4ebdA" name="self_dilatpores" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2NkRVEeeMy-Obu4ebdA" name="self_acnescar" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2N0RVEeeMy-Obu4ebdA" name="self_darkspot" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2OERVEeeMy-Obu4ebdA" name="self_roughness" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2OURVEeeMy-Obu4ebdA" name="self_dryness" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2OkRVEeeMy-Obu4ebdA" name="self_cracks" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2O0RVEeeMy-Obu4ebdA" name="self_patches" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2PERVEeeMy-Obu4ebdA" name="self_fragilips" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2PURVEeeMy-Obu4ebdA" name="self_tight" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2PkRVEeeMy-Obu4ebdA" name="self_uperlipigm" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2P0RVEeeMy-Obu4ebdA" name="self_lowerlipigm" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2QERVEeeMy-Obu4ebdA" name="self_perspir_face" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2QURVEeeMy-Obu4ebdA" name="self_perspir_body" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2QkRVEeeMy-Obu4ebdA" name="self_perspir_underarm" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2Q0RVEeeMy-Obu4ebdA" name="self_darkcircles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2RERVEeeMy-Obu4ebdA" name="self_darkcirc_color" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2RURVEeeMy-Obu4ebdA" name="self_darkcirc_moment" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2RkRVEeeMy-Obu4ebdA" name="self_darkcirc_freq" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2R0RVEeeMy-Obu4ebdA" name="self_darkcirc_bothered" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2SERVEeeMy-Obu4ebdA" name="self_darkcirc_solut" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2SURVEeeMy-Obu4ebdA" name="cluster_age" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2SkRVEeeMy-Obu4ebdA" name="ita_group" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2S0RVEeeMy-Obu4ebdA" name="sun_group" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2TERVEeeMy-Obu4ebdA" name="forehead_wrinkles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2TURVEeeMy-Obu4ebdA" name="t04" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2TkRVEeeMy-Obu4ebdA" name="fine_lines_on_the_forehead" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2T0RVEeeMy-Obu4ebdA" name="glabellar_wrinkles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2UERVEeeMy-Obu4ebdA" name="t041" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2UURVEeeMy-Obu4ebdA" name="inter_ocular_wrinkles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2UkRVEeeMy-Obu4ebdA" name="crows_feet_wrinkles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2U0RVEeeMy-Obu4ebdA" name="t042" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2VERVEeeMy-Obu4ebdA" name="number_of_crows_feet_wrinkles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2VURVEeeMy-Obu4ebdA" name="drooping_of_the_upper_outer_eyelid" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2VkRVEeeMy-Obu4ebdA" name="eye_bags" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2V0RVEeeMy-Obu4ebdA" name="t043" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2WERVEeeMy-Obu4ebdA" name="underneath_eye_wrinkles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2WURVEeeMy-Obu4ebdA" name="t044" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2WkRVEeeMy-Obu4ebdA" name="preauricular_wrinkles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2W0RVEeeMy-Obu4ebdA" name="cheek_folds" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2XERVEeeMy-Obu4ebdA" name="nasolabial_fold" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2XURVEeeMy-Obu4ebdA" name="t045" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2XkRVEeeMy-Obu4ebdA" name="small_folds_on_nasolabial_zone" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2X0RVEeeMy-Obu4ebdA" name="upper_lip_wrinkles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2YERVEeeMy-Obu4ebdA" name="t046" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2YURVEeeMy-Obu4ebdA" name="upper_lip_texture" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2YkRVEeeMy-Obu4ebdA" name="lower_lip_wrinkles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2Y0RVEeeMy-Obu4ebdA" name="cheek_sebaceous_pores" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2ZERVEeeMy-Obu4ebdA" name="wrinkles_of_the_corner_of_the_lips" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2ZURVEeeMy-Obu4ebdA" name="t047" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2ZkRVEeeMy-Obu4ebdA" name="texture_of_the_mouth_contour" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2Z0RVEeeMy-Obu4ebdA" name="t048" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2aERVEeeMy-Obu4ebdA" name="jawline_folds" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2aURVEeeMy-Obu4ebdA" name="t049" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2akRVEeeMy-Obu4ebdA" name="chin_withering" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2a0RVEeeMy-Obu4ebdA" name="ptosis_of_the_lower_part_of_the_face" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2bERVEeeMy-Obu4ebdA" name="t0411" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2bURVEeeMy-Obu4ebdA" name="wrinkles_created_by_lower_part_of_the_face_ptosis" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2bkRVEeeMy-Obu4ebdA" name="t0412" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2b0RVEeeMy-Obu4ebdA" name="horizontal_neck_fold" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2cERVEeeMy-Obu4ebdA" name="neck_sagging" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2cURVEeeMy-Obu4ebdA" name="neck_texture" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2ckRVEeeMy-Obu4ebdA" name="density_of_pigmentary_spots" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2c0RVEeeMy-Obu4ebdA" name="puddles_pigmentation_of_the_face" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2dERVEeeMy-Obu4ebdA" name="localized_pigmentary_spots_on_the_cheek" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2dURVEeeMy-Obu4ebdA" name="contrast_of_isolated_pigmentary_spot_of_the_face" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2dkRVEeeMy-Obu4ebdA" name="size_of_an_isolated_spot" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2d0RVEeeMy-Obu4ebdA" name="tears_valley_hyperpigmentation" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2eERVEeeMy-Obu4ebdA" name="skin_unevenness" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2eURVEeeMy-Obu4ebdA" name="ocular_area_pigmentation" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2ekRVEeeMy-Obu4ebdA" name="eye_contour_color_contrast" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2e0RVEeeMy-Obu4ebdA" name="forehead_pigmentation" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2fERVEeeMy-Obu4ebdA" name="malar_pigmentation" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2fURVEeeMy-Obu4ebdA" name="t0413" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2fkRVEeeMy-Obu4ebdA" name="malar_rosacea" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2f0RVEeeMy-Obu4ebdA" name="t0414" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2gERVEeeMy-Obu4ebdA" name="lateral_facial_pigmentation" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2gURVEeeMy-Obu4ebdA" name="t0415" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2gkRVEeeMy-Obu4ebdA" name="whole_face_pigmentation" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2g0RVEeeMy-Obu4ebdA" name="t0416" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2hERVEeeMy-Obu4ebdA" name="lower_face_diffuse_dyschromia" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2hURVEeeMy-Obu4ebdA" name="t0417" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2hkRVEeeMy-Obu4ebdA" name="importance_of_facial_skin_surface_texture_presenting_alteration" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2h0RVEeeMy-Obu4ebdA" name="vascular_disorders" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2iERVEeeMy-Obu4ebdA" name="t0418" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2iURVEeeMy-Obu4ebdA" name="lower_face_density_of_pigmentary_spots" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2ikRVEeeMy-Obu4ebdA" name="t0419" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2i0RVEeeMy-Obu4ebdA" name="upper_lip_pigmentation" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2jERVEeeMy-Obu4ebdA" name="skin_relief" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2jURVEeeMy-Obu4ebdA" name="vascular_homogeneity" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2jkRVEeeMy-Obu4ebdA" name="pigmentary_homogeneity" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2j0RVEeeMy-Obu4ebdA" name="quiz_age" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2kERVEeeMy-Obu4ebdA" name="quiz_darkcircles" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2kURVEeeMy-Obu4ebdA" name="quiz_fairness" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2kkRVEeeMy-Obu4ebdA" name="quiz_firmness" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2k0RVEeeMy-Obu4ebdA" name="quiz_glow" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2lERVEeeMy-Obu4ebdA" name="quiz_oily" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2lURVEeeMy-Obu4ebdA" name="quiz_pores" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2lkRVEeeMy-Obu4ebdA" name="quiz_pigmentation" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables xmi:id="_cCC2l0RVEeeMy-Obu4ebdA" sizeState="INTERMEDIATE" name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_cCC2mERVEeeMy-Obu4ebdA" name="code" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_cCC2mURVEeeMy-Obu4ebdA" name="lib" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node xmi:id="_cCC2mkRVEeeMy-Obu4ebdA" componentName="tHiveInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="32">
+    <elementParameter xmi:id="_cCC2m0RVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tHiveInput_1" show="false"/>
+    <elementParameter xmi:id="_cCC2nERVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_cCC2nURVEeeMy-Obu4ebdA" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_u2NtsDo2Eee_wuCTPLAcHw" show="false"/>
+    <elementParameter xmi:id="_cCC2nkRVEeeMy-Obu4ebdA" field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_2"/>
+    <elementParameter xmi:id="_cCC2n0RVEeeMy-Obu4ebdA" field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_cCC2oERVEeeMy-Obu4ebdA" field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter xmi:id="_cCC2oURVEeeMy-Obu4ebdA" field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_u2NtsDo2Eee_wuCTPLAcHw - input_bt_ethnie" show="false"/>
+    <elementParameter xmi:id="_cCC2okRVEeeMy-Obu4ebdA" field="CLOSED_LIST" name="INPUT_SOURCE" value="HIVE_TABLE"/>
+    <elementParameter xmi:id="_cCC2o0RVEeeMy-Obu4ebdA" field="TEXT" name="HIVE_DATABASE_NAME" value="&quot;poc_imagebank&quot;"/>
+    <elementParameter xmi:id="_cCC2pERVEeeMy-Obu4ebdA" field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;input_bt_ethnie&quot;"/>
+    <elementParameter xmi:id="_cCC2pURVEeeMy-Obu4ebdA" field="MEMO" name="SQL_QUERY" value="&quot;select id, name from table&quot;" show="false"/>
+    <elementParameter xmi:id="_cCC2pkRVEeeMy-Obu4ebdA" field="TEXT" name="FILENAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_cCC2p0RVEeeMy-Obu4ebdA" field="TEXT" name="TYPE" value="HIVE" show="false"/>
+    <elementParameter xmi:id="_cCC2qERVEeeMy-Obu4ebdA" field="TABLE" name="REGISTER_JARS"/>
+    <elementParameter xmi:id="_cCC2qURVEeeMy-Obu4ebdA" field="TABLE" name="TEMP_UDF_FUNCTIONS"/>
+    <elementParameter xmi:id="_cCC2qkRVEeeMy-Obu4ebdA" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cCC2q0RVEeeMy-Obu4ebdA" field="TEXT" name="LABEL" value="__HIVE_TABLE_NAME__"/>
+    <elementParameter xmi:id="_cCC2rERVEeeMy-Obu4ebdA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_cCC2rURVEeeMy-Obu4ebdA" connector="FLOW" label="input_bt_ethnie" name="tHiveInput_1">
+      <column xmi:id="_cCC2rkRVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="code" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC2r0RVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_cCC2sERVEeeMy-Obu4ebdA" comment="" key="false" length="2147483647" name="lib" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_cCC2sURVEeeMy-Obu4ebdA" key="Comment" value=""/>
+      </column>
+      <additionalProperties xmi:id="_cCC2skRVEeeMy-Obu4ebdA" key="Comment" value=""/>
+    </metadata>
+  </node>
+  <connection xmi:id="_cCC2s0RVEeeMy-Obu4ebdA" connectorName="FLOW" label="images" lineStyle="0" metaname="tHiveInput_4" offsetLabelX="0" offsetLabelY="0" source="tHiveInput_4" target="tMap_2">
+    <elementParameter xmi:id="_cCC2tERVEeeMy-Obu4ebdA" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_cCC2tURVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="images" show="false"/>
+  </connection>
+  <connection xmi:id="_cCC2tkRVEeeMy-Obu4ebdA" connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_3">
+    <elementParameter xmi:id="_cCC2t0RVEeeMy-Obu4ebdA" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_cCC2uERVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection xmi:id="_cCC2uURVEeeMy-Obu4ebdA" connectorName="FLOW" label="instruments" lineStyle="8" metaname="tHiveInput_3" offsetLabelX="0" offsetLabelY="0" source="tHiveInput_3" target="tMap_2">
+    <elementParameter xmi:id="_cCC2ukRVEeeMy-Obu4ebdA" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_cCC2u0RVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="instruments" show="false"/>
+  </connection>
+  <connection xmi:id="_cCC2vERVEeeMy-Obu4ebdA" connectorName="FLOW" label="row1" lineStyle="0" metaname="tHiveInput_2" offsetLabelX="0" offsetLabelY="0" source="tHiveInput_2" target="tMap_1">
+    <elementParameter xmi:id="_cCC2vURVEeeMy-Obu4ebdA" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_cCC2vkRVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection xmi:id="_cCC2v0RVEeeMy-Obu4ebdA" connectorName="FLOW" label="minibase" lineStyle="8" metaname="minibase" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_3">
+    <elementParameter xmi:id="_cCC2wERVEeeMy-Obu4ebdA" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_cCC2wURVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="minibase" show="false"/>
+  </connection>
+  <connection xmi:id="_cCC2wkRVEeeMy-Obu4ebdA" connectorName="FLOW" label="row2" lineStyle="8" metaname="tHiveInput_1" offsetLabelX="0" offsetLabelY="0" source="tHiveInput_1" target="tMap_1">
+    <elementParameter xmi:id="_cCC2w0RVEeeMy-Obu4ebdA" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_cCC2xERVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <subjob xmi:id="_cCC2xURVEeeMy-Obu4ebdA">
+    <elementParameter xmi:id="_cCC2xkRVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tHiveConfiguration_2" show="false"/>
+    <elementParameter xmi:id="_cCC2x0RVEeeMy-Obu4ebdA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_cCC2yERVEeeMy-Obu4ebdA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_cCC2yURVEeeMy-Obu4ebdA">
+    <elementParameter xmi:id="_cCC2ykRVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tHDFSConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_cCC2y0RVEeeMy-Obu4ebdA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_cCC2zERVEeeMy-Obu4ebdA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_cCC2zURVEeeMy-Obu4ebdA">
+    <elementParameter xmi:id="_cCC2zkRVEeeMy-Obu4ebdA" field="TEXT" name="UNIQUE_NAME" value="tHiveInput_4" show="false"/>
+    <elementParameter xmi:id="_cCC2z0RVEeeMy-Obu4ebdA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_cCC20ERVEeeMy-Obu4ebdA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

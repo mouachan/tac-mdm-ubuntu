@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_8-Vo4HKzEeeRScMQBd5cnw" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_8-Vo4XKzEeeRScMQBd5cnw" confirmationNeeded="false" name="Default"/>
+  <parameters xmi:id="_8-Vo4nKzEeeRScMQBd5cnw">
+    <elementParameter xmi:id="_8-Vo43KzEeeRScMQBd5cnw" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo5HKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo5XKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo5nKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo53KzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo6HKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo6XKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo6nKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo63KzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo7HKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo7XKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo7nKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo73KzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo8HKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_8-Vo8XKzEeeRScMQBd5cnw" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_8-Vo8nKzEeeRScMQBd5cnw" id="_5zTtIOLxEearo_IEB_JisQ" name="DQTechnical"/>
+    <routinesParameter xmi:id="_8-Vo83KzEeeRScMQBd5cnw" id="_5sodYOLxEearo_IEB_JisQ" name="DataMasking"/>
+    <routinesParameter xmi:id="_8-Vo9HKzEeeRScMQBd5cnw" id="_5XIHcOLxEearo_IEB_JisQ" name="DataOperation"/>
+    <routinesParameter xmi:id="_8-Vo9XKzEeeRScMQBd5cnw" id="_5wEL4OLxEearo_IEB_JisQ" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_8-Vo9nKzEeeRScMQBd5cnw" id="_5uQOAOLxEearo_IEB_JisQ" name="DataQuality"/>
+    <routinesParameter xmi:id="_8-Vo93KzEeeRScMQBd5cnw" id="_5xr8gOLxEearo_IEB_JisQ" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_8-Vo-HKzEeeRScMQBd5cnw" id="_51HrAOLxEearo_IEB_JisQ" name="MDM"/>
+    <routinesParameter xmi:id="_8-Vo-XKzEeeRScMQBd5cnw" id="_5gIScOLxEearo_IEB_JisQ" name="Mathematical"/>
+    <routinesParameter xmi:id="_8-Vo-nKzEeeRScMQBd5cnw" id="_5h8QUOLxEearo_IEB_JisQ" name="Numeric"/>
+    <routinesParameter xmi:id="_8-Vo-3KzEeeRScMQBd5cnw" id="_5jwOMOLxEearo_IEB_JisQ" name="Relational"/>
+    <routinesParameter xmi:id="_8-Vo_HKzEeeRScMQBd5cnw" id="_53H2IOLxEearo_IEB_JisQ" name="SQLike"/>
+    <routinesParameter xmi:id="_8-Vo_XKzEeeRScMQBd5cnw" id="_5lwZUOLxEearo_IEB_JisQ" name="StringHandling"/>
+    <routinesParameter xmi:id="_8-Vo_nKzEeeRScMQBd5cnw" id="_5nSDUOLxEearo_IEB_JisQ" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_8-Vo_3KzEeeRScMQBd5cnw" id="_5pGoQOLxEearo_IEB_JisQ" name="TalendDate"/>
+    <routinesParameter xmi:id="_8-VpAHKzEeeRScMQBd5cnw" id="_5quY4OLxEearo_IEB_JisQ" name="TalendString"/>
+    <routinesParameter xmi:id="_8-VpAXKzEeeRScMQBd5cnw" id="_N653ICoUEeOXW_CsPlpHtA" name="DEMO_BIGDATA"/>
+    <routinesParameter xmi:id="_8-VpAnKzEeeRScMQBd5cnw" id="_dnpOQD3HEeO7UMG_YqAtyA" name="DQ_METHODS"/>
+    <routinesParameter xmi:id="_8-VpA3KzEeeRScMQBd5cnw" id="_tCAnQMeYEeSrE9pbd6oYnw" name="DataTypeUtil"/>
+    <routinesParameter xmi:id="_8-VpBHKzEeeRScMQBd5cnw" id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter xmi:id="_8-VpBXKzEeeRScMQBd5cnw" id="_CvTbIOkKEeK60_2jX9gBEQ" name="FileListHtmlGenerator"/>
+    <routinesParameter xmi:id="_8-VpBnKzEeeRScMQBd5cnw" id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter xmi:id="_8-VpB3KzEeeRScMQBd5cnw" id="_I8o5kCJcEeavMa2Ga0Cafg" name="IPSEN_ParseAWSNotification"/>
+    <routinesParameter xmi:id="_8-VpCHKzEeeRScMQBd5cnw" id="_PESjcCYYEeW5gZVXtfxI4A" name="IpaasFileUtil"/>
+    <routinesParameter xmi:id="_8-VpCXKzEeeRScMQBd5cnw" id="_KUThkBuBEeaP26g4q0b-qg" name="EscapeJson"/>
+    <routinesParameter xmi:id="_8-VpCnKzEeeRScMQBd5cnw" id="_G417gAc-EeKqOMQjhZ_0wQ" name="KeyManagementForSqoop"/>
+    <routinesParameter xmi:id="_8-VpC3KzEeeRScMQBd5cnw" id="_JsAZQHlHEeS5M-4wmV8XNg" name="Transformation"/>
+    <routinesParameter xmi:id="_8-VpDHKzEeeRScMQBd5cnw" id="_TVdvcGcqEeOjappPcW-THA" name="Tweets_Generator"/>
+    <routinesParameter xmi:id="_8-VpDXKzEeeRScMQBd5cnw" id="_cUWzAOyNEd2AippjGM9H-A" name="Convert"/>
+    <routinesParameter xmi:id="_8-VpDnKzEeeRScMQBd5cnw" id="_HX3E4OJpEeCmJNdA0HkfKA" name="A1_parisstreetindexcreationTstandardizerow_1"/>
+    <routinesParameter xmi:id="_8-VpD3KzEeeRScMQBd5cnw" id="_U2GysOJpEeCmJNdA0HkfKA" name="A2_normalizeaddressTstandardizerow_1"/>
+    <routinesParameter xmi:id="_8-VpEHKzEeeRScMQBd5cnw" id="_jFtsAOJpEeCmJNdA0HkfKA" name="A2_standardizeaddressTstandardizerow_1"/>
+    <routinesParameter xmi:id="_8-VpEXKzEeeRScMQBd5cnw" id="_di-uoCdCEeaLNpvBEQh0uQ" name="SfObmHelper"/>
+    <routinesParameter xmi:id="_8-VpEnKzEeeRScMQBd5cnw" id="_E5MYoCdGEeaLNpvBEQh0uQ" name="SfObmNotification"/>
+    <routinesParameter xmi:id="_8-VpE3KzEeeRScMQBd5cnw" id="_5oT6QCdFEeaLNpvBEQh0uQ" name="SfObmObjectAttribute"/>
+    <routinesParameter xmi:id="_8-VpFHKzEeeRScMQBd5cnw" id="_AUmzICdGEeaLNpvBEQh0uQ" name="SfObmObject"/>
+    <routinesParameter xmi:id="_8-VpFXKzEeeRScMQBd5cnw" id="_qvPisCaGEeOtHJJvP7LbOA" name="convertRoutine"/>
+    <routinesParameter xmi:id="_8-VpFnKzEeeRScMQBd5cnw" id="_tNirUBbhEeaYy_yNckdDGQ" name="ImporttweetsTstandardizerow_1"/>
+    <routinesParameter xmi:id="_8-VpF3KzEeeRScMQBd5cnw" id="_VCnh0Gf7EeONMtYsYm-UXw" name="ImporttweetsTstandardizerow_2"/>
+    <routinesParameter xmi:id="_8-VpGHKzEeeRScMQBd5cnw" id="_wU5qIOJpEeCmJNdA0HkfKA" name="Products_parsingTstandardizerow_1"/>
+    <routinesParameter xmi:id="_8-VpGXKzEeeRScMQBd5cnw" id="_2RIxoGf6EeONMtYsYm-UXw" name="Standardize_and_word_analysisTstandardizerow_1"/>
+    <routinesParameter xmi:id="_8-VpGnKzEeeRScMQBd5cnw" id="_2VvR4GgHEeONMtYsYm-UXw" name="Step1_import_tweetsTstandardizerow_2"/>
+    <routinesParameter xmi:id="_8-VpG3KzEeeRScMQBd5cnw" id="_1cAIgMywEeSadJSYhJEDKA" name="tic_word_titleCase"/>
+    <routinesParameter xmi:id="_8-VpHHKzEeeRScMQBd5cnw" id="_ghBXkBbwEeaYy_yNckdDGQ" name="TweetstriggerTstandardizerow_1"/>
+  </parameters>
+</talendfile:ProcessType>

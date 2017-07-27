@@ -1,0 +1,48 @@
+<com.mycompany.accting.PurchaseOrders id="1">
+  <__purchaseOrders id="2">
+    <com.mycompany.accting.PurchaseOrder id="3">
+      <__number>456</__number>
+      <__date id="4">2009-11-02T00:00:00.000-08:00</__date>
+      <__comments>First order</__comments>
+      <__lineItems id="5">
+        <com.mycompany.accting.InvoiceItem id="6">
+          <__quantity>500</__quantity>
+          <__unitPrice>10.5</__unitPrice>
+          <__partNumber>p1</__partNumber>
+        </com.mycompany.accting.InvoiceItem>
+        <com.mycompany.accting.InvoiceItem id="7">
+          <__quantity>1000</__quantity>
+          <__unitPrice>100</__unitPrice>
+          <__partNumber>p2</__partNumber>
+        </com.mycompany.accting.InvoiceItem>
+        <com.mycompany.accting.InvoiceItem id="8">
+          <__quantity>20</__quantity>
+          <__unitPrice>900</__unitPrice>
+          <__partNumber>p823</__partNumber>
+        </com.mycompany.accting.InvoiceItem>
+      </__lineItems>
+    </com.mycompany.accting.PurchaseOrder>
+    <com.mycompany.accting.PurchaseOrder id="9">
+      <__number>222</__number>
+      <__date id="10">2009-11-14T00:00:00.000-08:00</__date>
+      <__comments>Second order</__comments>
+      <__lineItems id="11">
+        <com.mycompany.accting.InvoiceItem id="12">
+          <__quantity>2500</__quantity>
+          <__unitPrice>10.5</__unitPrice>
+          <__partNumber>p21</__partNumber>
+        </com.mycompany.accting.InvoiceItem>
+        <com.mycompany.accting.InvoiceItem id="13">
+          <__quantity>8000</__quantity>
+          <__unitPrice>100</__unitPrice>
+          <__partNumber>p22</__partNumber>
+        </com.mycompany.accting.InvoiceItem>
+        <com.mycompany.accting.InvoiceItem id="14">
+          <__quantity>2320</__quantity>
+          <__unitPrice>900</__unitPrice>
+          <__partNumber>p2823</__partNumber>
+        </com.mycompany.accting.InvoiceItem>
+      </__lineItems>
+    </com.mycompany.accting.PurchaseOrder>
+  </__purchaseOrders>
+</com.mycompany.accting.PurchaseOrders>

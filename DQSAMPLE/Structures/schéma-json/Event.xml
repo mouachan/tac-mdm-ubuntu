@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x15a1e834ea9' V1='4' name='Event' incarnation='23'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='fr.laposte.colis.schema.common.event' V281='13' V1='4' name='Event' description='Cette structure contient la définition complète d&apos;un évènement : Quoi ? Quand ? Où ? Qui ? Un événement intervient en un certain lieu et à un certain moment.'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='messageUuid' description='id du message porteur de l&apos;événement'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='4' V167='21' inheritsFromIncarnation='15' inheritsFromTimestamp='0x15a1e834ea9' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Status.xml' V281='13' V1='4' name='status' description='QUOI : Contient les informations d&apos;identification de l&apos;évènement.'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='5' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Status.xml' V281='13' V1='4' name='status'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='6' V167='21' inheritsFromIncarnation='10' inheritsFromTimestamp='0x15a1e834eac' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/EventDateTime.xml' V281='13' V1='4' name='dateTime' description='QUAND : Contient les informations d&apos;horodatage de l&apos;évènement'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='7' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/EventDateTime.xml' V281='13' V1='4' name='dateTime'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='8' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='producers' description='QUI : Contient la liste des informations sur l&apos;entité physique ou logique responsable ou à l&apos;origine de la production de l&apos;évènement'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='9' V167='21' inheritsFromIncarnation='6' inheritsFromTimestamp='0x15a1e834e72' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Equipment.xml' V281='13' V1='4' name='Equipment' description='QUI : Contient la liste des informations sur l&apos;entité physique ou logique responsable ou à l&apos;origine de la production de l&apos;évènement'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='10' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Equipment.xml' V281='13' V1='4' name='producers'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='11' V167='21' inheritsFromIncarnation='6' inheritsFromTimestamp='0x15a1e834e79' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Application.xml' V281='13' V1='4' name='Application' description='QUI : Contient la liste des informations sur l&apos;entité physique ou logique responsable ou à l&apos;origine de la production de l&apos;évènement'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='12' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Application.xml' V281='13' V1='4' name='producers'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='13' V167='21' inheritsFromIncarnation='6' inheritsFromTimestamp='0x15a1e834e7a' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Station.xml' V281='13' V1='4' name='Station' description='QUI : Contient la liste des informations sur l&apos;entité physique ou logique responsable ou à l&apos;origine de la production de l&apos;évènement'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='14' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Station.xml' V281='13' V1='4' name='producers'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='15' V167='21' inheritsFromIncarnation='8' inheritsFromTimestamp='0x15a1e834e7b' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Partner.xml' V281='13' V1='4' name='Partner' description='QUI : Contient la liste des informations sur l&apos;entité physique ou logique responsable ou à l&apos;origine de la production de l&apos;évènement'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='16' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Partner.xml' V281='13' V1='4' name='producers'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='17' V167='21' inheritsFromIncarnation='11' inheritsFromTimestamp='0x15a1e834e7c' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Operator.xml' V281='13' V1='4' name='Operator' description='QUI : Contient la liste des informations sur l&apos;entité physique ou logique responsable ou à l&apos;origine de la production de l&apos;évènement'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='18' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Operator.xml' V281='13' V1='4' name='producers'>
+        </savedDerivedCopy>
+      </child>
+    </child>
+    <child t='167' id='19' V167='21' inheritsFromIncarnation='22' inheritsFromTimestamp='0x15a1e834e80' inheritsInThisStruct='true' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Place.xml' V281='13' V1='4' name='places' description='OU : Contient la liste des informations sur le lieu de production,rattachement,echelon de l&apos;évènement'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='20' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Place.xml' V281='13' V1='4' name='places'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='21' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='comment' description='Commentaire libre sur le contexte de réalisation de l&apos;évènement. ATTENTION Est parfois utilisé pour calculer des informations à présenter en consultation. Exemple : CP REXXP : DDCCC ou REGATE ECHELON : RRRRRR'>
+      <structNode t='150' idref='1'/>
+    </child>
+  </rootElem>
+  <child t='162' id='22' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='23' V1='4' name='Document Bindings'>
+  </child>
+</root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_847kcHKzEeeRScMQBd5cnw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_847kcXKzEeeRScMQBd5cnw" comment="" name="sourcesPath" prompt="sourcesPath?" promptNeeded="false" type="id_String" value="&quot;C:/Users/pclapier/Documents/Customers/CARREFOUR/Extract/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_847kcnKzEeeRScMQBd5cnw" confirmationNeeded="false" name="Serv">
+    <contextParameter xmi:id="_847kc3KzEeeRScMQBd5cnw" comment="" name="sourcesPath" prompt="sourcesPath?" promptNeeded="false" type="id_String" value="&quot;/opt/talend/files/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_847kdHKzEeeRScMQBd5cnw" confirmationNeeded="false" name="ServLight">
+    <contextParameter xmi:id="_847kdXKzEeeRScMQBd5cnw" comment="" name="sourcesPath" prompt="sourcesPath?" promptNeeded="false" type="id_String" value="&quot;/opt/talend/light/&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

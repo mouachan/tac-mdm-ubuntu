@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<root t='150' id='1' V150='13' creationTimestamp='0x10e66651691' V1='4' name='POMultiFile' incarnation='963'>
+  <rootElem t='167' id='2' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='11' V1='4' name='POMultiFile' incarnation='5'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' inheritsFromIncarnation='-1' inheritsInThisStruct='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Simple/POStandard/POFile.xml' V281='11' V1='4' name='POs' incarnation='42'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='4' V167='21' inheritsFromIncarnation='-1' needInheritInit='true' inheritsInThisStruct='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Simple/POStandard/POFile.xml' V281='11' V1='4' name='POFile' incarnation='2'>
+      </savedDerivedCopy>
+      <savedOrigCopyAtInheritsFrom t='167' id='5' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='11' V1='4' name='POs' incarnation='11'>
+        <io>ReadURL({URL},{Start Offset},{Length})</io>
+      </savedOrigCopyAtInheritsFrom>
+      <io>ReadURL({Start Offset},{Length})</io>
+    </child>
+    <child t='167' id='6' V167='21' differentFromInherited='true' inheritsFromIncarnation='-1' inheritsInThisStruct='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' inheritsFromCopyRule='20' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Simple/POStandard/PartFile.xml' V281='11' V1='4' name='Parts' incarnation='38'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='7' V167='21' inheritsFromIncarnation='-1' needInheritInit='true' inheritsInThisStruct='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='Structures/Simple/POStandard/PartFile.xml' V281='11' V1='4' name='PartFile' incarnation='2'>
+      </savedDerivedCopy>
+      <savedOrigCopyAtInheritsFrom t='167' id='8' V167='21' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='11' V1='4' name='Parts' incarnation='2'>
+      </savedOrigCopyAtInheritsFrom>
+      <io>ReadURL({Start Offset},{Length})</io>
+      <child t='167' id='9' V167='21' inheritsFromIncarnation='-1' inheritsInThisStruct='true' V283='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Simple/POStandard/Part.xml' V281='11' V1='4' name='Part' incarnation='4'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='10' V167='21' inheritsFromIncarnation='-1' inheritsInThisStruct='true' V283='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/Simple/POStandard/Part' V281='11' V1='4' name='Part' incarnation='3'>
+          <savedDerivedCopy t='167' id='11' V167='21' inheritsFromIncarnation='-1' needInheritInit='true' inheritsInThisStruct='true' V283='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='Structures/Simple/POStandard/Part.xml' V281='11' V1='4' name='Part' incarnation='3'>
+          </savedDerivedCopy>
+        </savedOrigCopy>
+        <savedDerivedCopy t='167' idref='11'/>
+      </child>
+    </child>
+  </rootElem>
+  <child t='162' id='12' V1='4' name='Representations' incarnation='1'>
+  </child>
+  <child t='165' id='13' V1='4' name='Document Bindings' incarnation='1'>
+    <child t='166' id='14' V166='5' docType='1' docReposPath='/Simple/POFile/POs.xml' V1='4' name='/POMultiFile/POFile' incarnation='3'>
+      <elemNode t='167' idref='3'/>
+    </child>
+    <child t='166' id='15' V166='5' docType='1' docReposPath='/Simple/PartFile/Parts.xml' V1='4' name='/POMultiFile/PartFile' incarnation='2'>
+      <elemNode t='167' idref='6'/>
+    </child>
+  </child>
+</root>

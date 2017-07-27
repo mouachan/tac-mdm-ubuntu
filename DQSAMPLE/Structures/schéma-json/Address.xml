@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x15a1e834e83' V1='4' name='Address' incarnation='15'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='fr.laposte.colis.schema.common.address' V281='13' V1='4' name='Address' description='Cette structure defini les informations de base d&apos;une adresse geographique (format ColiPoste)'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='line1' description='1ere ligne d&apos;adresse'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='4' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='line2' description='2eme ligne d&apos;adresse'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='5' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='line3' description='3eme ligne d&apos;adresse'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='6' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='line4' description='4eme ligne d&apos;adresse'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='7' V167='21' inheritsFromIncarnation='5' inheritsFromTimestamp='0x15a1e834e83' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/ZipCode.xml' V281='13' V1='4' name='zipCode' description='Code Postal'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='8' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/ZipCode.xml' V281='13' V1='4' name='zipCode'>
+      </savedDerivedCopy>
+    </child>
+    <child t='167' id='9' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='City' avroNamespace='fr.laposte.colis.schema.common.area' V281='13' V1='4' name='city' description='City'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='10' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='name'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='11' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='state' description='Complement pour adresses etrangere Etat/Region'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='12' V167='21' inheritsFromIncarnation='9' inheritsFromTimestamp='0x15a1e834e84' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Country.xml' V281='13' V1='4' name='country' description='Pays'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='13' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/schéma-json/Country.xml' V281='13' V1='4' name='country'>
+      </savedDerivedCopy>
+    </child>
+  </rootElem>
+  <child t='162' id='14' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='15' V1='4' name='Document Bindings'>
+  </child>
+</root>

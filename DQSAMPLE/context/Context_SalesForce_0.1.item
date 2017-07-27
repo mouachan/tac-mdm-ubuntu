@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_84GeAHKzEeeRScMQBd5cnw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_84GeAXKzEeeRScMQBd5cnw" comment="" name="sf_url" prompt="sf_url?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_84GeAnKzEeeRScMQBd5cnw" comment="" name="sf_user" prompt="sf_user?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_84GeA3KzEeeRScMQBd5cnw" comment="" name="sf_password" prompt="sf_password?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_84GeBHKzEeeRScMQBd5cnw" comment="" name="sf_token" prompt="sf_token?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_84GeBXKzEeeRScMQBd5cnw" comment="" name="sf_version" prompt="sf_version?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_84GeBnKzEeeRScMQBd5cnw" comment="" name="sf_commit" prompt="sf_commit?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_84GeB3KzEeeRScMQBd5cnw" comment="" name="sf_environnement" prompt="sf_environnement?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84GeCHKzEeeRScMQBd5cnw" comment="" name="sf_Id_Famille" prompt="sf_Id_Famille?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84GeCXKzEeeRScMQBd5cnw" comment="" name="sf_suffixeEmail" prompt="sf_suffixeEmail?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84GeCnKzEeeRScMQBd5cnw" comment="" name="sf_userActif" prompt="sf_userActif?" promptNeeded="false" type="id_Boolean" value=""/>
+  <contextParameter xmi:id="_84GeC3KzEeeRScMQBd5cnw" comment="" name="sf_suffixeUsername" prompt="sf_suffixeUsername?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84GeDHKzEeeRScMQBd5cnw" comment="" name="sf_NbJourPMU" prompt="sf_NbJourPMU?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_84GeDXKzEeeRScMQBd5cnw" comment="" name="sf_timeOut" prompt="sf_timeOut?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84GeDnKzEeeRScMQBd5cnw" comment="" name="sf_repriseRdv" prompt="sf_repriseRdv?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84GeD3KzEeeRScMQBd5cnw" comment="" name="sf_perimetreRdv" prompt="sf_perimetreRdv?" promptNeeded="false" type="id_String" value="null"/>
+  <contextParameter xmi:id="_84GeEHKzEeeRScMQBd5cnw" comment="" name="sf_perimetreReprise" prompt="sf_perimetreReprise?" promptNeeded="false" type="id_String" value="null"/>
+</talendfile:ContextType>

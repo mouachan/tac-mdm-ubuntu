@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<Root>
+  <Combined>
+    <InvoiceNumber>123</InvoiceNumber>
+    <PoNumber>456</PoNumber>
+    <InvoiceDate>2009-04-22</InvoiceDate>
+    <PoDate>2009-11-02</PoDate>
+  </Combined>
+  <Combined>
+    <InvoiceNumber>111</InvoiceNumber>
+    <PoNumber>222</PoNumber>
+    <InvoiceDate>2010-12-08</InvoiceDate>
+    <PoDate>2009-11-14</PoDate>
+  </Combined>
+</Root>

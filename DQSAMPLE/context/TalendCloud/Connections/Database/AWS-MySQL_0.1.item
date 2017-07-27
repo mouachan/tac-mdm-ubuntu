@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_84opg3KzEeeRScMQBd5cnw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_84ophHKzEeeRScMQBd5cnw" comment="" name="connection_awsmysql_database" prompt="connection_awsmysql_database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_84ophXKzEeeRScMQBd5cnw" comment="" name="connection_awsmysql_host" prompt="connection_awsmysql_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_84ophnKzEeeRScMQBd5cnw" comment="" name="connection_awsmysql_port" prompt="connection_awsmysql_port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_84oph3KzEeeRScMQBd5cnw" comment="" name="connection_awsmysql_username" prompt="connection_awsmysql_username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_84opiHKzEeeRScMQBd5cnw" comment="" name="connection_awsmysql_password" prompt="connection_awsmysql_password?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_84opiXKzEeeRScMQBd5cnw" confirmationNeeded="false" name="Studio">
+    <contextParameter xmi:id="_84opinKzEeeRScMQBd5cnw" comment="" name="connection_awsmysql_database" prompt="connection_awsmysql_database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_84opi3KzEeeRScMQBd5cnw" comment="" name="connection_awsmysql_host" prompt="connection_awsmysql_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_84opjHKzEeeRScMQBd5cnw" comment="" name="connection_awsmysql_port" prompt="connection_awsmysql_port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_84opjXKzEeeRScMQBd5cnw" comment="" name="connection_awsmysql_username" prompt="connection_awsmysql_username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_84opjnKzEeeRScMQBd5cnw" comment="" name="connection_awsmysql_password" prompt="connection_awsmysql_password?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
