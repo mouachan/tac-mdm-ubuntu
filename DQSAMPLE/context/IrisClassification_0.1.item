@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_2OlNoGxjEeeL37kXNPv4gw" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_2OlNoWxjEeeL37kXNPv4gw" comment="" name="IrisClassification_TrainingFile" prompt="IrisClassification_TrainingFile?" promptNeeded="false" type="id_File" value="C:/Talend/Datamart/Iris/iris.csv"/>
-  <contextParameter xmi:id="_2OlNomxjEeeL37kXNPv4gw" comment="" name="IrisClassification_TestSetFile" prompt="IrisClassification_TestSetFile?" promptNeeded="false" type="id_File" value="C:/Talend/Datamart/Iris/iris_test_set.csv"/>
-  <contextParameter xmi:id="_2OlNo2xjEeeL37kXNPv4gw" comment="" name="IrisClassification_ModelPath" prompt="IrisClassification_ModelPath?" promptNeeded="false" type="id_Directory" value="C:/Talend/Datamart/Iris/model"/>
-</talendfile:ContextType>

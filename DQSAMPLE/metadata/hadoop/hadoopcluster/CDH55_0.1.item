@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TalendHadoopCluster:HadoopClusterConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHadoopCluster="http://www.talend.org/hadoopcluster" xmi:id="_V3b20BSMEeaCQf1NH8mRCw" name="CDH55" label="CDH55" distribution="CLOUDERA" dfVersion="Cloudera_CDH5_5" useYarn="true" nameNodeURI="hdfs://quickstart.cloudera:8020" jobTrackerURI="quickstart.cloudera:8032" principal="hdfs/_HOST@EXAMPLE.COM" jtOrRmPrincipal="yarn/_HOST@EXAMPLE.COM" jobHistoryPrincipal="mapred/_HOST@EXAMPLE.COM" userName="cloudera" group="" authMode="USERNAME" rmScheduler="quickstart.cloudera:8030" jobHistory="quickstart.cloudera:10020" stagingDirectory="/user">
-  <connectionList>_WDShgBSMEeaCQf1NH8mRCw</connectionList>
-</TalendHadoopCluster:HadoopClusterConnection>

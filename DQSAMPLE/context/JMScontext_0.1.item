@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_2OpfEGxjEeeL37kXNPv4gw" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_2OpfEWxjEeeL37kXNPv4gw" comment="" name="destination" prompt="destination?" promptNeeded="false" type="id_String" value="&quot;FileIn&quot;"/>
-  <contextParameter xmi:id="_2OpfEmxjEeeL37kXNPv4gw" comment="" name="routingSlip" prompt="routingSlip?" promptNeeded="false" type="id_String" value="&quot;direct:initAudit,direct:archive,direct:validate,direct:finalAudit&quot;"/>
-  <contextParameter xmi:id="_2OpfE2xjEeeL37kXNPv4gw" comment="" name="uri" prompt="uri?" promptNeeded="false" type="id_String" value="&quot;tcp://localhost:61616&quot;"/>
-</talendfile:ContextType>

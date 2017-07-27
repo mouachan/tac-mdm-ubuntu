@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
-  <talendfile:ContextType xmi:id="_2OiKUGxjEeeL37kXNPv4gw" confirmationNeeded="false" name="Default">
-    <contextParameter xmi:id="_2OiKUWxjEeeL37kXNPv4gw" comment="" name="dir_path" prompt="dir_path?" promptNeeded="false" type="id_Directory" value="C:/Talend/DataMart/StudentFiles_ESB/StudentFiles/ESBBasics/Routes/"/>
-  </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_2OiKUmxjEeeL37kXNPv4gw" confirmationNeeded="false" name="PROD">
-    <contextParameter xmi:id="_2OiKU2xjEeeL37kXNPv4gw" comment="" name="dir_path" prompt="dir_path?" promptNeeded="false" type="id_Directory" value="C:/Talend/DataMart/"/>
-  </talendfile:ContextType>
-</xmi:XMI>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_2OJv0GxjEeeL37kXNPv4gw" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_2OJv0WxjEeeL37kXNPv4gw" comment="" name="datasetPath" prompt="datasetPath?" promptNeeded="false" type="id_String" value="&quot;/user/student/MachineLearning/ChildCare/&quot;"/>
-  <contextParameter xmi:id="_2OJv0mxjEeeL37kXNPv4gw" comment="" name="outputPath" prompt="outputPath?" promptNeeded="false" type="id_String" value="&quot;/user/student/MachineLearning/ChildCare/output/&quot;"/>
-  <contextParameter xmi:id="_2OJv02xjEeeL37kXNPv4gw" comment="" name="datasetPath_local" prompt="datasetPath_local?" promptNeeded="false" type="id_String" value="&quot;C:/StudentFiles/MachineLearning/ChildCare/&quot;"/>
-</talendfile:ContextType>

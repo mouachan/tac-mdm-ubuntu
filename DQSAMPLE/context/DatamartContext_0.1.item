@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
-  <talendfile:ContextType xmi:id="_2OfHAGxjEeeL37kXNPv4gw" confirmationNeeded="false" name="Default">
-    <contextParameter xmi:id="_2OfHAWxjEeeL37kXNPv4gw" comment="Répertoire fichier sortie" name="OutputDir" prompt="OutputDir?" promptNeeded="false" type="id_String" value="&quot;c:/Talend/Datamart/output/&quot;"/>
-  </talendfile:ContextType>
-  <talendfile:ContextType xmi:id="_2OfHAmxjEeeL37kXNPv4gw" confirmationNeeded="false" name="Production">
-    <contextParameter xmi:id="_2OfHA2xjEeeL37kXNPv4gw" comment="Répertoire fichier sortie" name="OutputDir" prompt="OutputDir?" promptNeeded="false" type="id_String" value="&quot;c:/Talend/Datamart/production/&quot;"/>
-  </talendfile:ContextType>
-</xmi:XMI>
