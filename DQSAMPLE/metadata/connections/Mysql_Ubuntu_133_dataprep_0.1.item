@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
-  <TalendMetadata:DatabaseConnection xmi:id="_Avhe4DMKEeaLLaNpU1xKTA" name="Local_MySQL" id="_5Q_QwDMJEeaLLaNpU1xKTA" label="Local_MySQL" dataPackage="_Axa8UDMKEeaLLaNpU1xKTA" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/training?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="NZNgK6DuncI=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="training" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+  <TalendMetadata:DatabaseConnection xmi:id="_Avhe4DMKEeaLLaNpU1xKTA" name="Mysql_Ubuntu_133_dataprep" id="_5Q_QwDMJEeaLLaNpU1xKTA" label="Mysql_Ubuntu_133_dataprep" dataPackage="_5O6cnnafEeePWeZYSCE1tw" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://172.16.31.133:3306/dataprep_demo?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="remote_user" Password="YdTnhbqBAdo=" ServerName="172.16.31.133" DatasourceName="" FileFieldName="" SID="dataprep_demo" SqlSynthax="Syntaxe SQL" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
     <taggedValue xmi:id="_AvitADMKEeaLLaNpU1xKTA" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_Aw7NEDMKEeaLLaNpU1xKTA" tag="package filter" value=""/>
     <taggedValue xmi:id="_AxCh0DMKEeaLLaNpU1xKTA" tag="Status" value=""/>
@@ -12,7 +12,8 @@
     <taggedValue xmi:id="_AxOIADMKEeaLLaNpU1xKTA" tag="DB ProductName" value="MySQL"/>
     <taggedValue xmi:id="_AxOIATMKEeaLLaNpU1xKTA" tag="DB ProductVersion" value="5.6.25-log"/>
     <taggedValue xmi:id="_AxOIAjMKEeaLLaNpU1xKTA" tag="DB IdentifierQuoteString" value="`"/>
-    <parameters xmi:id="_AvitATMKEeaLLaNpU1xKTA" key="CONN_PARA_KEY_USERNAME" value="root"/>
+    <parameters xmi:id="_AvitATMKEeaLLaNpU1xKTA" key="CONN_PARA_KEY_USERNAME" value="remote_user"/>
+    <parameters xmi:id="_u6Zf0HafEeePWeZYSCE1tw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_Axa8UDMKEeaLLaNpU1xKTA" name="training" dataManager="_Avhe4DMKEeaLLaNpU1xKTA"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_5O6cnnafEeePWeZYSCE1tw" name="dataprep_demo" dataManager="_Avhe4DMKEeaLLaNpU1xKTA"/>
 </xmi:XMI>
