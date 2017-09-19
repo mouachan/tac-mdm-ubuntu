@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_o7hb8J0SEeeJzMQf4LgpWQ" name="iot" dataPackage="_o7hb950SEeeJzMQf4LgpWQ" JSONFilePath="/Users/mouachani/Documents/IoT/iot.json" Encoding="UTF-8" readbyMode="XPATH">
+    <schema xmi:id="_o7hb8Z0SEeeJzMQf4LgpWQ" LimitBoucle="50" AbsoluteXPathQuery="/root" flag="ROOT">
+      <schemaTargets xmi:id="_o7hb8p0SEeeJzMQf4LgpWQ" RelativeXPathQuery="CustomerID" TagName="CustomerID"/>
+      <schemaTargets xmi:id="_o7hb850SEeeJzMQf4LgpWQ" RelativeXPathQuery="sensorID" TagName="sensorID"/>
+      <schemaTargets xmi:id="_o7hb9J0SEeeJzMQf4LgpWQ" RelativeXPathQuery="Event" TagName="Event"/>
+      <schemaTargets xmi:id="_o7hb9Z0SEeeJzMQf4LgpWQ" RelativeXPathQuery="EventTime" TagName="EventTime"/>
+      <schemaTargets xmi:id="_o7hb9p0SEeeJzMQf4LgpWQ" RelativeXPathQuery="Value" TagName="Value"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_o7hb950SEeeJzMQf4LgpWQ" name="default" dataManager="_o7hb8J0SEeeJzMQf4LgpWQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_o7hb-J0SEeeJzMQf4LgpWQ" id="_dYHDIJ0SEeeJzMQf4LgpWQ" label="iot-json">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o7hb-Z0SEeeJzMQf4LgpWQ" label="CustomerID" length="7" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o7hb-p0SEeeJzMQf4LgpWQ" label="sensorID" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o7hb-50SEeeJzMQf4LgpWQ" label="Event" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o7hb_J0SEeeJzMQf4LgpWQ" label="EventTime" length="13" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o7hb_Z0SEeeJzMQf4LgpWQ" label="Value" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
