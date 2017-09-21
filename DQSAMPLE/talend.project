@@ -1429,6 +1429,8 @@
       <relatedItems xmi:id="_-UDfcnKzEeeRScMQBd5cnw" id="_UGPxEAv8EeaipMz8J9vTFg - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_-UDfc3KzEeeRScMQBd5cnw" id="_Q1jcYAv8EeaipMz8J9vTFg - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_-UDfdHKzEeeRScMQBd5cnw" id="_WtYycAv8EeaipMz8J9vTFg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_7olJUJ7FEeeQUuo551BUgg" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_7olJUZ7FEeeQUuo551BUgg" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_-UDfdXKzEeeRScMQBd5cnw">
       <baseItem xmi:id="_-UDfdnKzEeeRScMQBd5cnw" id="_KoYcAEFQEea53q_Uc4qJ3Q" version="0.1" type="job"/>
