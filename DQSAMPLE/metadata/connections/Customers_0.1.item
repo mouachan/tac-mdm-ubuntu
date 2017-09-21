@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_cDnyICvLEeacporFBMb1YQ" name="Customers" supplierDependency="_g37dnFpNEeayd9bHBahTPg" id="_SD-5MCvLEeacporFBMb1YQ" label="Customers" dataPackage="_fqvCwCvLEeacporFBMb1YQ" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/temp?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="NZNgK6DuncI=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="temp" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+  <TalendMetadata:DatabaseConnection xmi:id="_cDnyICvLEeacporFBMb1YQ" name="Customers" supplierDependency="_g37dnFpNEeayd9bHBahTPg" id="_SD-5MCvLEeacporFBMb1YQ" label="Customers" dataPackage="_fqvCwCvLEeacporFBMb1YQ" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/temp?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="DRzwLspoywrCK/y46hG4Qw==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="temp" SqlSynthax="Syntaxe SQL" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
     <taggedValue xmi:id="_cDnyISvLEeacporFBMb1YQ" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_cGL98CvLEeacporFBMb1YQ" tag="package filter" value=""/>
     <taggedValue xmi:id="_cGRdgCvLEeacporFBMb1YQ" tag="Status" value=""/>
@@ -10,9 +10,10 @@
     <taggedValue xmi:id="_cGSEkyvLEeacporFBMb1YQ" tag="Author" value=""/>
     <taggedValue xmi:id="_cGSElCvLEeacporFBMb1YQ" tag="otherParameter"/>
     <taggedValue xmi:id="_cGVu8CvLEeacporFBMb1YQ" tag="DB ProductName" value="MySQL"/>
-    <taggedValue xmi:id="_cGVu8SvLEeacporFBMb1YQ" tag="DB ProductVersion" value="5.7.12-log"/>
+    <taggedValue xmi:id="_cGVu8SvLEeacporFBMb1YQ" tag="DB ProductVersion" value="5.7.18"/>
     <taggedValue xmi:id="_cGWWACvLEeacporFBMb1YQ" tag="DB IdentifierQuoteString" value="`"/>
     <parameters xmi:id="_cDnyIivLEeacporFBMb1YQ" key="CONN_PARA_KEY_USERNAME" value="root"/>
+    <parameters xmi:id="_aIxVMJ7GEeeQUuo551BUgg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_fqvCwCvLEeacporFBMb1YQ" name="temp" dataManager="_cDnyICvLEeacporFBMb1YQ">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_fqvCwSvLEeacporFBMb1YQ" name="customerstate" id="_e4iJwCvLEeacporFBMb1YQ" label="customerstate" tableType="TABLE">
