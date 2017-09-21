@@ -7283,4 +7283,6 @@
     <migrationTask xmi:id="_BiKMcnKvEee5w_8Pg8gsJA" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_AVYPcnKvEee5w_8Pg8gsJA" login="presale_mdm@talend.com" firstName="presale" lastName="presale" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_YWOO8Z7FEeeQUuo551BUgg" login="mourad@talend.com" firstName="presale" lastName="presale" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_YWOO8p7FEeeQUuo551BUgg" login="mourad@talend.com" firstName="presale" lastName="presale" type="MDM" additionnalData="{}"/>
 </xmi:XMI>
