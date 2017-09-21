@@ -3179,9 +3179,8 @@
       <relatedItems xmi:id="_-UGjJXKzEeeRScMQBd5cnw" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UGjJnKzEeeRScMQBd5cnw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UGjJ3KzEeeRScMQBd5cnw" id="MDM" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UGjKHKzEeeRScMQBd5cnw" id="_5hFc4AvmEeaG_qop6r8MwQ - tlogcatcher" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_-UGjKXKzEeeRScMQBd5cnw" id="_5hFc4AvmEeaG_qop6r8MwQ - tstatcatcher" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_-UGjKnKzEeeRScMQBd5cnw" id="_5hFc4AvmEeaG_qop6r8MwQ - tflowmetercatcher" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_5w4LYJ7GEeeQUuo551BUgg" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_5w4LYZ7GEeeQUuo551BUgg" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_-UGjK3KzEeeRScMQBd5cnw">
       <baseItem xmi:id="_-UGjLHKzEeeRScMQBd5cnw" id="_y2OGMDDEEeeZverKhXnoPg" version="0.1" type="job"/>
