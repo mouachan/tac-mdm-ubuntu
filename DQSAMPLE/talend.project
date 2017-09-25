@@ -288,53 +288,6 @@
       <relatedItems xmi:id="_-UBpw3KzEeeRScMQBd5cnw" id="_jNP0sE5QEeaQGISjGZwwLg - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_-UBpxHKzEeeRScMQBd5cnw" id="_7F4BUFJvEeavaaPyr6GBRQ - metadata" version="Latest" type="schema"/>
     </ItemsRelations>
-    <ItemsRelations xmi:id="_-UBpxXKzEeeRScMQBd5cnw">
-      <baseItem xmi:id="_-UBpxnKzEeeRScMQBd5cnw" id="_VvXvwGIwEeexxvgIr1fGbA" version="0.1" type="job"/>
-      <relatedItems xmi:id="_-UBpx3KzEeeRScMQBd5cnw" id="SQLike" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBpyHKzEeeRScMQBd5cnw" id="SfObmObject" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBpyXKzEeeRScMQBd5cnw" id="Numeric" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBpynKzEeeRScMQBd5cnw" id="tic_word_titleCase" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBpy3KzEeeRScMQBd5cnw" id="DataMasking" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBpzHKzEeeRScMQBd5cnw" id="ImporttweetsTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBpzXKzEeeRScMQBd5cnw" id="ImporttweetsTstandardizerow_2" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBpznKzEeeRScMQBd5cnw" id="EscapeJson" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBpz3KzEeeRScMQBd5cnw" id="DemoRoutines" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp0HKzEeeRScMQBd5cnw" id="DataOperation" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp0XKzEeeRScMQBd5cnw" id="DqStringHandling" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp0nKzEeeRScMQBd5cnw" id="StringHandling" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp03KzEeeRScMQBd5cnw" id="TalendDate" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp1HKzEeeRScMQBd5cnw" id="TweetstriggerTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp1XKzEeeRScMQBd5cnw" id="A2_normalizeaddressTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp1nKzEeeRScMQBd5cnw" id="Products_parsingTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp13KzEeeRScMQBd5cnw" id="DQTechnical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp2HKzEeeRScMQBd5cnw" id="IpaasFileUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp2XKzEeeRScMQBd5cnw" id="FileListHtmlGenerator" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp2nKzEeeRScMQBd5cnw" id="TalendString" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp23KzEeeRScMQBd5cnw" id="IPSEN_ParseAWSNotification" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp3HKzEeeRScMQBd5cnw" id="Transformation" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp3XKzEeeRScMQBd5cnw" id="TalendDataGenerator" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp3nKzEeeRScMQBd5cnw" id="A1_parisstreetindexcreationTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp33KzEeeRScMQBd5cnw" id="DQ_METHODS" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp4HKzEeeRScMQBd5cnw" id="convertRoutine" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp4XKzEeeRScMQBd5cnw" id="ImageResize" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp4nKzEeeRScMQBd5cnw" id="DataQuality" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp43KzEeeRScMQBd5cnw" id="Standardize_and_word_analysisTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp5HKzEeeRScMQBd5cnw" id="Tweets_Generator" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp5XKzEeeRScMQBd5cnw" id="Mathematical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp5nKzEeeRScMQBd5cnw" id="SfObmHelper" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp53KzEeeRScMQBd5cnw" id="Step1_import_tweetsTstandardizerow_2" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp6HKzEeeRScMQBd5cnw" id="Relational" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp6XKzEeeRScMQBd5cnw" id="KeyManagementForSqoop" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp6nKzEeeRScMQBd5cnw" id="SfObmNotification" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp63KzEeeRScMQBd5cnw" id="DataQualityDependencies" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp7HKzEeeRScMQBd5cnw" id="MDM" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp7XKzEeeRScMQBd5cnw" id="GetRandomPhoneNum" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp7nKzEeeRScMQBd5cnw" id="SfObmObjectAttribute" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp73KzEeeRScMQBd5cnw" id="DEMO_BIGDATA" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp8HKzEeeRScMQBd5cnw" id="Convert" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp8XKzEeeRScMQBd5cnw" id="DataTypeUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UBp8nKzEeeRScMQBd5cnw" id="A2_standardizeaddressTstandardizerow_1" version="Latest" type="routine"/>
-    </ItemsRelations>
     <ItemsRelations xmi:id="_-UBp83KzEeeRScMQBd5cnw">
       <baseItem xmi:id="_-UBp9HKzEeeRScMQBd5cnw" id="_Eg0AMDL_Eeai5p98i8ZaCQ" version="0.1" type="job"/>
       <relatedItems xmi:id="_-UBp9XKzEeeRScMQBd5cnw" id="SQLike" version="Latest" type="routine"/>
@@ -4565,53 +4518,6 @@
       <relatedItems xmi:id="_-UI_SXKzEeeRScMQBd5cnw" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UI_SnKzEeeRScMQBd5cnw" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UI_S3KzEeeRScMQBd5cnw" id="DataQualityDependencies" version="Latest" type="routine"/>
-    </ItemsRelations>
-    <ItemsRelations xmi:id="_-UI_THKzEeeRScMQBd5cnw">
-      <baseItem xmi:id="_-UI_TXKzEeeRScMQBd5cnw" id="_41l6QGLuEeexxvgIr1fGbA" version="0.1" type="job"/>
-      <relatedItems xmi:id="_-UI_TnKzEeeRScMQBd5cnw" id="SQLike" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_T3KzEeeRScMQBd5cnw" id="SfObmObject" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_UHKzEeeRScMQBd5cnw" id="Numeric" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_UXKzEeeRScMQBd5cnw" id="tic_word_titleCase" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_UnKzEeeRScMQBd5cnw" id="DataMasking" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_U3KzEeeRScMQBd5cnw" id="ImporttweetsTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_VHKzEeeRScMQBd5cnw" id="ImporttweetsTstandardizerow_2" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_VXKzEeeRScMQBd5cnw" id="EscapeJson" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_VnKzEeeRScMQBd5cnw" id="DemoRoutines" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_V3KzEeeRScMQBd5cnw" id="DataOperation" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_WHKzEeeRScMQBd5cnw" id="DqStringHandling" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_WXKzEeeRScMQBd5cnw" id="StringHandling" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_WnKzEeeRScMQBd5cnw" id="TalendDate" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_W3KzEeeRScMQBd5cnw" id="TweetstriggerTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_XHKzEeeRScMQBd5cnw" id="A2_normalizeaddressTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_XXKzEeeRScMQBd5cnw" id="Products_parsingTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_XnKzEeeRScMQBd5cnw" id="DQTechnical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_X3KzEeeRScMQBd5cnw" id="IpaasFileUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_YHKzEeeRScMQBd5cnw" id="FileListHtmlGenerator" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_YXKzEeeRScMQBd5cnw" id="TalendString" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_YnKzEeeRScMQBd5cnw" id="IPSEN_ParseAWSNotification" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_Y3KzEeeRScMQBd5cnw" id="Transformation" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_ZHKzEeeRScMQBd5cnw" id="TalendDataGenerator" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_ZXKzEeeRScMQBd5cnw" id="A1_parisstreetindexcreationTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_ZnKzEeeRScMQBd5cnw" id="DQ_METHODS" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_Z3KzEeeRScMQBd5cnw" id="convertRoutine" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_aHKzEeeRScMQBd5cnw" id="ImageResize" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_aXKzEeeRScMQBd5cnw" id="DataQuality" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_anKzEeeRScMQBd5cnw" id="Standardize_and_word_analysisTstandardizerow_1" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_a3KzEeeRScMQBd5cnw" id="Tweets_Generator" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_bHKzEeeRScMQBd5cnw" id="Mathematical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_bXKzEeeRScMQBd5cnw" id="SfObmHelper" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_bnKzEeeRScMQBd5cnw" id="Step1_import_tweetsTstandardizerow_2" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_b3KzEeeRScMQBd5cnw" id="Relational" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_cHKzEeeRScMQBd5cnw" id="KeyManagementForSqoop" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_cXKzEeeRScMQBd5cnw" id="SfObmNotification" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_cnKzEeeRScMQBd5cnw" id="DataQualityDependencies" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_c3KzEeeRScMQBd5cnw" id="MDM" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_dHKzEeeRScMQBd5cnw" id="GetRandomPhoneNum" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_dXKzEeeRScMQBd5cnw" id="SfObmObjectAttribute" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_dnKzEeeRScMQBd5cnw" id="DEMO_BIGDATA" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_d3KzEeeRScMQBd5cnw" id="Convert" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_eHKzEeeRScMQBd5cnw" id="DataTypeUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_-UI_eXKzEeeRScMQBd5cnw" id="A2_standardizeaddressTstandardizerow_1" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_-UI_enKzEeeRScMQBd5cnw">
       <baseItem xmi:id="_-UI_e3KzEeeRScMQBd5cnw" id="_7phMINJvEeaoMJyykSOkcg" version="0.1" type="job"/>
