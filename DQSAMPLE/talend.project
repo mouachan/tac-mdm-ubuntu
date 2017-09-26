@@ -4616,6 +4616,7 @@
       <relatedItems xmi:id="_-UI_1XKzEeeRScMQBd5cnw" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UI_1nKzEeeRScMQBd5cnw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UI_13KzEeeRScMQBd5cnw" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_2FcIMKKnEee8qu3-eIlPsQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_-UI_2HKzEeeRScMQBd5cnw">
       <baseItem xmi:id="_-UI_2XKzEeeRScMQBd5cnw" id="_xW6oANJ8EeaoMJyykSOkcg" version="0.1" type="job"/>
