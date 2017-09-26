@@ -3,4 +3,6 @@
   <softwaredeployment:TdSoftwareSystem xmi:id="_5Si_YHafEeePWeZYSCE1tw" name="MySQL" subtype="MySQL" version="5.6.25-log"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_xylUkJ7FEeeQUuo551BUgg" name="MySQL" subtype="MySQL" version="5.7.12-log"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_uVS1kKK7Eee8qu3-eIlPsQ" name="MySQL" subtype="MySQL" version="5.7.18"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_vPRKgKK7Eee8qu3-eIlPsQ" name="Apache Hive" subtype="Apache Hive" version="1.1.0-cdh5.5.0"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_vPTmwKK7Eee8qu3-eIlPsQ" name="Apache Hive" subtype="Apache Hive" version="1.2.1.2.3.0.0-2557"/>
 </xmi:XMI>
