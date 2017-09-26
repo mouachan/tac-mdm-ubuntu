@@ -9,17 +9,32 @@
 	<wsdl:types>
 		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 			targetNamespace="http://www.talend.org/service/">
-			<xsd:element name="CatalogServicesOperationRequest">
+			<xsd:element name="displayBookInfoRequest">
 				<xsd:complexType>
 					<xsd:sequence>
 						<xsd:element name="bookId" type="xsd:string"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
-			<xsd:element name="CatalogServicesOperationResponse">
+			<xsd:element name="displayBookInfoResponse">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
+						<xsd:element name="title" type="xsd:string"></xsd:element>
+						<xsd:element name="author"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="publisher"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="releaseDate"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="pages"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="price"
+							type="xsd:string">
+						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
@@ -27,10 +42,10 @@
 	</wsdl:types>
 
 	<wsdl:message name="CatalogServicesOperationRequest">
-		<wsdl:part name="parameters" element="tns:CatalogServicesOperationRequest"></wsdl:part>
+		<wsdl:part name="parameters" element="tns:displayBookInfoRequest"></wsdl:part>
 	</wsdl:message>
 	<wsdl:message name="CatalogServicesOperationResponse">
-		<wsdl:part name="parameters" element="tns:CatalogServicesOperationResponse"></wsdl:part>
+		<wsdl:part name="parameters" element="tns:displayBookInfoResponse"></wsdl:part>
 	</wsdl:message>
 
 	<wsdl:portType name="CatalogServicesPortType">
