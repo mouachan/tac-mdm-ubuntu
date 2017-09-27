@@ -110,6 +110,7 @@
     <routinesParameter id="_zvDWULx-EeaTOZ4ZrDxKKA" name="TalendDate"/>
     <routinesParameter id="_zvOVcLx-EeaTOZ4ZrDxKKA" name="TalendString"/>
     <routinesParameter id="_4odcQKsaEeaHJvEgc6nPTA" name="SAP_KUNNR"/>
+    <routinesParameter id="_BVK4gHKvEee5w_8Pg8gsJA" name="TalendStringUtil"/>
   </parameters>
   <node componentName="tRouteInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRouteInput_1" show="false"/>
@@ -188,7 +189,7 @@
   </node>
   <node componentName="tHttpRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHttpRequest_1" show="false"/>
-    <elementParameter field="TEXT" name="URI" value="&quot;http://api.openweathermap.org/data/2.5/weather?q=&quot;+out.city+&quot;,&quot;+out.country+&quot;&amp;appid=e1e2366e41a83c9fbb9cf6a3c7a85841&quot;"/>
+    <elementParameter field="TEXT" name="URI" value="&quot;http://api.openweathermap.org/data/2.5/weather?q=&quot;+&quot;paris&quot;+&quot;,&quot;+&quot;France&quot;+&quot;&amp;appid=e1e2366e41a83c9fbb9cf6a3c7a85841&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD_CHOSED" value="GET"/>
     <elementParameter field="FILE" name="POST_PARAMS_FROM_FILE" value="" show="false"/>
     <elementParameter field="CHECK" name="OUT_TO_FILE" value="false"/>
