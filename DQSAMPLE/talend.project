@@ -7226,6 +7226,7 @@
       <relatedItems xmi:id="_tM6Wk6OSEee__JSlaehcGA" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_tM6WlKOSEee__JSlaehcGA" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_tM6WlaOSEee__JSlaehcGA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_RJItQKOTEee__JSlaehcGA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_tM69kKOSEee__JSlaehcGA">
       <baseItem xmi:id="_tM69kaOSEee__JSlaehcGA" id="_uymmQLyFEeaTOZ4ZrDxKKA" version="0.1" type="job"/>
