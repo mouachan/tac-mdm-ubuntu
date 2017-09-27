@@ -331,34 +331,33 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="newColumn" type="id_String" xpath="row1/newColumn" pattern="" lookupOutgoingConnections="//@node.7/@nodeData/@connections.0"/>
+        <nodes name="newColumn" type="id_String" xpath="row1/newColumn" pattern=""/>
       </inputTrees>
-      <inputTrees activateCondensedTool="true" name="row3" lookup="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <nodes name="movieID" expression="row1.newColumn" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.1" xpath="row3/movieID" lookupIncomingConnections="//@node.7/@nodeData/@connections.0" nullable="false"/>
-        <nodes name="title" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.2" xpath="row3/title"/>
-        <nodes name="director" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.3" xpath="row3/director"/>
-        <nodes name="releaseDate" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.4" xpath="row3/releaseDate"/>
-        <nodes name="runtime" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.5" xpath="row3/runtime"/>
-        <nodes name="studio" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.6" xpath="row3/studio"/>
-        <nodes name="price" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.7" xpath="row3/price"/>
+      <inputTrees activateCondensedTool="true" name="row3" lookup="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE" innerJoin="true">
+        <nodes name="movieID" expression="" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.0" xpath="row3/movieID" nullable="false"/>
+        <nodes name="title" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.1" xpath="row3/title"/>
+        <nodes name="director" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.2" xpath="row3/director"/>
+        <nodes name="releaseDate" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.3" xpath="row3/releaseDate"/>
+        <nodes name="runtime" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.4" xpath="row3/runtime"/>
+        <nodes name="studio" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.5" xpath="row3/studio"/>
+        <nodes name="price" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.6" xpath="row3/price"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="sendMovies" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="sendMovies/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="catalog" expression="" type="id_String" xpath="sendMovies.body:/catalog" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="movie" expression="" type="id_String" xpath="sendMovies.body:/catalog/movie" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="movieID" expression="row3.movieID" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.1" xpath="sendMovies.body:/catalog/movie/movieID"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="title" expression="row3.title" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.2" xpath="sendMovies.body:/catalog/movie/title"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="director" expression="row3.director" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.3" xpath="sendMovies.body:/catalog/movie/director"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="releaseDate" expression="row3.releaseDate" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.4" xpath="sendMovies.body:/catalog/movie/releaseDate"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="runtime" expression="row3.runtime" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.5" xpath="sendMovies.body:/catalog/movie/runtime"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="studio" expression="row3.studio" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.6" xpath="sendMovies.body:/catalog/movie/studio"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="price" expression="row3.price" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.7" xpath="sendMovies.body:/catalog/movie/price"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="movieID" expression="row3.movieID" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.0" xpath="sendMovies.body:/catalog/movie/movieID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="title" expression="row3.title" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.1" xpath="sendMovies.body:/catalog/movie/title"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="director" expression="row3.director" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.2" xpath="sendMovies.body:/catalog/movie/director"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="releaseDate" expression="row3.releaseDate" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.3" xpath="sendMovies.body:/catalog/movie/releaseDate"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="runtime" expression="row3.runtime" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.4" xpath="sendMovies.body:/catalog/movie/runtime"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="studio" expression="row3.studio" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.5" xpath="sendMovies.body:/catalog/movie/studio"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="price" expression="row3.price" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.6" xpath="sendMovies.body:/catalog/movie/price"/>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:LookupConnection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0" target="//@node.7/@nodeData/@inputTrees.1/@nodes.0"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.1/@nodes.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.1/@nodes.1" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.1/@nodes.2" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
