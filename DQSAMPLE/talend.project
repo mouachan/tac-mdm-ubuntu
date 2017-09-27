@@ -7098,6 +7098,7 @@
       <relatedItems xmi:id="_2UIBgqLIEee8qu3-eIlPsQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_2UIBg6LIEee8qu3-eIlPsQ" id="_o-nEwKK7Eee8qu3-eIlPsQ - movies" version="Latest" type="schema"/>
       <relatedItems xmi:id="_KONBcKNREeevxZL4VH6A-w" id="_5hFc4AvmEeaG_qop6r8MwQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_iGpyYKNTEeevxZL4VH6A-w" id="_o-nEwKK7Eee8qu3-eIlPsQ - books" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_BHheEHKvEee5w_8Pg8gsJA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_BHiFIHKvEee5w_8Pg8gsJA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
