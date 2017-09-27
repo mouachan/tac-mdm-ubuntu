@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
+  <Services:ServiceConnection xmi:id="__wbfkKOTEee__JSlaehcGA" WSDLPath="/Users/mouachani/Downloads/WebinarWS_0.1.wsdl" servicePort="__wqwIKOTEee__JSlaehcGA"/>
+  <Services:ServicePort xmi:id="__wqwIKOTEee__JSlaehcGA" name="WebinarWSPortType" id="__wpiAKOTEee__JSlaehcGA" serviceOperation="__wqwIaOTEee__JSlaehcGA"/>
+  <Services:ServiceOperation xmi:id="__wqwIaOTEee__JSlaehcGA" label="WebinarWSOperation" name="WebinarWSOperation" id="__wqJEKOTEee__JSlaehcGA"/>
+</xmi:XMI>
