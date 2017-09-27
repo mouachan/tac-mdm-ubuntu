@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_tI4LEKOSEee__JSlaehcGA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_tI4LEaOSEee__JSlaehcGA" comment="" name="TalendDEV_oauth_clientSecret" prompt="TalendDEV_oauth_clientSecret?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_tI4LEqOSEee__JSlaehcGA" comment="" name="TalendDEV_oauth_clientId" prompt="TalendDEV_oauth_clientId?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_tI4LE6OSEee__JSlaehcGA" comment="" name="TalendDEV_oauth_callbackHost" prompt="TalendDEV_oauth_callbackHost?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_tI4LFKOSEee__JSlaehcGA" comment="" name="TalendDEV_oauth_callbackPort" prompt="TalendDEV_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_tI4LFaOSEee__JSlaehcGA" comment="" name="TalendDEV_userPassword_securityKey" prompt="TalendDEV_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="wQRwIx6wZp8hkCUpSfWuFUl57bvJr8mDlnYdLqs936o="/>
+  <contextParameter xmi:id="_tI4LFqOSEee__JSlaehcGA" comment="" name="TalendDEV_proxy_port" prompt="TalendDEV_proxy_port?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_tI4LF6OSEee__JSlaehcGA" comment="" name="TalendDEV_proxy_userPassword_userId" prompt="TalendDEV_proxy_userPassword_userId?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_tI4LGKOSEee__JSlaehcGA" comment="" name="TalendDEV_proxy_userPassword_password" prompt="TalendDEV_proxy_userPassword_password?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_tI4LGaOSEee__JSlaehcGA" comment="" name="TalendDEV_endpoint" prompt="TalendDEV_endpoint?" promptNeeded="false" type="id_String" value="https://www.salesforce.com/services/Soap/u/34.0"/>
+  <contextParameter xmi:id="_tI4LGqOSEee__JSlaehcGA" comment="" name="TalendDEV_userPassword_password" prompt="TalendDEV_userPassword_password?" promptNeeded="false" type="id_Password" value="ZSGQ3zPMrsaCyFs4UBv9WA=="/>
+  <contextParameter xmi:id="_tI4LG6OSEee__JSlaehcGA" comment="" name="TalendDEV_proxy_host" prompt="TalendDEV_proxy_host?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_tI4LHKOSEee__JSlaehcGA" comment="" name="TalendDEV_clientId" prompt="TalendDEV_clientId?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_tI4LHaOSEee__JSlaehcGA" comment="" name="TalendDEV_oauth_tokenFile" prompt="TalendDEV_oauth_tokenFile?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_tI4LHqOSEee__JSlaehcGA" comment="" name="TalendDEV_timeout" prompt="TalendDEV_timeout?" promptNeeded="false" type="id_Integer" value="60000"/>
+  <contextParameter xmi:id="_tI4LH6OSEee__JSlaehcGA" comment="" name="TalendDEV_userPassword_userId" prompt="TalendDEV_userPassword_userId?" promptNeeded="false" type="id_String" value="jelek@talend.dev"/>
+</talendfile:ContextType>

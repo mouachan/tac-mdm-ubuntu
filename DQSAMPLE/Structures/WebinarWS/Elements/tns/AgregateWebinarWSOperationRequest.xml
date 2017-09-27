@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x158d9a9aaa7' V1='4' name='WebinarWSOperationRequest' incarnation='117'>
+  <rootElem t='167' id='13' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Root'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='14' V167='21' differentFromInherited='true' inheritsFromIncarnation='10' inheritsFromTimestamp='0x158d9a9aaa7' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' inheritsFromCopyRule='24' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/WebinarWS/Elements/tns/WebinarWSOperationRequest.xml' namespaceIndex='1' V281='13' modifiedFromParent_io='true' V1='4' name='WebinarWSOperationRequest'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='15' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/WebinarWS/Elements/tns/WebinarWSOperationRequest.xml' namespaceIndex='1' V281='13' V1='4' name='WebinarWSOperationRequest'>
+      </savedDerivedCopy>
+      <savedOrigCopyAtInheritsFrom t='167' id='16' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='WebinarWSOperationRequest'>
+      </savedOrigCopyAtInheritsFrom>
+      <io>ReadURL([repName="XML",url="file:///C:/Temp/WSIN.xml"],{Start Offset},{Length})</io>
+      <child t='167' id='17' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NUMERO'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='18' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NUMERO'>
+        </savedOrigCopy>
+      </child>
+      <child t='167' id='19' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DIVISION'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='20' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DIVISION'>
+        </savedOrigCopy>
+      </child>
+      <child t='167' id='21' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SALESORG'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='22' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SALESORG'>
+        </savedOrigCopy>
+      </child>
+      <child t='167' id='23' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CHANNEL'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='24' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CHANNEL'>
+        </savedOrigCopy>
+      </child>
+    </child>
+    <child t='167' id='25' V167='21' differentFromInherited='true' inheritsFromIncarnation='42' inheritsFromTimestamp='0x158df426609' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' inheritsFromCopyRule='24' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/weatherJSON.xml' V281='13' modifiedFromParent_io='true' V1='4' name='json' checksumValid='true' checksum='6CBoxO3/s2qLEwszqqmUMCbIUhQ='>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='26' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='Structures/weatherJSON.xml' V281='13' V1='4' name='json'>
+      </savedDerivedCopy>
+      <savedOrigCopyAtInheritsFrom t='167' id='27' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='Root'>
+      </savedOrigCopyAtInheritsFrom>
+      <io>ReadURL([repName="JSON",url="file:///C:/Temp/weather"],{Start Offset},{Length})</io>
+      <child t='167' id='28' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='coord'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='29' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='coord'>
+        </savedOrigCopy>
+        <child t='167' id='30' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='lon'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='31' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='lon'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='32' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='lat'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='33' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='lat'>
+          </savedOrigCopy>
+        </child>
+      </child>
+      <child t='167' id='34' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='weather'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='35' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='weather'>
+        </savedOrigCopy>
+        <child t='167' id='36' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='id'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='37' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='id'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='38' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='main'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='39' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='main'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='40' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='description'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='41' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='description'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='42' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='icon'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='43' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='icon'>
+          </savedOrigCopy>
+        </child>
+      </child>
+      <child t='167' id='44' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='base'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='45' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='base'>
+        </savedOrigCopy>
+      </child>
+      <child t='167' id='46' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='main'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='47' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='main'>
+        </savedOrigCopy>
+        <child t='167' id='48' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='temp'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='49' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='temp'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='50' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='pressure'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='51' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='pressure'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='52' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='humidity'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='53' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='humidity'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='54' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='temp_min'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='55' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='temp_min'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='56' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='temp_max'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='57' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='temp_max'>
+          </savedOrigCopy>
+        </child>
+      </child>
+      <child t='167' id='58' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='visibility'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='59' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='visibility'>
+        </savedOrigCopy>
+      </child>
+      <child t='167' id='60' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='wind'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='61' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='wind'>
+        </savedOrigCopy>
+        <child t='167' id='62' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='speed'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='63' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='speed'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='64' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='deg'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='65' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='deg'>
+          </savedOrigCopy>
+        </child>
+      </child>
+      <child t='167' id='66' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='clouds'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='67' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='clouds'>
+        </savedOrigCopy>
+        <child t='167' id='68' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='all'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='69' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='all'>
+          </savedOrigCopy>
+        </child>
+      </child>
+      <child t='167' id='70' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='dt'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='71' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='dt'>
+        </savedOrigCopy>
+      </child>
+      <child t='167' id='72' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='sys'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='73' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='sys'>
+        </savedOrigCopy>
+        <child t='167' id='74' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='type'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='75' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='type'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='76' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='id'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='77' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='id'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='78' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='message'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='79' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='21' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='message'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='80' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='country'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='81' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='country'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='82' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='sunrise'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='83' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='sunrise'>
+          </savedOrigCopy>
+        </child>
+        <child t='167' id='84' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='sunset'>
+          <structNode t='150' idref='1'/>
+          <savedOrigCopy t='167' id='85' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='sunset'>
+          </savedOrigCopy>
+        </child>
+      </child>
+      <child t='167' id='86' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='id'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='87' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='id'>
+        </savedOrigCopy>
+      </child>
+      <child t='167' id='88' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='name'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='89' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='name'>
+        </savedOrigCopy>
+      </child>
+      <child t='167' id='90' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='cod'>
+        <structNode t='150' idref='1'/>
+        <savedOrigCopy t='167' id='91' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='cod'>
+        </savedOrigCopy>
+      </child>
+    </child>
+    <child t='167' id='94' V167='21' inheritsFromIncarnation='43' inheritsFromTimestamp='0x158d9a80f67' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/detail.xml' V281='13' modifiedFromParent_io='true' V1='4' name='BAPI_CUSTOMER_GETDETAIL'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='95' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='Structures/detail.xml' V281='13' V1='4' name='BAPI_CUSTOMER_GETDETAIL'>
+      </savedDerivedCopy>
+      <io>ReadURL([repName="XML",url="file:///C:/Temp/detail"],{Start Offset},{Length})</io>
+    </child>
+    <child t='167' id='96' V167='21' inheritsFromIncarnation='-1' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/ORDERS.xml' V281='13' modifiedFromParent_io='true' V1='4' name='BAPI_SALESORDER_GETLIST'>
+      <structNode t='150' idref='1'/>
+      <savedDerivedCopy t='167' id='97' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='Structures/ORDERS.xml' V281='13' V1='4' name='BAPI_SALESORDER_GETLIST'>
+      </savedDerivedCopy>
+      <io>ReadURL([repName="XML",url="file:///C:/Temp/orders"],{Start Offset},{Length})</io>
+    </child>
+  </rootElem>
+  <defaultRep t='172' id='7' V172='6' autoFixNamespaceMismatch='true' V170='10' V692='1' V690='1' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='XML'>
+    <namespaceContainers t='220' ref='Namespace Containers/WebinarWS.xml'/>
+  </defaultRep>
+  <namespaceList t='161' id='8' V161='1' namespaceUri='___osdtDummy___' V1='4'>
+  </namespaceList>
+  <namespaceList t='161' id='9' V161='1' namespaceUri='http://www.talend.org/service/' namespacePrefix='tns' V1='4'>
+  </namespaceList>
+  <child t='162' id='10' V1='4' name='Representations'>
+    <child t='172' idref='7'/>
+  </child>
+  <child t='165' id='11' V1='4' name='Document Bindings'>
+    <child t='166' id='92' V166='5' docType='1' docReposPath='/WEBINAR360/Sample Data/weatherJSON/weather' V1='4' name='/Root/json'>
+      <elemNode t='167' idref='25'/>
+    </child>
+    <child t='166' id='93' V166='5' docType='1' docReposPath='/WEBINAR360/Sample Data/WebinarWS/Elements/tns/WebinarWSOperationRequest/WSIN.xml' V1='4' name='/Root/tns:WebinarWSOperationRequest'>
+      <elemNode t='167' idref='14'/>
+    </child>
+    <child t='166' id='98' V166='5' docType='1' docReposPath='/WEBINAR360/Sample Data/ORDERS/ORDERS' V1='4' name='/Root/BAPI_SALESORDER_GETLIST'>
+      <elemNode t='167' idref='96'/>
+    </child>
+    <child t='166' id='99' V166='5' docType='1' docReposPath='/WEBINAR360/Sample Data/detail/detail' V1='4' name='/Root/BAPI_CUSTOMER_GETDETAIL'>
+      <elemNode t='167' idref='94'/>
+    </child>
+  </child>
+</root>
