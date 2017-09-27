@@ -123,7 +123,31 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="96">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
@@ -134,57 +158,57 @@
       <column comment="" key="false" length="-1" name="country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="body" expression="" type="id_Document" xpath="row1/body">
-          <children name="BAPI_CUSTOMER_GETDETAIL" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL">
-            <children name="OUTPUT" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT" loop="true">
-              <children name="PE_ADDRESS" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS">
-                <children name="FORM_OF_AD" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/FORM_OF_AD"/>
-                <children name="FIRST_NAME" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/FIRST_NAME"/>
-                <children name="NAME" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/NAME"/>
-                <children name="NAME_3" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/NAME_3"/>
-                <children name="NAME_4" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/NAME_4"/>
-                <children name="DATE_BIRTH" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/DATE_BIRTH"/>
-                <children name="STREET" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/STREET"/>
-                <children name="POSTL_CODE" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/POSTL_CODE"/>
-                <children name="CITY" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/CITY"/>
-                <children name="REGION" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/REGION"/>
-                <children name="COUNTRY" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.1" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/COUNTRY"/>
-                <children name="COUNTRNISO" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/COUNTRNISO"/>
-                <children name="COUNTRAISO" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/COUNTRAISO"/>
-                <children name="INTERNET" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/INTERNET"/>
-                <children name="FAX_NUMBER" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/FAX_NUMBER"/>
-                <children name="TELEPHONE" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/TELEPHONE"/>
-                <children name="TELEPHONE2" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/TELEPHONE2"/>
-                <children name="LANGU" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/LANGU"/>
-                <children name="LANGU_ISO" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/LANGU_ISO"/>
-                <children name="CURRENCY" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/CURRENCY"/>
-                <children name="CURRENCY_ISO" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/CURRENCY_ISO"/>
-                <children name="COUNTRYISO" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/COUNTRYISO"/>
-                <children name="ONLY_CHANGE_COMADDRESS" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/ONLY_CHANGE_COMADDRESS"/>
+      <inputTrees name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="body" expression="" type="id_Document" xpath="row3/body">
+          <children name="BAPI_CUSTOMER_GETDETAIL" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL">
+            <children name="OUTPUT" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT" loop="true">
+              <children name="PE_ADDRESS" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS">
+                <children name="FORM_OF_AD" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/FORM_OF_AD"/>
+                <children name="FIRST_NAME" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/FIRST_NAME"/>
+                <children name="NAME" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/NAME"/>
+                <children name="NAME_3" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/NAME_3"/>
+                <children name="NAME_4" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/NAME_4"/>
+                <children name="DATE_BIRTH" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/DATE_BIRTH"/>
+                <children name="STREET" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/STREET"/>
+                <children name="POSTL_CODE" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/POSTL_CODE"/>
+                <children name="CITY" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/CITY"/>
+                <children name="REGION" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/REGION"/>
+                <children name="COUNTRY" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/COUNTRY"/>
+                <children name="COUNTRNISO" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/COUNTRNISO"/>
+                <children name="COUNTRAISO" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/COUNTRAISO"/>
+                <children name="INTERNET" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/INTERNET"/>
+                <children name="FAX_NUMBER" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/FAX_NUMBER"/>
+                <children name="TELEPHONE" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/TELEPHONE"/>
+                <children name="TELEPHONE2" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/TELEPHONE2"/>
+                <children name="LANGU" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/LANGU"/>
+                <children name="LANGU_ISO" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/LANGU_ISO"/>
+                <children name="CURRENCY" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/CURRENCY"/>
+                <children name="CURRENCY_ISO" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/CURRENCY_ISO"/>
+                <children name="COUNTRYISO" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/COUNTRYISO"/>
+                <children name="ONLY_CHANGE_COMADDRESS" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/ONLY_CHANGE_COMADDRESS"/>
               </children>
-              <children name="RETURN" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN">
-                <children name="TYPE" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/TYPE"/>
-                <children name="CODE" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/CODE"/>
-                <children name="MESSAGE" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/MESSAGE"/>
-                <children name="LOG_NO" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/LOG_NO"/>
-                <children name="LOG_MSG_NO" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/LOG_MSG_NO"/>
-                <children name="MESSAGE_V1" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/MESSAGE_V1"/>
-                <children name="MESSAGE_V2" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/MESSAGE_V2"/>
-                <children name="MESSAGE_V3" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/MESSAGE_V3"/>
-                <children name="MESSAGE_V4" type="id_String" xpath="row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/MESSAGE_V4"/>
+              <children name="RETURN" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN">
+                <children name="TYPE" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/TYPE"/>
+                <children name="CODE" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/CODE"/>
+                <children name="MESSAGE" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/MESSAGE"/>
+                <children name="LOG_NO" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/LOG_NO"/>
+                <children name="LOG_MSG_NO" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/LOG_MSG_NO"/>
+                <children name="MESSAGE_V1" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/MESSAGE_V1"/>
+                <children name="MESSAGE_V2" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/MESSAGE_V2"/>
+                <children name="MESSAGE_V3" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/MESSAGE_V3"/>
+                <children name="MESSAGE_V4" type="id_String" xpath="row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/RETURN/MESSAGE_V4"/>
               </children>
             </children>
           </children>
         </nodes>
       </inputTrees>
       <outputTrees name="out">
-        <nodes name="city" expression="[row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/CITY]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="out/city" pattern=""/>
-        <nodes name="country" expression="[row1.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/COUNTRY]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="out/country" pattern=""/>
+        <nodes name="city" expression="[row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/CITY]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="out/city" pattern=""/>
+        <nodes name="country" expression="[row3.body:/BAPI_CUSTOMER_GETDETAIL/OUTPUT/PE_ADDRESS/COUNTRY]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="out/country" pattern=""/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.10" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.8" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0/@children.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.1"/>
     </nodeData>
   </node>
   <node componentName="tHttpRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="96">
@@ -221,9 +245,13 @@
       <column defaultValue="" key="false" length="0" name="ResponseContent" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRouteInput_1" offsetLabelX="0" offsetLabelY="0" source="tRouteInput_1" target="tXMLMap_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRouteInput_1" offsetLabelX="0" offsetLabelY="0" source="tRouteInput_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tHttpRequest_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
