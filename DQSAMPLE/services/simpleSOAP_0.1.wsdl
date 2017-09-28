@@ -55,7 +55,7 @@
 
 	<wsdl:service name="simpleSOAP">
 		<wsdl:port name="simpleSOAPPort" binding="tns:simpleSOAPBinding">
-			<soap:address location="http://localhost:8090/services/simpleSOAP" />
+			<soap:address location="http://localhost:8040/services/simpleSOAP" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>

@@ -119,7 +119,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_0sTBcKKbEee8qu3-eIlPsQ - _0uWP4KKbEee8qu3-eIlPsQ - _0uWP4aKbEee8qu3-eIlPsQ" show="false"/>
     <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
     <elementParameter field="TEXT" name="WSDL_LOCATION" value="/Users/mouachani/talend/workspaces/.repositories/824336294/master/DQSAMPLE/services/simpleSOAP_0.1.wsdl" show="false"/>
-    <elementParameter field="TEXT" name="ENDPOINT_URI" value="http://localhost:8090/services/simpleSOAP" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT_URI" value="http://localhost:8040/services/simpleSOAP" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NS" value="http://www.talend.org/service/" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="simpleSOAP" show="false"/>
     <elementParameter field="TEXT" name="PORT_NS" value="http://www.talend.org/service/" show="false"/>
