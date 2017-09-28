@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
-  <Services:ServiceConnection xmi:id="_1x1foaK7Eee8qu3-eIlPsQ" servicePort="_sIV84KQbEee__JSlaehcGA"/>
-  <Services:ServicePort xmi:id="_sIV84KQbEee__JSlaehcGA" name="CatalogServicesPortType" id="_1yoJ0KK7Eee8qu3-eIlPsQ" serviceOperation="_sIV84aQbEee__JSlaehcGA"/>
-  <Services:ServiceOperation xmi:id="_sIV84aQbEee__JSlaehcGA" label="CatalogServicesOperation-CatalogServicesPortType_CatalogServicesOperation" name="CatalogServicesOperation" id="_1yoJ0aK7Eee8qu3-eIlPsQ" referenceJobId="_k3BSYKK9Eee8qu3-eIlPsQ"/>
+  <Services:ServiceConnection xmi:id="_1x1foaK7Eee8qu3-eIlPsQ" servicePort="_LThUkKQeEee__JSlaehcGA"/>
+  <Services:ServicePort xmi:id="_LThUkKQeEee__JSlaehcGA" name="CatalogServicesPortType" id="_1yoJ0KK7Eee8qu3-eIlPsQ" serviceOperation="_LThUkaQeEee__JSlaehcGA"/>
+  <Services:ServiceOperation xmi:id="_LThUkaQeEee__JSlaehcGA" label="CatalogServicesOperation-CatalogServicesPortType_CatalogServicesOperation" name="CatalogServicesOperation" id="_1yoJ0aK7Eee8qu3-eIlPsQ" referenceJobId="_k3BSYKK9Eee8qu3-eIlPsQ"/>
 </xmi:XMI>
