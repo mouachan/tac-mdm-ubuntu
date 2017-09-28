@@ -121,7 +121,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_1x1foKK7Eee8qu3-eIlPsQ - _1yoJ0KK7Eee8qu3-eIlPsQ - _1yoJ0aK7Eee8qu3-eIlPsQ" show="false"/>
     <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
     <elementParameter field="TEXT" name="WSDL_LOCATION" value="/Users/mouachani/talend/workspaces/.repositories/824336294/master/DQSAMPLE/services/CatalogServices_0.1.wsdl" show="false"/>
-    <elementParameter field="TEXT" name="ENDPOINT_URI" value="http://localhost:8090/services/CatalogServices" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT_URI" value="/services/CatalogServices" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NS" value="http://www.talend.org/service/" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="CatalogServices" show="false"/>
     <elementParameter field="TEXT" name="PORT_NS" value="http://www.talend.org/service/" show="false"/>
