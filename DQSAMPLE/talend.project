@@ -5756,6 +5756,7 @@
       <relatedItems xmi:id="_-UK0YHKzEeeRScMQBd5cnw" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UK0YXKzEeeRScMQBd5cnw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UK0YnKzEeeRScMQBd5cnw" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Pc6y4KQeEee__JSlaehcGA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_-UK0Y3KzEeeRScMQBd5cnw">
       <baseItem xmi:id="_-UK0ZHKzEeeRScMQBd5cnw" id="_sSamAMj9Eeago7ckmefH4g" version="0.1" type="job"/>
