@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
-  <Services:ServiceConnection xmi:id="_0sTogKKbEee8qu3-eIlPsQ" servicePort="_MBJacKK8Eee8qu3-eIlPsQ">
+  <Services:ServiceConnection xmi:id="_0sTogKKbEee8qu3-eIlPsQ" servicePort="_hD5JcKRGEee__JSlaehcGA">
     <additionalInfo xmi:id="_Ua6PsKRGEee__JSlaehcGA" key="UseSAM" value="false"/>
     <additionalInfo xmi:id="_Ua6PsaRGEee__JSlaehcGA" key="UseSL" value="true"/>
     <additionalInfo xmi:id="_Ua6PsqRGEee__JSlaehcGA" key="Security.Basic" value="false"/>
@@ -12,6 +12,6 @@
     <additionalInfo xmi:id="_Ua6PuKRGEee__JSlaehcGA" key="WsdlSchemaValidation" value="false"/>
     <additionalInfo xmi:id="_Ua6PuaRGEee__JSlaehcGA" key="useBusinessCorrelation" value="false"/>
   </Services:ServiceConnection>
-  <Services:ServicePort xmi:id="_MBJacKK8Eee8qu3-eIlPsQ" name="simpleSOAPPortType" id="_0uWP4KKbEee8qu3-eIlPsQ" serviceOperation="_MBJacaK8Eee8qu3-eIlPsQ"/>
-  <Services:ServiceOperation xmi:id="_MBJacaK8Eee8qu3-eIlPsQ" label="simpleSOAPOperation-simpleSOAPPortType_simpleSOAPOperation" name="simpleSOAPOperation" id="_0uWP4aKbEee8qu3-eIlPsQ" referenceJobId="_hlghUKKcEee8qu3-eIlPsQ"/>
+  <Services:ServicePort xmi:id="_hD5JcKRGEee__JSlaehcGA" name="simpleSOAPPortType" id="_0uWP4KKbEee8qu3-eIlPsQ" serviceOperation="_hD5JcaRGEee__JSlaehcGA"/>
+  <Services:ServiceOperation xmi:id="_hD5JcaRGEee__JSlaehcGA" label="simpleSOAPOperation-simpleSOAPPortType_simpleSOAPOperation" name="simpleSOAPOperation" id="_0uWP4aKbEee8qu3-eIlPsQ" referenceJobId="_hlghUKKcEee8qu3-eIlPsQ"/>
 </xmi:XMI>
