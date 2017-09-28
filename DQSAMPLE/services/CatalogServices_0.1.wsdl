@@ -70,7 +70,7 @@
 
 	<wsdl:service name="CatalogServices">
 		<wsdl:port name="CatalogServicesPort" binding="tns:CatalogServicesBinding">
-			<soap:address location="/services/CatalogServices" />
+			<soap:address location="services/CatalogServices" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
