@@ -7637,4 +7637,5 @@
   <TalendProperties:User xmi:id="_AVYPcnKvEee5w_8Pg8gsJA" login="presale_mdm@talend.com" firstName="presale" lastName="presale" type="MDM" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_YWOO8Z7FEeeQUuo551BUgg" login="mourad@talend.com" firstName="presale" lastName="presale" type="MDM" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_YWOO8p7FEeeQUuo551BUgg" login="mourad@talend.com" firstName="presale" lastName="presale" type="MDM" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_qS3LILASEeeZUNQo7bh_wQ" login="security@company.com" firstName="security" lastName="security" type="MDM" additionnalData="{}"/>
 </xmi:XMI>
