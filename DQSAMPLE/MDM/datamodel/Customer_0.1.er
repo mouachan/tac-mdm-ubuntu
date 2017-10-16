@@ -11,7 +11,7 @@
         <elements xmi:type="ermodel:Element" xmi:id="_wyMuQbJQEeeZUNQo7bh_wQ" name="Postcode" type="_aYtjwLJQEeeZUNQo7bh_wQ" maxOccurs="1"/>
       </entities>
       <entities xmi:type="ermodel:Entity" xmi:id="_fa12UbJPEeeZUNQo7bh_wQ" name="Country" type="_aY0RcLJQEeeZUNQo7bh_wQ">
-        <elements xmi:type="ermodel:Element" xmi:id="_fa2dYLJPEeeZUNQo7bh_wQ" name="ISO_NumericCode" type="_aYtjwLJQEeeZUNQo7bh_wQ" key="true" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_fa2dYLJPEeeZUNQo7bh_wQ" name="ISO_NumericCode" type="_RrcdYLJrEeeZUNQo7bh_wQ" key="true" minOccurs="1" maxOccurs="1"/>
         <elements xmi:type="ermodel:Element" xmi:id="_QPHLobJSEeeZUNQo7bh_wQ" name="ISO_Alpha-2&#xA;" type="_aYtjwLJQEeeZUNQo7bh_wQ" maxOccurs="1"/>
         <elements xmi:type="ermodel:Element" xmi:id="_SU3-QLJSEeeZUNQo7bh_wQ" name="ISO_Alpha-3&#xA;" type="_aYtjwLJQEeeZUNQo7bh_wQ" maxOccurs="1"/>
         <elements xmi:type="ermodel:Element" xmi:id="_VeyVgbJSEeeZUNQo7bh_wQ" name="Name" type="_aYtjwLJQEeeZUNQo7bh_wQ" maxOccurs="1"/>
@@ -39,7 +39,7 @@
       </types>
       <types xmi:type="ermodel:SimpleType" xmi:id="_aYtjwLJQEeeZUNQo7bh_wQ" name="string" namespace="http://www.w3.org/2001/XMLSchema" superType="_S9e9wLJPEeeZUNQo7bh_wQ"/>
       <types xmi:type="ermodel:ComplexType" xmi:id="_aY0RcLJQEeeZUNQo7bh_wQ" name="ANONYMOUS_1" superType="_S9lrcLJPEeeZUNQo7bh_wQ" anonymous="true">
-        <elements xmi:type="ermodel:TypeElement" xmi:id="_aZHzcLJQEeeZUNQo7bh_wQ" name="CountryId" type="_aYtjwLJQEeeZUNQo7bh_wQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_aZHzcLJQEeeZUNQo7bh_wQ" name="CountryId" type="_RrcdYLJrEeeZUNQo7bh_wQ" minOccurs="1" maxOccurs="1"/>
         <elements xmi:type="ermodel:TypeElement" xmi:id="_QPHLoLJSEeeZUNQo7bh_wQ" name="ISO_Alpha-2&#xA;" type="_aYtjwLJQEeeZUNQo7bh_wQ" maxOccurs="1"/>
         <elements xmi:type="ermodel:TypeElement" xmi:id="_SU3XMLJSEeeZUNQo7bh_wQ" name="ISO_Alpha-3&#xA;" type="_aYtjwLJQEeeZUNQo7bh_wQ" maxOccurs="1"/>
         <elements xmi:type="ermodel:TypeElement" xmi:id="_VeyVgLJSEeeZUNQo7bh_wQ" name="Name" type="_aYtjwLJQEeeZUNQo7bh_wQ" maxOccurs="1"/>
@@ -59,6 +59,7 @@
         <elements xmi:type="ermodel:TypeElement" xmi:id="_S6GdILJQEeeZUNQo7bh_wQ" name="PhoneNumbers" maxOccurs="1"/>
         <elements xmi:type="ermodel:TypeElement" xmi:id="_XHKTcLJQEeeZUNQo7bh_wQ" name="Email" maxOccurs="1"/>
       </types>
+      <types xmi:type="ermodel:SimpleType" xmi:id="_RrcdYLJrEeeZUNQo7bh_wQ" name="int"/>
     </typeContainer>
   </ermodel:ModelContainer>
   <notation:Diagram xmi:id="_5pcoULI7EeeZUNQo7bh_wQ" type="ERmodel" element="_5pbaMLI7EeeZUNQo7bh_wQ" name="Customer_0.1.er" measurementUnit="Pixel">
