@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
   <talendfile:ContextType xmi:id="_HAM6ILJUEeeZUNQo7bh_wQ" confirmationNeeded="false" name="Local">
-    <contextParameter xmi:id="_HAM6IbJUEeeZUNQo7bh_wQ" comment="" name="ANONYM_FILEPATH" prompt="ANONYM_FILEPATH?" promptNeeded="false" type="id_String" value="&quot;C:/Talend/DataMart/SystemeU&quot;"/>
+    <contextParameter xmi:id="_HAM6IbJUEeeZUNQo7bh_wQ" comment="" name="ANONYM_FILEPATH" prompt="ANONYM_FILEPATH?" promptNeeded="false" type="id_String" value="&quot;/Users/mouachani/Documents/Talend/DataMart/DataMasking&quot;"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_HAM6IrJUEeeZUNQo7bh_wQ" confirmationNeeded="false" name="Remote">
     <contextParameter xmi:id="_HAM6I7JUEeeZUNQo7bh_wQ" comment="" name="ANONYM_FILEPATH" prompt="ANONYM_FILEPATH?" promptNeeded="false" type="id_String" value="/temp"/>
