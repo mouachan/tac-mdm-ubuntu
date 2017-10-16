@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
   <model:JobletProcess defaultContext="Local" jobType="Standard">
     <context confirmationNeeded="false" name="Local">
-      <contextParameter comment="" name="ANONYM_FILEPATH" prompt="ANONYM_FILEPATH?" promptNeeded="false" repositoryContextId="_AdoBkKz8EeeqBZ1zTmqt7w" type="id_String" value="&quot;C:/Talend/DataMart/SystemeU&quot;"/>
+      <contextParameter comment="" name="ANONYM_FILEPATH" prompt="ANONYM_FILEPATH?" promptNeeded="false" repositoryContextId="_AdoBkKz8EeeqBZ1zTmqt7w" type="id_String" value="&quot;/Users/mouachani/Documents/Talend/DataMart/DataMasking&quot;"/>
     </context>
     <context confirmationNeeded="false" name="Remote">
       <contextParameter comment="" name="ANONYM_FILEPATH" prompt="ANONYM_FILEPATH?" promptNeeded="false" repositoryContextId="_AdoBkKz8EeeqBZ1zTmqt7w" type="id_String" value="/temp"/>
