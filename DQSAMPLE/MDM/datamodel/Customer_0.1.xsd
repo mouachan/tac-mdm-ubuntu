@@ -23,6 +23,7 @@
           <xsd:annotation/>
         </xsd:element>
         <xsd:element maxOccurs="1" minOccurs="0" name="FkAddresss">
+          <xsd:annotation/>
           <xsd:complexType>
             <xsd:sequence>
               <xsd:element maxOccurs="unbounded" minOccurs="0" name="FkAddress" type="xsd:string">
@@ -31,6 +32,12 @@
                   <xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
                   <xsd:appinfo source="X_FKIntegrity">true</xsd:appinfo>
                   <xsd:appinfo source="X_FKIntegrity_Override">false</xsd:appinfo>
+                  <xsd:appinfo source="X_ForeignKeyInfo">Address/BuldingIdentifier</xsd:appinfo>
+                  <xsd:appinfo source="X_ForeignKeyInfo">Address/Thoroughfare</xsd:appinfo>
+                  <xsd:appinfo source="X_ForeignKeyInfo">Address/Locality</xsd:appinfo>
+                  <xsd:appinfo source="X_ForeignKeyInfo">Address/AdministrativeArea</xsd:appinfo>
+                  <xsd:appinfo source="X_ForeignKeyInfo">Address/Postcode</xsd:appinfo>
+                  <xsd:appinfo source="X_ForeignKeyInfo">Address/FkCountry</xsd:appinfo>
                 </xsd:annotation>
               </xsd:element>
             </xsd:sequence>
