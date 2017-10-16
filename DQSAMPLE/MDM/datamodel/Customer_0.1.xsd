@@ -4,7 +4,7 @@
   <xsd:element name="Customer">
     <xsd:complexType>
       <xsd:all>
-        <xsd:element maxOccurs="1" minOccurs="1" name="CustomerId" type="xsd:string">
+        <xsd:element maxOccurs="1" minOccurs="1" name="CustomerId" type="AUTO_INCREMENT">
           <xsd:annotation/>
         </xsd:element>
         <xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="xsd:string">
@@ -77,4 +77,7 @@
       <xsd:field xpath="ISO_NumericCode"/>
     </xsd:unique>
   </xsd:element>
+  <xsd:simpleType name="AUTO_INCREMENT">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
 </xsd:schema>
