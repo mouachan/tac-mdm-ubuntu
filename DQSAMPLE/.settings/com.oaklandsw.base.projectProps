@@ -11,6 +11,14 @@ Maps/Java/JavaInvoiceToXML.xml,com.oaklandsw.base,references.0,Structures/Java/I
 Maps/Java/JavaInvoiceToXML.xml,com.oaklandsw.base,references.1,Structures/Java/XML/XMLInvoices.xml
 Maps/Java/POPayPalCsvToJava.xml,com.oaklandsw.base,references.0,Structures/Java/Invoices.xml
 Maps/Java/POPayPalCsvToJava.xml,com.oaklandsw.base,references.1,Structures/CSV/PurchaseOrderPayPal.xml
+Maps/Jobs/map_chiffrement.xml,com.oaklandsw.base,references.0,Structures/Jobs/test1/map_manual_input.xml
+Maps/Jobs/map_chiffrement.xml,com.oaklandsw.base,references.1,Structures/html.xml
+Maps/Jobs/map_permutation.xml,com.oaklandsw.base,references.0,Structures/Jobs/test1/map_manual_input.xml
+Maps/Jobs/map_permutation.xml,com.oaklandsw.base,references.1,Structures/html.xml
+Maps/Jobs/map_substitution.xml,com.oaklandsw.base,references.0,Structures/html.xml
+Maps/Jobs/map_substitution.xml,com.oaklandsw.base,references.1,Structures/Jobs/test1/map_manual_input.xml
+Maps/Jobs/map_tokenisation.xml,com.oaklandsw.base,references.0,Structures/html.xml
+Maps/Jobs/map_tokenisation.xml,com.oaklandsw.base,references.1,Structures/Jobs/test1/map_manual_input.xml
 Maps/Looping/LoopAggregate.xml,com.oaklandsw.base,references.0,Structures/Simple/POStandard/SimpleShipNoticeFile.xml
 Maps/Looping/LoopAggregate.xml,com.oaklandsw.base,references.1,Structures/Simple/POStandard/POFile.xml
 Maps/Looping/LoopMergeTwoLoops.xml,com.oaklandsw.base,references.0,Structures/Simple/Customer/CustomerAddress.xml
@@ -189,3 +197,5 @@ Structures/WebinarWS/Elements/tns/WebinarWSOperationResponse.xml,com.oaklandsw.b
 Structures/WebinarWS/Elements/tns/WebinarWSOperationResponse.xml,com.oaklandsw.base,references.1,Namespace Containers/WebinarWS.xml
 Structures/WebinarWS/Types/tns/order.xml,com.oaklandsw.base,references.0,Namespace Containers/WebinarWS.xml
 Structures/detail.xml,com.oaklandsw.base,references.0,Namespace Containers/detail.xml
+Structures/html.xml,com.oaklandsw.base,references.0,Namespace Containers/test.xml
+Structures/html.xml,com.oaklandsw.base,references.1,/POC_BIGDATA/Sample Data/html/test
