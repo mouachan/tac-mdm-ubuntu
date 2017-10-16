@@ -61,6 +61,15 @@
         <xsd:element maxOccurs="1" minOccurs="1" name="ISO_NumericCode" type="xsd:string">
           <xsd:annotation/>
         </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="ISO_Alpha-2&#10;" type="xsd:string">
+          <xsd:annotation/>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="ISO_Alpha-3&#10;" type="xsd:string">
+          <xsd:annotation/>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="Name" type="xsd:string">
+          <xsd:annotation/>
+        </xsd:element>
       </xsd:all>
     </xsd:complexType>
     <xsd:unique name="Country">
