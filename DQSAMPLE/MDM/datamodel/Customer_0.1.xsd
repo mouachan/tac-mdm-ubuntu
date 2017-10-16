@@ -70,6 +70,9 @@
             <xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
             <xsd:appinfo source="X_FKIntegrity">true</xsd:appinfo>
             <xsd:appinfo source="X_FKIntegrity_Override">false</xsd:appinfo>
+            <xsd:appinfo source="X_ForeignKeyInfo">Country/ISO_Alpha-2</xsd:appinfo>
+            <xsd:appinfo source="X_ForeignKeyInfo">Country/ISO_Alpha-3</xsd:appinfo>
+            <xsd:appinfo source="X_ForeignKeyInfo">Country/Name</xsd:appinfo>
           </xsd:annotation>
         </xsd:element>
       </xsd:all>
