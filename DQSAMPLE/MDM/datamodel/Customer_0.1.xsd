@@ -4,7 +4,24 @@
   <xsd:element name="Customer">
     <xsd:complexType>
       <xsd:all>
-        <xsd:element name="CustomerId" type="xsd:string"/>
+        <xsd:element maxOccurs="1" minOccurs="1" name="CustomerId" type="xsd:string">
+          <xsd:annotation/>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="xsd:string">
+          <xsd:annotation/>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="xsd:string">
+          <xsd:annotation/>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xsd:string">
+          <xsd:annotation/>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="PhoneNumbers" type="xsd:string">
+          <xsd:annotation/>
+        </xsd:element>
+        <xsd:element maxOccurs="1" minOccurs="0" name="Email" type="xsd:string">
+          <xsd:annotation/>
+        </xsd:element>
       </xsd:all>
     </xsd:complexType>
     <xsd:unique name="Customer">
@@ -26,7 +43,9 @@
   <xsd:element name="Country">
     <xsd:complexType>
       <xsd:all>
-        <xsd:element name="CountryId" type="xsd:string"/>
+        <xsd:element maxOccurs="1" minOccurs="1" name="CountryId" type="xsd:string">
+          <xsd:annotation/>
+        </xsd:element>
       </xsd:all>
     </xsd:complexType>
     <xsd:unique name="Country">
