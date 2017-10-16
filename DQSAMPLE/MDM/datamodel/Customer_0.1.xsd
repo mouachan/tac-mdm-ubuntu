@@ -22,7 +22,7 @@
         <xsd:element maxOccurs="1" minOccurs="0" name="Email" type="xsd:string">
           <xsd:annotation/>
         </xsd:element>
-        <xsd:element maxOccurs="1" minOccurs="0" name="FkAddresss">
+        <xsd:element maxOccurs="1" minOccurs="0" name="Addresss">
           <xsd:annotation/>
           <xsd:complexType>
             <xsd:sequence>
