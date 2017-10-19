@@ -120,7 +120,14 @@
     <elementParameter field="CLOSED_LIST" name="METHOD" value="PUT"/>
     <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml"/>
     <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/xml"/>
-    <elementParameter field="TABLE" name="QUERY"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;groupId&quot;"/>
+      <elementValue elementRef="VALUE" value="226d6f72746761676573220a20203c67726f757049643e6d6f727467616765733c2f67726f757049643e0a20203c617274696661637449643e6d6f727467616765733c2f617274696661637449643e0a20203c76657273696f6e3e312e302e302d534e415053484f543c2f76657273696f6e3e0a3c2f646570656e64656e63793e22" hexValue="true"/>
+      <elementValue elementRef="NAME" value="&quot;artifactId&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;mortgages&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;version&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;1.0.0-SNAPSHOT&quot;"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
