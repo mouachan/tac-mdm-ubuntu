@@ -117,7 +117,12 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tREST_1" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;http://192.168.64.2:8180/kie-server/services/rest/server&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
-    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;user&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;kieserver&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;password&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;kieserver1!&quot;"/>
+    </elementParameter>
     <elementParameter field="MEMO" name="BODY" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tREST_1">
