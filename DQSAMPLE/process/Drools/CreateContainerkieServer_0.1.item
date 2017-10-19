@@ -122,13 +122,13 @@
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="artifactId"/>
-      <elementValue elementRef="QUERY" value="/release-id/artifact-id/@value"/>
+      <elementValue elementRef="QUERY" value="&quot;/release-id/artifact-id/@value&quot;"/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="groupId"/>
-      <elementValue elementRef="QUERY" value="/release-id/group-id/@value"/>
+      <elementValue elementRef="QUERY" value="&quot;/release-id/group-id/@value&quot;"/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="version"/>
-      <elementValue elementRef="QUERY" value="/release-id/version/@value"/>
+      <elementValue elementRef="QUERY" value="&quot;/release-id/version/@value&quot;"/>
       <elementValue elementRef="NODECHECK" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
