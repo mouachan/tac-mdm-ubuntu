@@ -121,7 +121,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="statusCode"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
-      <elementValue elementRef="VALUE" value="223c6b69652d636f6e7461696e65723e3c72656c656173652d69643e3c61727469666163742d69643e6d6f727467616765733c2f61727469666163742d69643e203c67726f75702d69643e6d6f727467616765733c2f67726f75702d69643e203c76657273696f6e3e312e302e302d534e415053484f543c2f76657273696f6e3e3c2f72656c656173652d69643e3c2f6b69652d636f6e7461696e65723e220a20203c72656c656173652d69643e0a202020203c61727469666163742d69643e6d6f727467616765733c2f61727469666163742d69643e0a202020203c67726f75702d69643e6d6f727467616765733c2f67726f75702d69643e0a202020203c76657273696f6e3e312e302e302d534e415053484f543c2f76657273696f6e3e0a20203c2f72656c656173652d69643e0a3c2f6b69652d636f6e7461696e65723e" hexValue="true"/>
+      <elementValue elementRef="VALUE" value="&quot;&lt;kie-container>&lt;release-id>&lt;artifact-id>mortgages&lt;/artifact-id> &lt;group-id>mortgages&lt;/group-id> &lt;version>1.0.0-SNAPSHOT&lt;/version>&lt;/release-id>&lt;/kie-containerId>&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="string"/>
       <elementValue elementRef="VALUE" value=""/>
     </elementParameter>
