@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_FeZzILVoEeeqwe1mDNQRWg" name="AMC641" id="__mIYMLVnEeeqwe1mDNQRWg" label="AMC641" dataPackage="_Ff62ELVoEeeqwe1mDNQRWg" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/amc641?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="DRzwLspoywrCK/y46hG4Qw==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="amc641" SqlSynthax="Syntaxe SQL" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_FeZzIbVoEeeqwe1mDNQRWg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_FemncLVoEeeqwe1mDNQRWg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_FeujQLVoEeeqwe1mDNQRWg" tag="Status" value=""/>
+    <taggedValue xmi:id="_FeujQbVoEeeqwe1mDNQRWg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_FeujQrVoEeeqwe1mDNQRWg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_FeujQ7VoEeeqwe1mDNQRWg" tag="Description" value=""/>
+    <taggedValue xmi:id="_FeujRLVoEeeqwe1mDNQRWg" tag="Author" value=""/>
+    <taggedValue xmi:id="_FeujRbVoEeeqwe1mDNQRWg" tag="otherParameter"/>
+    <taggedValue xmi:id="_FfLPMLVoEeeqwe1mDNQRWg" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_FfLPMbVoEeeqwe1mDNQRWg" tag="DB ProductVersion" value="5.7.18"/>
+    <taggedValue xmi:id="_FfLPMrVoEeeqwe1mDNQRWg" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_FeZzIrVoEeeqwe1mDNQRWg" key="CONN_PARA_KEY_USERNAME" value="root"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Ff62ELVoEeeqwe1mDNQRWg" name="amc641" dataManager="_FeZzILVoEeeqwe1mDNQRWg"/>
+</xmi:XMI>
