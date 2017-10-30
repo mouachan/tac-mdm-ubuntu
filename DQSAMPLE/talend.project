@@ -4974,6 +4974,7 @@
       <relatedItems xmi:id="_-UJmNHKzEeeRScMQBd5cnw" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UJmNXKzEeeRScMQBd5cnw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UJmNnKzEeeRScMQBd5cnw" id="_PCdTcMBsEeac0rTU8I7CxA - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_0_RH8L1OEeehY7VPJcP77g" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_-UJmN3KzEeeRScMQBd5cnw">
       <baseItem xmi:id="_-UJmOHKzEeeRScMQBd5cnw" id="_S7fbgOxTEeaHufLyyrp7-g" version="1.0" type="job"/>
