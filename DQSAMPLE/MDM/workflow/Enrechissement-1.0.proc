@@ -173,6 +173,8 @@
         <condition xmi:type="expression:Expression" xmi:id="_wvQj8L1REeehY7VPJcP77g" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_Qlx8gGKXEeaDbeg_vFJw6Q" documentation="Person who takes the first action to start the process" name="Initiator" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_-wEkkL1XEeehY7VPJcP77g" name="RM1"/>
+      <actors xmi:type="process:Actor" xmi:id="_DuhbkL1YEeehY7VPJcP77g" name="Actor1"/>
       <contract xmi:type="process:Contract" xmi:id="_vyXb1WKUEeaDbeg_vFJw6Q"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_vyXb1mKUEeaDbeg_vFJw6Q">
         <name xmi:type="expression:Expression" xmi:id="_vyXb12KUEeaDbeg_vFJw6Q" content="" returnTypeFixed="true"/>
