@@ -52,40 +52,40 @@
     <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
     <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
-    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
-    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/Applications/TalendStudio-6.4.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/Users/mouachani/talend/workspaces/ubuntu-133/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
-    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5" show="false"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;172.16.31.132&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
     <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;172.16.31.132&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;amc&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;remote_user&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="X3+iLqN9rp0p4b38DHnmFg==" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;tstatcatcher&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;tlogcatcher&quot;" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;tflowmetercatcher&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
     <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
     <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
     <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
     <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
     <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
@@ -96,13 +96,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
-    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
-    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
-    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
-    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
     <routinesParameter id="_SRrv4MBpEeac0rTU8I7CxA" name="MDM"/>
     <routinesParameter id="_SdORgMBpEeac0rTU8I7CxA" name="DataMasking"/>
     <routinesParameter id="_Sdc7AMBpEeac0rTU8I7CxA" name="DataQuality"/>
@@ -118,11 +111,10 @@
     <routinesParameter id="_SeW58MBpEeac0rTU8I7CxA" name="TalendDataGenerator"/>
     <routinesParameter id="_SebycMBpEeac0rTU8I7CxA" name="TalendDate"/>
     <routinesParameter id="_Segq8MBpEeac0rTU8I7CxA" name="TalendString"/>
+    <routinesParameter id="_BVK4gHKvEee5w_8Pg8gsJA" name="TalendStringUtil"/>
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_XA9QgMBrEeac0rTU8I7CxA" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Talend/Files/fichierA.txt&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
@@ -137,8 +129,6 @@
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_XA9QgMBrEeac0rTU8I7CxA - metadata" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_XA9QgMBrEeac0rTU8I7CxA - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Talend/install/Talend-Studio-20160704_1411-V6.2.1/Talend-Studio-20160704_1411-V6.2.1/workspace&quot;" show="false"/>
@@ -203,41 +193,6 @@
       <column comment="" key="false" length="-1" name="date_commande" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="LookupDistributeur" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="LookupDistributeur_1"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
-    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-    <metadata connector="FLOW" name="LookupDistributeur_1">
-      <column comment="" key="false" length="9" name="reference_commande" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="reference_objet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="34" name="designation_objet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="quantite" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="reference_client" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="date_commande" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="OUTPUT_1" name="OUTPUT_1">
-      <column comment="" key="false" length="9" name="reference_commande" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="nom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="reference_objet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="34" name="designation_objet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="quantite" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="reference_client" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="date_commande" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="OUTPUT_2" name="OUTPUT_2">
-      <column comment="" key="false" length="-1" name="reference_commande" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ref_client" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
@@ -309,15 +264,40 @@
       <column comment="" key="false" length="-1" name="ref_client" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="LookupDistributeur" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128" sizeX="32" sizeY="35">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="LookupDistributeur_1"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <metadata connector="FLOW" name="LookupDistributeur_1">
+      <column comment="" key="false" length="9" name="reference_commande" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="reference_objet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="designation_objet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="quantite" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="reference_client" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_commande" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT_1" name="OUTPUT_1">
+      <column comment="" key="false" length="9" name="reference_commande" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="nom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="reference_objet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="designation_objet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="quantite" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="reference_client" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date_commande" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT_2" name="OUTPUT_2">
+      <column comment="" key="false" length="-1" name="reference_commande" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ref_client" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="LookupDistributeur_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="OUTPUT_1" label="out" lineStyle="0" metaname="OUTPUT_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="LookupDistributeur_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="OUTPUT_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="LookupDistributeur_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out" show="false"/>
   </connection>
-  <connection connectorName="OUTPUT_2" label="reject" lineStyle="0" metaname="OUTPUT_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="LookupDistributeur_1" target="tLogRow_2">
+  <connection connectorName="FLOW" label="reject" lineStyle="0" metaname="OUTPUT_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="LookupDistributeur_1" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="reject" show="false"/>
   </connection>

@@ -2329,7 +2329,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_-UFUKHKzEeeRScMQBd5cnw">
       <baseItem xmi:id="_-UFUKXKzEeeRScMQBd5cnw" id="_ONPNkMBqEeac0rTU8I7CxA" version="0.1" type="job"/>
-      <relatedItems xmi:id="_-UFUKnKzEeeRScMQBd5cnw" id="_XA9QgMBrEeac0rTU8I7CxA" version="Latest" type="property"/>
       <relatedItems xmi:id="_-UFUK3KzEeeRScMQBd5cnw" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UFULHKzEeeRScMQBd5cnw" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UFULXKzEeeRScMQBd5cnw" id="TalendString" version="Latest" type="routine"/>
@@ -2346,6 +2345,7 @@
       <relatedItems xmi:id="_-UFUOHKzEeeRScMQBd5cnw" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UFUOXKzEeeRScMQBd5cnw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-UFUOnKzEeeRScMQBd5cnw" id="_XA9QgMBrEeac0rTU8I7CxA - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_MzYdYL1PEeehY7VPJcP77g" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_-UFUO3KzEeeRScMQBd5cnw">
       <baseItem xmi:id="_-UFUPHKzEeeRScMQBd5cnw" id="_KKrXwA0YEea07bfDW9_3JQ" version="0.1" type="job"/>
